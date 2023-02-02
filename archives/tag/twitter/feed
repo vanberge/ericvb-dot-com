@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Twitter &#8211; Eric VB.com</title>
+	<atom:link href="http://www.ericvb.com/archives/tag/twitter/feed" rel="self" type="application/rss+xml" />
+	<link>http://www.ericvb.com</link>
+	<description>A Distinction Without a Difference...</description>
+	<lastBuildDate>Fri, 02 Apr 2010 19:31:41 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.1</generator>
+	<item>
+		<title>Better Twitter Integration</title>
+		<link>http://www.ericvb.com/archives/better-twitter-integration</link>
+					<comments>http://www.ericvb.com/archives/better-twitter-integration#comments</comments>
+		
+		<dc:creator><![CDATA[Vanberge]]></dc:creator>
+		<pubDate>Fri, 02 Apr 2010 16:39:16 +0000</pubDate>
+				<category><![CDATA[Site related]]></category>
+		<category><![CDATA[Tech]]></category>
+		<category><![CDATA[Twitter]]></category>
+		<category><![CDATA[wordpress]]></category>
+		<guid isPermaLink="false">http://www.ericvb.com/?p=1104</guid>
+
+					<description><![CDATA[I both love and hate the Twitter-Tools plugin for WordPress. On one hand; I really like how it can integrate Twitter into my blog via both sidebar widget and weekly Twitter digest posts&#8230; But, on the other hand, I was really starting to feel like these digest posts were cluttering up both my blog and [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I both love and hate the <a href="http://wordpress.org/extend/plugins/twitter-tools/">Twitter-Tools plugin</a> for WordPress.</p>
+<p>On one hand; I really like how it can integrate Twitter into my blog via both sidebar widget and weekly Twitter digest posts&#8230;  But, on the other hand, I was really starting to feel like these digest posts were cluttering up both my blog and my archives.  Several times recently I have found myself scrolling back through way too many Twitter digest posts in order to get at my ACTUAL blog posts and content that I had written.  Basically, I came to the conclusion that &#8220;I didn&#8217;t like this&#8221; and I had to modify how Twitter integrated with my Blog.</p>
+<p>Today I&#8217;ve taken the steps necessary to achieve what I believe is the best of both worlds.  I now have weekly Twitter digest post created as usual; but they do not display in my main blog page or in my archives page &#8212; AND you have to specifically navigate to a &#8220;Twitter&#8221; page in order to see them at all.</p>
+<p>This was actually a little more challenging for me than I&#8217;d like to admit &#8211; but I&#8217;ll go through the steps below:</p>
+<p><strong>First: Exclude the Category</strong><br />
+To block out my Twitter category from displaying on my blog and archives, I added the following function to the functions.php file within my theme directory.  The &#8220;-28&#8221; below refers to the corresponding category ID for the Twitter category.  This code made it so all posts within the  &#8220;Twitter&#8221; category are ignored in both my blog page and my archives.</p>
+<p>        <code>function exclude_category($query){<br />
+        if ($query->is_home) {<br />
+        $query->set('cat', '-28');<br />
+        }<br />
+return $query;<br />
+}<br />
+add_filter('pre_get_posts', 'exclude_category');</code></p>
+<p><strong>Second: Make the Category &#8220;Navigateable&#8221; from the Main Page</strong><br />
+The more challenging part for me was figuring out an &#8220;easy&#8221; way to navigate to these Twitter digest posts.  It sounded like a fairly easy thing to do; but I had a surprisingly difficult time with it.</p>
+<p>I experimented with some .htacces redirection, and also some plugins that claimed to do exactly what I wanted (but, sucked).  In the end; I chose to just modify my theme&#8217;s main loop logic and save it as a new page template.  I copied the the text from my theme&#8217;s index.php file, and and pasted it into my a file called &#8220;twitter.php&#8221; which I saved as a new page template.  I then replaced the following code:</p>
+<p><code>if (have_posts()) :<br />
+while (have_posts()) : the_post();</code></p>
+<p>With this code:<br />
+<code>$recent = new WP_Query();<br />
+$recent->query('cat=28');<br />
+if ($recent->have_posts()) :<br />
+while($recent->have_posts()) : $recent->the_post();</code></p>
+<p>This actually worked fairly well, and in retrospect is very easy &#8211; it just took me quite awhile to arrive at this solution!  The final step here was then to add a page called &#8220;Twitter&#8221; via the administration panel; and simply change the page to use this Twitter.php template instead of the default page template.</p>
+<p>Voila, a Twitter page that you can navigate to which displays all the weekly digest Twitter posts created automatically by the Twitter Tools plugin.</p>
+<p>**** UPDATE ****<br />
+Vanlandw had a great recommendation about excluding these Twitter digest posts from my RSS feeds as well.  That was very simple to do&#8230;  My exclude function in the functions.php file in my theme directory now reads as such:<br />
+<code>function exclude_category($query){<br />
+        if ($query->is_home || $query->is_feed) {<br />
+        $query->set('cat', '-28');<br />
+        }<br />
+return $query;<br />
+}</code></p>
+<p>And, now the Twitter digest posts are excluded from my RSS feed as well!  <img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" />  WordPress and PHP are both awesome.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>http://www.ericvb.com/archives/better-twitter-integration/feed</wfw:commentRss>
+			<slash:comments>6</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>The Twitter Enigma</title>
+		<link>http://www.ericvb.com/archives/the-twitter-enigma</link>
+					<comments>http://www.ericvb.com/archives/the-twitter-enigma#comments</comments>
+		
+		<dc:creator><![CDATA[Vanberge]]></dc:creator>
+		<pubDate>Fri, 28 Aug 2009 13:19:42 +0000</pubDate>
+				<category><![CDATA[Tech]]></category>
+		<category><![CDATA[Twitter]]></category>
+		<guid isPermaLink="false">http://www.ericvb.com/?p=711</guid>
+
+					<description><![CDATA[Love it or hate it, Twitter is really a pretty amazing thing. I&#8217;ve been using twitter for a little over a year now, and I&#8217;ve gone through phases ranging from daily use to weeks without tweets. Overall, I&#8217;m a fan and I think it&#8217;s a &#8220;cool&#8221; technology. Granted you&#8217;re always going to have the annoying [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Love it or hate it, Twitter is really a pretty amazing thing.  </p>
+<p>I&#8217;ve been using twitter for a little over a year now, and I&#8217;ve gone through phases ranging from daily use to weeks without tweets.  Overall, I&#8217;m a fan and I think it&#8217;s a &#8220;cool&#8221; technology.</p>
+<p>Granted you&#8217;re always going to have the annoying too much information or 100-tweets-a-day type of annoyances that really nobody likes.  But, you also can really do some cool things.</p>
+<p>Example 1<br />
+I posted a &#8220;tweet&#8221; regarding my frustration at Best Buy for canceling my order for a $9.99 52&#8221; television.  CNN reporter Abbi Tatton, searching Twitter, finds my tweet and looks up my contact information.  I am then interviewed and referenced on a CNN airing of &#8220;The Situation Room&#8221; and also countless online news sites that seemingly feed from CNN.  A mild 15 minutes of fame that is then followed up by a radio interview about the whole situation.  The entire thing started because I posted a tweet &#8211; and that is just amazing to me.</p>
+<p>Example 2<br />
+Yesterday I had a pretty creative idea for Google Voice, a service I have been happily using for about 6 months now.  I thought it would be pretty cool if Google Voice had the capability to set a wakeup call.  This would be set just like any other alarm, and then maybe even have the wakeup call go to different phones on different days.</p>
+<p>Surprised at myself for actually coming up with a good idea, I post a tweet directly to Craig Walker (co-founder of GrandCentral and top dog at Google Voice now) about the wakeup call idea.  </p>
+<p>He replies: &#8220;@vanberge love this idea&#8221;</p>
+<p>So, very possibly this functionality may actually make it into Google Voice some point down the road&#8230; All because of Twitter.  I was able to directly pitch an idea to the person that can do the most with it.  Simply amazing.</p>
+<p>Like I said &#8211; love it or hate it, Twitter makes some pretty cool things possible.  Here&#8217;s to hoping for a wakeup call functionality to show up soon under my Google Voice settings page.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>http://www.ericvb.com/archives/the-twitter-enigma/feed</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

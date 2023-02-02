@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Insomnia Upgraded	</title>
+	<atom:link href="http://www.ericvb.com/archives/insomnia-upgraded/feed" rel="self" type="application/rss+xml" />
+	<link>http://www.ericvb.com/archives/insomnia-upgraded</link>
+	<description>A Distinction Without a Difference...</description>
+	<lastBuildDate>Tue, 22 Jul 2008 03:47:15 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.1</generator>
+	<item>
+		<title>
+		By: vanlandw		</title>
+		<link>http://www.ericvb.com/archives/insomnia-upgraded#comment-8745</link>
+
+		<dc:creator><![CDATA[vanlandw]]></dc:creator>
+		<pubDate>Tue, 22 Jul 2008 03:47:15 +0000</pubDate>
+		<guid isPermaLink="false">http://www.palmerforpresident.com/?p=204#comment-8745</guid>
+
+					<description><![CDATA[not that you asked me but i bleeding edge to fix problems if they come up and stable when everything is fine.
+
+brb]]></description>
+			<content:encoded><![CDATA[<p>not that you asked me but i bleeding edge to fix problems if they come up and stable when everything is fine.</p>
+<p>brb</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Vanberge		</title>
+		<link>http://www.ericvb.com/archives/insomnia-upgraded#comment-8660</link>
+
+		<dc:creator><![CDATA[Vanberge]]></dc:creator>
+		<pubDate>Fri, 18 Jul 2008 22:08:25 +0000</pubDate>
+		<guid isPermaLink="false">http://www.palmerforpresident.com/?p=204#comment-8660</guid>
+
+					<description><![CDATA[Do you stick to &#039;stable&#039; releases or do you run &#039;bleeding edge&#039; ?]]></description>
+			<content:encoded><![CDATA[<p>Do you stick to &#8216;stable&#8217; releases or do you run &#8216;bleeding edge&#8217; ?</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Vanberge		</title>
+		<link>http://www.ericvb.com/archives/insomnia-upgraded#comment-8659</link>
+
+		<dc:creator><![CDATA[Vanberge]]></dc:creator>
+		<pubDate>Fri, 18 Jul 2008 22:00:19 +0000</pubDate>
+		<guid isPermaLink="false">http://www.palmerforpresident.com/?p=204#comment-8659</guid>
+
+					<description><![CDATA[You&#039;re right... it is awesome.
+
+I completely deleted wordpress, checked out the subverson latest, re-copied my plugins/themes and I was done in 8 minutes.
+
+future upgrades should be pretty damn easy.
+
+Thanks chouse.]]></description>
+			<content:encoded><![CDATA[<p>You&#8217;re right&#8230; it is awesome.</p>
+<p>I completely deleted wordpress, checked out the subverson latest, re-copied my plugins/themes and I was done in 8 minutes.</p>
+<p>future upgrades should be pretty damn easy.</p>
+<p>Thanks chouse.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: chouse		</title>
+		<link>http://www.ericvb.com/archives/insomnia-upgraded#comment-8655</link>
+
+		<dc:creator><![CDATA[chouse]]></dc:creator>
+		<pubDate>Fri, 18 Jul 2008 20:08:49 +0000</pubDate>
+		<guid isPermaLink="false">http://www.palmerforpresident.com/?p=204#comment-8655</guid>
+
+					<description><![CDATA[You must check it out. It is awesome. Still command line! http://codex.wordpress.org/Installing/Updating_WordPress_with_Subversion
+
+$ cd blog
+$ svn sw http://svn.automattic.com/wordpress/tags/2.6/
+
+Step through wp-admin/upgrade.php and voila.
+
+You need to do a few painless things before using svn for the first time though but no big deal.]]></description>
+			<content:encoded><![CDATA[<p>You must check it out. It is awesome. Still command line! <a href="http://codex.wordpress.org/Installing/Updating_WordPress_with_Subversion" rel="nofollow ugc">http://codex.wordpress.org/Installing/Updating_WordPress_with_Subversion</a></p>
+<p>$ cd blog<br />
+$ svn sw <a href="http://svn.automattic.com/wordpress/tags/2.6/" rel="nofollow ugc">http://svn.automattic.com/wordpress/tags/2.6/</a></p>
+<p>Step through wp-admin/upgrade.php and voila.</p>
+<p>You need to do a few painless things before using svn for the first time though but no big deal.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Vanberge		</title>
+		<link>http://www.ericvb.com/archives/insomnia-upgraded#comment-8621</link>
+
+		<dc:creator><![CDATA[Vanberge]]></dc:creator>
+		<pubDate>Thu, 17 Jul 2008 15:20:17 +0000</pubDate>
+		<guid isPermaLink="false">http://www.palmerforpresident.com/?p=204#comment-8621</guid>
+
+					<description><![CDATA[Mr. Chouse - i looked into that once but never really took it to completion.
+
+For these last few upgrades I&#039;ve stuck with wget to download the latest; ultimately relying on gunzip &#124; tar -xvf 
+
+I am a command line nerd.  :-(]]></description>
+			<content:encoded><![CDATA[<p>Mr. Chouse &#8211; i looked into that once but never really took it to completion.</p>
+<p>For these last few upgrades I&#8217;ve stuck with wget to download the latest; ultimately relying on gunzip | tar -xvf </p>
+<p>I am a command line nerd.  🙁</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: chouse		</title>
+		<link>http://www.ericvb.com/archives/insomnia-upgraded#comment-8599</link>
+
+		<dc:creator><![CDATA[chouse]]></dc:creator>
+		<pubDate>Thu, 17 Jul 2008 01:58:58 +0000</pubDate>
+		<guid isPermaLink="false">http://www.palmerforpresident.com/?p=204#comment-8599</guid>
+
+					<description><![CDATA[is your wordpress install &quot;svn-enabled&quot;? because that is the way to upgrade for sure.]]></description>
+			<content:encoded><![CDATA[<p>is your wordpress install &#8220;svn-enabled&#8221;? because that is the way to upgrade for sure.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: vanlandw		</title>
+		<link>http://www.ericvb.com/archives/insomnia-upgraded#comment-8589</link>
+
+		<dc:creator><![CDATA[vanlandw]]></dc:creator>
+		<pubDate>Wed, 16 Jul 2008 19:20:17 +0000</pubDate>
+		<guid isPermaLink="false">http://www.palmerforpresident.com/?p=204#comment-8589</guid>
+
+					<description><![CDATA[GREAT WORK VANBERGE NUMBER FOUR
+
+I am sorry I won&#039;t be able to view Batman with you guys oh well.  I am also glad your updates were successful.  Sadly I can&#039;t bother you about the auto show pictures anymore so really your homepage is pretty much where it should be.
+
+brb]]></description>
+			<content:encoded><![CDATA[<p>GREAT WORK VANBERGE NUMBER FOUR</p>
+<p>I am sorry I won&#8217;t be able to view Batman with you guys oh well.  I am also glad your updates were successful.  Sadly I can&#8217;t bother you about the auto show pictures anymore so really your homepage is pretty much where it should be.</p>
+<p>brb</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

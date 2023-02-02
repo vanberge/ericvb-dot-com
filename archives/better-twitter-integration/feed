@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Better Twitter Integration	</title>
+	<atom:link href="http://www.ericvb.com/archives/better-twitter-integration/feed" rel="self" type="application/rss+xml" />
+	<link>http://www.ericvb.com/archives/better-twitter-integration</link>
+	<description>A Distinction Without a Difference...</description>
+	<lastBuildDate>Tue, 15 Nov 2011 16:19:48 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.1</generator>
+	<item>
+		<title>
+		By: PHP Site Tweaks &#124; Eric VB.com		</title>
+		<link>http://www.ericvb.com/archives/better-twitter-integration#comment-18081</link>
+
+		<dc:creator><![CDATA[PHP Site Tweaks &#124; Eric VB.com]]></dc:creator>
+		<pubDate>Tue, 15 Nov 2011 16:19:48 +0000</pubDate>
+		<guid isPermaLink="false">http://www.ericvb.com/?p=1104#comment-18081</guid>
+
+					<description><![CDATA[[...] a couple custom tweaks to my theme&#8217;s functions.php file, I was able to mostly implement this. The Twitter category [...]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] a couple custom tweaks to my theme&#8217;s functions.php file, I was able to mostly implement this. The Twitter category [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Vanberge		</title>
+		<link>http://www.ericvb.com/archives/better-twitter-integration#comment-14395</link>
+
+		<dc:creator><![CDATA[Vanberge]]></dc:creator>
+		<pubDate>Tue, 06 Apr 2010 18:18:52 +0000</pubDate>
+		<guid isPermaLink="false">http://www.ericvb.com/?p=1104#comment-14395</guid>
+
+					<description><![CDATA[Fulljeff I&#039;m pretty sure I tried that plugin and it I couldn&#039;t easily find a way to create a page of just the one single excluded category.
+
+But you&#039;re probably right - I often do things the hardest way possible.  
+At least this time I have avoided changing wordpress core files that get over-written every upgrade.]]></description>
+			<content:encoded><![CDATA[<p>Fulljeff I&#8217;m pretty sure I tried that plugin and it I couldn&#8217;t easily find a way to create a page of just the one single excluded category.</p>
+<p>But you&#8217;re probably right &#8211; I often do things the hardest way possible.<br />
+At least this time I have avoided changing wordpress core files that get over-written every upgrade.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Jeffrey		</title>
+		<link>http://www.ericvb.com/archives/better-twitter-integration#comment-14374</link>
+
+		<dc:creator><![CDATA[Jeffrey]]></dc:creator>
+		<pubDate>Fri, 02 Apr 2010 20:40:51 +0000</pubDate>
+		<guid isPermaLink="false">http://www.ericvb.com/?p=1104#comment-14374</guid>
+
+					<description><![CDATA[This was a fantastic idea, I&#039;m glad you implemented it. However, I believe  there are numerous plugins that could have achieved the functionality with much less hassle. i.e. Advanced Category Excluder.]]></description>
+			<content:encoded><![CDATA[<p>This was a fantastic idea, I&#8217;m glad you implemented it. However, I believe  there are numerous plugins that could have achieved the functionality with much less hassle. i.e. Advanced Category Excluder.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Vanberge		</title>
+		<link>http://www.ericvb.com/archives/better-twitter-integration#comment-14372</link>
+
+		<dc:creator><![CDATA[Vanberge]]></dc:creator>
+		<pubDate>Fri, 02 Apr 2010 19:18:15 +0000</pubDate>
+		<guid isPermaLink="false">http://www.ericvb.com/?p=1104#comment-14372</guid>
+
+					<description><![CDATA[I have immediately implemented a similar function to BRB the twitter digests from my RSS feed.  GG.]]></description>
+			<content:encoded><![CDATA[<p>I have immediately implemented a similar function to BRB the twitter digests from my RSS feed.  GG.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Vanberge		</title>
+		<link>http://www.ericvb.com/archives/better-twitter-integration#comment-14371</link>
+
+		<dc:creator><![CDATA[Vanberge]]></dc:creator>
+		<pubDate>Fri, 02 Apr 2010 19:13:08 +0000</pubDate>
+		<guid isPermaLink="false">http://www.ericvb.com/?p=1104#comment-14371</guid>
+
+					<description><![CDATA[Vanlandwissimo,
+I don&#039;t think so - I believe they will still be in my RSS feed.   That&#039;s  good call though; I will investimujate.]]></description>
+			<content:encoded><![CDATA[<p>Vanlandwissimo,<br />
+I don&#8217;t think so &#8211; I believe they will still be in my RSS feed.   That&#8217;s  good call though; I will investimujate.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: vanlandw		</title>
+		<link>http://www.ericvb.com/archives/better-twitter-integration#comment-14370</link>
+
+		<dc:creator><![CDATA[vanlandw]]></dc:creator>
+		<pubDate>Fri, 02 Apr 2010 19:05:56 +0000</pubDate>
+		<guid isPermaLink="false">http://www.ericvb.com/?p=1104#comment-14370</guid>
+
+					<description><![CDATA[Good call GG this is much better. Does this also remove your RSS feed sending weekly twitter posts?]]></description>
+			<content:encoded><![CDATA[<p>Good call GG this is much better. Does this also remove your RSS feed sending weekly twitter posts?</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

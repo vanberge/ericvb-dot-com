@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>logstash &#8211; Eric VB.com</title>
+	<atom:link href="http://www.ericvb.com/archives/tag/logstash/feed" rel="self" type="application/rss+xml" />
+	<link>http://www.ericvb.com</link>
+	<description>A Distinction Without a Difference...</description>
+	<lastBuildDate>Mon, 18 Aug 2014 18:54:57 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.1</generator>
+	<item>
+		<title>Getting Started on Centralized Logging with Logstash, Elasticsearch and Kibana</title>
+		<link>http://www.ericvb.com/archives/getting-started-on-centralized-logging-with-logstash-elasticsearch-and-kibana</link>
+					<comments>http://www.ericvb.com/archives/getting-started-on-centralized-logging-with-logstash-elasticsearch-and-kibana#comments</comments>
+		
+		<dc:creator><![CDATA[Vanberge]]></dc:creator>
+		<pubDate>Sun, 05 Jan 2014 03:29:05 +0000</pubDate>
+				<category><![CDATA[Tech]]></category>
+		<category><![CDATA[logstash]]></category>
+		<category><![CDATA[sysadmin]]></category>
+		<guid isPermaLink="false">http://www.ericvb.com/?p=3639</guid>
+
+					<description><![CDATA[As a sysadmin, one of the &#8220;rainy day&#8221; things on my to-do list for some time has been exploring centralized logging.  I&#8217;ve done a few proof of concept style quick implementations throughout the years but have never been able to secure budget or resources to see it to completion.  Splunk was too expensive, and the [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>As a sysadmin, one of the &#8220;rainy day&#8221; things on my to-do list for some time has been exploring centralized logging.  I&#8217;ve done a few proof of concept style quick implementations throughout the years but have never been able to secure budget or resources to see it to completion.  Splunk was too expensive, and the open source ones I tried required too much effort to be worth while back then.  This time, however,  I was more determined to make something stick.  With that, I began searching out some of the more popular open source tools.</p>
+<p>I considered various combinations of things like Fluentd, Graylog2, Octopussy, etc.  In the end, I settled on going with the Logstash/Elasticsearch/Kibana stack.  All of these free, open source tools are powerful in their own right &#8211; but they&#8217;re designed to work together and are <strong>immensely</strong> powerful when combined.  Logstash collects, ships, filters, and makes logs consistent.  Elasticsearch creates indices and searchability of the logs.  And finally, Kibana gives you a great web interface to analyze all your log data.  Here&#8217;s a screenshot of it all coming together for me.  This is a custom Kibana dashboard showing syslog output from all my VMware servers:</p>
+<p><a href="http://www.ericvb.com/wp-content/uploads/2014/01/Custom-Kibana-dashboard.png"><img decoding="async" loading="lazy" class="alignnone wp-image-3676 size-medium" src="http://www.ericvb.com/wp-content/uploads/2014/01/Custom-Kibana-dashboard-300x138.png" alt="Custom-Kibana-dashboard" width="300" height="138" srcset="http://www.ericvb.com/wp-content/uploads/2014/01/Custom-Kibana-dashboard-300x138.png 300w, http://www.ericvb.com/wp-content/uploads/2014/01/Custom-Kibana-dashboard.png 945w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+<p>Before diving into the steps, I feel the need to point out that I&#8217;ve had a great time learning and setting up these tools.  I honestly haven&#8217;t been this excited about using software since first trying VMware ESX server.   I can&#8217;t stop working on it.  It&#8217;s become an addiction for me to continuously improve, filter, and make sense of various logs.  It&#8217;s really very rewarding to be able to visualize your log data in such a usable way.  Everything was  pretty easy to set up at a basic level, and the open source community was there for me via #logstash on IRC when I needed help taking things further or had any questions.  The setup of these tools <em>can</em> feel a little daunting to a newcomer with so many options and such a degree of configurability/customization, so I wanted to provide a step-by-step guide for how I ended up with an initial deployment.</p>
+<p>A couple prerequisite disclaimer points before I get started</p>
+<ul>
+<li>I chose to use Ubuntu server.  This is a personal preference, and certainly this guide can be helpful if you choose a different OS.  Use whatever OS you feel comfortable with.</li>
+<li>For the purposes of this guide, all 3 tools will be run on one server.  It is possible (even recommended depending on your workload) to separate them onto different servers.</li>
+<li>This is a &#8220;getting started&#8221; guide.  These tools can certainly be taken much further than I take them here.  They can be integrated with a message broker like Redis or RabbitMQ.  I&#8217;ll consider going into deeper options such as these in a followup enhanced configuration guide vs. here in the getting started guide.</li>
+</ul>
+<p>Now  let&#8217;s get into the setup!</p>
+<ol>
+<li>Get a webserver and PHP installed on your server.  I much prefer apache or nginx as the webserver.  Logstash does has a built in webserver that you can run, but I much prefer running a separate webserver.  In Ubuntu, I just went with the entire LAMP stack.   This is as easy as &#8220;<strong>apt-get install lamp-server</strong>&#8220;.</li>
+<li>Install a java runtime.  Again, easy in Ubuntu via <strong>apt-get install openjdk-7-jre-headless</strong></li>
+<li>Download the three components.  I downloaded gzip archives of each, but depending on your OS, there may be packages built for it.  Choose whichever way you&#8217;re more comfortable with.
+<ul>
+<li><strong>Elasticsearch</strong> (index) via: <a href="http://www.elasticsearch.org/download/">http://www.elasticsearch.org/download/</a></li>
+<li><strong>Logstash</strong> (collection) via: <a href="http://www.elasticsearch.org/overview/logstash/">http://www.elasticsearch.org/overview/logstash/</a></li>
+<li><strong>Kibana</strong> (web interface) via: <a href="http://www.elasticsearch.org/overview/kibana/">http://www.elasticsearch.org/overview/kibana/</a></li>
+</ul>
+</li>
+<li>Extract the archives (tar -xvf &lt;filename&gt;.tgz) and place the files where you want them. I chose /opt for logstash and elasticsearch, and then Kibana goes in your web root.  I did it as follows, an;d I&#8217;ll continue to reference these directories in the rest of the guide.
+<ul>
+<li>Extracted Elasticsearch tgz to /opt/elasticsearch</li>
+<li>Placed the Logstash jar in /opt/logstash</li>
+<li>Extracted Kibana tgz to my web root folder, /var/www/kibana &#8211; there was no special configuration needed other than putting the files here.</li>
+</ul>
+</li>
+<li>Edit your Elasticsearch config file (/opt/elasticsearch/config/elasticsearch.yml) and make 2 edits:
+<ul>
+<li>Find the line that says &#8220;cluster.name&#8221; and uncomment it, setting a name for your new Elasticsearch cluster.</li>
+<li>Look for &#8220;node.name&#8221; and set the node name as well.</li>
+<li>Note that you don&#8217;t have to set these variables.  If you don&#8217;t set these, Elasticsearch will set them randomly for you, but it is handy to know which server you&#8217;re looking at if you ever have to expand your setup so I recommend setting them.</li>
+</ul>
+</li>
+<li>Go ahead and start Elasticsearch by running <strong>/opt/elasticsearch/bin/elasticsearch</strong></li>
+<li>Create a basic logstash.conf file.  I created an /opt/logstash/logstash.conf with an initial config something like this, which just creates local file inputs.
+<pre>input {
+file {
+type => "linux-syslog"
+path => [ "/var/log/*.log", "/var/log/messages", "/var/log/syslog" ]
+}
+}
+output {
+stdout { }
+elasticsearch { cluster => "YourclusterName" }
+}</pre>
+<p>This input section is defined to look at and ingest files defined in the path array variable. Then the output section is setting to output to stdout (your command window) and also to elasticsearch where you define your cluster name. This is a very basic config to easily show us things are working.</li>
+<li>Now fire up Logstash by running:  <strong>/opt/logstash/bin/logstash agent -f /opt/logstash/logstash.conf</strong></li>
+<li>You should now see logstash initialize and all of the events it indexes should get output to your terminal via the stdout output, in addition to getting pushed over to elasticsearch where we should see them with Kibana.</li>
+<li>If you extracted Kibana as noted in step 4, then you should be able to browse to your server and check out your data!  Try http://yourserver/kibana and you should be greeted with an introduction screen. You&#8217;ll see they have a pre-configured logstash dashboard that you can click on and save as your default</li>
+<li>Once you see your data is indeed visible through Kibana, we can dive into further configuration of logstash.  If something&#8217;s off and you don&#8217;t see data, check out the <a href="http://logstash.net/docs/1.3.2/">logstash docs</a> or jump into #logstash on irc.freenode.net where people are very happy to help.  Once you&#8217;re satisfied that it is working, you may want to remove the stdout line from the output section and only have your output go to Elasticsearch for indexing.</li>
+<li>Now that we know things are functional, we can set up some additional logstash configs to further improve things
+<ul>
+<li>First, let&#8217;s set up a very common input for remote systems to dump syslogs into Logstash</li>
+<li>Edit your logstash.conf again and add a syslog to your input section like this:
+<pre>syslog {
+type => "syslog"
+}</pre>
+</li>
+<li>With the Logstash syslog input, you can specify the port, add tags, and set a bunch of other options. Make sure to check out the documentation for each input you add to your config. For syslog, visit http://logstash.net/docs/1.3.2/inputs/syslog for example.</li>
+<li>Next, we&#8217;ll want to set up a filter section of our config. The filter below makes sure we get a FQDN for the host by using a reverse DNS lookup and replacing the host variable with that (without this, many hosts just report an IP address), and then additionally adds a tag &#8220;VMware&#8221; for any host matching &#8220;esx&#8221; in the hostname. Pending your host names contain &#8220;esx&#8221; somewhere in them, this example makes it easy for browsing VMware syslog data through Kibana. You can certainly tailor these to any host names or even other fields you like. Logstash&#8217;s filtering and grok parsing are very powerful capabilities. This example is enough to give you an idea of the structure and how the logic works. Again, I can&#8217;t stress enough to dig into the docs and hop on IRC for help.  Overall, the filter section is probably where you&#8217;ll end up spending most of your time.
+<pre>filter {
+if [type] == "syslog" {
+dns {
+reverse => [ "host" ] action => "replace"
+}
+if [host] =~ /.*?(esx).*?(yourdomain)?/ {
+mutate { add_tag => [ "VMware" ] }
+}
+}
+}</pre>
+</li>
+<li>Once you get your logstash.conf tweaked, restart Logstash.  <strong>ps -ef | grep logstash</strong> and then kill the process.  Restart it the same way you did in step 8.</li>
+</ul>
+</li>
+<li><span style="line-height: 1.5em;">Now we&#8217;re ready to have some servers to dump syslogs to your new central log server! I started with VMware and Ubuntu and branched out from there. Depending on your OS or the syslog implementation, the method of sending logs to a remote syslog host varies.  Check your OS documentation for how to do this.  The default port is 514, which is default for the syslog input and typically remote hosts sending syslog data.</span></li>
+<li><span style="line-height: 1.5em;">Check out Kibana now and hopefully you see log entries.  Click through on hosts, on tags, try creating a new dashboard displaying only your &#8220;VMware&#8221; tagged logs. Etc Etc Etc &#8211; hopefully you can see your filters in action and how it helps bring consistency to your log data.</span></li>
+<li>Keep exploring the Logstash docs for more inputs.  Windows servers, Cisco devices, apache or IIS logs, Exchange, etc.  I don&#8217;t think there&#8217;s a sysadmin out there who has a shortage of log data they could/should be analyzing.</li>
+<li>Document your setup as you go so you can remember it later. <img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></li>
+</ol>
+<p>I hope this startup guide has been helpful to getting a base configuration.  Keep in mind that Logstash has a plethora of inputs, outputs codecs and filters.  Make sure to check out all the documentation at <a href="http://logstash.net/docs/1.3.2/">http://logstash.net/docs/1.3.2/</a> and tailor this awesome tool to your needs.  If you have a system logging, chances are there&#8217;s an input or plugin for it.</p>
+<p>A few bonus tips</p>
+<ul>
+<li>Check out <a href="http://www.elasticsearch.org/videos/">http://www.elasticsearch.org/videos/</a>, particularly &#8220;Introduction to Logstash&#8221;</li>
+<li>Install a few awesome plugins for Elasticsearch
+<ul>
+<li>/opt/elasticsearch/bin/plugin -install karmi/elasticsearch-paramedic</li>
+<li>/opt/elasticsearch/bin/plugin -install royrusso/elasticsearch-HQ</li>
+<li>/opt/elasticsearch/bin/plugin -install mobz/elasticsearch-head</li>
+</ul>
+</li>
+<li>Move your logstash dashboard to default by browsing to /var/www/kibana/app/dashboards and copying logstash.json to default.json.  Maybe save default.json off as default.json.orig or something first.</li>
+<li>Make sure to visit the <a href="http://cookbook.logstash.net/">Logstash community cookbook</a>.</li>
+</ul>
+]]></content:encoded>
+					
+					<wfw:commentRss>http://www.ericvb.com/archives/getting-started-on-centralized-logging-with-logstash-elasticsearch-and-kibana/feed</wfw:commentRss>
+			<slash:comments>4</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

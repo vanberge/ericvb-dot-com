@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Site Overhaul	</title>
+	<atom:link href="http://www.ericvb.com/archives/site-overhaul-2/feed" rel="self" type="application/rss+xml" />
+	<link>http://www.ericvb.com/archives/site-overhaul-2</link>
+	<description>A Distinction Without a Difference...</description>
+	<lastBuildDate>Thu, 26 May 2011 14:29:12 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.1</generator>
+	<item>
+		<title>
+		By: vanlandw		</title>
+		<link>http://www.ericvb.com/archives/site-overhaul-2#comment-16974</link>
+
+		<dc:creator><![CDATA[vanlandw]]></dc:creator>
+		<pubDate>Thu, 26 May 2011 14:29:12 +0000</pubDate>
+		<guid isPermaLink="false">http://www.ericvb.com/?p=1458#comment-16974</guid>
+
+					<description><![CDATA[Now if everybody was as diligent on updating their websites as you are vanberge.This is a jab at jja...
+
+Looks good G+G]]></description>
+			<content:encoded><![CDATA[<p>Now if everybody was as diligent on updating their websites as you are vanberge.This is a jab at jja&#8230;</p>
+<p>Looks good G+G</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

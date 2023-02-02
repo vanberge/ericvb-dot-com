@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>jjafuller &#8211; Eric VB.com</title>
+	<atom:link href="http://www.ericvb.com/archives/tag/jjafuller/feed" rel="self" type="application/rss+xml" />
+	<link>http://www.ericvb.com</link>
+	<description>A Distinction Without a Difference...</description>
+	<lastBuildDate>Thu, 19 Nov 2009 20:09:40 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.1</generator>
+	<item>
+		<title>MAMBO</title>
+		<link>http://www.ericvb.com/archives/mambo</link>
+					<comments>http://www.ericvb.com/archives/mambo#comments</comments>
+		
+		<dc:creator><![CDATA[Vanberge]]></dc:creator>
+		<pubDate>Thu, 19 Nov 2009 20:08:28 +0000</pubDate>
+				<category><![CDATA[Misc]]></category>
+		<category><![CDATA[funny]]></category>
+		<category><![CDATA[jjafuller]]></category>
+		<category><![CDATA[mambo]]></category>
+		<guid isPermaLink="false">http://www.ericvb.com/?p=769</guid>
+
+					<description><![CDATA[]]></description>
+										<content:encoded><![CDATA[<div id="attachment_770" style="width: 565px" class="wp-caption aligncenter"><img aria-describedby="caption-attachment-770" decoding="async" class="size-full wp-image-770" title="MAMBO" src="http://ericvb.com/wp-content/uploads/2009/11/mambo.JPG" alt="MAMBO" width="555" height="192" srcset="http://www.ericvb.com/wp-content/uploads/2009/11/mambo.JPG 679w, http://www.ericvb.com/wp-content/uploads/2009/11/mambo-300x103.jpg 300w" sizes="(max-width: 555px) 100vw, 555px" /><p id="caption-attachment-770" class="wp-caption-text">MAMBO</p></div>
+]]></content:encoded>
+					
+					<wfw:commentRss>http://www.ericvb.com/archives/mambo/feed</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

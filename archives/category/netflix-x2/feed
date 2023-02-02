@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Netflix-X2 &#8211; Eric VB.com</title>
+	<atom:link href="http://www.ericvb.com/archives/category/netflix-x2/feed" rel="self" type="application/rss+xml" />
+	<link>http://www.ericvb.com</link>
+	<description>A Distinction Without a Difference...</description>
+	<lastBuildDate>Fri, 02 Apr 2010 19:10:10 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.1</generator>
+	<item>
+		<title>Plugin Transfusion &#8211; Netflix-X2</title>
+		<link>http://www.ericvb.com/archives/plugin-transfusion-netflix-x2</link>
+					<comments>http://www.ericvb.com/archives/plugin-transfusion-netflix-x2#comments</comments>
+		
+		<dc:creator><![CDATA[Vanberge]]></dc:creator>
+		<pubDate>Tue, 23 Feb 2010 03:31:12 +0000</pubDate>
+				<category><![CDATA[Netflix-X2]]></category>
+		<category><![CDATA[wordpress]]></category>
+		<guid isPermaLink="false">http://www.ericvb.com/?p=860</guid>
+
+					<description><![CDATA[**Updated** 2/24/2010 I kept the motivational momentum going here and have made this plugin totally widget-capable. Totally tested and declared stable as version 1.3! Updated download links. Over a year ago, I decided to take Albert Banks&#8217; WordPress Netflix plugin, fork it, and maintain it as a new plugin&#8230; I did this because Albert&#8217;s version [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>**Updated** 2/24/2010<br />
+I kept the motivational momentum going here and have made this plugin totally widget-capable.  Totally tested and declared stable as version 1.3!  Updated download links.</p>
+<p>Over a year ago, I decided to take <a href="http://www.albertbanks.com/2006/01/04/wordpress-netflix-plugin-2/">Albert Banks&#8217; WordPress Netflix plugin</a>, fork it, and maintain it as a new plugin&#8230;</p>
+<p>I did this because Albert&#8217;s version didn&#8217;t support newer RSS feeds that Netflix provided, and it lacked some functionality that I desperately wanted to have (displaying movie reviews I&#8217;ve written on the Netflix site).  So, I decided to maintain my own version for better, and for worse.</p>
+<p>My interest and motivation to work on this plugin has drastically diminished lately &#8211; but today I got a transfusion of sheer inspiration to do some much needed house-keeping.  Ever since it&#8217;s inception in 2006 with Albert&#8217;s first version &#8211; this plugin has used functions from MagpieRSS to ingest and parse the RSS feeds.  Well, unbeknown to me this library has not been maintained since 2005 and never even made it out of beta status (even though wordpress&#8217; rss.php include file has it built in?).  I decided to bite the bullet today and make some modifications to my plugin&#8230;  Most notably it&#8217;s now using fetch_feed function from SimplePie vs Magpie&#8217;s fetch_rss function.</p>
+<p>I had to modify some of my other code for pulling descriptions, titles, and links &#8211; but one of the users of my plugin had already started that for me so I just had to take it the last mile.</p>
+<p>I did some other random cleanup, removed the annoying ^M characters that always seem to get in there when going from windows to linux, and I now call the rss.php include file instead of the depreciated rss-functions.php file.   All in all, it was a good day for the Netflix-X2 plugin&#8230;  maybe some day I will get around to improving the widget configuration!  Right now it just hacks together an unordered-list style widget and gives no other options.  but, hey&#8230; at least it is widgetized!</p>
+<p>Feel free to try the plugin out:<br />
+Download the latest release:  <a href="http://downloads.wordpress.org/plugin/netflix-x2.1.3.zip">http://downloads.wordpress.org/plugin/netflix-x2.1.3.zip</a></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>http://www.ericvb.com/archives/plugin-transfusion-netflix-x2/feed</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Plugin Updates</title>
+		<link>http://www.ericvb.com/archives/plugin-updates</link>
+					<comments>http://www.ericvb.com/archives/plugin-updates#respond</comments>
+		
+		<dc:creator><![CDATA[Vanberge]]></dc:creator>
+		<pubDate>Thu, 13 Nov 2008 01:51:24 +0000</pubDate>
+				<category><![CDATA[Netflix-X2]]></category>
+		<guid isPermaLink="false">http://www.palmerforpresident.com/?p=465</guid>
+
+					<description><![CDATA[Did some additional work on the Netflix-X2 plugin for wordpress over the last couple days. It&#8217;s been downloaded over 30 times already this week and I&#8217;ve had some nice feedback from users&#8230; 1 &#8211; Widgetized it. This is something I always wish would have been available &#8211; and now it is. Use the widget by [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Did some additional work on the Netflix-X2 plugin for wordpress over the last couple days.  It&#8217;s been downloaded over 30 times already this week and I&#8217;ve had some nice feedback from users&#8230;</p>
+<p>1 &#8211; Widgetized it.  This is something I always wish would have been available &#8211; and now it is.  Use the widget by A: having a widget ready theme.  B: Setting the Netflix-X2 options from the plugin configuration section.  C:  Add the widget to your favorite sidebar.  Right now it&#8217;s pretty bare bones, but I will be adding some configurable options to make the widget easier to use.</p>
+<p>2 &#8211; Added a new display option in the netflix function.  You can now use the option &#8216;text&#8217; to retreive the text section of the feed item.  Previous options included images, title, link, and raw.  This new option will display your movie reviews directly when using the reviews feed;  and will display the movie summary/description if using any other feeds.</p>
+<p><a href="http://wordpress.org/extend/plugins/netflix-x2/">Check it out if interested</a></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>http://www.ericvb.com/archives/plugin-updates/feed</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Introducing Netflix-X2</title>
+		<link>http://www.ericvb.com/archives/introducing-netflix-x2</link>
+					<comments>http://www.ericvb.com/archives/introducing-netflix-x2#respond</comments>
+		
+		<dc:creator><![CDATA[Vanberge]]></dc:creator>
+		<pubDate>Sat, 08 Nov 2008 02:26:17 +0000</pubDate>
+				<category><![CDATA[Journal]]></category>
+		<category><![CDATA[Netflix-X2]]></category>
+		<category><![CDATA[Site related]]></category>
+		<category><![CDATA[Tech]]></category>
+		<guid isPermaLink="false">http://www.palmerforpresident.com/?p=383</guid>
+
+					<description><![CDATA[Ladies and gentlemen, I would like to introduce to you Netflix-X2, a plugin for WordPress that will allow you display content from your Netflix account into your WordPress website. For a couple years, I&#8217;ve been using a plugin called &#8220;Netflix&#8221; &#8211; a very cool plugin written by Albert Banks. His plugin allowed WordPress users to [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Ladies and gentlemen, I would like to introduce to you Netflix-X2, a plugin for WordPress that will allow you display content from your Netflix account into your WordPress website.</p>
+<p>For a couple years, I&#8217;ve been using a plugin called &#8220;Netflix&#8221; &#8211; a very cool plugin written by <a href="http://www.albertbanks.com">Albert Banks</a>.   His plugin allowed WordPress users to display Netflix content in their blogs.  I&#8217;ve always used it to show movies in my queue, the movies I have at home, and my recommended movies.</p>
+<p>As I&#8217;ve used his plugin, I&#8217;ve grown very familiar with it.  I&#8217;ve tweaked it to work with different themes, exercised and exhausted nearly every variable, modified every possible configuration option, and just overall have really enjoyed using the plugin.  Mr. Albert Banks has genuinely written one of my favorite WordPress plugins ever.</p>
+<p>However, Netflix has since offered a few new RSS feeds including a feed for the &#8220;Watch Instantly&#8221; queue; and in particular, the &#8220;Reviews&#8221; RSS feed that displays any reviews I&#8217;ve written within Netflix.</p>
+<p>I emailed Albert a few months ago requesting that he add new functionality to support these new feeds &#8211; but it unfortunately seems like those requests have gone unanswered and the plugin is starting to fall behind.  I don&#8217;t blame Albert &#8211; his plugin works great &#8211; It just needs a freshening up to catch up to the new options available to use.</p>
+<p>With that, I decided to download his plugin and write these enhancements myself.  Albert licensed his plugin under the GPL, so I took his PHP code as the base, wrote in support for the new Netflix feeds, and essentially split it into my own published plugin called Netflix-X2.  The process has been harder than I would like to admit, because I would rate my PHP experience at a 4 out of 10.  It took me about 4 hours to complete and I believe a seasoned PHP developer could have done it in about 45 minutes.  Nevertheless, it does work and seems to work very well.</p>
+<p>By no means do I intend to try and compete with Albert&#8230; after all, his hard work and impressive development skills have laid the foundation for my plugin.  In fact, this emphasizes the very meaning and beauty of open source software.</p>
+<p>I don&#8217;t want to call Netflix-X2 a &#8216;fork&#8217; of Albert&#8217;s plugin&#8230; I&#8217;d like to call it an extension of an already great product.  But, I will be taking on maintenance of this version, So I&#8217;ve decided to rename and reversion it as my own.</p>
+<p>If Albert ever happens to read this, Thank you very much for contributing to the WordPress community.  And, for everybody else &#8211; <a href="http://www.palmerforpresident.com/wordpress-netflix-plugin">please check out the plugin!</a>  <img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>I&#8217;m using it now on my site, and I&#8217;ve updated my &#8216;Movies&#8217; page to use some of the new functionality I coded in.  So, feel free to check out my movies page and check out the reviews I&#8217;ve written for some of my Netflix movies.  </p>
+]]></content:encoded>
+					
+					<wfw:commentRss>http://www.ericvb.com/archives/introducing-netflix-x2/feed</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

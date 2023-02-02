@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Online Overload	</title>
+	<atom:link href="http://www.ericvb.com/archives/online-overload/feed" rel="self" type="application/rss+xml" />
+	<link>http://www.ericvb.com/archives/online-overload</link>
+	<description>A Distinction Without a Difference...</description>
+	<lastBuildDate>Wed, 23 Jul 2008 02:06:36 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.1</generator>
+	<item>
+		<title>
+		By: Vanberge		</title>
+		<link>http://www.ericvb.com/archives/online-overload#comment-8771</link>
+
+		<dc:creator><![CDATA[Vanberge]]></dc:creator>
+		<pubDate>Wed, 23 Jul 2008 02:06:36 +0000</pubDate>
+		<guid isPermaLink="false">http://www.palmerforpresident.com/?p=233#comment-8771</guid>
+
+					<description><![CDATA[Yeah it was awesome. I was bummed to hear it got discontinued.  I&#039;ve been keeping an eye on mozilla weave; i&#039;m hoping that does something similar, maybe even including firefox mobile.]]></description>
+			<content:encoded><![CDATA[<p>Yeah it was awesome. I was bummed to hear it got discontinued.  I&#8217;ve been keeping an eye on mozilla weave; i&#8217;m hoping that does something similar, maybe even including firefox mobile.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: chouse		</title>
+		<link>http://www.ericvb.com/archives/online-overload#comment-8754</link>
+
+		<dc:creator><![CDATA[chouse]]></dc:creator>
+		<pubDate>Tue, 22 Jul 2008 13:10:04 +0000</pubDate>
+		<guid isPermaLink="false">http://www.palmerforpresident.com/?p=233#comment-8754</guid>
+
+					<description><![CDATA[The loss of google browser sync for firefox is the worst (and only) thing about firefox3. I can&#039;t believe they won&#039;t update it. Not only did it sync bookmarks but also cookies, saved passwords, etc. Completely helpful.]]></description>
+			<content:encoded><![CDATA[<p>The loss of google browser sync for firefox is the worst (and only) thing about firefox3. I can&#8217;t believe they won&#8217;t update it. Not only did it sync bookmarks but also cookies, saved passwords, etc. Completely helpful.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

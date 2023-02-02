@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Vote!	</title>
+	<atom:link href="http://www.ericvb.com/archives/vote/feed" rel="self" type="application/rss+xml" />
+	<link>http://www.ericvb.com/archives/vote</link>
+	<description>A Distinction Without a Difference...</description>
+	<lastBuildDate>Mon, 27 Jul 2009 19:07:12 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.1</generator>
+	<item>
+		<title>
+		By: Jeff		</title>
+		<link>http://www.ericvb.com/archives/vote#comment-13764</link>
+
+		<dc:creator><![CDATA[Jeff]]></dc:creator>
+		<pubDate>Mon, 27 Jul 2009 19:07:12 +0000</pubDate>
+		<guid isPermaLink="false">http://www.palmerforpresident.com/?p=356#comment-13764</guid>
+
+					<description><![CDATA[Typical, an Obama supporter advocated voter fraud. :razz:]]></description>
+			<content:encoded><![CDATA[<p>Typical, an Obama supporter advocated voter fraud. 😛</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: FLO		</title>
+		<link>http://www.ericvb.com/archives/vote#comment-11504</link>
+
+		<dc:creator><![CDATA[FLO]]></dc:creator>
+		<pubDate>Wed, 05 Nov 2008 08:40:39 +0000</pubDate>
+		<guid isPermaLink="false">http://www.palmerforpresident.com/?p=356#comment-11504</guid>
+
+					<description><![CDATA[I did grab two &quot;I Voted&quot; stickers.]]></description>
+			<content:encoded><![CDATA[<p>I did grab two &#8220;I Voted&#8221; stickers.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

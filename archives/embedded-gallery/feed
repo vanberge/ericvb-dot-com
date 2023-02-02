@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Embedded Gallery	</title>
+	<atom:link href="http://www.ericvb.com/archives/embedded-gallery/feed" rel="self" type="application/rss+xml" />
+	<link>http://www.ericvb.com/archives/embedded-gallery</link>
+	<description>A Distinction Without a Difference...</description>
+	<lastBuildDate>Mon, 28 Aug 2006 20:55:30 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.1</generator>
+	<item>
+		<title>
+		By: vanlandw		</title>
+		<link>http://www.ericvb.com/archives/embedded-gallery#comment-415</link>
+
+		<dc:creator><![CDATA[vanlandw]]></dc:creator>
+		<pubDate>Mon, 28 Aug 2006 20:55:30 +0000</pubDate>
+		<guid isPermaLink="false">http://www.palmerforpresident.com/?p=98#comment-415</guid>
+
+					<description><![CDATA[any comment from &quot;bun&quot; should almost instantly be sent to the &quot;moderation&quot; queue :-[]]></description>
+			<content:encoded><![CDATA[<p>any comment from &#8220;bun&#8221; should almost instantly be sent to the &#8220;moderation&#8221; queue :-[</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: bun		</title>
+		<link>http://www.ericvb.com/archives/embedded-gallery#comment-412</link>
+
+		<dc:creator><![CDATA[bun]]></dc:creator>
+		<pubDate>Mon, 28 Aug 2006 18:42:49 +0000</pubDate>
+		<guid isPermaLink="false">http://www.palmerforpresident.com/?p=98#comment-412</guid>
+
+					<description><![CDATA[i am russellteee]]></description>
+			<content:encoded><![CDATA[<p>i am russellteee</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: chouse		</title>
+		<link>http://www.ericvb.com/archives/embedded-gallery#comment-411</link>
+
+		<dc:creator><![CDATA[chouse]]></dc:creator>
+		<pubDate>Mon, 28 Aug 2006 15:08:09 +0000</pubDate>
+		<guid isPermaLink="false">http://www.palmerforpresident.com/?p=98#comment-411</guid>
+
+					<description><![CDATA[good deal, siriux is the man, and wpg2 gets the job done. w00t.]]></description>
+			<content:encoded><![CDATA[<p>good deal, siriux is the man, and wpg2 gets the job done. w00t.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: vanlandw		</title>
+		<link>http://www.ericvb.com/archives/embedded-gallery#comment-407</link>
+
+		<dc:creator><![CDATA[vanlandw]]></dc:creator>
+		<pubDate>Mon, 28 Aug 2006 01:03:50 +0000</pubDate>
+		<guid isPermaLink="false">http://www.palmerforpresident.com/?p=98#comment-407</guid>
+
+					<description><![CDATA[pretty cool vanberge i like it...i&#039;m still trying to come up with a good solution to my &quot;i have images all over the web&quot; issue. 
+
+gg]]></description>
+			<content:encoded><![CDATA[<p>pretty cool vanberge i like it&#8230;i&#8217;m still trying to come up with a good solution to my &#8220;i have images all over the web&#8221; issue. </p>
+<p>gg</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

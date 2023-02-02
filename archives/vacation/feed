@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Vacation	</title>
+	<atom:link href="http://www.ericvb.com/archives/vacation/feed" rel="self" type="application/rss+xml" />
+	<link>http://www.ericvb.com/archives/vacation</link>
+	<description>A Distinction Without a Difference...</description>
+	<lastBuildDate>Fri, 28 Sep 2007 10:54:34 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.1</generator>
+	<item>
+		<title>
+		By: vanbergs		</title>
+		<link>http://www.ericvb.com/archives/vacation#comment-3794</link>
+
+		<dc:creator><![CDATA[vanbergs]]></dc:creator>
+		<pubDate>Fri, 28 Sep 2007 10:54:34 +0000</pubDate>
+		<guid isPermaLink="false">http://www.palmerforpresident.com/archives/178#comment-3794</guid>
+
+					<description><![CDATA[I noticed you have House of 1,000 Corpses in your queue.  It&#039;s not as good as Zombie&#039;s follow-up, The Devil&#039;s Rejects.  I have the unrated editions of both :-)]]></description>
+			<content:encoded><![CDATA[<p>I noticed you have House of 1,000 Corpses in your queue.  It&#8217;s not as good as Zombie&#8217;s follow-up, The Devil&#8217;s Rejects.  I have the unrated editions of both 🙂</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: bun		</title>
+		<link>http://www.ericvb.com/archives/vacation#comment-3777</link>
+
+		<dc:creator><![CDATA[bun]]></dc:creator>
+		<pubDate>Thu, 27 Sep 2007 04:47:51 +0000</pubDate>
+		<guid isPermaLink="false">http://www.palmerforpresident.com/archives/178#comment-3777</guid>
+
+					<description><![CDATA[vanberge you are an amazing male, and predator 2 is an awful film.]]></description>
+			<content:encoded><![CDATA[<p>vanberge you are an amazing male, and predator 2 is an awful film.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Look n&#8217; Feel	</title>
+	<atom:link href="http://www.ericvb.com/archives/look-n-feel/feed" rel="self" type="application/rss+xml" />
+	<link>http://www.ericvb.com/archives/look-n-feel</link>
+	<description>A Distinction Without a Difference...</description>
+	<lastBuildDate>Mon, 19 May 2008 14:56:38 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.1</generator>
+	<item>
+		<title>
+		By: vanlandw		</title>
+		<link>http://www.ericvb.com/archives/look-n-feel#comment-7018</link>
+
+		<dc:creator><![CDATA[vanlandw]]></dc:creator>
+		<pubDate>Mon, 19 May 2008 14:56:38 +0000</pubDate>
+		<guid isPermaLink="false">http://www.palmerforpresident.com/?p=198#comment-7018</guid>
+
+					<description><![CDATA[how has nobody commented on this post.
+
+vanberge your bi-yearly update to look/feel is very nice.
+
+also your tag-line on your homepage is epic hopefully all your readership understands the significance. 
+
+new disturbed....three weeks....brb....]]></description>
+			<content:encoded><![CDATA[<p>how has nobody commented on this post.</p>
+<p>vanberge your bi-yearly update to look/feel is very nice.</p>
+<p>also your tag-line on your homepage is epic hopefully all your readership understands the significance. </p>
+<p>new disturbed&#8230;.three weeks&#8230;.brb&#8230;.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

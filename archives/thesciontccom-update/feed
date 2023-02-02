@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: TheSciontC.com Update	</title>
+	<atom:link href="http://www.ericvb.com/archives/thesciontccom-update/feed" rel="self" type="application/rss+xml" />
+	<link>http://www.ericvb.com/archives/thesciontccom-update</link>
+	<description>A Distinction Without a Difference...</description>
+	<lastBuildDate>Sat, 02 Sep 2006 05:16:33 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.1</generator>
+	<item>
+		<title>
+		By: vanlandw		</title>
+		<link>http://www.ericvb.com/archives/thesciontccom-update#comment-424</link>
+
+		<dc:creator><![CDATA[vanlandw]]></dc:creator>
+		<pubDate>Thu, 31 Aug 2006 21:40:44 +0000</pubDate>
+		<guid isPermaLink="false">http://www.palmerforpresident.com/?p=100#comment-424</guid>
+
+					<description><![CDATA[the banner looks good vanberge/jjafuller
+
+:-*?]]></description>
+			<content:encoded><![CDATA[<p>the banner looks good vanberge/jjafuller</p>
+<p>:-*?</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Jeff		</title>
+		<link>http://www.ericvb.com/archives/thesciontccom-update#comment-423</link>
+
+		<dc:creator><![CDATA[Jeff]]></dc:creator>
+		<pubDate>Thu, 31 Aug 2006 03:32:37 +0000</pubDate>
+		<guid isPermaLink="false">http://www.palmerforpresident.com/?p=100#comment-423</guid>
+
+					<description><![CDATA[Eric, I already looked through your gallery and have determined that there is nothing usuable in there. I will take a look at Flo&#039;s]]></description>
+			<content:encoded><![CDATA[<p>Eric, I already looked through your gallery and have determined that there is nothing usuable in there. I will take a look at Flo&#8217;s</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: vanberge		</title>
+		<link>http://www.ericvb.com/archives/thesciontccom-update#comment-422</link>
+
+		<dc:creator><![CDATA[vanberge]]></dc:creator>
+		<pubDate>Wed, 30 Aug 2006 17:39:51 +0000</pubDate>
+		<guid isPermaLink="false">http://www.palmerforpresident.com/?p=100#comment-422</guid>
+
+					<description><![CDATA[also in mine fulljeff... I have a gallery with quite a few scion tc pics.  :-P
+
+http://www.palmerforpresident.com/wp-gallery2.php?g2_itemId=2151
+
+Thansk for the coding heads ups also jja.]]></description>
+			<content:encoded><![CDATA[<p>also in mine fulljeff&#8230; I have a gallery with quite a few scion tc pics.  😛</p>
+<p><a href="http://www.palmerforpresident.com/wp-gallery2.php?g2_itemId=2151" rel="nofollow ugc">http://www.palmerforpresident.com/wp-gallery2.php?g2_itemId=2151</a></p>
+<p>Thansk for the coding heads ups also jja.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: FLO		</title>
+		<link>http://www.ericvb.com/archives/thesciontccom-update#comment-421</link>
+
+		<dc:creator><![CDATA[FLO]]></dc:creator>
+		<pubDate>Wed, 30 Aug 2006 16:59:03 +0000</pubDate>
+		<guid isPermaLink="false">http://www.palmerforpresident.com/?p=100#comment-421</guid>
+
+					<description><![CDATA[fulljeff, there are some decent tc photos in my gallery.  take a look to see if there is anything you can use there.  some that are as is and some that i&#039;ve manipulated.]]></description>
+			<content:encoded><![CDATA[<p>fulljeff, there are some decent tc photos in my gallery.  take a look to see if there is anything you can use there.  some that are as is and some that i&#8217;ve manipulated.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Jeff		</title>
+		<link>http://www.ericvb.com/archives/thesciontccom-update#comment-420</link>
+
+		<dc:creator><![CDATA[Jeff]]></dc:creator>
+		<pubDate>Wed, 30 Aug 2006 16:06:42 +0000</pubDate>
+		<guid isPermaLink="false">http://www.palmerforpresident.com/?p=100#comment-420</guid>
+
+					<description><![CDATA[Of course, wordpress had to shit on the code I put in that comment. :razz:]]></description>
+			<content:encoded><![CDATA[<p>Of course, wordpress had to shit on the code I put in that comment. 😛</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Jeff		</title>
+		<link>http://www.ericvb.com/archives/thesciontccom-update#comment-419</link>
+
+		<dc:creator><![CDATA[Jeff]]></dc:creator>
+		<pubDate>Wed, 30 Aug 2006 16:04:57 +0000</pubDate>
+		<guid isPermaLink="false">http://www.palmerforpresident.com/?p=100#comment-419</guid>
+
+					<description><![CDATA[1. If you want a banner you are going to have to come up with some good scion tc photos, because there aren&#039;t any on the web.
+
+2. Your website probably does not work in safari because you have uncommented comments in your CSS code, the following needs to be commented out every time it appears:
+
+&quot;!scaling units so that 1.0em=10px, thus more easy to scale pictures. This is necessary since active font-size is 1.2em in the middle section.&quot;
+
+3. You have invalid xhtml code on your page:
+
+&lt;a href=&quot;./forums/viewforum.php?f=11&quot; rel=&quot;nofollow&quot;&gt;Maintenance and DIY&lt;/a&gt;
+        				
+      
+
+should read:
+
+&lt;a href=&quot;./forums/viewforum.php?f=11&quot; rel=&quot;nofollow&quot;&gt;Maintenance and DIY&lt;/a&gt;				
+      
+	  ]]></description>
+			<content:encoded><![CDATA[<p>1. If you want a banner you are going to have to come up with some good scion tc photos, because there aren&#8217;t any on the web.</p>
+<p>2. Your website probably does not work in safari because you have uncommented comments in your CSS code, the following needs to be commented out every time it appears:</p>
+<p>&#8220;!scaling units so that 1.0em=10px, thus more easy to scale pictures. This is necessary since active font-size is 1.2em in the middle section.&#8221;</p>
+<p>3. You have invalid xhtml code on your page:</p>
+<p><a href="./forums/viewforum.php?f=11" rel="nofollow">Maintenance and DIY</a></p>
+<p>should read:</p>
+<p><a href="./forums/viewforum.php?f=11" rel="nofollow">Maintenance and DIY</a>				</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: vanberge		</title>
+		<link>http://www.ericvb.com/archives/thesciontccom-update#comment-418</link>
+
+		<dc:creator><![CDATA[vanberge]]></dc:creator>
+		<pubDate>Wed, 30 Aug 2006 11:08:28 +0000</pubDate>
+		<guid isPermaLink="false">http://www.palmerforpresident.com/?p=100#comment-418</guid>
+
+					<description><![CDATA[i just found a  tag that i didnt close... that might fix it. 
+
+try again / brb.]]></description>
+			<content:encoded><![CDATA[<p>i just found a  tag that i didnt close&#8230; that might fix it. </p>
+<p>try again / brb.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: vanberge		</title>
+		<link>http://www.ericvb.com/archives/thesciontccom-update#comment-417</link>
+
+		<dc:creator><![CDATA[vanberge]]></dc:creator>
+		<pubDate>Wed, 30 Aug 2006 10:58:52 +0000</pubDate>
+		<guid isPermaLink="false">http://www.palmerforpresident.com/?p=100#comment-417</guid>
+
+					<description><![CDATA[use firefox.
+
+
+:-P]]></description>
+			<content:encoded><![CDATA[<p>use firefox.</p>
+<p>😛</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: FLO		</title>
+		<link>http://www.ericvb.com/archives/thesciontccom-update#comment-416</link>
+
+		<dc:creator><![CDATA[FLO]]></dc:creator>
+		<pubDate>Wed, 30 Aug 2006 07:23:12 +0000</pubDate>
+		<guid isPermaLink="false">http://www.palmerforpresident.com/?p=100#comment-416</guid>
+
+					<description><![CDATA[i know you have only implemented a &quot;beta&quot; of thesciontc.com, so i understand its in a rough form right now.  i emailed you what it looks like in safari.  it looks like ass as of right now. brb.]]></description>
+			<content:encoded><![CDATA[<p>i know you have only implemented a &#8220;beta&#8221; of thesciontc.com, so i understand its in a rough form right now.  i emailed you what it looks like in safari.  it looks like ass as of right now. brb.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

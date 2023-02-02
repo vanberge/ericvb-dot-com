@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Site related &#8211; Eric VB.com</title>
+	<atom:link href="http://www.ericvb.com/archives/category/site-related/feed" rel="self" type="application/rss+xml" />
+	<link>http://www.ericvb.com</link>
+	<description>A Distinction Without a Difference...</description>
+	<lastBuildDate>Fri, 28 Mar 2014 13:11:01 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.1</generator>
+	<item>
+		<title>Navigating a Web Traffic Jam</title>
+		<link>http://www.ericvb.com/archives/navigating-a-web-traffic-jam</link>
+					<comments>http://www.ericvb.com/archives/navigating-a-web-traffic-jam#comments</comments>
+		
+		<dc:creator><![CDATA[Vanberge]]></dc:creator>
+		<pubDate>Thu, 27 Mar 2014 21:04:41 +0000</pubDate>
+				<category><![CDATA[Site related]]></category>
+		<category><![CDATA[Tech]]></category>
+		<guid isPermaLink="false">http://www.ericvb.com/?p=3690</guid>
+
+					<description><![CDATA[If you&#8217;ve tried to view ericvb.com recently, you may have been met with various error messages at various times instead of my actual website. Terms like &#8220;ACCOUNT SUSPENDED&#8221; or &#8220;500 Server error&#8221; and &#8220;Error establishing a database connection&#8221; have been appearing all too often. Turns out I have a couple of blog posts that have [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>If you&#8217;ve tried to view ericvb.com recently, you may have been met with various error messages at various times instead of my actual website. Terms like &#8220;ACCOUNT SUSPENDED&#8221; or &#8220;500 Server error&#8221; and &#8220;Error establishing a database connection&#8221; have been appearing all too often.</p>
+<p>Turns out I have a couple of blog posts that have become fairly popular, and I thought it&#8217;d be interesting to share the story of how my site has had to go from &#8220;just a hobby&#8221; to something a little more enterprise grade.</p>
+<p><strong>Houston, we have a problem</strong><br />
+I received an email from my hosting provider stating my account had been suspended due to resource abuse.  I then tried to navigate to my site, and I only see &#8220;This account has been suspended&#8221; instead of my site content.  A few emails back and forth with support, and they re-enabled my account to give me a chance to try mitigate the performance issues.  I updated plugins and themes to latest versions, enabled some caching and security plugins, and finally even signed up for <a href="https://www.cloudflare.com/">CloudFlare</a> which has a really nice free content delivery service (more on this later).</p>
+<p>Things smoothed out for awhile, but soon my resource usage began to climb again.  CPU and RAM utilization were just crushing the server; and since I was on a shared server configuration, my site was making other people&#8217;s stuff perform poorly.  I had reviewed analytics data and found basically 2 of my posts were the culprits.  One on setting up tabbed ssh for Windows, and another on getting started with the ELK stack for syslogging.  I tried unpublishing those posts for awhile but I still ended up getting suspended 3 separate times. Finally, I had make the decision to move my website to a dedicated server.</p>
+<p>The migration to a dedicated server was really pretty easy.  Even fun!  MySQL is a great database and was easy to backup/restore, and the rest was just copying files.  In the end, my website is better secured thanks to the <a href="http://ithemes.com/security/">iThemes security plugin</a>, as well CloudFlare&#8217;s front end capabilities.</p>
+<p>I really can&#8217;t say enough about how happy I am with CloudFlare.  It provides caching, content optimization, and security features.  Their free offering is very capable, and obviously the paid subscriptions give you more features. </p>
+<p>Overall, this entire experience has been a great learning opportunity.  Topics I&#8217;ve never even thought about such as content delivery, web caching, and WordPess security are now a focus of mine with this website, and hopefully it results in a better experience for anyone who visits&#8230;</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>http://www.ericvb.com/archives/navigating-a-web-traffic-jam/feed</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>SOPA / PIPA Blackout</title>
+		<link>http://www.ericvb.com/archives/sopa-pipa-blackout</link>
+					<comments>http://www.ericvb.com/archives/sopa-pipa-blackout#respond</comments>
+		
+		<dc:creator><![CDATA[Vanberge]]></dc:creator>
+		<pubDate>Tue, 17 Jan 2012 18:11:13 +0000</pubDate>
+				<category><![CDATA[Site related]]></category>
+		<category><![CDATA[Tech]]></category>
+		<guid isPermaLink="false">http://www.ericvb.com/?p=1591</guid>
+
+					<description><![CDATA[I&#8217;m not the &#8220;activist&#8221; type&#8230; But following the ongoing SOPA and PIPA proposed legislation has me inspired to do my part. Many strong internet companies are against these bills, and many of them are taking action up to and including blacking out their website for a day. This is a viral protest, and many sites [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I&#8217;m not the &#8220;activist&#8221; type&#8230;</p>
+<p>But following the ongoing SOPA and PIPA proposed legislation has me inspired to do my part.</p>
+<p><a href="http://techcrunch.com/2011/12/22/over-40-internet-companies-have-come-out-publicly-against-sopa/">Many strong internet companies</a> are against these bills, and many of them are taking action up to and including <a href="http://news.yahoo.com/wikipedia-blackout-brings-sopa-pipa-issue-forefront-businesses-162801217.html">blacking out their website for a day</a>.</p>
+<p>This is a viral protest, and many sites are taking part in this campaign.  Certainly, ericvb.com and its 50 visits per day are merely a drop in an olympic size swimming pool &#8211; but we are all swimming in that pool.</p>
+<p>Therefore, tomorrow I will be using <a href="http://wordpress.org/extend/plugins/sopa-blackout/">this handy WordPress plugin</a> to black out my site as well and stand at arms with <a href="http://wikimediafoundation.org/wiki/English_Wikipedia_anti-SOPA_blackout">Wikipedia</a>, <a href="http://blog.reddit.com/2012/01/stopped-they-must-be-on-this-all.html">reddit</a>, etc.</p>
+<p>Learn more about these bills and the blackout by visiting this site:<br />
+<a href="http://sopablackout.org/learnmore/">http://sopablackout.org/learnmore/</a></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>http://www.ericvb.com/archives/sopa-pipa-blackout/feed</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>PHP Site Tweaks</title>
+		<link>http://www.ericvb.com/archives/php-site-tweaks</link>
+					<comments>http://www.ericvb.com/archives/php-site-tweaks#comments</comments>
+		
+		<dc:creator><![CDATA[Vanberge]]></dc:creator>
+		<pubDate>Tue, 15 Nov 2011 16:19:44 +0000</pubDate>
+				<category><![CDATA[Site related]]></category>
+		<category><![CDATA[awesome]]></category>
+		<category><![CDATA[php]]></category>
+		<category><![CDATA[wordpress]]></category>
+		<guid isPermaLink="false">http://www.ericvb.com/?p=1540</guid>
+
+					<description><![CDATA[Recently I&#8217;ve made a couple of subtle tweaks to my theme to fix minor issues that have bugged me for some time. 1: The Completion of Twitter De-integration First on my list was to button up the exclusion of my Twitter category.  For some time, I&#8217;ve been using the Twitter Tools plugin to create weekly [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Recently I&#8217;ve made a couple of subtle tweaks to my theme to fix minor issues that have bugged me for some time.</p>
+<p><strong>1: The Completion of Twitter De-integration</strong><br />
+First on my list was to button up the exclusion of my Twitter category.  For some time, I&#8217;ve been using the <a href="http://wordpress.org/extend/plugins/twitter-tools/">Twitter Tools</a> plugin to create weekly digest posts of all my Twitter activity.  I appreciate this functionality quite a lot.  I like being able to search a subject and find my WordPress blog entries AND tweets on the subject.  However, I didn&#8217;t like spamming readers via RSS or pushing down the real content of my site with what I&#8217;d consider &#8220;archival&#8221; content.  Ultimately I wanted to exclude the Twitter category from every possible area except if you actually click on the Twitter header link to get to that category.</p>
+<p>Using a couple <a href="http://www.ericvb.com/archives/better-twitter-integration">custom tweaks</a> to my theme&#8217;s functions.php file, I was able to mostly implement this back in 2010.  The Twitter category primarily only shows up if you go the category page.  But, recently I also happened to notice that the single posts have links to the previous post and next post; and unfortunately this loop didn&#8217;t read the standard WordPress query.  The previous/next post links embrace their own functions completely.  As such, these were showing the posts from my Twitter category.  <img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f641.png" alt="🙁" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>With a little research on the functions specific to post navigation, I found it was pretty easy to ditch the Twitter category here as well.</p>
+<p>Original code for the previous/next links:<br />
+<code>&lt;?php previous_post_link( '%link', '&lt;span&gt;'<br />
+. _x( '&amp;larr;', 'Previous post link', 'twentyten' ) . '&lt;/span&gt; %title' ); ?&gt;</code></p>
+<p>Updated code for the previous/next links to exclude my Twitter category:<br />
+<code>&lt;?php previous_post_link( '%link', '&lt;span&gt;'<br />
+. _x( '&amp;larr;', 'Previous post link', 'twentyten' ) . '&lt;/span&gt; %title', FALSE, '28'  ); ?&gt;</code></p>
+<p>The FALSE indicates that the next/previous don&#8217;t have to be from the same category, and then the &#8217;28&#8217; is the last variable which is &#8220;excluded_categories&#8221;.</p>
+<p>So, the Twitter category now will really only show up if you&#8217;re searching or if you&#8217;re clicking on the Twitter link in the header nav bar.  I love WordPress.</p>
+<p><strong>2: Double Sentence Spacing</strong><br />
+Next up is the effect of my typing style that I cannot break.  When I&#8217;m done typing a sentence, I hit the spacebar twice.  This is certainly a debated point as to whether single or double sentence spacing is correct &#8211; especially on the internet.  It creates &#8220;rivers&#8221; of white space at times that can be a distraction, and can be a waste of page space and characters in database tables.  Even worse, my theme would display a quirky structure at times by moving that 2nd space onto the leading edge of a new line, hence starting the new line one space indented from the rest of my site.  It looked terrible.</p>
+<p>Example of bad spacing, note the clear indent on the 2nd line:<br />
+<a href="http://ericvb.com/wp-content/uploads/2011/11/spacing-bad.jpg"><img decoding="async" loading="lazy" class="alignnone size-full wp-image-1550" title="spacing-bad" src="http://ericvb.com/wp-content/uploads/2011/11/spacing-bad.jpg" alt="Note the clear space indenting the 2nd line" width="259" height="81" /></a></p>
+<p>In my opinion, it&#8217;s better to single space.  I just can&#8217;t seem to do it.  I can&#8217;t manage to break that habit.  So, I scoured the internet for ways to make WordPress do it for me.  It didn&#8217;t take long for me to find a simple and easy function to handle this.</p>
+<p><code>function remove_spaces($the_content) {<br />
+return preg_replace( '/[\p{Z}\s]{2,}/u', ' ', $the_content );<br />
+}<br />
+add_filter('the_content', 'remove_spaces');</code></p>
+<p>I added that code to my theme&#8217;s custom function.php file (the same place where I exclude the Twitter category), and all is well!  Wordpress adjusts my double spaced content into single space and displays it beautifully:<br />
+<a href="http://ericvb.com/wp-content/uploads/2011/11/spacing-good.jpg"><img decoding="async" loading="lazy" class="alignnone size-full wp-image-1549" title="spacing-good" src="http://ericvb.com/wp-content/uploads/2011/11/spacing-good.jpg" alt="" width="259" height="81" /></a></p>
+<p>I love WordPress</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>http://www.ericvb.com/archives/php-site-tweaks/feed</wfw:commentRss>
+			<slash:comments>4</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>The Death of Google Reader</title>
+		<link>http://www.ericvb.com/archives/the-death-of-google-reader</link>
+					<comments>http://www.ericvb.com/archives/the-death-of-google-reader#comments</comments>
+		
+		<dc:creator><![CDATA[Vanberge]]></dc:creator>
+		<pubDate>Mon, 07 Nov 2011 16:26:04 +0000</pubDate>
+				<category><![CDATA[Site related]]></category>
+		<category><![CDATA[Tech]]></category>
+		<guid isPermaLink="false">http://www.ericvb.com/?p=1531</guid>
+
+					<description><![CDATA[A few weeks ago, Google announced some big changes to Google Reader. The overall strategy by Google to unify its services drew them to the conclusion that they have to force all Google Reader users to begin using Google+ to fulfill the social aspect of Reader.  Friending, following others, and commenting on shared items within [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>A few weeks ago, <a href="http://googlereader.blogspot.com/2011/10/upcoming-changes-to-reader-new-look-new.html">Google announced some big changes</a> to Google Reader.</p>
+<p>The overall strategy by Google to unify its services drew them to the conclusion that they have to force all Google Reader users to begin using Google+ to fulfill the social aspect of Reader.  Friending, following others, and commenting on shared items within Reader would now be discontinued&#8230;</p>
+<p>I don&#8217;t think this really hit me until it actually happened.</p>
+<p>As I was greeted with the &#8220;Welcome to the new Reader&#8221; message last week, I finally got a feel for how big this change truly was.  Usually, my first click is to &#8220;People you follow&#8221; when I log into Google Reader.  Well, that&#8217;s now gone.  There&#8217;s no longer a simple way to see shared items, to comment on them, or to get a quick overview of what items my friends are reading.  Instead, I&#8217;m stuck muddling through Google+ posts trying to find a way to make this social world work again.</p>
+<p>I just feel completely lost in the new Reader.  The extra clicks/page views necessary to get the same functionality in Google+ make it difficult and inefficient.  I don&#8217;t like the look of the new Reader.  I don&#8217;t like having to go back and forth between 2 different sites to see and comment on shared items.  It&#8217;s just a sad state of affairs.  I&#8217;m sick of companies trying to force customers/users into a model that they obviously don&#8217;t support.</p>
+<p>As of yet, there isn&#8217;t a very solid alternative to Google Reader.  I&#8217;ve researched and tested a few, but the social aspect is a key that is missing in nearly every contender.  I&#8217;m looking forward to trying out <a href="http://hivemined.org/">hivemined</a>, which seems to be getting alot of e-buzz as a true Google Reader alternative.  Until then, I&#8217;m struggling to adapt to a new way of doing this.  A significant portion of my friends and my own internet activity was spent inside Google Reader, and at this point we&#8217;re all trying to re-group as the table cloth was pulled out from under us.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>http://www.ericvb.com/archives/the-death-of-google-reader/feed</wfw:commentRss>
+			<slash:comments>4</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Site Overhaul</title>
+		<link>http://www.ericvb.com/archives/site-overhaul-2</link>
+					<comments>http://www.ericvb.com/archives/site-overhaul-2#comments</comments>
+		
+		<dc:creator><![CDATA[Vanberge]]></dc:creator>
+		<pubDate>Thu, 26 May 2011 04:06:03 +0000</pubDate>
+				<category><![CDATA[Site related]]></category>
+		<guid isPermaLink="false">http://www.ericvb.com/?p=1458</guid>
+
+					<description><![CDATA[I have taken it upon myself to make some dramatic changes to EricVB.com. Unordered list of changes: Uninstalled Gallery photo publishing software (I never update it, photos go on FB etc) Uninstalled all unused plugins Cleaned out the mysql database. (dropped ~60 tables of g2_*, and also ALOT of tables created by past plugins. If [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I have taken it upon myself to make some dramatic changes to EricVB.com.</p>
+<p>Unordered list of changes:</p>
+<ul>
+<li>Uninstalled Gallery photo publishing software (I never update it, photos go on FB etc)</li>
+<li>Uninstalled all unused plugins</li>
+<li>Cleaned out the mysql database.  (dropped ~60 tables of g2_*, and also ALOT of tables created by past plugins.  If you&#8217;re a wordpress dev, don&#8217;t ever have your plugin create tables.  Store an entry in the options table GOSH.</li>
+<li>Upgraded lean/cleaned WordPress to 3.2 Beta 1</li>
+<li>Upgraded immediately to 3.2 Beta 2 which was just released (svn sw ftw)</li>
+<li>Decide on the new default theme called &#8220;twentyeleven&#8221;</li>
+<li>Learn about creating a child theme; which is way more awesome than directly editing theme files &#8211; which, I&#8217;ve always done in the past.</li>
+<li>Used my child theme to re-add sidebars to single posts and pages, put in Google analytics code, make various css tweaks</li>
+</ul>
+<p>Overall, I like the look of the twentyeleven theme.  But there are a couple things that I really do not understand.  First:I dont really understand why they remove the sidebar on pages and on single-post permalinks &#8211; so it took me some work to figure out how to get that back in there and make it look normal (set pages to use the sidebar template; customized css for all .singular content entries).  </p>
+<p>Secondly:  I cannot stand the header image size.  The header in the WordPress 3.0 default theme &#8220;twentyten&#8221; was 940 x 188.  This was too large for my taste, but I rolled with it and grew to be OK with it vs re-writing css to skinny it down.  Now, in the 3.2 default theme of twnetyeleven, the header even larger.   1000 x 288.  Seriously.  TWO HUNDRED AND EIGHTY EIGHT pixels tall.  That is nearly a third of your screen resolution before you can even see any content.  It&#8217;s literally nothing but ridiculous.  Therefore, I have disabled the header image completely.  If any person responsible for the header image size in the theme &#8220;twentyeleven&#8221;:  I hope your car dies on you tomorrow in gridlock traffic seriously.</p>
+<p>Things are certainly still a work in progress&#8230; but I am having fun re-tooling my web presence.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>http://www.ericvb.com/archives/site-overhaul-2/feed</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>The Best Possible RickRoll Method</title>
+		<link>http://www.ericvb.com/archives/the-best-possible-rickroll-method</link>
+					<comments>http://www.ericvb.com/archives/the-best-possible-rickroll-method#comments</comments>
+		
+		<dc:creator><![CDATA[Vanberge]]></dc:creator>
+		<pubDate>Mon, 23 May 2011 03:56:56 +0000</pubDate>
+				<category><![CDATA[Misc]]></category>
+		<category><![CDATA[Site related]]></category>
+		<category><![CDATA[Tech]]></category>
+		<guid isPermaLink="false">http://www.ericvb.com/?p=1420</guid>
+
+					<description><![CDATA[The phenomenon known as &#8220;RickRolling&#8221; is certainly nothing new. Millions have been duped into watching Rick Astley&#8217;s &#8220;Never Gonna Give You Up&#8221;. And many, like myself, have had it done multiple times. Some strategies to Rickrolling a would be victim might include Non-specific Youtube link Use of URL shorteners like Bit.ly or Goo.gl URL re-direction [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>The phenomenon known as &#8220;<a href="http://en.wikipedia.org/wiki/Rickrolling">RickRolling</a>&#8221; is certainly nothing new.  Millions have been duped into watching Rick Astley&#8217;s &#8220;Never Gonna Give You Up&#8221;.  And many, like myself, have had it done multiple times.</p>
+<p>Some strategies to Rickrolling a would be victim might include</p>
+<ul>
+<li>Non-specific Youtube link</li>
+<li>Use of URL shorteners like Bit.ly or Goo.gl</li>
+<li>URL re-direction</li>
+</ul>
+<p>I&#8217;d like to take the URL re-direction bullet, make it a bit overly technical, and unleash what I am convinced is an undetectable rick roll method.  Prerequisites include an apache web server with mod rewrite (probably do-able with IIS as well, but I am unaware of rewriting URLs in IIS).</p>
+<ul>
+<li>Create a folder in the root of your web directory.  Name the folder something like &#8220;index.html&#8221;.</li>
+<li>Inside that folder, create a file named .htaccess (note the leading dot. Required in the name)</li>
+<li>Put the following text inside that .htaccess file:<br />
+<code><IfModule mod_rewrite.c><br />
+Options +FollowSymLinks<br />
+RewriteEngine on<br />
+RewriteRule (.*) "http://www.youtube.com/watch?v=oHg5SJYRHA0" [R=301,L]<br />
+</IfModule><br />
+</code></li>
+<li>Now, you can link somebody to http://www.yoursite.com/index.html and they will immediately be forwarded to Rick Astley.</li>
+</ul>
+<p>I went ahead and implimented this for display purposes here:  <a href="http://www.ericvb.com/yeah.html">http://www.ericvb.com/yeah.html</a></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>http://www.ericvb.com/archives/the-best-possible-rickroll-method/feed</wfw:commentRss>
+			<slash:comments>3</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Sheer Ads</title>
+		<link>http://www.ericvb.com/archives/sheer-ads</link>
+					<comments>http://www.ericvb.com/archives/sheer-ads#comments</comments>
+		
+		<dc:creator><![CDATA[Vanberge]]></dc:creator>
+		<pubDate>Tue, 07 Dec 2010 21:31:19 +0000</pubDate>
+				<category><![CDATA[Site related]]></category>
+		<guid isPermaLink="false">http://www.ericvb.com/?p=1346</guid>
+
+					<description><![CDATA[Maybe a year ago, I did a trial run on some Google ads on my site. They were up for maybe 6 or 8 months. My site&#8217;s traffic has gone up pretty significantly since then, and I figured it might be nice to give them another shot. Therefore I have inconspicuously and tastefully placed a [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Maybe a year ago, I did a trial run on some Google ads on my site.  They were up for maybe 6 or 8 months.</p>
+<p>My site&#8217;s traffic has gone up pretty significantly since then, and I figured it might be nice to give them another shot.  Therefore I have inconspicuously and tastefully placed a couple ads on my site.  </p>
+<p>I also finally took the plunge to creating a feedburner feed for this site.  So I&#8217;ve redirected the RSS traffic to the feedburner feed vs the locally generated WordPress feed.  This obviously allows me to place ads in the RSS feeds which I have clearly done.</p>
+<p>I advise all users to never click any of my ads.  <img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f61b.png" alt="😛" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>http://www.ericvb.com/archives/sheer-ads/feed</wfw:commentRss>
+			<slash:comments>4</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Grand Theft Auto 4 &#8211; Mission Complete Ringtones</title>
+		<link>http://www.ericvb.com/archives/grand-theft-auto-4-mission-complete-ringtones</link>
+					<comments>http://www.ericvb.com/archives/grand-theft-auto-4-mission-complete-ringtones#comments</comments>
+		
+		<dc:creator><![CDATA[Vanberge]]></dc:creator>
+		<pubDate>Fri, 30 Apr 2010 21:02:37 +0000</pubDate>
+				<category><![CDATA[Site related]]></category>
+		<category><![CDATA[Tech]]></category>
+		<category><![CDATA[gg]]></category>
+		<category><![CDATA[gta]]></category>
+		<category><![CDATA[ringtones]]></category>
+		<guid isPermaLink="false">http://www.ericvb.com/?p=1152</guid>
+
+					<description><![CDATA[Back when I was playing through Grand Theft Auto IV, Vanlandw and I were trying very hard to find the sound samples used when the player successfully completed a mission&#8230; For those that may not know what I&#8217;m talking about:  Depending which mission you were playing in GTA 4, one of three various sound samples [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Back when I was playing through Grand Theft Auto IV, <a href="http://vanlandw.com">Vanlandw</a> and I were trying very hard to find the sound samples used when the player successfully completed a mission&#8230;</p>
+<p>For those that may not know what I&#8217;m talking about:  Depending which mission you were playing in GTA 4, one of three various sound samples would play upon successful completion &#8211; and they were all very catchy, cool sounding clips.  Mainly, our thought was that they would make great ring tones on a mobile phone.</p>
+<p>After I had long since given up, Vanlandw did actually manage to find and make one of the sounds into an mp3 ringtone &#8211; for which I give him immense credit.  I&#8217;ve used that very ring tone off and on as my ringer for some time.   Today, I came across a youtube vid that sampled all of the various mission complete sounds (even 2 additional &#8220;sad&#8221; mission ending sounds that I didn&#8217;t think about).  The sampling on the two &#8220;sad&#8221; clips is kinda shaky &#8211; you can hear traffic and footsteps from the game, so I elected not to use those.  But, I decided to use some rip/dub/export awesomeness to get the audio into a usable mp3 format and create a ringer for each different sound clip.   Check them out below, or just click on the &#8220;Files&#8221; tab up above and find them under Ringtones.</p>
+<ul>
+<li><a href="http://www.ericvb.com/misc/Ringtones/GTA4_miss_comp1.mp3">GTA4 &#8211; Mission Complete tone 1</a></li>
+<li><a href="http://www.ericvb.com/misc/Ringtones/GTA4_miss_comp1-double.mp3">GTA4 &#8211; Mission Complete tone 1</a> (double ring)</li>
+<li><a href="http://www.ericvb.com/misc/Ringtones/GTA4_miss_comp2.mp3">GTA4 &#8211; Mission Complete tone 2</a></li>
+<li><a href="http://www.ericvb.com/misc/Ringtones/GTA4_miss_comp3.mp3">GTA4 &#8211; Mission Complete tone 3</a></li>
+</ul>
+<p>#1 is my fav, I think&#8230;</p>
+<p>****Update****<br />
+Noticed these ring-tones were very quiet when played on a cell phone &#8211; So I&#8217;ve uploaded amplified versions &#8211; as well as a double ring version of the 1st tone.</p>
+<p>YEAH</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>http://www.ericvb.com/archives/grand-theft-auto-4-mission-complete-ringtones/feed</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		<enclosure url="http://www.ericvb.com/misc/Ringtones/GTA4_miss_comp1.mp3" length="41002" type="audio/mpeg" />
+<enclosure url="http://www.ericvb.com/misc/Ringtones/GTA4_miss_comp1-double.mp3" length="84426" type="audio/mpeg" />
+<enclosure url="http://www.ericvb.com/misc/Ringtones/GTA4_miss_comp2.mp3" length="40166" type="audio/mpeg" />
+<enclosure url="http://www.ericvb.com/misc/Ringtones/GTA4_miss_comp3.mp3" length="89903" type="audio/mpeg" />
+
+			</item>
+		<item>
+		<title>Better Twitter Integration</title>
+		<link>http://www.ericvb.com/archives/better-twitter-integration</link>
+					<comments>http://www.ericvb.com/archives/better-twitter-integration#comments</comments>
+		
+		<dc:creator><![CDATA[Vanberge]]></dc:creator>
+		<pubDate>Fri, 02 Apr 2010 16:39:16 +0000</pubDate>
+				<category><![CDATA[Site related]]></category>
+		<category><![CDATA[Tech]]></category>
+		<category><![CDATA[Twitter]]></category>
+		<category><![CDATA[wordpress]]></category>
+		<guid isPermaLink="false">http://www.ericvb.com/?p=1104</guid>
+
+					<description><![CDATA[I both love and hate the Twitter-Tools plugin for WordPress. On one hand; I really like how it can integrate Twitter into my blog via both sidebar widget and weekly Twitter digest posts&#8230; But, on the other hand, I was really starting to feel like these digest posts were cluttering up both my blog and [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I both love and hate the <a href="http://wordpress.org/extend/plugins/twitter-tools/">Twitter-Tools plugin</a> for WordPress.</p>
+<p>On one hand; I really like how it can integrate Twitter into my blog via both sidebar widget and weekly Twitter digest posts&#8230;  But, on the other hand, I was really starting to feel like these digest posts were cluttering up both my blog and my archives.  Several times recently I have found myself scrolling back through way too many Twitter digest posts in order to get at my ACTUAL blog posts and content that I had written.  Basically, I came to the conclusion that &#8220;I didn&#8217;t like this&#8221; and I had to modify how Twitter integrated with my Blog.</p>
+<p>Today I&#8217;ve taken the steps necessary to achieve what I believe is the best of both worlds.  I now have weekly Twitter digest post created as usual; but they do not display in my main blog page or in my archives page &#8212; AND you have to specifically navigate to a &#8220;Twitter&#8221; page in order to see them at all.</p>
+<p>This was actually a little more challenging for me than I&#8217;d like to admit &#8211; but I&#8217;ll go through the steps below:</p>
+<p><strong>First: Exclude the Category</strong><br />
+To block out my Twitter category from displaying on my blog and archives, I added the following function to the functions.php file within my theme directory.  The &#8220;-28&#8221; below refers to the corresponding category ID for the Twitter category.  This code made it so all posts within the  &#8220;Twitter&#8221; category are ignored in both my blog page and my archives.</p>
+<p>        <code>function exclude_category($query){<br />
+        if ($query->is_home) {<br />
+        $query->set('cat', '-28');<br />
+        }<br />
+return $query;<br />
+}<br />
+add_filter('pre_get_posts', 'exclude_category');</code></p>
+<p><strong>Second: Make the Category &#8220;Navigateable&#8221; from the Main Page</strong><br />
+The more challenging part for me was figuring out an &#8220;easy&#8221; way to navigate to these Twitter digest posts.  It sounded like a fairly easy thing to do; but I had a surprisingly difficult time with it.</p>
+<p>I experimented with some .htacces redirection, and also some plugins that claimed to do exactly what I wanted (but, sucked).  In the end; I chose to just modify my theme&#8217;s main loop logic and save it as a new page template.  I copied the the text from my theme&#8217;s index.php file, and and pasted it into my a file called &#8220;twitter.php&#8221; which I saved as a new page template.  I then replaced the following code:</p>
+<p><code>if (have_posts()) :<br />
+while (have_posts()) : the_post();</code></p>
+<p>With this code:<br />
+<code>$recent = new WP_Query();<br />
+$recent->query('cat=28');<br />
+if ($recent->have_posts()) :<br />
+while($recent->have_posts()) : $recent->the_post();</code></p>
+<p>This actually worked fairly well, and in retrospect is very easy &#8211; it just took me quite awhile to arrive at this solution!  The final step here was then to add a page called &#8220;Twitter&#8221; via the administration panel; and simply change the page to use this Twitter.php template instead of the default page template.</p>
+<p>Voila, a Twitter page that you can navigate to which displays all the weekly digest Twitter posts created automatically by the Twitter Tools plugin.</p>
+<p>**** UPDATE ****<br />
+Vanlandw had a great recommendation about excluding these Twitter digest posts from my RSS feeds as well.  That was very simple to do&#8230;  My exclude function in the functions.php file in my theme directory now reads as such:<br />
+<code>function exclude_category($query){<br />
+        if ($query->is_home || $query->is_feed) {<br />
+        $query->set('cat', '-28');<br />
+        }<br />
+return $query;<br />
+}</code></p>
+<p>And, now the Twitter digest posts are excluded from my RSS feed as well!  <img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" />  WordPress and PHP are both awesome.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>http://www.ericvb.com/archives/better-twitter-integration/feed</wfw:commentRss>
+			<slash:comments>6</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Merry Xmas, EricVB.com</title>
+		<link>http://www.ericvb.com/archives/merry-xmas-ericvb-com</link>
+					<comments>http://www.ericvb.com/archives/merry-xmas-ericvb-com#comments</comments>
+		
+		<dc:creator><![CDATA[Vanberge]]></dc:creator>
+		<pubDate>Thu, 31 Dec 2009 00:38:17 +0000</pubDate>
+				<category><![CDATA[Site related]]></category>
+		<guid isPermaLink="false">http://www.ericvb.com/?p=795</guid>
+
+					<description><![CDATA[I have recently updated you to WordPress 2.9, removed the slightly cocky RSS icon in your upper left corner, and removed the sidebar 1 pixel border giving you a slightly cleaner look n feel. You&#8217;re welcome. What&#8217;d you get me?]]></description>
+										<content:encoded><![CDATA[<p>I have recently updated you to WordPress 2.9, removed the slightly cocky RSS icon in your upper left corner, and removed the sidebar 1 pixel border giving you a slightly cleaner look n feel.</p>
+<p>You&#8217;re welcome.</p>
+<p>What&#8217;d you get me?  </p>
+]]></content:encoded>
+					
+					<wfw:commentRss>http://www.ericvb.com/archives/merry-xmas-ericvb-com/feed</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

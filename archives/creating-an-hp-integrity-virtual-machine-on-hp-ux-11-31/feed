@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Creating an HP Integrity Virtual Machine on HP-UX 11.31	</title>
+	<atom:link href="http://www.ericvb.com/archives/creating-an-hp-integrity-virtual-machine-on-hp-ux-11-31/feed" rel="self" type="application/rss+xml" />
+	<link>http://www.ericvb.com/archives/creating-an-hp-integrity-virtual-machine-on-hp-ux-11-31</link>
+	<description>A Distinction Without a Difference...</description>
+	<lastBuildDate>Mon, 02 Nov 2020 22:45:46 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.1</generator>
+	<item>
+		<title>
+		By: Chris Conn		</title>
+		<link>http://www.ericvb.com/archives/creating-an-hp-integrity-virtual-machine-on-hp-ux-11-31#comment-222200</link>
+
+		<dc:creator><![CDATA[Chris Conn]]></dc:creator>
+		<pubDate>Mon, 02 Nov 2020 22:45:46 +0000</pubDate>
+		<guid isPermaLink="false">http://www.ericvb.com/?p=3548#comment-222200</guid>
+
+					<description><![CDATA[Can you offer some tips on using HP integrity VMs with a SAN? Ours is a netapp appliance.]]></description>
+			<content:encoded><![CDATA[<p>Can you offer some tips on using HP integrity VMs with a SAN? Ours is a netapp appliance.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Creating an HP Integrity Virtual Machine on HP-UX 11.31 &#124; VirtIRL		</title>
+		<link>http://www.ericvb.com/archives/creating-an-hp-integrity-virtual-machine-on-hp-ux-11-31#comment-25488</link>
+
+		<dc:creator><![CDATA[Creating an HP Integrity Virtual Machine on HP-UX 11.31 &#124; VirtIRL]]></dc:creator>
+		<pubDate>Wed, 13 Mar 2013 17:41:20 +0000</pubDate>
+		<guid isPermaLink="false">http://www.ericvb.com/?p=3548#comment-25488</guid>
+
+					<description><![CDATA[[...] VirtIRL is about all forms of virtualization &#8211; server, storage, desktop &#8211; and not just x86! Check out this post by former coworker ericVB: Creating an HP Integrity Virtual Machine on HP-UX 11.31 &#124; Eric VB.com. [...]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] VirtIRL is about all forms of virtualization &#8211; server, storage, desktop &#8211; and not just x86! Check out this post by former coworker ericVB: Creating an HP Integrity Virtual Machine on HP-UX 11.31 | Eric VB.com. [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

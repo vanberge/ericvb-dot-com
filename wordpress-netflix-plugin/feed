@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Netflix-X2	</title>
+	<atom:link href="http://www.ericvb.com/wordpress-netflix-plugin/feed" rel="self" type="application/rss+xml" />
+	<link>http://www.ericvb.com</link>
+	<description>A Distinction Without a Difference...</description>
+	<lastBuildDate>Sat, 14 Dec 2013 20:03:38 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.1</generator>
+	<item>
+		<title>
+		By: Vanberge		</title>
+		<link>http://www.ericvb.com/wordpress-netflix-plugin#comment-20425</link>
+
+		<dc:creator><![CDATA[Vanberge]]></dc:creator>
+		<pubDate>Tue, 17 Apr 2012 16:19:02 +0000</pubDate>
+		<guid isPermaLink="false">http://www.palmerforpresident.com/?page_id=368#comment-20425</guid>
+
+					<description><![CDATA[The overall rental activity will always show two entries for movies that you have returned.  Because netflix has shipped it to you, and you have also returned it.  The netflix RSS feed contains both of those items.
+
+Looking at your page, it seems that you&#039;ve gotten it looking really nice... Congrats!
+
+Let me know if you have any more questions.
+
+But to get large images, just use this call:  get_cover_image($size)  like i show in my example code.]]></description>
+			<content:encoded><![CDATA[<p>The overall rental activity will always show two entries for movies that you have returned.  Because netflix has shipped it to you, and you have also returned it.  The netflix RSS feed contains both of those items.</p>
+<p>Looking at your page, it seems that you&#8217;ve gotten it looking really nice&#8230; Congrats!</p>
+<p>Let me know if you have any more questions.</p>
+<p>But to get large images, just use this call:  get_cover_image($size)  like i show in my example code.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Cheryl Free		</title>
+		<link>http://www.ericvb.com/wordpress-netflix-plugin#comment-20231</link>
+
+		<dc:creator><![CDATA[Cheryl Free]]></dc:creator>
+		<pubDate>Mon, 09 Apr 2012 07:58:10 +0000</pubDate>
+		<guid isPermaLink="false">http://www.palmerforpresident.com/?page_id=368#comment-20231</guid>
+
+					<description><![CDATA[Sorry for not distinguishing between questions.  For the first one, it&#039;s overall rental activity.  I tried six at first.  It listed the one I have a home of course, the two before that, the two before that AGAIN, and one more :(
+
+I didn&#039;t even think of checking Netflix-X2 Configuration because I thought it was just for the widget.  I had it set for 1 title from &quot;Movies At Home&quot;.  I changed it to Queue, but it made no difference when I tried showing six movies again :(
+
+I used your example for the code:
+
+
+I also used them before writing yesterday to publish this page:
+http://theluckyladybug.net/about/movies/
+
+I&#039;d really like to include title and link with the large covers, but haven&#039;t figured out how to do it in a way that looks nice yet.  Was hoping you might be able to help.
+I&#039;m using &quot;Allow PHP in posts and pages&quot; :)]]></description>
+			<content:encoded><![CDATA[<p>Sorry for not distinguishing between questions.  For the first one, it&#8217;s overall rental activity.  I tried six at first.  It listed the one I have a home of course, the two before that, the two before that AGAIN, and one more 🙁</p>
+<p>I didn&#8217;t even think of checking Netflix-X2 Configuration because I thought it was just for the widget.  I had it set for 1 title from &#8220;Movies At Home&#8221;.  I changed it to Queue, but it made no difference when I tried showing six movies again 🙁</p>
+<p>I used your example for the code:</p>
+<p>I also used them before writing yesterday to publish this page:<br />
+<a href="http://theluckyladybug.net/about/movies/" rel="nofollow ugc">http://theluckyladybug.net/about/movies/</a></p>
+<p>I&#8217;d really like to include title and link with the large covers, but haven&#8217;t figured out how to do it in a way that looks nice yet.  Was hoping you might be able to help.<br />
+I&#8217;m using &#8220;Allow PHP in posts and pages&#8221; 🙂</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Vanberge		</title>
+		<link>http://www.ericvb.com/wordpress-netflix-plugin#comment-20216</link>
+
+		<dc:creator><![CDATA[Vanberge]]></dc:creator>
+		<pubDate>Sun, 08 Apr 2012 13:13:11 +0000</pubDate>
+		<guid isPermaLink="false">http://www.palmerforpresident.com/?page_id=368#comment-20216</guid>
+
+					<description><![CDATA[Cheryl,
+
+Are you trying to display movies in your queue or your overall rental activity?
+
+Netflix&#039;s RSS feed for rental activity will also show returns; so my guess is you&#039;re seeing the title of the movie being shipped to you and also it&#039;s return to netflix.
+
+Try changing the feed to your queue instead of overall rental activity in the netflix options.
+
+Here&#039;s a link to the text of my most recent movie example page (which is offline because my membership is currently on hold)  but it should give you a good place to build from.
+
+http://www.ericvb.com/misc/Misc/netflixpage.txt
+
+Also note that you&#039;ll have to have a plugin to allow execution of php (I use RunPHP)]]></description>
+			<content:encoded><![CDATA[<p>Cheryl,</p>
+<p>Are you trying to display movies in your queue or your overall rental activity?</p>
+<p>Netflix&#8217;s RSS feed for rental activity will also show returns; so my guess is you&#8217;re seeing the title of the movie being shipped to you and also it&#8217;s return to netflix.</p>
+<p>Try changing the feed to your queue instead of overall rental activity in the netflix options.</p>
+<p>Here&#8217;s a link to the text of my most recent movie example page (which is offline because my membership is currently on hold)  but it should give you a good place to build from.</p>
+<p><a href="http://www.ericvb.com/misc/Misc/netflixpage.txt" rel="nofollow ugc">http://www.ericvb.com/misc/Misc/netflixpage.txt</a></p>
+<p>Also note that you&#8217;ll have to have a plugin to allow execution of php (I use RunPHP)</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Cheryl Free		</title>
+		<link>http://www.ericvb.com/wordpress-netflix-plugin#comment-20212</link>
+
+		<dc:creator><![CDATA[Cheryl Free]]></dc:creator>
+		<pubDate>Sun, 08 Apr 2012 09:22:31 +0000</pubDate>
+		<guid isPermaLink="false">http://www.palmerforpresident.com/?page_id=368#comment-20212</guid>
+
+					<description><![CDATA[If I try to display more than 3 recent DVDs, it starts showing duplicates at number four .  Is it possible to display more than 3?
+
+Could you give me an example PHP of how to include title and link with the large covers?
+
+Thank you!]]></description>
+			<content:encoded><![CDATA[<p>If I try to display more than 3 recent DVDs, it starts showing duplicates at number four .  Is it possible to display more than 3?</p>
+<p>Could you give me an example PHP of how to include title and link with the large covers?</p>
+<p>Thank you!</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Vanberge		</title>
+		<link>http://www.ericvb.com/wordpress-netflix-plugin#comment-16425</link>
+
+		<dc:creator><![CDATA[Vanberge]]></dc:creator>
+		<pubDate>Mon, 31 Jan 2011 12:21:20 +0000</pubDate>
+		<guid isPermaLink="false">http://www.palmerforpresident.com/?page_id=368#comment-16425</guid>
+
+					<description><![CDATA[Rabah,
+By default the feed engine will cache the feed data for 30 minutes.  If you&#039;re using an older version this could actually be as long as 12 hours.
+
+So, if you make queue changes, that will be reflected on your site after 30 minutes.
+Glad you like the plugin!]]></description>
+			<content:encoded><![CDATA[<p>Rabah,<br />
+By default the feed engine will cache the feed data for 30 minutes.  If you&#8217;re using an older version this could actually be as long as 12 hours.</p>
+<p>So, if you make queue changes, that will be reflected on your site after 30 minutes.<br />
+Glad you like the plugin!</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Rabah Rahil		</title>
+		<link>http://www.ericvb.com/wordpress-netflix-plugin#comment-16423</link>
+
+		<dc:creator><![CDATA[Rabah Rahil]]></dc:creator>
+		<pubDate>Mon, 31 Jan 2011 05:48:17 +0000</pubDate>
+		<guid isPermaLink="false">http://www.palmerforpresident.com/?page_id=368#comment-16423</guid>
+
+					<description><![CDATA[I was wondering if this plug-in updates and how often because I have it installed on my sidebar widget and it doesn&#039;t reflect the changes I have made to my queue. Thanks for the plug-in love it!]]></description>
+			<content:encoded><![CDATA[<p>I was wondering if this plug-in updates and how often because I have it installed on my sidebar widget and it doesn&#8217;t reflect the changes I have made to my queue. Thanks for the plug-in love it!</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: WordPress Geekery &#171; Lexi&#039;s Geekery		</title>
+		<link>http://www.ericvb.com/wordpress-netflix-plugin#comment-14903</link>
+
+		<dc:creator><![CDATA[WordPress Geekery &#171; Lexi&#039;s Geekery]]></dc:creator>
+		<pubDate>Thu, 18 Nov 2010 02:03:29 +0000</pubDate>
+		<guid isPermaLink="false">http://www.palmerforpresident.com/?page_id=368#comment-14903</guid>
+
+					<description><![CDATA[[...] Netflix-X2 : A reimplementation of the original Albert Banks Netflix plugin, Netflix-X2 displays RSS content from your Netflix account. [...]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] Netflix-X2 : A reimplementation of the original Albert Banks Netflix plugin, Netflix-X2 displays RSS content from your Netflix account. [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: foist &#187; How the Sidebars Work		</title>
+		<link>http://www.ericvb.com/wordpress-netflix-plugin#comment-14832</link>
+
+		<dc:creator><![CDATA[foist &#187; How the Sidebars Work]]></dc:creator>
+		<pubDate>Fri, 08 Oct 2010 23:53:07 +0000</pubDate>
+		<guid isPermaLink="false">http://www.palmerforpresident.com/?page_id=368#comment-14832</guid>
+
+					<description><![CDATA[[...] uses the Netflix-X2 plugin for WordPress (and necessitates a Netflix [...]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] uses the Netflix-X2 plugin for WordPress (and necessitates a Netflix [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Vanberge		</title>
+		<link>http://www.ericvb.com/wordpress-netflix-plugin#comment-14691</link>
+
+		<dc:creator><![CDATA[Vanberge]]></dc:creator>
+		<pubDate>Tue, 03 Aug 2010 15:43:12 +0000</pubDate>
+		<guid isPermaLink="false">http://www.palmerforpresident.com/?page_id=368#comment-14691</guid>
+
+					<description><![CDATA[Jeremy,
+Thanks for using the plugin!  I&#039;m glad you&#039;ve found it useful.
+
+Your request is a valid one...  That&#039;s a great suggestion.  That does present a significant code rewrite however - I will keep this in mind as something to work towards.
+
+Thanks very much for a great suggestion!]]></description>
+			<content:encoded><![CDATA[<p>Jeremy,<br />
+Thanks for using the plugin!  I&#8217;m glad you&#8217;ve found it useful.</p>
+<p>Your request is a valid one&#8230;  That&#8217;s a great suggestion.  That does present a significant code rewrite however &#8211; I will keep this in mind as something to work towards.</p>
+<p>Thanks very much for a great suggestion!</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Jeremy Meyers		</title>
+		<link>http://www.ericvb.com/wordpress-netflix-plugin#comment-14672</link>
+
+		<dc:creator><![CDATA[Jeremy Meyers]]></dc:creator>
+		<pubDate>Tue, 27 Jul 2010 05:33:50 +0000</pubDate>
+		<guid isPermaLink="false">http://www.palmerforpresident.com/?page_id=368#comment-14672</guid>
+
+					<description><![CDATA[Hey Eric-
+
+Great job on the plugin (i&#039;m using it on the footer of my site). 
+
+This isn&#039;t a bug report as much as a feature request.  Me and my gf have separate profiles (and therefore different netflix ID #s) on the same account.  Is there any way to build out the functionality to be able to provide more than one ID to have it pull data from, for this particular situation?]]></description>
+			<content:encoded><![CDATA[<p>Hey Eric-</p>
+<p>Great job on the plugin (i&#8217;m using it on the footer of my site). </p>
+<p>This isn&#8217;t a bug report as much as a feature request.  Me and my gf have separate profiles (and therefore different netflix ID #s) on the same account.  Is there any way to build out the functionality to be able to provide more than one ID to have it pull data from, for this particular situation?</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: The Best Possible RickRoll Method	</title>
+	<atom:link href="http://www.ericvb.com/archives/the-best-possible-rickroll-method/feed" rel="self" type="application/rss+xml" />
+	<link>http://www.ericvb.com/archives/the-best-possible-rickroll-method</link>
+	<description>A Distinction Without a Difference...</description>
+	<lastBuildDate>Sun, 29 May 2011 16:57:19 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.1</generator>
+	<item>
+		<title>
+		By: burgetta		</title>
+		<link>http://www.ericvb.com/archives/the-best-possible-rickroll-method#comment-16983</link>
+
+		<dc:creator><![CDATA[burgetta]]></dc:creator>
+		<pubDate>Sun, 29 May 2011 16:57:19 +0000</pubDate>
+		<guid isPermaLink="false">http://www.ericvb.com/?p=1420#comment-16983</guid>
+
+					<description><![CDATA[This youtube video has 48 million views.]]></description>
+			<content:encoded><![CDATA[<p>This youtube video has 48 million views.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Vanberge		</title>
+		<link>http://www.ericvb.com/archives/the-best-possible-rickroll-method#comment-16968</link>
+
+		<dc:creator><![CDATA[Vanberge]]></dc:creator>
+		<pubDate>Wed, 25 May 2011 13:06:06 +0000</pubDate>
+		<guid isPermaLink="false">http://www.ericvb.com/?p=1420#comment-16968</guid>
+
+					<description><![CDATA[Jeffrey Fuller,
+
+I have recently upgraded to Wordpress 3.2 beta 1 and adopted the new default theme.  I have not had much chance to tweak its settings/css/etc yet.  But yes this comment form is ~ 1600x1200]]></description>
+			<content:encoded><![CDATA[<p>Jeffrey Fuller,</p>
+<p>I have recently upgraded to WordPress 3.2 beta 1 and adopted the new default theme.  I have not had much chance to tweak its settings/css/etc yet.  But yes this comment form is ~ 1600&#215;1200</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Jeffrey Fuller		</title>
+		<link>http://www.ericvb.com/archives/the-best-possible-rickroll-method#comment-16959</link>
+
+		<dc:creator><![CDATA[Jeffrey Fuller]]></dc:creator>
+		<pubDate>Tue, 24 May 2011 00:25:43 +0000</pubDate>
+		<guid isPermaLink="false">http://www.ericvb.com/?p=1420#comment-16959</guid>
+
+					<description><![CDATA[Originally I came here to comment on this post, as I use this method also. But, now I feel compelled to point out that you must have the single largest comment form on the internet.]]></description>
+			<content:encoded><![CDATA[<p>Originally I came here to comment on this post, as I use this method also. But, now I feel compelled to point out that you must have the single largest comment form on the internet.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

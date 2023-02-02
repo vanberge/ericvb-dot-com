@@ -1,0 +1,547 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Tech &#8211; Eric VB.com</title>
+	<atom:link href="http://www.ericvb.com/archives/category/tech/feed" rel="self" type="application/rss+xml" />
+	<link>http://www.ericvb.com</link>
+	<description>A Distinction Without a Difference...</description>
+	<lastBuildDate>Sat, 08 May 2021 02:11:24 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.1</generator>
+	<item>
+		<title>Migrate Google Cloud GCE VM Instances From One Project To Another</title>
+		<link>http://www.ericvb.com/archives/migrate-google-cloud-gce-vm-instances-from-one-project-to-another</link>
+					<comments>http://www.ericvb.com/archives/migrate-google-cloud-gce-vm-instances-from-one-project-to-another#comments</comments>
+		
+		<dc:creator><![CDATA[Vanberge]]></dc:creator>
+		<pubDate>Tue, 08 Dec 2020 20:45:20 +0000</pubDate>
+				<category><![CDATA[Tech]]></category>
+		<guid isPermaLink="false">http://www.ericvb.com/?p=3872</guid>
+
+					<description><![CDATA[So, alot has happened in the last 6 years since I last blogged on this website. TL/DR: Cloud has taken over the world, and I&#8217;m lucky enough to have a career focused on designing cloud solutions. This brings us to the year 2020, and one challenge I had to tackle recently was trying to find [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<p>So, alot has happened in the last 6 years since I <a href="https://www.ericvb.com/archives/installing-the-vmware-horizon-view-client-on-ubuntu-14-10" data-type="post" data-id="3738">last blogged</a> on this website.  <br>TL/DR:  Cloud has taken over the world, and I&#8217;m lucky enough to have a career focused on  designing cloud solutions.</p>
+
+
+
+<p>This brings us to the year 2020, and one challenge I had to tackle recently was trying to find a relatively easy way to migrate Virtual Machines between projects within Google Cloud Platform (GCP).  </p>
+
+
+
+<p>Before we get into the solution, we&#8217;ll talk a little background info&#8230;</p>
+
+
+
+<p>Google cloud organizes its resources into &#8220;projects&#8221; &#8211; think of these similar to an Azure subscription/resource group organizational unit.  Natively, once you have built Google Compute Engine (GCE) VMs, you are unable to easily move those VM resources into another project.  There are a few how-to guides for leveraging disk snapshots, cloning, etc, but alot of those are difficult to operate at scale and open a plethora of potential issues in practice.</p>
+
+
+
+<p>Therefore, I present to you: <a href="https://github.com/vanberge/gce-migrator" data-type="URL" data-id="https://github.com/vanberge/gce-migrator">The Google Cloud Compute Engine Migrator</a>.</p>
+
+
+
+<p>I&#8217;ve developed a scriptable way to &#8220;move&#8221; VMs between projects, giving options on network connectivity with the ability to do both individual and bulk migrations.  Now, the &#8220;move&#8221; is in quotes here, because what this script actually does is shuts down the target VM, takes a virtual machine image of that VM (which includes all disks), and then deploys a new VM instance from that image in the project of your choosing.  So, while it&#8217;s a true 1:1 clone, it is not in fact the same virtual machine.  </p>
+
+
+
+<p>I&#8217;ll also concede there surely is a much more API driven and UX friendly way of doing this with.  But, I&#8217;m a command line script kid first, even in 2020. Therefore what we have here is a bash script leveraging the gcloud command suite to somewhat intelligently enable you to migrate your VMs between projects.  With that, let&#8217;s dive into the tech weeds&#8230;</p>
+
+
+
+<p><strong>Pre-Requisite Info</strong></p>
+
+
+
+<ul><li><strong>Disclaimer</strong>: This migration tool is provided without any warranty, make sure you review the script code and test accordingly with your requirements. Always make sure you have backups and have validated recovery from those backups before running, especially in production environments.  This cannot be stressed enough.</li><li>Make sure you know the source project id, destination project id, and which network within your GCP environment you would like to attach to.</li><li>If you intend to keep the source VM&#8217;s same IP address, the VPC network must be shared between the source and destination projects.</li><li>Keeping the same IP address will require the source VM to be removed after taking a machine image. The script will not do this for you, but will prompt you when to do it. </li><li>If not using the same IP (IE, attaching to a new VPC network at the destination), recognize that you will be left with 2 VM instances and that a cleanup should be performed on the source VM once destination VM has been completed.</li></ul>
+
+
+
+<p><strong>Using the Migrator Script</strong></p>
+
+
+
+<ul><li>Make sure you<a href="https://cloud.google.com/sdk/docs/install"> install the Google cloud SDK</a> (or, just use CloudShell within GCP)</li><li>If running outside of CloudShell, authenticate by running  <code>gcloud auth login</code></li><li>Clone the repository:  <code>git clone https://github.com/vanberge/gce-migrator.git</code></li><li>Change directory into the gce-migrator folder and run the script per the usage options below</li><li>Use format:<ul><li><code>./gce-migrate.sh -s -d -n -m -S</code></li></ul></li></ul>
+
+
+
+<p><strong>Required options</strong></p>
+
+
+
+<ul><li>-s <em>&lt;sourceproject id&gt;</em>: The project ID where VM currently lives</li><li>-d <em>&lt;destproject id&gt;</em>: The project ID where VM will reside after migration</li><li>-n <em>&lt;network&gt;</em>: The destination network that the new instance of the VM will be connected to.  Values are the name of the destination network, or &#8220;static&#8221; to keep the existing IP.<ul><li>network name: If passing network name, the VM will be connected to the network specified with the next available IP address.</li><li>static: If passing &#8220;static&#8221;, the script will retain the IP address of the VM instance.<br><br>NOTE: Setting the network &#8220;static&#8221; will require the deletion of the source VM before creating the new instance in the destination project. The script will prompt you to do this, but you MUST Have a backup and recovery scenario in the even this does not work.</li></ul></li><li>-m <em>&lt;migration type&gt;</em>: Must pass a single VM name, or &#8220;bulk&#8221;.<ul><li>bulk &#8211; use the &#8220;bulk&#8221; argument to migrate all GCE instances in the source project into the destination project and network.</li><li>Single VM &#8211; Pass <code>-m &lt;vmname&gt;</code> arguments to migrate a single GCE instance</li></ul></li></ul>
+
+
+
+<p><strong>Optional parameter</strong></p>
+
+
+
+<ul><li>-S: enable Secure/Shielded VM as part of the conversion. Only needed if source is NOT shielded, and you wish the destination to be shielded.</li></ul>
+
+
+
+<p><strong>Examples</strong></p>
+
+
+
+<p><code>./gce-migrate.sh -s sourceproject1 -d destproject1 -n default -m myvm1</code></p>
+
+
+
+<ul><li>This will migrate the VM &#8220;myvm1&#8221; from sourceproject1 to destproject1 using the default VPC network</li></ul>
+
+
+
+<p><code>./gce-migrate.sh -s sourceproject1 -d destproject1 -n static -m myvm1</code></p>
+
+
+
+<ul><li>This will migrate the VM &#8220;myvm1&#8221; from sourceproject1 to destproject1, keeping myvm1&#8217;s private IP address</li><li>As noted above, this requires the VM&#8217;s VPC network/subnet to be shared with the destination project</li></ul>
+
+
+
+<p><code>./gce-migrate.sh -s sourceproject1 -d destproject1 -n default -m bulk</code></p>
+
+
+
+<ul><li>Migrates all VMs in sourceproject1 to destproject</li><li>Attaches the VMs to the default network</li></ul>
+
+
+
+<p><code>./gce-migrate.sh -s sourceproject1 -d destproject1 -n default -m bulk -S</code></p>
+
+
+
+<ul><li>This will migrate all VM instances in sourceproject1 to destproject1, connecting to the default VPC network.</li><li>Enables shielded VM options on the VM as part of the migration</li></ul>
+
+
+
+<p><strong>Cleanup</strong></p>
+
+
+
+<p>If moving to a new network, this migration script will leave a stopped GCE instance in the source project, as well as machine images for all migrated VMs. Once functionality is validated at the destination, these items should be cleaned up per best practices and to avoid any future interruption.</p>
+
+
+
+<p>Hopefully this helps somebody who finds themselves with the challenge of moving GCE VMs between GCP projects!</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>http://www.ericvb.com/archives/migrate-google-cloud-gce-vm-instances-from-one-project-to-another/feed</wfw:commentRss>
+			<slash:comments>4</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Installing the VMware Horizon View Client on Ubuntu 14.10</title>
+		<link>http://www.ericvb.com/archives/installing-the-vmware-horizon-view-client-on-ubuntu-14-10</link>
+					<comments>http://www.ericvb.com/archives/installing-the-vmware-horizon-view-client-on-ubuntu-14-10#respond</comments>
+		
+		<dc:creator><![CDATA[Vanberge]]></dc:creator>
+		<pubDate>Fri, 31 Oct 2014 18:24:08 +0000</pubDate>
+				<category><![CDATA[Tech]]></category>
+		<category><![CDATA[linux]]></category>
+		<category><![CDATA[sysadmin]]></category>
+		<category><![CDATA[VMware]]></category>
+		<guid isPermaLink="false">http://www.ericvb.com/?p=3738</guid>
+
+					<description><![CDATA[If you&#8217;re a Linux user, you will be happy to know that VMware offers a Linux version of it&#8217;s Horizon View client. However, it&#8217;s a bit of a strange release strategy. For Ubuntu, my distro of choice, VMware only offers the packages for the LTS versions of the popular OS. This is kind of a [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>If you&#8217;re a Linux user, you will be happy to know that VMware offers a Linux version of it&#8217;s <a href="https://www.vmware.com/support/viewclients/doc/horizon-view-client-linux-release-notes.html">Horizon View client</a>.  However, it&#8217;s a bit of a strange release strategy.  For Ubuntu, my distro of choice, VMware only offers the packages for the LTS versions of the popular OS. This is kind of a bummer because the LTS versions of Ubuntu Linux are only released every 2 years.  I really do not like running an OS that&#8217;s even one release behind.</p>
+<p>Well, I decided this just cannot stand.  I wanted to have a working View client on my latest Ubuntu 14.10 release which was not an LTS version.</p>
+<p>Google was surprisingly unhelpful here, only really offering suggestions on installing a 32 bit version and changing repositories in your sources.list file.  I did not really want to cross the streams that much on a fresh build, so I decided to try and find a cleaner way to get the Horizon View client installed.  This was actually quite a bit easier than I expected.</p>
+<p>The good news is, the packages VMware releases for the LTS versions of Ubuntu can pretty much install on any of the later versions of Ubuntu. Here&#8217;s how I did it:</p>
+<ul>
+<li>Browse to http://archive.canonical.com/ubuntu/pool/partner/v/vmware-view-client/ from your web browser and download the latest .deb package file.  At the time of this writing, the latest version is 2.2.0 for Ubuntu 14.04 LTS</li>
+<li>Open the file with archive manager and click &#8220;Install&#8221;, or install it from command line via
+<pre>sudo dpkg -i vmware-view-client_2.2.0-0ubuntu0.14.04_i386.deb</pre>
+</li>
+<li>The package should auto-resolve some dependencies for you and install successfully.</li>
+</ul>
+<p>That&#8217;s it!  You now have the VMware Horizon View client installed on the latest/greatest release of Ubuntu.  It&#8217;s been working great for me, and I hope it works just as well for anyone who comes across this. </p>
+]]></content:encoded>
+					
+					<wfw:commentRss>http://www.ericvb.com/archives/installing-the-vmware-horizon-view-client-on-ubuntu-14-10/feed</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>How to Build an Ikea &#8220;Lack Rack&#8221; for Your Home Lab</title>
+		<link>http://www.ericvb.com/archives/how-to-build-an-ikea-lack-rack-for-your-home-lab</link>
+					<comments>http://www.ericvb.com/archives/how-to-build-an-ikea-lack-rack-for-your-home-lab#comments</comments>
+		
+		<dc:creator><![CDATA[Vanberge]]></dc:creator>
+		<pubDate>Mon, 04 Aug 2014 20:57:42 +0000</pubDate>
+				<category><![CDATA[Tech]]></category>
+		<category><![CDATA[sysadmin]]></category>
+		<guid isPermaLink="false">http://www.ericvb.com/?p=3717</guid>
+
+					<description><![CDATA[As a sysadmin, I keep in the loop with the home lab/hobbyist community and am always looking for cool things to try and do with computers. One of the projects I&#8217;ve been looking to take on for some time has been a rack to store my IT equipment. Granted, I don&#8217;t have a ton &#8211; [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>As a sysadmin, I keep in the loop with the home lab/hobbyist community and am always looking for cool things to try and do with computers. One of the projects I&#8217;ve been looking to take on for some time has been a rack to store my IT equipment. Granted, I don&#8217;t have a ton &#8211; a decent server, small NAS, and some other miscellaneous hardware &#8211; but having all this stuff just sitting on the floor of my utility room is not ideal by any means.</p>
+<p>Through online forums and /r/homelab on reddit, I came up with a game plan to do this on the cheap.</p>
+<p>Enter the Lack Rack.</p>
+<p>Somehow, it was discovered that Ikea&#8217;s lack table line provides a near perfect fit for rack-sized hardware. There is a decent amount of information out there if you&#8217;re Googling around for how to build one (Even a <a href="https://wiki.eth0.nl/index.php/LackRack">whole site</a> dedicated to them). But, most of what I found out there was using a side table with legs only. Kind of like this:<a href="http://www.ericvb.com/wp-content/uploads/2014/08/lackrack.png"><br />
+</a></p>
+<p>I didn&#8217;t really love that style.  It looks and feels half done to me.  So, I decided to take it a little bit further.  I used 2 lack tables since they&#8217;re so cheap which allowed me to give it a base.  Then I wanted to be able to wheel it around, so I also added some caster style wheels on the bottom as well.  Here are a couple pics of what I ended up with</p>
+<p>I haven&#8217;t really seen any good writeups with doing a lack rack in this style, and therefore I wanted to go ahead and share my experiences with the interenet.</p>
+<p>Here&#8217;s how I made my lack rack</p>
+<p>What to get:</p>
+<ul>
+<li>2x <a href="https://www.ikea.com/us/en/p/lack-side-table-black-20011408/">Ikea Lack Side tables</a>.  I recommend 22 inch version vs. the 21 and 5/8 that seem to be on other guides. This is a perfect/snug fit.  I can&#8217;t imagine a 21 and 5/8 table fitting my server without me having to bump the legs out a little bit.  Note that it seems the black table is the only one that comes in 22&#8221;</li>
+<li>If you want to be able to roll this rig, get <a href="http://www.homedepot.com/p/Shepherd-2-in-Polypropylene-Wheel-Swivel-Plate-Caster-9392/100142073">4 caster style wheels</a> that you can easily screw onto the bottom</li>
+<li>Some hardware.  You&#8217;ll need at least 4 of something like  <a href="http://www.homedepot.com/p/Crown-Bolt-Zinc-Plated-2-in-Corner-Brace-61552/204765180">these corner brace/angle bracket</a> things, as well as some self-drilling style screws to mount those and your wheels.  I recommend taking some time looking at the screw width, depth, and length.  These are Ikea tables after all, so you have to sort of balance out how hard you tighten them down while being careful not to strip it out.  I didn&#8217;t have any problems using some screws with pretty wide threads that bit into the wood fairly well.  You should need 24 screws if you&#8217;re doing wheels and braces.</li>
+<li>Optional:  A couple of <a href="http://www.ikea.com/us/en/catalog/products/50072645/">these rails</a> to set your gear on!  I haven&#8217;t done this yet, and I&#8217;m not sure if I will.  But you might want to line the sides of your lack rack with these.
+<p>The Assembly Steps:</li>
+</ul>
+<ul>
+<li>Gather your 2x Ikea Lack side tables (again, I am a fan of the black 22&#8221; version).<br />
+<a href="https://www.ericvb.com/wp-content/uploads/2014/08/IMG_20140804_092158.jpg"><img decoding="async" loading="lazy" class="alignright size-medium wp-image-3888" src="https://www.ericvb.com/wp-content/uploads/2014/08/IMG_20140804_092158-266x300.jpg" alt="" width="266" height="300" srcset="http://www.ericvb.com/wp-content/uploads/2014/08/IMG_20140804_092158-266x300.jpg 266w, http://www.ericvb.com/wp-content/uploads/2014/08/IMG_20140804_092158-908x1024.jpg 908w, http://www.ericvb.com/wp-content/uploads/2014/08/IMG_20140804_092158-768x867.jpg 768w, http://www.ericvb.com/wp-content/uploads/2014/08/IMG_20140804_092158-1361x1536.jpg 1361w, http://www.ericvb.com/wp-content/uploads/2014/08/IMG_20140804_092158-624x704.jpg 624w, http://www.ericvb.com/wp-content/uploads/2014/08/IMG_20140804_092158.jpg 1815w" sizes="(max-width: 266px) 100vw, 266px" /></a></li>
+<li>Assemble the first table completely per the provided instructions.  It&#8217;s very easy&#8230;  You essentially just have to hand screw the legs onto the top.</li>
+<li>Open the 2nd table and take just the top, which you will actually use as the bottom of your rack.  This shall henceforth be referred to as the &#8220;base&#8221;.  You&#8217;ll have 4 legs left over. Find something creative to use them for?</li>
+<li>Using the angle bracket/corner brace things, attach your first fully assembled table to the base of the 2nd table.  It might sound a little complicated, but you really just set the base from your 2nd table down flat with the finished side up, and then set your fully assembled table on top of it.  I did not pre-drill any holes and they all screwed in very easily without stripping.  It&#8217;s worth mentioning again that it did feel like it&#8217;d be easy to strip the wood, so don&#8217;t over tighten.</li>
+<li>Reminder, finished side of the base goes up.  You don&#8217;t want the bottom of your rack decorated while the visible base section is unfinished wood.  You can see from my pictures how the top/bottom are oriented and the way I used the brackets to mount the tables together.</li>
+<li>You should now have a mostly fully functioning &#8220;lack rack&#8221; &#8211; Congratulations!  Now if you like, go ahead and flip it upside down and screw on your caster style wheels to the bottom.</li>
+<li>And there you go, you should be all set.</li>
+</ul>
+<p><a href="https://www.ericvb.com/wp-content/uploads/2014/08/IMG_20140804_092230.jpg"><img decoding="async" loading="lazy" class="size-medium wp-image-3889 aligncenter" src="https://www.ericvb.com/wp-content/uploads/2014/08/IMG_20140804_092230-243x300.jpg" alt="" width="243" height="300" srcset="http://www.ericvb.com/wp-content/uploads/2014/08/IMG_20140804_092230-243x300.jpg 243w, http://www.ericvb.com/wp-content/uploads/2014/08/IMG_20140804_092230-829x1024.jpg 829w, http://www.ericvb.com/wp-content/uploads/2014/08/IMG_20140804_092230-768x949.jpg 768w, http://www.ericvb.com/wp-content/uploads/2014/08/IMG_20140804_092230-1243x1536.jpg 1243w, http://www.ericvb.com/wp-content/uploads/2014/08/IMG_20140804_092230-624x771.jpg 624w, http://www.ericvb.com/wp-content/uploads/2014/08/IMG_20140804_092230.jpg 1657w" sizes="(max-width: 243px) 100vw, 243px" /></a></p>
+<p>I might find a way to add some sides to this build to clean it up a little bit.  It also could use some cable management.  And as I stated earlier I may end up putting some rails along the sides.  I&#8217;ll call this my stage 1 for a decent home lab lack rack.  Total cost?  About 35 dollars.  Hope this helps if you&#8217;re considering a build!</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>http://www.ericvb.com/archives/how-to-build-an-ikea-lack-rack-for-your-home-lab/feed</wfw:commentRss>
+			<slash:comments>5</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Navigating a Web Traffic Jam</title>
+		<link>http://www.ericvb.com/archives/navigating-a-web-traffic-jam</link>
+					<comments>http://www.ericvb.com/archives/navigating-a-web-traffic-jam#comments</comments>
+		
+		<dc:creator><![CDATA[Vanberge]]></dc:creator>
+		<pubDate>Thu, 27 Mar 2014 21:04:41 +0000</pubDate>
+				<category><![CDATA[Site related]]></category>
+		<category><![CDATA[Tech]]></category>
+		<guid isPermaLink="false">http://www.ericvb.com/?p=3690</guid>
+
+					<description><![CDATA[If you&#8217;ve tried to view ericvb.com recently, you may have been met with various error messages at various times instead of my actual website. Terms like &#8220;ACCOUNT SUSPENDED&#8221; or &#8220;500 Server error&#8221; and &#8220;Error establishing a database connection&#8221; have been appearing all too often. Turns out I have a couple of blog posts that have [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>If you&#8217;ve tried to view ericvb.com recently, you may have been met with various error messages at various times instead of my actual website. Terms like &#8220;ACCOUNT SUSPENDED&#8221; or &#8220;500 Server error&#8221; and &#8220;Error establishing a database connection&#8221; have been appearing all too often.</p>
+<p>Turns out I have a couple of blog posts that have become fairly popular, and I thought it&#8217;d be interesting to share the story of how my site has had to go from &#8220;just a hobby&#8221; to something a little more enterprise grade.</p>
+<p><strong>Houston, we have a problem</strong><br />
+I received an email from my hosting provider stating my account had been suspended due to resource abuse.  I then tried to navigate to my site, and I only see &#8220;This account has been suspended&#8221; instead of my site content.  A few emails back and forth with support, and they re-enabled my account to give me a chance to try mitigate the performance issues.  I updated plugins and themes to latest versions, enabled some caching and security plugins, and finally even signed up for <a href="https://www.cloudflare.com/">CloudFlare</a> which has a really nice free content delivery service (more on this later).</p>
+<p>Things smoothed out for awhile, but soon my resource usage began to climb again.  CPU and RAM utilization were just crushing the server; and since I was on a shared server configuration, my site was making other people&#8217;s stuff perform poorly.  I had reviewed analytics data and found basically 2 of my posts were the culprits.  One on setting up tabbed ssh for Windows, and another on getting started with the ELK stack for syslogging.  I tried unpublishing those posts for awhile but I still ended up getting suspended 3 separate times. Finally, I had make the decision to move my website to a dedicated server.</p>
+<p>The migration to a dedicated server was really pretty easy.  Even fun!  MySQL is a great database and was easy to backup/restore, and the rest was just copying files.  In the end, my website is better secured thanks to the <a href="http://ithemes.com/security/">iThemes security plugin</a>, as well CloudFlare&#8217;s front end capabilities.</p>
+<p>I really can&#8217;t say enough about how happy I am with CloudFlare.  It provides caching, content optimization, and security features.  Their free offering is very capable, and obviously the paid subscriptions give you more features. </p>
+<p>Overall, this entire experience has been a great learning opportunity.  Topics I&#8217;ve never even thought about such as content delivery, web caching, and WordPess security are now a focus of mine with this website, and hopefully it results in a better experience for anyone who visits&#8230;</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>http://www.ericvb.com/archives/navigating-a-web-traffic-jam/feed</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Getting Started on Centralized Logging with Logstash, Elasticsearch and Kibana</title>
+		<link>http://www.ericvb.com/archives/getting-started-on-centralized-logging-with-logstash-elasticsearch-and-kibana</link>
+					<comments>http://www.ericvb.com/archives/getting-started-on-centralized-logging-with-logstash-elasticsearch-and-kibana#comments</comments>
+		
+		<dc:creator><![CDATA[Vanberge]]></dc:creator>
+		<pubDate>Sun, 05 Jan 2014 03:29:05 +0000</pubDate>
+				<category><![CDATA[Tech]]></category>
+		<category><![CDATA[logstash]]></category>
+		<category><![CDATA[sysadmin]]></category>
+		<guid isPermaLink="false">http://www.ericvb.com/?p=3639</guid>
+
+					<description><![CDATA[As a sysadmin, one of the &#8220;rainy day&#8221; things on my to-do list for some time has been exploring centralized logging.  I&#8217;ve done a few proof of concept style quick implementations throughout the years but have never been able to secure budget or resources to see it to completion.  Splunk was too expensive, and the [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>As a sysadmin, one of the &#8220;rainy day&#8221; things on my to-do list for some time has been exploring centralized logging.  I&#8217;ve done a few proof of concept style quick implementations throughout the years but have never been able to secure budget or resources to see it to completion.  Splunk was too expensive, and the open source ones I tried required too much effort to be worth while back then.  This time, however,  I was more determined to make something stick.  With that, I began searching out some of the more popular open source tools.</p>
+<p>I considered various combinations of things like Fluentd, Graylog2, Octopussy, etc.  In the end, I settled on going with the Logstash/Elasticsearch/Kibana stack.  All of these free, open source tools are powerful in their own right &#8211; but they&#8217;re designed to work together and are <strong>immensely</strong> powerful when combined.  Logstash collects, ships, filters, and makes logs consistent.  Elasticsearch creates indices and searchability of the logs.  And finally, Kibana gives you a great web interface to analyze all your log data.  Here&#8217;s a screenshot of it all coming together for me.  This is a custom Kibana dashboard showing syslog output from all my VMware servers:</p>
+<p><a href="http://www.ericvb.com/wp-content/uploads/2014/01/Custom-Kibana-dashboard.png"><img decoding="async" loading="lazy" class="alignnone wp-image-3676 size-medium" src="http://www.ericvb.com/wp-content/uploads/2014/01/Custom-Kibana-dashboard-300x138.png" alt="Custom-Kibana-dashboard" width="300" height="138" srcset="http://www.ericvb.com/wp-content/uploads/2014/01/Custom-Kibana-dashboard-300x138.png 300w, http://www.ericvb.com/wp-content/uploads/2014/01/Custom-Kibana-dashboard.png 945w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+<p>Before diving into the steps, I feel the need to point out that I&#8217;ve had a great time learning and setting up these tools.  I honestly haven&#8217;t been this excited about using software since first trying VMware ESX server.   I can&#8217;t stop working on it.  It&#8217;s become an addiction for me to continuously improve, filter, and make sense of various logs.  It&#8217;s really very rewarding to be able to visualize your log data in such a usable way.  Everything was  pretty easy to set up at a basic level, and the open source community was there for me via #logstash on IRC when I needed help taking things further or had any questions.  The setup of these tools <em>can</em> feel a little daunting to a newcomer with so many options and such a degree of configurability/customization, so I wanted to provide a step-by-step guide for how I ended up with an initial deployment.</p>
+<p>A couple prerequisite disclaimer points before I get started</p>
+<ul>
+<li>I chose to use Ubuntu server.  This is a personal preference, and certainly this guide can be helpful if you choose a different OS.  Use whatever OS you feel comfortable with.</li>
+<li>For the purposes of this guide, all 3 tools will be run on one server.  It is possible (even recommended depending on your workload) to separate them onto different servers.</li>
+<li>This is a &#8220;getting started&#8221; guide.  These tools can certainly be taken much further than I take them here.  They can be integrated with a message broker like Redis or RabbitMQ.  I&#8217;ll consider going into deeper options such as these in a followup enhanced configuration guide vs. here in the getting started guide.</li>
+</ul>
+<p>Now  let&#8217;s get into the setup!</p>
+<ol>
+<li>Get a webserver and PHP installed on your server.  I much prefer apache or nginx as the webserver.  Logstash does has a built in webserver that you can run, but I much prefer running a separate webserver.  In Ubuntu, I just went with the entire LAMP stack.   This is as easy as &#8220;<strong>apt-get install lamp-server</strong>&#8220;.</li>
+<li>Install a java runtime.  Again, easy in Ubuntu via <strong>apt-get install openjdk-7-jre-headless</strong></li>
+<li>Download the three components.  I downloaded gzip archives of each, but depending on your OS, there may be packages built for it.  Choose whichever way you&#8217;re more comfortable with.
+<ul>
+<li><strong>Elasticsearch</strong> (index) via: <a href="http://www.elasticsearch.org/download/">http://www.elasticsearch.org/download/</a></li>
+<li><strong>Logstash</strong> (collection) via: <a href="http://www.elasticsearch.org/overview/logstash/">http://www.elasticsearch.org/overview/logstash/</a></li>
+<li><strong>Kibana</strong> (web interface) via: <a href="http://www.elasticsearch.org/overview/kibana/">http://www.elasticsearch.org/overview/kibana/</a></li>
+</ul>
+</li>
+<li>Extract the archives (tar -xvf &lt;filename&gt;.tgz) and place the files where you want them. I chose /opt for logstash and elasticsearch, and then Kibana goes in your web root.  I did it as follows, an;d I&#8217;ll continue to reference these directories in the rest of the guide.
+<ul>
+<li>Extracted Elasticsearch tgz to /opt/elasticsearch</li>
+<li>Placed the Logstash jar in /opt/logstash</li>
+<li>Extracted Kibana tgz to my web root folder, /var/www/kibana &#8211; there was no special configuration needed other than putting the files here.</li>
+</ul>
+</li>
+<li>Edit your Elasticsearch config file (/opt/elasticsearch/config/elasticsearch.yml) and make 2 edits:
+<ul>
+<li>Find the line that says &#8220;cluster.name&#8221; and uncomment it, setting a name for your new Elasticsearch cluster.</li>
+<li>Look for &#8220;node.name&#8221; and set the node name as well.</li>
+<li>Note that you don&#8217;t have to set these variables.  If you don&#8217;t set these, Elasticsearch will set them randomly for you, but it is handy to know which server you&#8217;re looking at if you ever have to expand your setup so I recommend setting them.</li>
+</ul>
+</li>
+<li>Go ahead and start Elasticsearch by running <strong>/opt/elasticsearch/bin/elasticsearch</strong></li>
+<li>Create a basic logstash.conf file.  I created an /opt/logstash/logstash.conf with an initial config something like this, which just creates local file inputs.
+<pre>input {
+file {
+type => "linux-syslog"
+path => [ "/var/log/*.log", "/var/log/messages", "/var/log/syslog" ]
+}
+}
+output {
+stdout { }
+elasticsearch { cluster => "YourclusterName" }
+}</pre>
+<p>This input section is defined to look at and ingest files defined in the path array variable. Then the output section is setting to output to stdout (your command window) and also to elasticsearch where you define your cluster name. This is a very basic config to easily show us things are working.</li>
+<li>Now fire up Logstash by running:  <strong>/opt/logstash/bin/logstash agent -f /opt/logstash/logstash.conf</strong></li>
+<li>You should now see logstash initialize and all of the events it indexes should get output to your terminal via the stdout output, in addition to getting pushed over to elasticsearch where we should see them with Kibana.</li>
+<li>If you extracted Kibana as noted in step 4, then you should be able to browse to your server and check out your data!  Try http://yourserver/kibana and you should be greeted with an introduction screen. You&#8217;ll see they have a pre-configured logstash dashboard that you can click on and save as your default</li>
+<li>Once you see your data is indeed visible through Kibana, we can dive into further configuration of logstash.  If something&#8217;s off and you don&#8217;t see data, check out the <a href="http://logstash.net/docs/1.3.2/">logstash docs</a> or jump into #logstash on irc.freenode.net where people are very happy to help.  Once you&#8217;re satisfied that it is working, you may want to remove the stdout line from the output section and only have your output go to Elasticsearch for indexing.</li>
+<li>Now that we know things are functional, we can set up some additional logstash configs to further improve things
+<ul>
+<li>First, let&#8217;s set up a very common input for remote systems to dump syslogs into Logstash</li>
+<li>Edit your logstash.conf again and add a syslog to your input section like this:
+<pre>syslog {
+type => "syslog"
+}</pre>
+</li>
+<li>With the Logstash syslog input, you can specify the port, add tags, and set a bunch of other options. Make sure to check out the documentation for each input you add to your config. For syslog, visit http://logstash.net/docs/1.3.2/inputs/syslog for example.</li>
+<li>Next, we&#8217;ll want to set up a filter section of our config. The filter below makes sure we get a FQDN for the host by using a reverse DNS lookup and replacing the host variable with that (without this, many hosts just report an IP address), and then additionally adds a tag &#8220;VMware&#8221; for any host matching &#8220;esx&#8221; in the hostname. Pending your host names contain &#8220;esx&#8221; somewhere in them, this example makes it easy for browsing VMware syslog data through Kibana. You can certainly tailor these to any host names or even other fields you like. Logstash&#8217;s filtering and grok parsing are very powerful capabilities. This example is enough to give you an idea of the structure and how the logic works. Again, I can&#8217;t stress enough to dig into the docs and hop on IRC for help.  Overall, the filter section is probably where you&#8217;ll end up spending most of your time.
+<pre>filter {
+if [type] == "syslog" {
+dns {
+reverse => [ "host" ] action => "replace"
+}
+if [host] =~ /.*?(esx).*?(yourdomain)?/ {
+mutate { add_tag => [ "VMware" ] }
+}
+}
+}</pre>
+</li>
+<li>Once you get your logstash.conf tweaked, restart Logstash.  <strong>ps -ef | grep logstash</strong> and then kill the process.  Restart it the same way you did in step 8.</li>
+</ul>
+</li>
+<li><span style="line-height: 1.5em;">Now we&#8217;re ready to have some servers to dump syslogs to your new central log server! I started with VMware and Ubuntu and branched out from there. Depending on your OS or the syslog implementation, the method of sending logs to a remote syslog host varies.  Check your OS documentation for how to do this.  The default port is 514, which is default for the syslog input and typically remote hosts sending syslog data.</span></li>
+<li><span style="line-height: 1.5em;">Check out Kibana now and hopefully you see log entries.  Click through on hosts, on tags, try creating a new dashboard displaying only your &#8220;VMware&#8221; tagged logs. Etc Etc Etc &#8211; hopefully you can see your filters in action and how it helps bring consistency to your log data.</span></li>
+<li>Keep exploring the Logstash docs for more inputs.  Windows servers, Cisco devices, apache or IIS logs, Exchange, etc.  I don&#8217;t think there&#8217;s a sysadmin out there who has a shortage of log data they could/should be analyzing.</li>
+<li>Document your setup as you go so you can remember it later. <img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></li>
+</ol>
+<p>I hope this startup guide has been helpful to getting a base configuration.  Keep in mind that Logstash has a plethora of inputs, outputs codecs and filters.  Make sure to check out all the documentation at <a href="http://logstash.net/docs/1.3.2/">http://logstash.net/docs/1.3.2/</a> and tailor this awesome tool to your needs.  If you have a system logging, chances are there&#8217;s an input or plugin for it.</p>
+<p>A few bonus tips</p>
+<ul>
+<li>Check out <a href="http://www.elasticsearch.org/videos/">http://www.elasticsearch.org/videos/</a>, particularly &#8220;Introduction to Logstash&#8221;</li>
+<li>Install a few awesome plugins for Elasticsearch
+<ul>
+<li>/opt/elasticsearch/bin/plugin -install karmi/elasticsearch-paramedic</li>
+<li>/opt/elasticsearch/bin/plugin -install royrusso/elasticsearch-HQ</li>
+<li>/opt/elasticsearch/bin/plugin -install mobz/elasticsearch-head</li>
+</ul>
+</li>
+<li>Move your logstash dashboard to default by browsing to /var/www/kibana/app/dashboards and copying logstash.json to default.json.  Maybe save default.json off as default.json.orig or something first.</li>
+<li>Make sure to visit the <a href="http://cookbook.logstash.net/">Logstash community cookbook</a>.</li>
+</ul>
+]]></content:encoded>
+					
+					<wfw:commentRss>http://www.ericvb.com/archives/getting-started-on-centralized-logging-with-logstash-elasticsearch-and-kibana/feed</wfw:commentRss>
+			<slash:comments>4</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>VMworld: Day 4 &#8211; The &#034;Unofficial&#034; Summary Guide</title>
+		<link>http://www.ericvb.com/archives/vmworld-day-4-the-unofficial-summary-guide</link>
+					<comments>http://www.ericvb.com/archives/vmworld-day-4-the-unofficial-summary-guide#respond</comments>
+		
+		<dc:creator><![CDATA[Vanberge]]></dc:creator>
+		<pubDate>Wed, 04 Sep 2013 14:17:00 +0000</pubDate>
+				<category><![CDATA[Tech]]></category>
+		<category><![CDATA[VMware]]></category>
+		<category><![CDATA[VMworld]]></category>
+		<guid isPermaLink="false">http://www.ericvb.com/?p=3618</guid>
+
+					<description><![CDATA[As VMworld 2013 came to a close, I found myself reflecting on the vast experience. Did I make the most of it? Was it worthwhile? What should I do differently next time? None of these questions had simple answers, so I took the time to summarize my thoughts and feelings on VMworld. Making the most [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>As VMworld 2013 came to a close, I found myself reflecting on the vast experience.  Did I make the most of it?  Was it worthwhile?  What should I do differently next time?  None of these questions had simple answers, so I took the time to summarize my thoughts and feelings on VMworld.</p>
+<p><strong>Making the most of it.</strong><br />
+If you&#8217;re going to VMworld, you&#8217;re probably already planning on sessions, group discussions, labs, etc. Attending these things goes without saying. However, what I think is nearly as equally important are all the unofficial or underground things you can participate in at VMworld.  Do some of these things and have some fun while you meet/greet with some of the great minds in the industry.</p>
+<ul>
+<li>Meetups, Tweetups, and parties.<br />
+From <a href="http://www.vmunderground.com/">#VMunderground</a> to <a href="http://www.vbeers.org/">#vBeers</a>, there are plenty of community and vendor sponsored activities to check out. The comprehensive list can be found here: http://www.vmworld.com/community/gatherings. Even if you didn&#8217;t make it in time to sign up for one officially, crash one! Many times, they scan your badge and still let you in (I&#8217;ve heard). <img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f61b.png" alt="😛" class="wp-smiley" style="height: 1em; max-height: 1em;" /></li>
+<li>Start a conversation.<br />
+I&#8217;m totally an introvert by nature, and so are most of the people attending VMworld.  At mealtimes, this resulted in many people sitting and eating by themselves at tables for 6.  My introverted nature begged me to do the same, but I forced myself to sit at a table with somebody else and start a conversation.  In literally every case, just saying &#8220;Mind if I join you? &#8230; So, where are you from?&#8221; resulted in great conversation.  So, take the initiative and be the one to break the ice!  Whether sitting at a meal, or if you happen to see one of your favorite tech bloggers &#8211; I found it very worthwhile to say hello.</li>
+<li>Embrace social media.<br />
+Social media outlets like Twitter, Instagram, Vine and Facebook sometimes elicit a negative connotation or response. Granted, these outlets are used for some of the more annoying things our human race has to offer.  This shouldn&#8217;t stop you from using them though.  I found Twitter particularly helpful &#8211; using hashtags for my sessions, finding new ideas, and overall interacting with colleagues was a really positive experience. You can ask about a good place to eat, trade ideas/thoughts on new products, and get in on running jokes.  Social media gives you a whole new level of interaction detail within VMworld, and you really should use it.</li>
+</ul>
+<p><strong>What would I do differently?</strong><br />
+My rookie foray into the enigma that is VMworld was bound to be a learning experience.  As noted before, I don&#8217;t travel very often.  I tried to counteract that lack of experience with planning and using available technologies. But there are still some things I would do differently next year.</p>
+<ul>
+<li>Register early.<br />
+I got a confirmation that I was going to VMworld pretty late in the game.  I think schedule builder kicks off in May, and I finally registered in early August. By then, many sessions are filled up.  I still got into plenty of great sessions, and you can always get in the standby line for ones that are full.  Not to mention I had to stay up at Fisherman&#8217;s wharf because all the other close hotels were booked.  This did give me the opportunity to ride the city&#8217;s impressive public transit system though.</li>
+<li>Branch out.<br />
+My tendency was to pick sessions for products that I use every day and am familiar with.  What is the point of that? Learn a little bit more or hope for one new feature you may not have known about before?  It&#8217;s probably better in retrospect to look for sessions or products you don&#8217;t use or don&#8217;t know anything about.  That way, you can learn ALOT and you will find yourself brainstorming of ways you could leverage these new products.</li>
+<li>Be a session detective.<br />
+The sessions available offer clues to the announcements that will be made at VMworld.  &#8220;What&#8217;s new in vSphere&#8221; sessions available? Well then they&#8217;re going to announce a new version of vSphere.  Keep an eye out for new products or what may be updates to existing products and you can have a head start on your session scheduling.</li>
+</ul>
+<p><strong>Was it worth it?</strong><br />
+Absolutely. It was an awesome experience.  I&#8217;m sure part of that is it being my first time, but I found myself coming up with new ideas and feeling inspired to learn more during and after VMworld.  You end up hearing how another enterprise solved a tough problem, or how a cool product helped an organization expand or take a next step and you can&#8217;t help but take that enthusiasm away with you.  It re-energized me in my career and I felt great about my industry and skillset. VMworld 2013 may have been my first, but I sincerely hope it is not even close to my last.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>http://www.ericvb.com/archives/vmworld-day-4-the-unofficial-summary-guide/feed</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>VMworld: Day 3 &#8211; Things to Bring</title>
+		<link>http://www.ericvb.com/archives/vmworld-day-3-things-to-bring</link>
+					<comments>http://www.ericvb.com/archives/vmworld-day-3-things-to-bring#comments</comments>
+		
+		<dc:creator><![CDATA[Vanberge]]></dc:creator>
+		<pubDate>Wed, 28 Aug 2013 06:27:46 +0000</pubDate>
+				<category><![CDATA[Tech]]></category>
+		<category><![CDATA[VMware]]></category>
+		<category><![CDATA[VMworld]]></category>
+		<guid isPermaLink="false">http://www.ericvb.com/?p=3612</guid>
+
+					<description><![CDATA[The third part in this VMworld blog series will focus on the things I have found myself glad to have brought, or that I wish I had brought. A messenger bag/back pack This is one of the things I&#8217;m going to most strongly advocate.  &#8220;Wait, don&#8217;t you get a back pack when you register, dude?&#8221; [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>The third part in this VMworld blog series will focus on the things I have found myself glad to have brought, or that I wish I had brought.</p>
+<p><strong>A messenger bag/back pack</strong><br />
+This is one of the things I&#8217;m going to most strongly advocate.  &#8220;Wait, don&#8217;t you get a back pack when you register, dude?&#8221; Yes, you get a backpack registering for VMworld &#8211; but that means so did 22,000 other people.  I would rather carry around my own DIFFERENT bag and not worry about mixing it up with somebody else&#8217;s.  Whether your choice is a backpack or messenger style, a bag is an absolute must.  It carries everything else you need; as well as all the other crap that you don&#8217;t need but will undoubtedly end up with.</p>
+<p><strong>A small computing device</strong><br />
+Whether your mobile computing device of choice is an iPad, a tablet, or an ultrabook &#8211; bring it.  Keeping up on news between sessions, BYOD labs, taking notes, social media, etc etc etc&#8230; And, since you&#8217;re going to be lugging this device around for an entire week, you don&#8217;t want it to be some 11 pound monster laptop.  My Lenovo ultrabook is about 2 lbs and has been a great fit.  Some type of mobile computing device is a must at VMworld.  In fact, if you&#8217;re considering attending VMworld and not bringing one, then you are a bad person.</p>
+<p><strong>A wifi-tether hotspot capable mobile phone</strong><br />
+The wifi at VMworld can get pretty painful when thousands of people with multiple devices connect to it.  Therefore, you will want to have a backup plan.  Since the 4G LTE signal is pretty solid in San Francisco, I&#8217;ve found myself using my mobile phone as an access point more often than traditional Wi-Fi (even at my hotel).  If you have an android phone, you can root it and install Wi-Fi tether.  Otherwise, there may be extra costs associated with tethering.  In those cases, you&#8217;ll just have to weigh your online needs vs. the costs.  Granted, this is not a silver bullet solution.  Because some of the lower level sessions end up with poor signal and 4G LTE can also suffer speed issues with so many devices connected in a small area.</p>
+<p><strong>Headphones</strong><br />
+Listen to music in between sessions.  Listen to music walking around the city.  Keep headphones in your ears even if they are plugged into nothing.  This way, you can talk to the vendors that you actually want to talk to vs being pestered non-stop.  People are really alot less likely to talk to you when you have headphones on, so it gives you the chance to be the one choose your conversations.</p>
+<p><strong>Sunglasses</strong><br />
+The Moscone Center seems to be built out of highly reflective mirrors that amplify the sunlight into the main lobbies no matter what building you&#8217;re in, and no matter what time of day or angle of the sun.  Even a short walk across the street from Moscone North to Moscone South is difficult.  I found myself pulling out sunglasses for every short walk outside and keeping them on until I made it past the lobbies of the main conference centers.  Then you&#8217;ll also have the bonus of vendors failing to make eye contact with you.  Therefore, I highly recommend sunglasses and headphones be utilized together for a complete vendor repellent solution.  Don&#8217;t get me wrong, there are plenty of great products and solutions to check out from plenty of really intresting and reputable vendors.  I just want to be in control of how often my badge gets scanned and only by the people at booths I feel like visiting.</p>
+<p><strong>Comfortable shoes</strong><br />
+The official VMworld faq will tell you that the attire for the conference should be &#8220;business casual&#8221;.  That is BS.  People will wear t-shirts, shorts, sandals, and really anything in between.  And you know what? Nobody cares. I&#8217;m not telling  you to dress like a schmuck.  I&#8217;m telling you that being comfortable is more important than looking your best.  Even if you manage to book a hotel right next to Moscone, you end up walking a LOT.  Overall, just make sure to avoid buying a new pair of dress shoes and thinking you&#8217;ll break them in at VMworld.  There&#8217;s nothing wrong with a decent looking pair of comfortable casual shoes.</p>
+<p><strong>A charger for every device you&#8217;re carrying</strong><br />
+The heavy use of my phone and ultrabook left their respective batteries hurting.  I dimmed my laptop&#8217;s screen to try to conserve as much as possible, but I still had to charge it later in the afternoon.  I used my phone&#8217;s GPS constantly to get to dinners, vendor events, and off-site sessions.  I would not have been happy should either of these things ended up with a dead battery later in the day.   Luckily I could jack my phone into my ultrabook and keep it juicing up during sessions.</p>
+<p>This is still my first VMworld, so this list may grow or change &#8211; but so far these are my &#8220;must have&#8221; items that I take with me and use constantly throughout the day.</p>
+<p>&nbsp;</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>http://www.ericvb.com/archives/vmworld-day-3-things-to-bring/feed</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>VMworld: Day 2</title>
+		<link>http://www.ericvb.com/archives/vmworld-day-2</link>
+					<comments>http://www.ericvb.com/archives/vmworld-day-2#respond</comments>
+		
+		<dc:creator><![CDATA[Vanberge]]></dc:creator>
+		<pubDate>Tue, 27 Aug 2013 06:09:01 +0000</pubDate>
+				<category><![CDATA[Tech]]></category>
+		<category><![CDATA[VMware]]></category>
+		<category><![CDATA[VMworld]]></category>
+		<guid isPermaLink="false">http://www.ericvb.com/?p=3610</guid>
+
+					<description><![CDATA[As day one resulted in me planning and feeling like I knew exactly what to do, it is only fair that day 2 show me exactly what I should not have done.  Here is a list of my first things I&#8217;ve learned not to do at VMworld. Do not schedule back to back sessions during [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>As day one resulted in me planning and feeling like I knew exactly what to do, it is only fair that day 2 show me exactly what I should not have done.  Here is a list of my first things I&#8217;ve learned not to do at VMworld.</p>
+<ul>
+<li>Do not schedule back to back sessions during lunch.  The food is certainly better at 11.30am vs 1:45 pm.</li>
+<li>Do not schedule sessions close together in time, but far apart in distance</li>
+<li>Do not think you will have reliable Wi-Fi/LTE when there are 21,000 people using both of those on multiple devices.</li>
+<li>Do not wear your &#8220;VMworld 2013&#8221; T-shirt that you got at registration to the first day of sessions.  Come on now.</li>
+<li>Don&#8217;t take pictures of slides during the presentations.  You can download them later.</li>
+</ul>
+<p>Some of that is joking, some of that is serious.</p>
+<p>Getting serious now:  My first day of real sessions was probably too overbooked.  I found myself distracted during current sessions trying to figure out how much time I had to make it to my next session.  I should have left a bit more time in between to allow for things like snacks, walking, drinks, bathroom breaks, and other extra curriculars like the hangout space and hands-on labs.  I will be adjusting my schedule accordingly, because I think I&#8217;m confident in saying that there is just as much to be gained from &#8220;unofficial&#8221; networking and experiences as there is from the actual sessions.  Ultimately, cramming in as many sessions as possible is not necessarily the best way to do it.</p>
+<p>Noted, VMworld.  Tomorrow is another day!</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>http://www.ericvb.com/archives/vmworld-day-2/feed</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>VMworld: Day 1</title>
+		<link>http://www.ericvb.com/archives/vmworld-day-1</link>
+					<comments>http://www.ericvb.com/archives/vmworld-day-1#respond</comments>
+		
+		<dc:creator><![CDATA[Vanberge]]></dc:creator>
+		<pubDate>Mon, 26 Aug 2013 03:14:15 +0000</pubDate>
+				<category><![CDATA[Tech]]></category>
+		<category><![CDATA[VMware]]></category>
+		<category><![CDATA[VMworld]]></category>
+		<guid isPermaLink="false">http://www.ericvb.com/?p=3605</guid>
+
+					<description><![CDATA[The 10th anniversary rendition of VMware&#8217;s flagship tech conference is officially under way! I&#8217;ve been a user and fan of VMware for about 8 years, thus making it a mega techie sin that this is only now my maiden voyage.  I&#8217;ve never been lucky enough to make it out west for VMworld until now, and [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>The 10th anniversary rendition of VMware&#8217;s flagship tech conference is officially under way!</p>
+<p>I&#8217;ve been a user and fan of VMware for about 8 years, thus making it a mega techie sin that this is only now my maiden voyage.  I&#8217;ve never been lucky enough to make it out west for VMworld until now, and being a VMworld rookie is already an interesting experience. There is SO much to do that the entire experience is extremely overwhelming, especially for a first timer.</p>
+<ul>
+<li>Hundreds of breakout sessions, hands on labs, and keynotes</li>
+<li>Hundreds of presenters</li>
+<li>Afterparties, meetups, tweetups, and vendor receptions</li>
+<li>One of America&#8217;s coolest cities to explore</li>
+</ul>
+<p>My first strategy for making the most of VMworld was to concentrate on being a savvy traveler.  I don&#8217;t travel much, so this is kind of a big deal for me.  I got electronic boarding passes, I put my hotel, flight info, and VMworld agenda into a synced Evernote notebook, and finally I planned out routes to/from my hotel via both hotel shuttle and Frisco&#8217;s impressive public transit system (<a href="http://tripplanner.transit.511.org/">http://tripplanner.transit.511.org</a> is very helpful).  This all worked out pretty well, leaving me with a smooth travel experience.  It&#8217;s also really nice to  have a couple of free/low cost methods of getting around this city.  The first thing I did after checking into my hotel was to ride a cable car, which I found to be a really fun way to get around.  The Powell Street cable car was especially impressive because it provided some spectacular views of the city.  At Powell/California, for example, I could see all the way out to the bay bridge down a street luge&#8217;s dream of a hill.   All together, this planning and preparation left me feeling ready to hit the ground running when arriving in SFO.</p>
+<p>My next strategy was to not worry too much about my sessions and labs.  Sure, you want to get into some of these things that are relevant to your interests and career, but you have HUNDREDS to choose from.  You could go over, over again, and still be making changes on your 5th time through schedule builder.  Sign up for the ones that make sense and then don&#8217;t worry about it anymore.  VMware makes them all available for download afterwards anyway.  Ultimately I forced myself to stop making changes and focus on making the most of the ones I picked.</p>
+<p>Day 1 for me was designed to be registration, check in, and getting my bearings in the city.  It has been a success, and I&#8217;m looking forward to the rest of this experience.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>http://www.ericvb.com/archives/vmworld-day-1/feed</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>My Cellphone History</title>
+		<link>http://www.ericvb.com/archives/my-cellphone-history</link>
+					<comments>http://www.ericvb.com/archives/my-cellphone-history#respond</comments>
+		
+		<dc:creator><![CDATA[Vanberge]]></dc:creator>
+		<pubDate>Thu, 25 Jul 2013 04:06:41 +0000</pubDate>
+				<category><![CDATA[Tech]]></category>
+		<guid isPermaLink="false">http://www.ericvb.com/?p=3571</guid>
+
+					<description><![CDATA[Somewhat on a whim, I decided to compile a list of every cell phone I have ever owned.  It was challenging to come back with some of the models, but I have done so successfully. I may update with pictures of all these rancid devices at some point. Centurytel Nokia 5190 Alltel LG vx6000 Alltel [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Somewhat on a whim, I decided to compile a list of every cell phone I have ever owned.  It was challenging to come back with some of the models, but I have done so successfully.  I may update with pictures of all these rancid devices at some point.</p>
+<ul>
+<li>Centurytel Nokia 5190</li>
+<li>Alltel LG vx6000</li>
+<li>Alltel Motorola v710</li>
+<li>Alltel Motorola Razr v3m</li>
+<li>Sprint/Nextel Blackberry 7510</li>
+<li>Sprint/Nextel Blackberry 7520</li>
+<li>Sprint/Nextel Blackberry 7100i</li>
+<li>Sprint Blackberry 8830 world edition</li>
+<li>Sprint 8830 world edition (again, job change)</li>
+<li>Verizon Blackberry Curve 8330</li>
+<li>Verizon Blackberry Storm 1</li>
+<li>Verizon Blackberry Storm 2</li>
+<li>Sprint Epic 4g Touch Galaxy S2</li>
+<li>Verizon Samsung Galaxy S4</li>
+</ul>
+<p>By far, the worst phone on this list is the Blackberry Storm 1.  RIM deserved to fail after releasing that device.  </p>
+]]></content:encoded>
+					
+					<wfw:commentRss>http://www.ericvb.com/archives/my-cellphone-history/feed</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

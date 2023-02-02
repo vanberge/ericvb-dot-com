@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Six Feet Under &#8211; Death or Vanbergs	</title>
+	<atom:link href="http://www.ericvb.com/archives/six-feet-under-death-or-vanbergs/feed" rel="self" type="application/rss+xml" />
+	<link>http://www.ericvb.com/archives/six-feet-under-death-or-vanbergs</link>
+	<description>A Distinction Without a Difference...</description>
+	<lastBuildDate>Sat, 07 Feb 2009 07:16:55 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.1</generator>
+	<item>
+		<title>
+		By: vanlandw		</title>
+		<link>http://www.ericvb.com/archives/six-feet-under-death-or-vanbergs#comment-11613</link>
+
+		<dc:creator><![CDATA[vanlandw]]></dc:creator>
+		<pubDate>Sat, 07 Feb 2009 07:16:55 +0000</pubDate>
+		<guid isPermaLink="false">http://www.palmerforpresident.com/?p=538#comment-11613</guid>
+
+					<description><![CDATA[I only love my knife vanberge...]]></description>
+			<content:encoded><![CDATA[<p>I only love my knife vanberge&#8230;</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

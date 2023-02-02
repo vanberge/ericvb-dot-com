@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>wordpress &#8211; Eric VB.com</title>
+	<atom:link href="http://www.ericvb.com/archives/tag/wordpress/feed" rel="self" type="application/rss+xml" />
+	<link>http://www.ericvb.com</link>
+	<description>A Distinction Without a Difference...</description>
+	<lastBuildDate>Tue, 15 Nov 2011 16:28:00 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.1</generator>
+	<item>
+		<title>PHP Site Tweaks</title>
+		<link>http://www.ericvb.com/archives/php-site-tweaks</link>
+					<comments>http://www.ericvb.com/archives/php-site-tweaks#comments</comments>
+		
+		<dc:creator><![CDATA[Vanberge]]></dc:creator>
+		<pubDate>Tue, 15 Nov 2011 16:19:44 +0000</pubDate>
+				<category><![CDATA[Site related]]></category>
+		<category><![CDATA[awesome]]></category>
+		<category><![CDATA[php]]></category>
+		<category><![CDATA[wordpress]]></category>
+		<guid isPermaLink="false">http://www.ericvb.com/?p=1540</guid>
+
+					<description><![CDATA[Recently I&#8217;ve made a couple of subtle tweaks to my theme to fix minor issues that have bugged me for some time. 1: The Completion of Twitter De-integration First on my list was to button up the exclusion of my Twitter category.  For some time, I&#8217;ve been using the Twitter Tools plugin to create weekly [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Recently I&#8217;ve made a couple of subtle tweaks to my theme to fix minor issues that have bugged me for some time.</p>
+<p><strong>1: The Completion of Twitter De-integration</strong><br />
+First on my list was to button up the exclusion of my Twitter category.  For some time, I&#8217;ve been using the <a href="http://wordpress.org/extend/plugins/twitter-tools/">Twitter Tools</a> plugin to create weekly digest posts of all my Twitter activity.  I appreciate this functionality quite a lot.  I like being able to search a subject and find my WordPress blog entries AND tweets on the subject.  However, I didn&#8217;t like spamming readers via RSS or pushing down the real content of my site with what I&#8217;d consider &#8220;archival&#8221; content.  Ultimately I wanted to exclude the Twitter category from every possible area except if you actually click on the Twitter header link to get to that category.</p>
+<p>Using a couple <a href="http://www.ericvb.com/archives/better-twitter-integration">custom tweaks</a> to my theme&#8217;s functions.php file, I was able to mostly implement this back in 2010.  The Twitter category primarily only shows up if you go the category page.  But, recently I also happened to notice that the single posts have links to the previous post and next post; and unfortunately this loop didn&#8217;t read the standard WordPress query.  The previous/next post links embrace their own functions completely.  As such, these were showing the posts from my Twitter category.  <img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f641.png" alt="🙁" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>With a little research on the functions specific to post navigation, I found it was pretty easy to ditch the Twitter category here as well.</p>
+<p>Original code for the previous/next links:<br />
+<code>&lt;?php previous_post_link( '%link', '&lt;span&gt;'<br />
+. _x( '&amp;larr;', 'Previous post link', 'twentyten' ) . '&lt;/span&gt; %title' ); ?&gt;</code></p>
+<p>Updated code for the previous/next links to exclude my Twitter category:<br />
+<code>&lt;?php previous_post_link( '%link', '&lt;span&gt;'<br />
+. _x( '&amp;larr;', 'Previous post link', 'twentyten' ) . '&lt;/span&gt; %title', FALSE, '28'  ); ?&gt;</code></p>
+<p>The FALSE indicates that the next/previous don&#8217;t have to be from the same category, and then the &#8217;28&#8217; is the last variable which is &#8220;excluded_categories&#8221;.</p>
+<p>So, the Twitter category now will really only show up if you&#8217;re searching or if you&#8217;re clicking on the Twitter link in the header nav bar.  I love WordPress.</p>
+<p><strong>2: Double Sentence Spacing</strong><br />
+Next up is the effect of my typing style that I cannot break.  When I&#8217;m done typing a sentence, I hit the spacebar twice.  This is certainly a debated point as to whether single or double sentence spacing is correct &#8211; especially on the internet.  It creates &#8220;rivers&#8221; of white space at times that can be a distraction, and can be a waste of page space and characters in database tables.  Even worse, my theme would display a quirky structure at times by moving that 2nd space onto the leading edge of a new line, hence starting the new line one space indented from the rest of my site.  It looked terrible.</p>
+<p>Example of bad spacing, note the clear indent on the 2nd line:<br />
+<a href="http://ericvb.com/wp-content/uploads/2011/11/spacing-bad.jpg"><img decoding="async" loading="lazy" class="alignnone size-full wp-image-1550" title="spacing-bad" src="http://ericvb.com/wp-content/uploads/2011/11/spacing-bad.jpg" alt="Note the clear space indenting the 2nd line" width="259" height="81" /></a></p>
+<p>In my opinion, it&#8217;s better to single space.  I just can&#8217;t seem to do it.  I can&#8217;t manage to break that habit.  So, I scoured the internet for ways to make WordPress do it for me.  It didn&#8217;t take long for me to find a simple and easy function to handle this.</p>
+<p><code>function remove_spaces($the_content) {<br />
+return preg_replace( '/[\p{Z}\s]{2,}/u', ' ', $the_content );<br />
+}<br />
+add_filter('the_content', 'remove_spaces');</code></p>
+<p>I added that code to my theme&#8217;s custom function.php file (the same place where I exclude the Twitter category), and all is well!  Wordpress adjusts my double spaced content into single space and displays it beautifully:<br />
+<a href="http://ericvb.com/wp-content/uploads/2011/11/spacing-good.jpg"><img decoding="async" loading="lazy" class="alignnone size-full wp-image-1549" title="spacing-good" src="http://ericvb.com/wp-content/uploads/2011/11/spacing-good.jpg" alt="" width="259" height="81" /></a></p>
+<p>I love WordPress</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>http://www.ericvb.com/archives/php-site-tweaks/feed</wfw:commentRss>
+			<slash:comments>4</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Better Twitter Integration</title>
+		<link>http://www.ericvb.com/archives/better-twitter-integration</link>
+					<comments>http://www.ericvb.com/archives/better-twitter-integration#comments</comments>
+		
+		<dc:creator><![CDATA[Vanberge]]></dc:creator>
+		<pubDate>Fri, 02 Apr 2010 16:39:16 +0000</pubDate>
+				<category><![CDATA[Site related]]></category>
+		<category><![CDATA[Tech]]></category>
+		<category><![CDATA[Twitter]]></category>
+		<category><![CDATA[wordpress]]></category>
+		<guid isPermaLink="false">http://www.ericvb.com/?p=1104</guid>
+
+					<description><![CDATA[I both love and hate the Twitter-Tools plugin for WordPress. On one hand; I really like how it can integrate Twitter into my blog via both sidebar widget and weekly Twitter digest posts&#8230; But, on the other hand, I was really starting to feel like these digest posts were cluttering up both my blog and [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I both love and hate the <a href="http://wordpress.org/extend/plugins/twitter-tools/">Twitter-Tools plugin</a> for WordPress.</p>
+<p>On one hand; I really like how it can integrate Twitter into my blog via both sidebar widget and weekly Twitter digest posts&#8230;  But, on the other hand, I was really starting to feel like these digest posts were cluttering up both my blog and my archives.  Several times recently I have found myself scrolling back through way too many Twitter digest posts in order to get at my ACTUAL blog posts and content that I had written.  Basically, I came to the conclusion that &#8220;I didn&#8217;t like this&#8221; and I had to modify how Twitter integrated with my Blog.</p>
+<p>Today I&#8217;ve taken the steps necessary to achieve what I believe is the best of both worlds.  I now have weekly Twitter digest post created as usual; but they do not display in my main blog page or in my archives page &#8212; AND you have to specifically navigate to a &#8220;Twitter&#8221; page in order to see them at all.</p>
+<p>This was actually a little more challenging for me than I&#8217;d like to admit &#8211; but I&#8217;ll go through the steps below:</p>
+<p><strong>First: Exclude the Category</strong><br />
+To block out my Twitter category from displaying on my blog and archives, I added the following function to the functions.php file within my theme directory.  The &#8220;-28&#8221; below refers to the corresponding category ID for the Twitter category.  This code made it so all posts within the  &#8220;Twitter&#8221; category are ignored in both my blog page and my archives.</p>
+<p>        <code>function exclude_category($query){<br />
+        if ($query->is_home) {<br />
+        $query->set('cat', '-28');<br />
+        }<br />
+return $query;<br />
+}<br />
+add_filter('pre_get_posts', 'exclude_category');</code></p>
+<p><strong>Second: Make the Category &#8220;Navigateable&#8221; from the Main Page</strong><br />
+The more challenging part for me was figuring out an &#8220;easy&#8221; way to navigate to these Twitter digest posts.  It sounded like a fairly easy thing to do; but I had a surprisingly difficult time with it.</p>
+<p>I experimented with some .htacces redirection, and also some plugins that claimed to do exactly what I wanted (but, sucked).  In the end; I chose to just modify my theme&#8217;s main loop logic and save it as a new page template.  I copied the the text from my theme&#8217;s index.php file, and and pasted it into my a file called &#8220;twitter.php&#8221; which I saved as a new page template.  I then replaced the following code:</p>
+<p><code>if (have_posts()) :<br />
+while (have_posts()) : the_post();</code></p>
+<p>With this code:<br />
+<code>$recent = new WP_Query();<br />
+$recent->query('cat=28');<br />
+if ($recent->have_posts()) :<br />
+while($recent->have_posts()) : $recent->the_post();</code></p>
+<p>This actually worked fairly well, and in retrospect is very easy &#8211; it just took me quite awhile to arrive at this solution!  The final step here was then to add a page called &#8220;Twitter&#8221; via the administration panel; and simply change the page to use this Twitter.php template instead of the default page template.</p>
+<p>Voila, a Twitter page that you can navigate to which displays all the weekly digest Twitter posts created automatically by the Twitter Tools plugin.</p>
+<p>**** UPDATE ****<br />
+Vanlandw had a great recommendation about excluding these Twitter digest posts from my RSS feeds as well.  That was very simple to do&#8230;  My exclude function in the functions.php file in my theme directory now reads as such:<br />
+<code>function exclude_category($query){<br />
+        if ($query->is_home || $query->is_feed) {<br />
+        $query->set('cat', '-28');<br />
+        }<br />
+return $query;<br />
+}</code></p>
+<p>And, now the Twitter digest posts are excluded from my RSS feed as well!  <img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" />  WordPress and PHP are both awesome.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>http://www.ericvb.com/archives/better-twitter-integration/feed</wfw:commentRss>
+			<slash:comments>6</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Plugin Transfusion &#8211; Netflix-X2</title>
+		<link>http://www.ericvb.com/archives/plugin-transfusion-netflix-x2</link>
+					<comments>http://www.ericvb.com/archives/plugin-transfusion-netflix-x2#comments</comments>
+		
+		<dc:creator><![CDATA[Vanberge]]></dc:creator>
+		<pubDate>Tue, 23 Feb 2010 03:31:12 +0000</pubDate>
+				<category><![CDATA[Netflix-X2]]></category>
+		<category><![CDATA[wordpress]]></category>
+		<guid isPermaLink="false">http://www.ericvb.com/?p=860</guid>
+
+					<description><![CDATA[**Updated** 2/24/2010 I kept the motivational momentum going here and have made this plugin totally widget-capable. Totally tested and declared stable as version 1.3! Updated download links. Over a year ago, I decided to take Albert Banks&#8217; WordPress Netflix plugin, fork it, and maintain it as a new plugin&#8230; I did this because Albert&#8217;s version [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>**Updated** 2/24/2010<br />
+I kept the motivational momentum going here and have made this plugin totally widget-capable.  Totally tested and declared stable as version 1.3!  Updated download links.</p>
+<p>Over a year ago, I decided to take <a href="http://www.albertbanks.com/2006/01/04/wordpress-netflix-plugin-2/">Albert Banks&#8217; WordPress Netflix plugin</a>, fork it, and maintain it as a new plugin&#8230;</p>
+<p>I did this because Albert&#8217;s version didn&#8217;t support newer RSS feeds that Netflix provided, and it lacked some functionality that I desperately wanted to have (displaying movie reviews I&#8217;ve written on the Netflix site).  So, I decided to maintain my own version for better, and for worse.</p>
+<p>My interest and motivation to work on this plugin has drastically diminished lately &#8211; but today I got a transfusion of sheer inspiration to do some much needed house-keeping.  Ever since it&#8217;s inception in 2006 with Albert&#8217;s first version &#8211; this plugin has used functions from MagpieRSS to ingest and parse the RSS feeds.  Well, unbeknown to me this library has not been maintained since 2005 and never even made it out of beta status (even though wordpress&#8217; rss.php include file has it built in?).  I decided to bite the bullet today and make some modifications to my plugin&#8230;  Most notably it&#8217;s now using fetch_feed function from SimplePie vs Magpie&#8217;s fetch_rss function.</p>
+<p>I had to modify some of my other code for pulling descriptions, titles, and links &#8211; but one of the users of my plugin had already started that for me so I just had to take it the last mile.</p>
+<p>I did some other random cleanup, removed the annoying ^M characters that always seem to get in there when going from windows to linux, and I now call the rss.php include file instead of the depreciated rss-functions.php file.   All in all, it was a good day for the Netflix-X2 plugin&#8230;  maybe some day I will get around to improving the widget configuration!  Right now it just hacks together an unordered-list style widget and gives no other options.  but, hey&#8230; at least it is widgetized!</p>
+<p>Feel free to try the plugin out:<br />
+Download the latest release:  <a href="http://downloads.wordpress.org/plugin/netflix-x2.1.3.zip">http://downloads.wordpress.org/plugin/netflix-x2.1.3.zip</a></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>http://www.ericvb.com/archives/plugin-transfusion-netflix-x2/feed</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

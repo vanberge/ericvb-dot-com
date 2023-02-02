@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>linux &#8211; Eric VB.com</title>
+	<atom:link href="http://www.ericvb.com/archives/tag/linux/feed" rel="self" type="application/rss+xml" />
+	<link>http://www.ericvb.com</link>
+	<description>A Distinction Without a Difference...</description>
+	<lastBuildDate>Wed, 08 Feb 2017 04:40:59 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.1</generator>
+	<item>
+		<title>Installing the VMware Horizon View Client on Ubuntu 14.10</title>
+		<link>http://www.ericvb.com/archives/installing-the-vmware-horizon-view-client-on-ubuntu-14-10</link>
+					<comments>http://www.ericvb.com/archives/installing-the-vmware-horizon-view-client-on-ubuntu-14-10#respond</comments>
+		
+		<dc:creator><![CDATA[Vanberge]]></dc:creator>
+		<pubDate>Fri, 31 Oct 2014 18:24:08 +0000</pubDate>
+				<category><![CDATA[Tech]]></category>
+		<category><![CDATA[linux]]></category>
+		<category><![CDATA[sysadmin]]></category>
+		<category><![CDATA[VMware]]></category>
+		<guid isPermaLink="false">http://www.ericvb.com/?p=3738</guid>
+
+					<description><![CDATA[If you&#8217;re a Linux user, you will be happy to know that VMware offers a Linux version of it&#8217;s Horizon View client. However, it&#8217;s a bit of a strange release strategy. For Ubuntu, my distro of choice, VMware only offers the packages for the LTS versions of the popular OS. This is kind of a [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>If you&#8217;re a Linux user, you will be happy to know that VMware offers a Linux version of it&#8217;s <a href="https://www.vmware.com/support/viewclients/doc/horizon-view-client-linux-release-notes.html">Horizon View client</a>.  However, it&#8217;s a bit of a strange release strategy.  For Ubuntu, my distro of choice, VMware only offers the packages for the LTS versions of the popular OS. This is kind of a bummer because the LTS versions of Ubuntu Linux are only released every 2 years.  I really do not like running an OS that&#8217;s even one release behind.</p>
+<p>Well, I decided this just cannot stand.  I wanted to have a working View client on my latest Ubuntu 14.10 release which was not an LTS version.</p>
+<p>Google was surprisingly unhelpful here, only really offering suggestions on installing a 32 bit version and changing repositories in your sources.list file.  I did not really want to cross the streams that much on a fresh build, so I decided to try and find a cleaner way to get the Horizon View client installed.  This was actually quite a bit easier than I expected.</p>
+<p>The good news is, the packages VMware releases for the LTS versions of Ubuntu can pretty much install on any of the later versions of Ubuntu. Here&#8217;s how I did it:</p>
+<ul>
+<li>Browse to http://archive.canonical.com/ubuntu/pool/partner/v/vmware-view-client/ from your web browser and download the latest .deb package file.  At the time of this writing, the latest version is 2.2.0 for Ubuntu 14.04 LTS</li>
+<li>Open the file with archive manager and click &#8220;Install&#8221;, or install it from command line via
+<pre>sudo dpkg -i vmware-view-client_2.2.0-0ubuntu0.14.04_i386.deb</pre>
+</li>
+<li>The package should auto-resolve some dependencies for you and install successfully.</li>
+</ul>
+<p>That&#8217;s it!  You now have the VMware Horizon View client installed on the latest/greatest release of Ubuntu.  It&#8217;s been working great for me, and I hope it works just as well for anyone who comes across this. </p>
+]]></content:encoded>
+					
+					<wfw:commentRss>http://www.ericvb.com/archives/installing-the-vmware-horizon-view-client-on-ubuntu-14-10/feed</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

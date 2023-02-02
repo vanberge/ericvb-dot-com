@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: WoW	</title>
+	<atom:link href="http://www.ericvb.com/archives/wow/feed" rel="self" type="application/rss+xml" />
+	<link>http://www.ericvb.com/archives/wow</link>
+	<description>A Distinction Without a Difference...</description>
+	<lastBuildDate>Wed, 11 Mar 2009 21:05:43 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.1</generator>
+	<item>
+		<title>
+		By: Vo		</title>
+		<link>http://www.ericvb.com/archives/wow#comment-13011</link>
+
+		<dc:creator><![CDATA[Vo]]></dc:creator>
+		<pubDate>Wed, 11 Mar 2009 21:05:43 +0000</pubDate>
+		<guid isPermaLink="false">http://www.palmerforpresident.com/?p=545#comment-13011</guid>
+
+					<description><![CDATA[I am clearly ashamed of you.]]></description>
+			<content:encoded><![CDATA[<p>I am clearly ashamed of you.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

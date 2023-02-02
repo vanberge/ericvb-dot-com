@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: PHP Site Tweaks	</title>
+	<atom:link href="http://www.ericvb.com/archives/php-site-tweaks/feed" rel="self" type="application/rss+xml" />
+	<link>http://www.ericvb.com/archives/php-site-tweaks</link>
+	<description>A Distinction Without a Difference...</description>
+	<lastBuildDate>Thu, 17 Nov 2011 15:52:09 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.1</generator>
+	<item>
+		<title>
+		By: chouse		</title>
+		<link>http://www.ericvb.com/archives/php-site-tweaks#comment-18111</link>
+
+		<dc:creator><![CDATA[chouse]]></dc:creator>
+		<pubDate>Thu, 17 Nov 2011 15:52:09 +0000</pubDate>
+		<guid isPermaLink="false">http://www.ericvb.com/?p=1540#comment-18111</guid>
+
+					<description><![CDATA[I learned it when I learned how to type on a typewriter. I quickly forgot it though when I moved to PC typing. Single-space FTW.]]></description>
+			<content:encoded><![CDATA[<p>I learned it when I learned how to type on a typewriter. I quickly forgot it though when I moved to PC typing. Single-space FTW.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Jeffrey		</title>
+		<link>http://www.ericvb.com/archives/php-site-tweaks#comment-18108</link>
+
+		<dc:creator><![CDATA[Jeffrey]]></dc:creator>
+		<pubDate>Thu, 17 Nov 2011 13:43:10 +0000</pubDate>
+		<guid isPermaLink="false">http://www.ericvb.com/?p=1540#comment-18108</guid>
+
+					<description><![CDATA[By the way, you might want to move your double space filter to the save hook, so you are only doing it when the post is saved, instead of every single instance of the_content. Running that many regular expressions is just asking for trouble, performancewise]]></description>
+			<content:encoded><![CDATA[<p>By the way, you might want to move your double space filter to the save hook, so you are only doing it when the post is saved, instead of every single instance of the_content. Running that many regular expressions is just asking for trouble, performancewise</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Jeffrey		</title>
+		<link>http://www.ericvb.com/archives/php-site-tweaks#comment-18107</link>
+
+		<dc:creator><![CDATA[Jeffrey]]></dc:creator>
+		<pubDate>Thu, 17 Nov 2011 13:38:30 +0000</pubDate>
+		<guid isPermaLink="false">http://www.ericvb.com/?p=1540#comment-18107</guid>
+
+					<description><![CDATA[Thank for your twitter de-integration. And, where on earth did you pick up the double sentence space habit? People actually taught you to do that?]]></description>
+			<content:encoded><![CDATA[<p>Thank for your twitter de-integration. And, where on earth did you pick up the double sentence space habit? People actually taught you to do that?</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: vanlandw		</title>
+		<link>http://www.ericvb.com/archives/php-site-tweaks#comment-18096</link>
+
+		<dc:creator><![CDATA[vanlandw]]></dc:creator>
+		<pubDate>Wed, 16 Nov 2011 18:29:38 +0000</pubDate>
+		<guid isPermaLink="false">http://www.ericvb.com/?p=1540#comment-18096</guid>
+
+					<description><![CDATA[looks great vanberge gg on the Twitter stuff you did it perfectly]]></description>
+			<content:encoded><![CDATA[<p>looks great vanberge gg on the Twitter stuff you did it perfectly</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

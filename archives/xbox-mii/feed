@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Xbox &#8220;Mii&#8221;	</title>
+	<atom:link href="http://www.ericvb.com/archives/xbox-mii/feed" rel="self" type="application/rss+xml" />
+	<link>http://www.ericvb.com/archives/xbox-mii</link>
+	<description>A Distinction Without a Difference...</description>
+	<lastBuildDate>Mon, 28 Mar 2011 15:31:50 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.1</generator>
+	<item>
+		<title>
+		By: Vo		</title>
+		<link>http://www.ericvb.com/archives/xbox-mii#comment-11570</link>
+
+		<dc:creator><![CDATA[Vo]]></dc:creator>
+		<pubDate>Sun, 07 Dec 2008 12:00:47 +0000</pubDate>
+		<guid isPermaLink="false">http://www.palmerforpresident.com/?p=499#comment-11570</guid>
+
+					<description><![CDATA[Honestly, the receding hairline is classy.]]></description>
+			<content:encoded><![CDATA[<p>Honestly, the receding hairline is classy.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: I Couldn&#8217;t Help Myself at vanlandw.com		</title>
+		<link>http://www.ericvb.com/archives/xbox-mii#comment-11566</link>
+
+		<dc:creator><![CDATA[I Couldn&#8217;t Help Myself at vanlandw.com]]></dc:creator>
+		<pubDate>Wed, 03 Dec 2008 21:06:53 +0000</pubDate>
+		<guid isPermaLink="false">http://www.palmerforpresident.com/?p=499#comment-11566</guid>
+
+					<description><![CDATA[[...] an epic gatering of Xbox 360 Avatars&#8230;.jjafuller, and vanberge reunited!      &#171; 21 Towers - [...]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] an epic gatering of Xbox 360 Avatars&#8230;.jjafuller, and vanberge reunited!      &laquo; 21 Towers &#8211; [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Mickeyvb.	</title>
+	<atom:link href="http://www.ericvb.com/archives/mickeyvb/feed" rel="self" type="application/rss+xml" />
+	<link>http://www.ericvb.com/archives/mickeyvb</link>
+	<description>A Distinction Without a Difference...</description>
+	<lastBuildDate>Mon, 19 Jun 2006 23:40:40 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.1</generator>
+	<item>
+		<title>
+		By: mickeyvb		</title>
+		<link>http://www.ericvb.com/archives/mickeyvb#comment-286</link>
+
+		<dc:creator><![CDATA[mickeyvb]]></dc:creator>
+		<pubDate>Mon, 19 Jun 2006 23:40:40 +0000</pubDate>
+		<guid isPermaLink="false">http://www.palmerforpresident.com/?p=82#comment-286</guid>
+
+					<description><![CDATA[One of TWO Princes of Van...]]></description>
+			<content:encoded><![CDATA[<p>One of TWO Princes of Van&#8230;</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: vanlandw		</title>
+		<link>http://www.ericvb.com/archives/mickeyvb#comment-285</link>
+
+		<dc:creator><![CDATA[vanlandw]]></dc:creator>
+		<pubDate>Mon, 19 Jun 2006 04:51:53 +0000</pubDate>
+		<guid isPermaLink="false">http://www.palmerforpresident.com/?p=82#comment-285</guid>
+
+					<description><![CDATA[that was a very powerful update you issued long long ago :-[]]></description>
+			<content:encoded><![CDATA[<p>that was a very powerful update you issued long long ago :-[</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: mickeyvb		</title>
+		<link>http://www.ericvb.com/archives/mickeyvb#comment-284</link>
+
+		<dc:creator><![CDATA[mickeyvb]]></dc:creator>
+		<pubDate>Sun, 18 Jun 2006 22:34:09 +0000</pubDate>
+		<guid isPermaLink="false">http://www.palmerforpresident.com/?p=82#comment-284</guid>
+
+					<description><![CDATA[Thank you, son o mine...
+
+Prince of Van...
+
+nuff said...
+
+So let it be written, so let it be done!
+
+King Van hath spoken!]]></description>
+			<content:encoded><![CDATA[<p>Thank you, son o mine&#8230;</p>
+<p>Prince of Van&#8230;</p>
+<p>nuff said&#8230;</p>
+<p>So let it be written, so let it be done!</p>
+<p>King Van hath spoken!</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

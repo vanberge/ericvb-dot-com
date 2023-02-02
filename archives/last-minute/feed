@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Last Minute	</title>
+	<atom:link href="http://www.ericvb.com/archives/last-minute/feed" rel="self" type="application/rss+xml" />
+	<link>http://www.ericvb.com/archives/last-minute</link>
+	<description>A Distinction Without a Difference...</description>
+	<lastBuildDate>Thu, 07 May 2009 00:18:59 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.1</generator>
+	<item>
+		<title>
+		By: vanlandw		</title>
+		<link>http://www.ericvb.com/archives/last-minute#comment-13459</link>
+
+		<dc:creator><![CDATA[vanlandw]]></dc:creator>
+		<pubDate>Thu, 07 May 2009 00:18:59 +0000</pubDate>
+		<guid isPermaLink="false">http://www.palmerforpresident.com/?p=581#comment-13459</guid>
+
+					<description><![CDATA[Yeah you do jerky.
+
+Disturbed playing &quot;Hell&quot; in concert is something I will never forget.
+
+brb]]></description>
+			<content:encoded><![CDATA[<p>Yeah you do jerky.</p>
+<p>Disturbed playing &#8220;Hell&#8221; in concert is something I will never forget.</p>
+<p>brb</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: bun		</title>
+		<link>http://www.ericvb.com/archives/last-minute#comment-13425</link>
+
+		<dc:creator><![CDATA[bun]]></dc:creator>
+		<pubDate>Wed, 29 Apr 2009 16:18:36 +0000</pubDate>
+		<guid isPermaLink="false">http://www.palmerforpresident.com/?p=581#comment-13425</guid>
+
+					<description><![CDATA[i wish i could go!]]></description>
+			<content:encoded><![CDATA[<p>i wish i could go!</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

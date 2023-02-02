@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Forum&#8230;	</title>
+	<atom:link href="http://www.ericvb.com/archives/forum/feed" rel="self" type="application/rss+xml" />
+	<link>http://www.ericvb.com/archives/forum</link>
+	<description>A Distinction Without a Difference...</description>
+	<lastBuildDate>Sat, 02 Sep 2006 05:15:10 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.1</generator>
+	<item>
+		<title>
+		By: Vanberge		</title>
+		<link>http://www.ericvb.com/archives/forum#comment-410</link>
+
+		<dc:creator><![CDATA[Vanberge]]></dc:creator>
+		<pubDate>Mon, 28 Aug 2006 02:39:26 +0000</pubDate>
+		<guid isPermaLink="false">http://www.palmerforpresident.com/?p=97#comment-410</guid>
+
+					<description><![CDATA[Alright... I changed the Forum link up in the header so that it&#039;ll take a user to the forum with all the Scion blocks minimized.
+
+I created a template as a starting point.
+
+We&#039;ll see what happens.
+Vanbergs, post something in the forum.  you were the first person to sign up and you havent even made 1 post on www.thesciontc.com!]]></description>
+			<content:encoded><![CDATA[<p>Alright&#8230; I changed the Forum link up in the header so that it&#8217;ll take a user to the forum with all the Scion blocks minimized.</p>
+<p>I created a template as a starting point.</p>
+<p>We&#8217;ll see what happens.<br />
+Vanbergs, post something in the forum.  you were the first person to sign up and you havent even made 1 post on <a href="http://www.thesciontc.com" rel="nofollow ugc">http://www.thesciontc.com</a>!</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Vanberge		</title>
+		<link>http://www.ericvb.com/archives/forum#comment-406</link>
+
+		<dc:creator><![CDATA[Vanberge]]></dc:creator>
+		<pubDate>Mon, 28 Aug 2006 00:30:11 +0000</pubDate>
+		<guid isPermaLink="false">http://www.palmerforpresident.com/?p=97#comment-406</guid>
+
+					<description><![CDATA[I liked them too kramer...  It was like chatting on line; but slower.  :-)
+
+They just seem to go out of in and out of style  :&#039;-(]]></description>
+			<content:encoded><![CDATA[<p>I liked them too kramer&#8230;  It was like chatting on line; but slower.  🙂</p>
+<p>They just seem to go out of in and out of style  :&#8217;-(</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Kramer		</title>
+		<link>http://www.ericvb.com/archives/forum#comment-405</link>
+
+		<dc:creator><![CDATA[Kramer]]></dc:creator>
+		<pubDate>Sun, 27 Aug 2006 19:00:05 +0000</pubDate>
+		<guid isPermaLink="false">http://www.palmerforpresident.com/?p=97#comment-405</guid>
+
+					<description><![CDATA[I always liked the forums.  It was fun when everyone was using them.  I&#039;d give them another go.]]></description>
+			<content:encoded><![CDATA[<p>I always liked the forums.  It was fun when everyone was using them.  I&#8217;d give them another go.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

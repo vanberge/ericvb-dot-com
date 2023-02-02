@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Legend of the Red Dragon	</title>
+	<atom:link href="http://www.ericvb.com/archives/legend-of-the-red-dragon/feed" rel="self" type="application/rss+xml" />
+	<link>http://www.ericvb.com/archives/legend-of-the-red-dragon</link>
+	<description>A Distinction Without a Difference...</description>
+	<lastBuildDate>Sun, 08 Nov 2009 18:50:27 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.1</generator>
+	<item>
+		<title>
+		By: Kramer		</title>
+		<link>http://www.ericvb.com/archives/legend-of-the-red-dragon#comment-14079</link>
+
+		<dc:creator><![CDATA[Kramer]]></dc:creator>
+		<pubDate>Sun, 08 Nov 2009 18:50:27 +0000</pubDate>
+		<guid isPermaLink="false">http://www.ericvb.com/?p=760#comment-14079</guid>
+
+					<description><![CDATA[I love LoRD.]]></description>
+			<content:encoded><![CDATA[<p>I love LoRD.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: chousey		</title>
+		<link>http://www.ericvb.com/archives/legend-of-the-red-dragon#comment-14077</link>
+
+		<dc:creator><![CDATA[chousey]]></dc:creator>
+		<pubDate>Fri, 06 Nov 2009 01:40:40 +0000</pubDate>
+		<guid isPermaLink="false">http://www.ericvb.com/?p=760#comment-14077</guid>
+
+					<description><![CDATA[AN EPIC BATTLE FOR SURE]]></description>
+			<content:encoded><![CDATA[<p>AN EPIC BATTLE FOR SURE</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

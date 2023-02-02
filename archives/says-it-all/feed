@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Says it all	</title>
+	<atom:link href="http://www.ericvb.com/archives/says-it-all/feed" rel="self" type="application/rss+xml" />
+	<link>http://www.ericvb.com/archives/says-it-all</link>
+	<description>A Distinction Without a Difference...</description>
+	<lastBuildDate>Thu, 06 Nov 2008 01:46:01 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.1</generator>
+	<item>
+		<title>
+		By: Kramer		</title>
+		<link>http://www.ericvb.com/archives/says-it-all#comment-11507</link>
+
+		<dc:creator><![CDATA[Kramer]]></dc:creator>
+		<pubDate>Thu, 06 Nov 2008 01:46:01 +0000</pubDate>
+		<guid isPermaLink="false">http://www.palmerforpresident.com/?p=363#comment-11507</guid>
+
+					<description><![CDATA[I don&#039;t know if Obama drinks, but I bet he would bum a smoke off of you.
+
+I was not impressed with the booing during John McCain&#039;s speech last night.  Especially since I thought it was a very good speech, both him and Obama did excellent jobs with their speeches.
+
+When this election started, I hadn&#039;t planned to vote for Obama, but I&#039;m glad I did.  I don&#039;t know if he can get everything (or anything) done that he&#039;s promising to.  But I&#039;m willing to give him the chance.]]></description>
+			<content:encoded><![CDATA[<p>I don&#8217;t know if Obama drinks, but I bet he would bum a smoke off of you.</p>
+<p>I was not impressed with the booing during John McCain&#8217;s speech last night.  Especially since I thought it was a very good speech, both him and Obama did excellent jobs with their speeches.</p>
+<p>When this election started, I hadn&#8217;t planned to vote for Obama, but I&#8217;m glad I did.  I don&#8217;t know if he can get everything (or anything) done that he&#8217;s promising to.  But I&#8217;m willing to give him the chance.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Vo		</title>
+		<link>http://www.ericvb.com/archives/says-it-all#comment-11505</link>
+
+		<dc:creator><![CDATA[Vo]]></dc:creator>
+		<pubDate>Wed, 05 Nov 2008 21:41:31 +0000</pubDate>
+		<guid isPermaLink="false">http://www.palmerforpresident.com/?p=363#comment-11505</guid>
+
+					<description><![CDATA[I couldn&#039;t agree more.]]></description>
+			<content:encoded><![CDATA[<p>I couldn&#8217;t agree more.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

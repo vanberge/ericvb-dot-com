@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>VMware &#8211; Eric VB.com</title>
+	<atom:link href="http://www.ericvb.com/archives/tag/vmware/feed" rel="self" type="application/rss+xml" />
+	<link>http://www.ericvb.com</link>
+	<description>A Distinction Without a Difference...</description>
+	<lastBuildDate>Wed, 08 Feb 2017 04:40:59 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.1</generator>
+	<item>
+		<title>Installing the VMware Horizon View Client on Ubuntu 14.10</title>
+		<link>http://www.ericvb.com/archives/installing-the-vmware-horizon-view-client-on-ubuntu-14-10</link>
+					<comments>http://www.ericvb.com/archives/installing-the-vmware-horizon-view-client-on-ubuntu-14-10#respond</comments>
+		
+		<dc:creator><![CDATA[Vanberge]]></dc:creator>
+		<pubDate>Fri, 31 Oct 2014 18:24:08 +0000</pubDate>
+				<category><![CDATA[Tech]]></category>
+		<category><![CDATA[linux]]></category>
+		<category><![CDATA[sysadmin]]></category>
+		<category><![CDATA[VMware]]></category>
+		<guid isPermaLink="false">http://www.ericvb.com/?p=3738</guid>
+
+					<description><![CDATA[If you&#8217;re a Linux user, you will be happy to know that VMware offers a Linux version of it&#8217;s Horizon View client. However, it&#8217;s a bit of a strange release strategy. For Ubuntu, my distro of choice, VMware only offers the packages for the LTS versions of the popular OS. This is kind of a [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>If you&#8217;re a Linux user, you will be happy to know that VMware offers a Linux version of it&#8217;s <a href="https://www.vmware.com/support/viewclients/doc/horizon-view-client-linux-release-notes.html">Horizon View client</a>.  However, it&#8217;s a bit of a strange release strategy.  For Ubuntu, my distro of choice, VMware only offers the packages for the LTS versions of the popular OS. This is kind of a bummer because the LTS versions of Ubuntu Linux are only released every 2 years.  I really do not like running an OS that&#8217;s even one release behind.</p>
+<p>Well, I decided this just cannot stand.  I wanted to have a working View client on my latest Ubuntu 14.10 release which was not an LTS version.</p>
+<p>Google was surprisingly unhelpful here, only really offering suggestions on installing a 32 bit version and changing repositories in your sources.list file.  I did not really want to cross the streams that much on a fresh build, so I decided to try and find a cleaner way to get the Horizon View client installed.  This was actually quite a bit easier than I expected.</p>
+<p>The good news is, the packages VMware releases for the LTS versions of Ubuntu can pretty much install on any of the later versions of Ubuntu. Here&#8217;s how I did it:</p>
+<ul>
+<li>Browse to http://archive.canonical.com/ubuntu/pool/partner/v/vmware-view-client/ from your web browser and download the latest .deb package file.  At the time of this writing, the latest version is 2.2.0 for Ubuntu 14.04 LTS</li>
+<li>Open the file with archive manager and click &#8220;Install&#8221;, or install it from command line via
+<pre>sudo dpkg -i vmware-view-client_2.2.0-0ubuntu0.14.04_i386.deb</pre>
+</li>
+<li>The package should auto-resolve some dependencies for you and install successfully.</li>
+</ul>
+<p>That&#8217;s it!  You now have the VMware Horizon View client installed on the latest/greatest release of Ubuntu.  It&#8217;s been working great for me, and I hope it works just as well for anyone who comes across this. </p>
+]]></content:encoded>
+					
+					<wfw:commentRss>http://www.ericvb.com/archives/installing-the-vmware-horizon-view-client-on-ubuntu-14-10/feed</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>VMworld: Day 4 &#8211; The &#034;Unofficial&#034; Summary Guide</title>
+		<link>http://www.ericvb.com/archives/vmworld-day-4-the-unofficial-summary-guide</link>
+					<comments>http://www.ericvb.com/archives/vmworld-day-4-the-unofficial-summary-guide#respond</comments>
+		
+		<dc:creator><![CDATA[Vanberge]]></dc:creator>
+		<pubDate>Wed, 04 Sep 2013 14:17:00 +0000</pubDate>
+				<category><![CDATA[Tech]]></category>
+		<category><![CDATA[VMware]]></category>
+		<category><![CDATA[VMworld]]></category>
+		<guid isPermaLink="false">http://www.ericvb.com/?p=3618</guid>
+
+					<description><![CDATA[As VMworld 2013 came to a close, I found myself reflecting on the vast experience. Did I make the most of it? Was it worthwhile? What should I do differently next time? None of these questions had simple answers, so I took the time to summarize my thoughts and feelings on VMworld. Making the most [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>As VMworld 2013 came to a close, I found myself reflecting on the vast experience.  Did I make the most of it?  Was it worthwhile?  What should I do differently next time?  None of these questions had simple answers, so I took the time to summarize my thoughts and feelings on VMworld.</p>
+<p><strong>Making the most of it.</strong><br />
+If you&#8217;re going to VMworld, you&#8217;re probably already planning on sessions, group discussions, labs, etc. Attending these things goes without saying. However, what I think is nearly as equally important are all the unofficial or underground things you can participate in at VMworld.  Do some of these things and have some fun while you meet/greet with some of the great minds in the industry.</p>
+<ul>
+<li>Meetups, Tweetups, and parties.<br />
+From <a href="http://www.vmunderground.com/">#VMunderground</a> to <a href="http://www.vbeers.org/">#vBeers</a>, there are plenty of community and vendor sponsored activities to check out. The comprehensive list can be found here: http://www.vmworld.com/community/gatherings. Even if you didn&#8217;t make it in time to sign up for one officially, crash one! Many times, they scan your badge and still let you in (I&#8217;ve heard). <img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f61b.png" alt="😛" class="wp-smiley" style="height: 1em; max-height: 1em;" /></li>
+<li>Start a conversation.<br />
+I&#8217;m totally an introvert by nature, and so are most of the people attending VMworld.  At mealtimes, this resulted in many people sitting and eating by themselves at tables for 6.  My introverted nature begged me to do the same, but I forced myself to sit at a table with somebody else and start a conversation.  In literally every case, just saying &#8220;Mind if I join you? &#8230; So, where are you from?&#8221; resulted in great conversation.  So, take the initiative and be the one to break the ice!  Whether sitting at a meal, or if you happen to see one of your favorite tech bloggers &#8211; I found it very worthwhile to say hello.</li>
+<li>Embrace social media.<br />
+Social media outlets like Twitter, Instagram, Vine and Facebook sometimes elicit a negative connotation or response. Granted, these outlets are used for some of the more annoying things our human race has to offer.  This shouldn&#8217;t stop you from using them though.  I found Twitter particularly helpful &#8211; using hashtags for my sessions, finding new ideas, and overall interacting with colleagues was a really positive experience. You can ask about a good place to eat, trade ideas/thoughts on new products, and get in on running jokes.  Social media gives you a whole new level of interaction detail within VMworld, and you really should use it.</li>
+</ul>
+<p><strong>What would I do differently?</strong><br />
+My rookie foray into the enigma that is VMworld was bound to be a learning experience.  As noted before, I don&#8217;t travel very often.  I tried to counteract that lack of experience with planning and using available technologies. But there are still some things I would do differently next year.</p>
+<ul>
+<li>Register early.<br />
+I got a confirmation that I was going to VMworld pretty late in the game.  I think schedule builder kicks off in May, and I finally registered in early August. By then, many sessions are filled up.  I still got into plenty of great sessions, and you can always get in the standby line for ones that are full.  Not to mention I had to stay up at Fisherman&#8217;s wharf because all the other close hotels were booked.  This did give me the opportunity to ride the city&#8217;s impressive public transit system though.</li>
+<li>Branch out.<br />
+My tendency was to pick sessions for products that I use every day and am familiar with.  What is the point of that? Learn a little bit more or hope for one new feature you may not have known about before?  It&#8217;s probably better in retrospect to look for sessions or products you don&#8217;t use or don&#8217;t know anything about.  That way, you can learn ALOT and you will find yourself brainstorming of ways you could leverage these new products.</li>
+<li>Be a session detective.<br />
+The sessions available offer clues to the announcements that will be made at VMworld.  &#8220;What&#8217;s new in vSphere&#8221; sessions available? Well then they&#8217;re going to announce a new version of vSphere.  Keep an eye out for new products or what may be updates to existing products and you can have a head start on your session scheduling.</li>
+</ul>
+<p><strong>Was it worth it?</strong><br />
+Absolutely. It was an awesome experience.  I&#8217;m sure part of that is it being my first time, but I found myself coming up with new ideas and feeling inspired to learn more during and after VMworld.  You end up hearing how another enterprise solved a tough problem, or how a cool product helped an organization expand or take a next step and you can&#8217;t help but take that enthusiasm away with you.  It re-energized me in my career and I felt great about my industry and skillset. VMworld 2013 may have been my first, but I sincerely hope it is not even close to my last.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>http://www.ericvb.com/archives/vmworld-day-4-the-unofficial-summary-guide/feed</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>VMworld: Day 3 &#8211; Things to Bring</title>
+		<link>http://www.ericvb.com/archives/vmworld-day-3-things-to-bring</link>
+					<comments>http://www.ericvb.com/archives/vmworld-day-3-things-to-bring#comments</comments>
+		
+		<dc:creator><![CDATA[Vanberge]]></dc:creator>
+		<pubDate>Wed, 28 Aug 2013 06:27:46 +0000</pubDate>
+				<category><![CDATA[Tech]]></category>
+		<category><![CDATA[VMware]]></category>
+		<category><![CDATA[VMworld]]></category>
+		<guid isPermaLink="false">http://www.ericvb.com/?p=3612</guid>
+
+					<description><![CDATA[The third part in this VMworld blog series will focus on the things I have found myself glad to have brought, or that I wish I had brought. A messenger bag/back pack This is one of the things I&#8217;m going to most strongly advocate.  &#8220;Wait, don&#8217;t you get a back pack when you register, dude?&#8221; [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>The third part in this VMworld blog series will focus on the things I have found myself glad to have brought, or that I wish I had brought.</p>
+<p><strong>A messenger bag/back pack</strong><br />
+This is one of the things I&#8217;m going to most strongly advocate.  &#8220;Wait, don&#8217;t you get a back pack when you register, dude?&#8221; Yes, you get a backpack registering for VMworld &#8211; but that means so did 22,000 other people.  I would rather carry around my own DIFFERENT bag and not worry about mixing it up with somebody else&#8217;s.  Whether your choice is a backpack or messenger style, a bag is an absolute must.  It carries everything else you need; as well as all the other crap that you don&#8217;t need but will undoubtedly end up with.</p>
+<p><strong>A small computing device</strong><br />
+Whether your mobile computing device of choice is an iPad, a tablet, or an ultrabook &#8211; bring it.  Keeping up on news between sessions, BYOD labs, taking notes, social media, etc etc etc&#8230; And, since you&#8217;re going to be lugging this device around for an entire week, you don&#8217;t want it to be some 11 pound monster laptop.  My Lenovo ultrabook is about 2 lbs and has been a great fit.  Some type of mobile computing device is a must at VMworld.  In fact, if you&#8217;re considering attending VMworld and not bringing one, then you are a bad person.</p>
+<p><strong>A wifi-tether hotspot capable mobile phone</strong><br />
+The wifi at VMworld can get pretty painful when thousands of people with multiple devices connect to it.  Therefore, you will want to have a backup plan.  Since the 4G LTE signal is pretty solid in San Francisco, I&#8217;ve found myself using my mobile phone as an access point more often than traditional Wi-Fi (even at my hotel).  If you have an android phone, you can root it and install Wi-Fi tether.  Otherwise, there may be extra costs associated with tethering.  In those cases, you&#8217;ll just have to weigh your online needs vs. the costs.  Granted, this is not a silver bullet solution.  Because some of the lower level sessions end up with poor signal and 4G LTE can also suffer speed issues with so many devices connected in a small area.</p>
+<p><strong>Headphones</strong><br />
+Listen to music in between sessions.  Listen to music walking around the city.  Keep headphones in your ears even if they are plugged into nothing.  This way, you can talk to the vendors that you actually want to talk to vs being pestered non-stop.  People are really alot less likely to talk to you when you have headphones on, so it gives you the chance to be the one choose your conversations.</p>
+<p><strong>Sunglasses</strong><br />
+The Moscone Center seems to be built out of highly reflective mirrors that amplify the sunlight into the main lobbies no matter what building you&#8217;re in, and no matter what time of day or angle of the sun.  Even a short walk across the street from Moscone North to Moscone South is difficult.  I found myself pulling out sunglasses for every short walk outside and keeping them on until I made it past the lobbies of the main conference centers.  Then you&#8217;ll also have the bonus of vendors failing to make eye contact with you.  Therefore, I highly recommend sunglasses and headphones be utilized together for a complete vendor repellent solution.  Don&#8217;t get me wrong, there are plenty of great products and solutions to check out from plenty of really intresting and reputable vendors.  I just want to be in control of how often my badge gets scanned and only by the people at booths I feel like visiting.</p>
+<p><strong>Comfortable shoes</strong><br />
+The official VMworld faq will tell you that the attire for the conference should be &#8220;business casual&#8221;.  That is BS.  People will wear t-shirts, shorts, sandals, and really anything in between.  And you know what? Nobody cares. I&#8217;m not telling  you to dress like a schmuck.  I&#8217;m telling you that being comfortable is more important than looking your best.  Even if you manage to book a hotel right next to Moscone, you end up walking a LOT.  Overall, just make sure to avoid buying a new pair of dress shoes and thinking you&#8217;ll break them in at VMworld.  There&#8217;s nothing wrong with a decent looking pair of comfortable casual shoes.</p>
+<p><strong>A charger for every device you&#8217;re carrying</strong><br />
+The heavy use of my phone and ultrabook left their respective batteries hurting.  I dimmed my laptop&#8217;s screen to try to conserve as much as possible, but I still had to charge it later in the afternoon.  I used my phone&#8217;s GPS constantly to get to dinners, vendor events, and off-site sessions.  I would not have been happy should either of these things ended up with a dead battery later in the day.   Luckily I could jack my phone into my ultrabook and keep it juicing up during sessions.</p>
+<p>This is still my first VMworld, so this list may grow or change &#8211; but so far these are my &#8220;must have&#8221; items that I take with me and use constantly throughout the day.</p>
+<p>&nbsp;</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>http://www.ericvb.com/archives/vmworld-day-3-things-to-bring/feed</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>VMworld: Day 2</title>
+		<link>http://www.ericvb.com/archives/vmworld-day-2</link>
+					<comments>http://www.ericvb.com/archives/vmworld-day-2#respond</comments>
+		
+		<dc:creator><![CDATA[Vanberge]]></dc:creator>
+		<pubDate>Tue, 27 Aug 2013 06:09:01 +0000</pubDate>
+				<category><![CDATA[Tech]]></category>
+		<category><![CDATA[VMware]]></category>
+		<category><![CDATA[VMworld]]></category>
+		<guid isPermaLink="false">http://www.ericvb.com/?p=3610</guid>
+
+					<description><![CDATA[As day one resulted in me planning and feeling like I knew exactly what to do, it is only fair that day 2 show me exactly what I should not have done.  Here is a list of my first things I&#8217;ve learned not to do at VMworld. Do not schedule back to back sessions during [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>As day one resulted in me planning and feeling like I knew exactly what to do, it is only fair that day 2 show me exactly what I should not have done.  Here is a list of my first things I&#8217;ve learned not to do at VMworld.</p>
+<ul>
+<li>Do not schedule back to back sessions during lunch.  The food is certainly better at 11.30am vs 1:45 pm.</li>
+<li>Do not schedule sessions close together in time, but far apart in distance</li>
+<li>Do not think you will have reliable Wi-Fi/LTE when there are 21,000 people using both of those on multiple devices.</li>
+<li>Do not wear your &#8220;VMworld 2013&#8221; T-shirt that you got at registration to the first day of sessions.  Come on now.</li>
+<li>Don&#8217;t take pictures of slides during the presentations.  You can download them later.</li>
+</ul>
+<p>Some of that is joking, some of that is serious.</p>
+<p>Getting serious now:  My first day of real sessions was probably too overbooked.  I found myself distracted during current sessions trying to figure out how much time I had to make it to my next session.  I should have left a bit more time in between to allow for things like snacks, walking, drinks, bathroom breaks, and other extra curriculars like the hangout space and hands-on labs.  I will be adjusting my schedule accordingly, because I think I&#8217;m confident in saying that there is just as much to be gained from &#8220;unofficial&#8221; networking and experiences as there is from the actual sessions.  Ultimately, cramming in as many sessions as possible is not necessarily the best way to do it.</p>
+<p>Noted, VMworld.  Tomorrow is another day!</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>http://www.ericvb.com/archives/vmworld-day-2/feed</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>VMworld: Day 1</title>
+		<link>http://www.ericvb.com/archives/vmworld-day-1</link>
+					<comments>http://www.ericvb.com/archives/vmworld-day-1#respond</comments>
+		
+		<dc:creator><![CDATA[Vanberge]]></dc:creator>
+		<pubDate>Mon, 26 Aug 2013 03:14:15 +0000</pubDate>
+				<category><![CDATA[Tech]]></category>
+		<category><![CDATA[VMware]]></category>
+		<category><![CDATA[VMworld]]></category>
+		<guid isPermaLink="false">http://www.ericvb.com/?p=3605</guid>
+
+					<description><![CDATA[The 10th anniversary rendition of VMware&#8217;s flagship tech conference is officially under way! I&#8217;ve been a user and fan of VMware for about 8 years, thus making it a mega techie sin that this is only now my maiden voyage.  I&#8217;ve never been lucky enough to make it out west for VMworld until now, and [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>The 10th anniversary rendition of VMware&#8217;s flagship tech conference is officially under way!</p>
+<p>I&#8217;ve been a user and fan of VMware for about 8 years, thus making it a mega techie sin that this is only now my maiden voyage.  I&#8217;ve never been lucky enough to make it out west for VMworld until now, and being a VMworld rookie is already an interesting experience. There is SO much to do that the entire experience is extremely overwhelming, especially for a first timer.</p>
+<ul>
+<li>Hundreds of breakout sessions, hands on labs, and keynotes</li>
+<li>Hundreds of presenters</li>
+<li>Afterparties, meetups, tweetups, and vendor receptions</li>
+<li>One of America&#8217;s coolest cities to explore</li>
+</ul>
+<p>My first strategy for making the most of VMworld was to concentrate on being a savvy traveler.  I don&#8217;t travel much, so this is kind of a big deal for me.  I got electronic boarding passes, I put my hotel, flight info, and VMworld agenda into a synced Evernote notebook, and finally I planned out routes to/from my hotel via both hotel shuttle and Frisco&#8217;s impressive public transit system (<a href="http://tripplanner.transit.511.org/">http://tripplanner.transit.511.org</a> is very helpful).  This all worked out pretty well, leaving me with a smooth travel experience.  It&#8217;s also really nice to  have a couple of free/low cost methods of getting around this city.  The first thing I did after checking into my hotel was to ride a cable car, which I found to be a really fun way to get around.  The Powell Street cable car was especially impressive because it provided some spectacular views of the city.  At Powell/California, for example, I could see all the way out to the bay bridge down a street luge&#8217;s dream of a hill.   All together, this planning and preparation left me feeling ready to hit the ground running when arriving in SFO.</p>
+<p>My next strategy was to not worry too much about my sessions and labs.  Sure, you want to get into some of these things that are relevant to your interests and career, but you have HUNDREDS to choose from.  You could go over, over again, and still be making changes on your 5th time through schedule builder.  Sign up for the ones that make sense and then don&#8217;t worry about it anymore.  VMware makes them all available for download afterwards anyway.  Ultimately I forced myself to stop making changes and focus on making the most of the ones I picked.</p>
+<p>Day 1 for me was designed to be registration, check in, and getting my bearings in the city.  It has been a success, and I&#8217;m looking forward to the rest of this experience.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>http://www.ericvb.com/archives/vmworld-day-1/feed</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

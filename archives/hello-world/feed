@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Migrated	</title>
+	<atom:link href="http://www.ericvb.com/archives/hello-world/feed" rel="self" type="application/rss+xml" />
+	<link>http://www.ericvb.com/archives/hello-world</link>
+	<description>A Distinction Without a Difference...</description>
+	<lastBuildDate>Sat, 17 Feb 2007 16:44:21 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.1</generator>
+	<item>
+		<title>
+		By: Vanberge		</title>
+		<link>http://www.ericvb.com/archives/hello-world#comment-5</link>
+
+		<dc:creator><![CDATA[Vanberge]]></dc:creator>
+		<pubDate>Mon, 21 Nov 2005 03:32:35 +0000</pubDate>
+		<guid isPermaLink="false">/?p=1#comment-5</guid>
+
+					<description><![CDATA[i&#039;m still tweaking jja...  i&#039;ll have it set up correctly]]></description>
+			<content:encoded><![CDATA[<p>i&#8217;m still tweaking jja&#8230;  i&#8217;ll have it set up correctly</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Jeff		</title>
+		<link>http://www.ericvb.com/archives/hello-world#comment-4</link>
+
+		<dc:creator><![CDATA[Jeff]]></dc:creator>
+		<pubDate>Mon, 21 Nov 2005 02:59:45 +0000</pubDate>
+		<guid isPermaLink="false">/?p=1#comment-4</guid>
+
+					<description><![CDATA[I remember a simpler time, back before email addresses were required.]]></description>
+			<content:encoded><![CDATA[<p>I remember a simpler time, back before email addresses were required.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Vanberge		</title>
+		<link>http://www.ericvb.com/archives/hello-world#comment-3</link>
+
+		<dc:creator><![CDATA[Vanberge]]></dc:creator>
+		<pubDate>Mon, 21 Nov 2005 01:38:30 +0000</pubDate>
+		<guid isPermaLink="false">/?p=1#comment-3</guid>
+
+					<description><![CDATA[Just testing the comments...  woot]]></description>
+			<content:encoded><![CDATA[<p>Just testing the comments&#8230;  woot</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: chouse		</title>
+		<link>http://www.ericvb.com/archives/hello-world#comment-2</link>
+
+		<dc:creator><![CDATA[chouse]]></dc:creator>
+		<pubDate>Sun, 20 Nov 2005 23:46:16 +0000</pubDate>
+		<guid isPermaLink="false">/?p=1#comment-2</guid>
+
+					<description><![CDATA[there are blosxom to wordpress/moveable type scripts out there - just google around for them, they are pretty easy to use. I moved my 200+ articles to wordpress site in like 5 minutes.]]></description>
+			<content:encoded><![CDATA[<p>there are blosxom to wordpress/moveable type scripts out there &#8211; just google around for them, they are pretty easy to use. I moved my 200+ articles to wordpress site in like 5 minutes.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

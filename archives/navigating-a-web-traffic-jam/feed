@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Navigating a Web Traffic Jam	</title>
+	<atom:link href="http://www.ericvb.com/archives/navigating-a-web-traffic-jam/feed" rel="self" type="application/rss+xml" />
+	<link>http://www.ericvb.com/archives/navigating-a-web-traffic-jam</link>
+	<description>A Distinction Without a Difference...</description>
+	<lastBuildDate>Wed, 18 Jun 2014 05:49:05 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.1</generator>
+	<item>
+		<title>
+		By: Brock		</title>
+		<link>http://www.ericvb.com/archives/navigating-a-web-traffic-jam#comment-70053</link>
+
+		<dc:creator><![CDATA[Brock]]></dc:creator>
+		<pubDate>Wed, 18 Jun 2014 05:49:05 +0000</pubDate>
+		<guid isPermaLink="false">http://www.ericvb.com/?p=3690#comment-70053</guid>
+
+					<description><![CDATA[Useful info. Lucky me I discovered your web site accidentally, and I am stunned why this accident did not happened in advance! I bookmarked it.]]></description>
+			<content:encoded><![CDATA[<p>Useful info. Lucky me I discovered your web site accidentally, and I am stunned why this accident did not happened in advance! I bookmarked it.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: browndr		</title>
+		<link>http://www.ericvb.com/archives/navigating-a-web-traffic-jam#comment-36783</link>
+
+		<dc:creator><![CDATA[browndr]]></dc:creator>
+		<pubDate>Sat, 05 Apr 2014 20:00:10 +0000</pubDate>
+		<guid isPermaLink="false">http://www.ericvb.com/?p=3690#comment-36783</guid>
+
+					<description><![CDATA[Please tell me you are monetizing the hell out of those posts with unobtrusive ads.]]></description>
+			<content:encoded><![CDATA[<p>Please tell me you are monetizing the hell out of those posts with unobtrusive ads.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

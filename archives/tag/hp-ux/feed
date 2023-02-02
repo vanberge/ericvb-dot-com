@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>HP-UX &#8211; Eric VB.com</title>
+	<atom:link href="http://www.ericvb.com/archives/tag/hp-ux/feed" rel="self" type="application/rss+xml" />
+	<link>http://www.ericvb.com</link>
+	<description>A Distinction Without a Difference...</description>
+	<lastBuildDate>Thu, 06 Jun 2013 15:55:07 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.1</generator>
+	<item>
+		<title>Building a Serviceguard Cluster on HP-UX 11.31</title>
+		<link>http://www.ericvb.com/archives/building-a-serviceguard-cluster-on-hp-ux-11-31</link>
+					<comments>http://www.ericvb.com/archives/building-a-serviceguard-cluster-on-hp-ux-11-31#respond</comments>
+		
+		<dc:creator><![CDATA[Vanberge]]></dc:creator>
+		<pubDate>Thu, 06 Jun 2013 15:55:07 +0000</pubDate>
+				<category><![CDATA[Tech]]></category>
+		<category><![CDATA[HP-UX]]></category>
+		<category><![CDATA[sysadmin]]></category>
+		<guid isPermaLink="false">http://www.ericvb.com/?p=3578</guid>
+
+					<description><![CDATA[I have recently been working alot with HP-UX.  A big part of that work relates to managing Serviceguard clusters, something I have had little previous experience doing.  It was a challenge for me to find any sort of a quick start guide or simplified steps towards building a Serviceguard cluster, so I wanted to combine [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>I have recently been working alot with HP-UX.  A big part of that work relates to managing Serviceguard clusters, something I have had little previous experience doing.  It was a challenge for me to find any sort of a quick start guide or simplified steps towards building a Serviceguard cluster, so I wanted to combine all the pieces and parts I have Googled and man-paged together so the next person can hopefully find this useful.</p>
+<p>Prerequisites</p>
+<ul>
+<li>Two hosts (nodes) running the same build of HP-UX</li>
+<li>Same version of Serviceguard installed</li>
+</ul>
+<p>Here are the steps to build a ServiceGuard cluster on HP-UX 11.31</p>
+<ol>
+<li>Run <strong>csshsetup &lt;secondary nodename&gt;</strong> on your primary node, enter the root password.</li>
+<li>Run <strong>csshsetup &lt;primary nodename&gt;</strong> on your secondary node, enter the root password.</li>
+<li>Run <strong>cmpreparecl -n &lt;primarynode&gt; -n &lt;secondarynode&gt; </strong>to set up the Serviceguard relationship settings</li>
+<li>Create a basic cluster configuration file by running <strong>cmquerycl -v -C &lt;clustername.ascii&gt; -n &lt;primarynode&gt; -n &lt;secondarynode&gt;</strong></li>
+<li>Edit the newly created ascii file to your specific needs, noting things like:
+<ul>
+<li>Cluster name</li>
+<li>IPs</li>
+<li>Quorum server hosts or volume group</li>
+<li>Cluster shares storage/volume groups</li>
+<li>Take some extra time here, this is really important!</li>
+</ul>
+</li>
+<li>Validate the cluster config file by running <strong>cmcheckconf -C &lt;clustername.ascii&gt;</strong>.  Deal with any warnings or errors that are of concern.  (The setup will apply with warnings, but they should still be considered)</li>
+<li>Apply the config and create the cluster by running <strong>cmapplyconf -v -C &lt;clustername.ascii&gt;</strong>.</li>
+<li>Review all the output and make sure the cluster relationship was successful; run <strong>cmviewcl</strong> which should show both nodes, likely in a &#8220;down&#8221; state</li>
+<li>You can bring up the nodes now if you want, starting with the primary node by running <strong>cmrunnode &lt;nodename&gt;</strong>. Run <strong>cmviewcl</strong> again to check and make sure everything looks good.  You&#8217;ll see a cluster, and nodes but no packages yet</li>
+<li>Now its time to create some packages.  This is where the real meat of Serviceguard starts to develop, so pay special attention to these configurations
+<ul>
+<li>You can create a very basic template config by running <strong>cmmakepkg -m sg/failover -m sg/package_ip &lt;packageconfig.conf&gt;</strong> &#8211; which would give you failover and IP capabilities</li>
+<li>Or, you could create a &#8220;full&#8221; config by running <strong>cmmakepkg -m sg/all &lt;packageconfig.conf&gt;</strong>.</li>
+<li>Edit the package config file to suit your needs, consider adding: IP Addresses, package names, filesystems and volume groups</li>
+</ul>
+</li>
+<li>When you&#8217;ve got your package config file in order, you can validate it by running <strong>cmcheckconf -v -P &lt;packageconfig.conf&gt;</strong>.</li>
+<li>Review your output and check for any errors.  If you&#8217;re satisfied with everything, go ahead and apply the config to create your cluster package!  <strong>cmapplyconf -P &lt;packageconfig.conf&gt;</strong></li>
+<li>Run a <strong>cmviewcl</strong> again to check out the cluster now, you should see your newly created cluster package, in a down state.</li>
+<li>To  bring the package online, run <strong>cmrunpkg -n &lt;nodename&gt; &lt;packagename&gt;</strong> and then make sure it is up and running (with another <strong>cmviewcl</strong>)</li>
+<li>Optionally, you can set the package up for auto run by <strong>cmmodpkg -e &lt;packagename&gt;</strong> to allow it to startup automatically after a failover.</li>
+</ol>
+<p>You can also use the HP systems management homepage to click through the steps of creating a Serviceguard cluster, but really where&#8217;s the fun in that? <img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>A list of some of the useful commands to use for Serviceguard clusters:</p>
+<ul>
+<li>cmviewcl</li>
+<li>cmquerycl</li>
+<li>cmrunpkg</li>
+<li>cmhaltpkg</li>
+<li>cmrunnode</li>
+<li>cmcheckconf</li>
+<li>cmapplyconf</li>
+<li>cmmakepkg</li>
+</ul>
+]]></content:encoded>
+					
+					<wfw:commentRss>http://www.ericvb.com/archives/building-a-serviceguard-cluster-on-hp-ux-11-31/feed</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

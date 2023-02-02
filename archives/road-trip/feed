@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Road Trip	</title>
+	<atom:link href="http://www.ericvb.com/archives/road-trip/feed" rel="self" type="application/rss+xml" />
+	<link>http://www.ericvb.com/archives/road-trip</link>
+	<description>A Distinction Without a Difference...</description>
+	<lastBuildDate>Tue, 16 Sep 2008 02:32:46 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.1</generator>
+	<item>
+		<title>
+		By: Vanberge		</title>
+		<link>http://www.ericvb.com/archives/road-trip#comment-10280</link>
+
+		<dc:creator><![CDATA[Vanberge]]></dc:creator>
+		<pubDate>Tue, 16 Sep 2008 02:32:46 +0000</pubDate>
+		<guid isPermaLink="false">http://www.palmerforpresident.com/?p=314#comment-10280</guid>
+
+					<description><![CDATA[I got a Chicken/bacon/swiss combo with curly fries and a mountain dew.
+
+And also a &#039;beef n cheddar&#039;.  
+
+i kept the combo medium sized.]]></description>
+			<content:encoded><![CDATA[<p>I got a Chicken/bacon/swiss combo with curly fries and a mountain dew.</p>
+<p>And also a &#8216;beef n cheddar&#8217;.  </p>
+<p>i kept the combo medium sized.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: vanbergs		</title>
+		<link>http://www.ericvb.com/archives/road-trip#comment-10268</link>
+
+		<dc:creator><![CDATA[vanbergs]]></dc:creator>
+		<pubDate>Mon, 15 Sep 2008 14:37:20 +0000</pubDate>
+		<guid isPermaLink="false">http://www.palmerforpresident.com/?p=314#comment-10268</guid>
+
+					<description><![CDATA[...what did you get at arby&#039;s?]]></description>
+			<content:encoded><![CDATA[<p>&#8230;what did you get at arby&#8217;s?</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Kramer		</title>
+		<link>http://www.ericvb.com/archives/road-trip#comment-10253</link>
+
+		<dc:creator><![CDATA[Kramer]]></dc:creator>
+		<pubDate>Sun, 14 Sep 2008 16:51:16 +0000</pubDate>
+		<guid isPermaLink="false">http://www.palmerforpresident.com/?p=314#comment-10253</guid>
+
+					<description><![CDATA[GG on the Arby&#039;s.]]></description>
+			<content:encoded><![CDATA[<p>GG on the Arby&#8217;s.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: chouse		</title>
+		<link>http://www.ericvb.com/archives/road-trip#comment-10236</link>
+
+		<dc:creator><![CDATA[chouse]]></dc:creator>
+		<pubDate>Sun, 14 Sep 2008 02:23:55 +0000</pubDate>
+		<guid isPermaLink="false">http://www.palmerforpresident.com/?p=314#comment-10236</guid>
+
+					<description><![CDATA[wow, that sucks. our datacenters are 20 minutes apart. hooray. we used to have servers at the outpatient centers but we would dispatch the desktop team to press said power buttons or swap failed drives. nice eh?]]></description>
+			<content:encoded><![CDATA[<p>wow, that sucks. our datacenters are 20 minutes apart. hooray. we used to have servers at the outpatient centers but we would dispatch the desktop team to press said power buttons or swap failed drives. nice eh?</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

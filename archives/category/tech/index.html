@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<!--[if IE 7]>
+<html class="ie ie7" lang="en-US">
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8" lang="en-US">
+<![endif]-->
+<!--[if !(IE 7) & !(IE 8)]><!-->
+<html lang="en-US">
+<!--<![endif]-->
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width" />
+<title>Tech | Eric VB.com</title>
+<link rel="profile" href="https://gmpg.org/xfn/11" />
+<link rel="pingback" href="https://www.ericvb.com/xmlrpc.php">
+<!--[if lt IE 9]>
+<script src="https://www.ericvb.com/wp-content/themes/twentytwelve/js/html5.js?ver=3.7.0" type="text/javascript"></script>
+<![endif]-->
+<meta name='robots' content='max-image-preview:large' />
+<link rel='dns-prefetch' href='https://fonts.googleapis.com/' />
+<link href='https://fonts.gstatic.com' crossorigin rel='preconnect' />
+<link rel="alternate" type="application/rss+xml" title="Eric VB.com &raquo; Feed" href="../../../feed" />
+<link rel="alternate" type="application/rss+xml" title="Eric VB.com &raquo; Comments Feed" href="../../../comments/feed" />
+<link rel="alternate" type="application/rss+xml" title="Eric VB.com &raquo; Tech Category Feed" href="feed" />
+<script type="text/javascript">
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.ericvb.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.1"}};
+/*! This file is auto-generated */
+!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode,e=(p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0),i.toDataURL());return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(p&&p.fillText)switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([129777,127995,8205,129778,127999],[129777,127995,8203,129778,127999])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(e=t.source||{}).concatemoji?c(e.concatemoji):e.wpemoji&&e.twemoji&&(c(e.twemoji),c(e.wpemoji)))}(window,document,window._wpemojiSettings);
+</script>
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='sbi_styles-css' href='../../../wp-content/plugins/instagram-feed/css/sbi-styles.min.css@ver=6.1.1.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-css' href='../../../wp-includes/css/dist/block-library/style.min.css@ver=6.1.css' type='text/css' media='all' />
+<style id='wp-block-library-theme-inline-css' type='text/css'>
+.wp-block-audio figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-audio figcaption{color:hsla(0,0%,100%,.65)}.wp-block-audio{margin:0 0 1em}.wp-block-code{border:1px solid #ccc;border-radius:4px;font-family:Menlo,Consolas,monaco,monospace;padding:.8em 1em}.wp-block-embed figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-embed figcaption{color:hsla(0,0%,100%,.65)}.wp-block-embed{margin:0 0 1em}.blocks-gallery-caption{color:#555;font-size:13px;text-align:center}.is-dark-theme .blocks-gallery-caption{color:hsla(0,0%,100%,.65)}.wp-block-image figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-image figcaption{color:hsla(0,0%,100%,.65)}.wp-block-image{margin:0 0 1em}.wp-block-pullquote{border-top:4px solid;border-bottom:4px solid;margin-bottom:1.75em;color:currentColor}.wp-block-pullquote__citation,.wp-block-pullquote cite,.wp-block-pullquote footer{color:currentColor;text-transform:uppercase;font-size:.8125em;font-style:normal}.wp-block-quote{border-left:.25em solid;margin:0 0 1.75em;padding-left:1em}.wp-block-quote cite,.wp-block-quote footer{color:currentColor;font-size:.8125em;position:relative;font-style:normal}.wp-block-quote.has-text-align-right{border-left:none;border-right:.25em solid;padding-left:0;padding-right:1em}.wp-block-quote.has-text-align-center{border:none;padding-left:0}.wp-block-quote.is-large,.wp-block-quote.is-style-large,.wp-block-quote.is-style-plain{border:none}.wp-block-search .wp-block-search__label{font-weight:700}.wp-block-search__button{border:1px solid #ccc;padding:.375em .625em}:where(.wp-block-group.has-background){padding:1.25em 2.375em}.wp-block-separator.has-css-opacity{opacity:.4}.wp-block-separator{border:none;border-bottom:2px solid;margin-left:auto;margin-right:auto}.wp-block-separator.has-alpha-channel-opacity{opacity:1}.wp-block-separator:not(.is-style-wide):not(.is-style-dots){width:100px}.wp-block-separator.has-background:not(.is-style-dots){border-bottom:none;height:1px}.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots){height:2px}.wp-block-table{margin:"0 0 1em 0"}.wp-block-table thead{border-bottom:3px solid}.wp-block-table tfoot{border-top:3px solid}.wp-block-table td,.wp-block-table th{padding:.5em;border:1px solid;word-break:normal}.wp-block-table figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-table figcaption{color:hsla(0,0%,100%,.65)}.wp-block-video figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-video figcaption{color:hsla(0,0%,100%,.65)}.wp-block-video{margin:0 0 1em}.wp-block-template-part.has-background{padding:1.25em 2.375em;margin-top:0;margin-bottom:0}
+</style>
+<link rel='stylesheet' id='classic-theme-styles-css' href='../../../wp-includes/css/classic-themes.min.css@ver=1.css' type='text/css' media='all' />
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #fff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--blue: #21759b;--wp--preset--color--dark-gray: #444;--wp--preset--color--medium-gray: #9f9f9f;--wp--preset--color--light-gray: #e6e6e6;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('index.html');--wp--preset--duotone--grayscale: url('index.html');--wp--preset--duotone--purple-yellow: url('index.html');--wp--preset--duotone--blue-red: url('index.html');--wp--preset--duotone--midnight: url('index.html');--wp--preset--duotone--magenta-yellow: url('index.html');--wp--preset--duotone--purple-green: url('index.html');--wp--preset--duotone--blue-orange: url('index.html');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;}:where(.is-layout-flex){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='ctf_styles-css' href='../../../wp-content/plugins/custom-twitter-feeds/css/ctf-styles.min.css@ver=2.0.4.css' type='text/css' media='all' />
+<link rel='stylesheet' id='twentytwelve-fonts-css' href='https://fonts.googleapis.com/css?family=Open+Sans%3A400italic%2C700italic%2C400%2C700&#038;subset=latin%2Clatin-ext&#038;display=fallback' type='text/css' media='all' />
+<link rel='stylesheet' id='twentytwelve-style-css' href='../../../wp-content/themes/twentytwelve/style.css@ver=20221101.css' type='text/css' media='all' />
+<link rel='stylesheet' id='twentytwelve-block-style-css' href='../../../wp-content/themes/twentytwelve/css/blocks.css@ver=20190406.css' type='text/css' media='all' />
+<!--[if lt IE 9]>
+<link rel='stylesheet' id='twentytwelve-ie-css' href='https://www.ericvb.com/wp-content/themes/twentytwelve/css/ie.css?ver=20150214' type='text/css' media='all' />
+<![endif]-->
+<script type='text/javascript' src='../../../wp-includes/js/jquery/jquery.min.js@ver=3.6.1' id='jquery-core-js'></script>
+<script type='text/javascript' src='../../../wp-includes/js/jquery/jquery-migrate.min.js@ver=3.3.2' id='jquery-migrate-js'></script>
+<link rel="https://api.w.org/" href="../../../wp-json/index.html" /><link rel="alternate" type="application/json" href="https://www.ericvb.com/wp-json/wp/v2/categories/21" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="../../../xmlrpc.php@rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="../../../wp-includes/wlwmanifest.xml" />
+<meta name="generator" content="WordPress 6.1" />
+
+<style type="text/css">
+.a-stats {
+	width: auto;
+}
+.a-stats a {
+	background: #7CA821;
+	background-image:-moz-linear-gradient(0% 100% 90deg,#5F8E14,#7CA821);
+	background-image:-webkit-gradient(linear,0% 0,0% 100%,from(#7CA821),to(#5F8E14));
+	border: 1px solid #5F8E14;
+	border-radius:3px;
+	color: #CFEA93;
+	cursor: pointer;
+	display: block;
+	font-weight: normal;
+	height: 100%;
+	-moz-border-radius:3px;
+	padding: 7px 0 8px;
+	text-align: center;
+	text-decoration: none;
+	-webkit-border-radius:3px;
+	width: 100%;
+}
+.a-stats a:hover {
+	text-decoration: none;
+	background-image:-moz-linear-gradient(0% 100% 90deg,#6F9C1B,#659417);
+	background-image:-webkit-gradient(linear,0% 0,0% 100%,from(#659417),to(#6F9C1B));
+}
+.a-stats .count {
+	color: #FFF;
+	display: block;
+	font-size: 15px;
+	line-height: 16px;
+	padding: 0 13px;
+	white-space: nowrap;
+}
+</style>
+
+	<style type="text/css" id="twentytwelve-header-css">
+			.site-header h1 a,
+		.site-header h2 {
+			color: #444;
+		}
+		</style>
+	</head>
+
+<body class="archive category category-tech category-21 wp-embed-responsive custom-font-enabled single-author">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-dark-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 0.49803921568627" /><feFuncG type="table" tableValues="0 0.49803921568627" /><feFuncB type="table" tableValues="0 0.49803921568627" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 1" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0 1" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-purple-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-blue-red"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 1" /><feFuncG type="table" tableValues="0 0.27843137254902" /><feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-midnight"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 0" /><feFuncG type="table" tableValues="0 0.64705882352941" /><feFuncB type="table" tableValues="0 1" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-magenta-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.78039215686275 1" /><feFuncG type="table" tableValues="0 0.94901960784314" /><feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-purple-green"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0.44705882352941 0.4" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-blue-orange"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.098039215686275 1" /><feFuncG type="table" tableValues="0 0.66274509803922" /><feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><div id="page" class="hfeed site">
+	<header id="masthead" class="site-header">
+		<hgroup>
+			<h1 class="site-title"><a href="../../../index.html" title="Eric VB.com" rel="home">Eric VB.com</a></h1>
+			<h2 class="site-description">A Distinction Without a Difference&#8230;</h2>
+		</hgroup>
+
+		<nav id="site-navigation" class="main-navigation">
+			<button class="menu-toggle">Menu</button>
+			<a class="assistive-text" href="index.html#content" title="Skip to content">Skip to content</a>
+			<div class="menu-default-container"><ul id="menu-default" class="nav-menu"><li id="menu-item-1295" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1295"><a href="../../../../ericvb.com/index.html">Blog</a></li>
+<li id="menu-item-1300" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1300"><a href="../../../index.html@p=589.html">Archives</a></li>
+<li id="menu-item-1302" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1302"><a href="../../../index.html@p=368.html">Netflix-X2</a></li>
+<li id="menu-item-1301" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1301"><a href="../../../index.html@p=134.html">About</a></li>
+</ul></div>		</nav><!-- #site-navigation -->
+
+			</header><!-- #masthead -->
+
+	<div id="main" class="wrapper">
+
+	<section id="primary" class="site-content">
+		<div id="content" role="main">
+
+					<header class="archive-header">
+				<h1 class="archive-title">
+				Category Archives: <span>Tech</span>				</h1>
+
+							<div class="archive-meta"><p>Technology related stuff</p>
+</div>
+						</header><!-- .archive-header -->
+
+			
+	<article id="post-3872" class="post-3872 post type-post status-publish format-standard hentry category-tech">
+				<header class="entry-header">
+			
+						<h1 class="entry-title">
+				<a href="../../../index.html@p=3872.html" rel="bookmark">Migrate Google Cloud GCE VM Instances From One Project To Another</a>
+			</h1>
+										<div class="comments-link">
+					<a href="../../../index.html@p=3872.html#comments">4 Replies</a>				</div><!-- .comments-link -->
+					</header><!-- .entry-header -->
+
+				<div class="entry-content">
+			
+<p>So, alot has happened in the last 6 years since I <a href="https://www.ericvb.com/archives/installing-the-vmware-horizon-view-client-on-ubuntu-14-10" data-type="post" data-id="3738">last blogged</a> on this website.  <br>TL/DR:  Cloud has taken over the world, and I&#8217;m lucky enough to have a career focused on  designing cloud solutions.</p>
+
+
+
+<p>This brings us to the year 2020, and one challenge I had to tackle recently was trying to find a relatively easy way to migrate Virtual Machines between projects within Google Cloud Platform (GCP).  </p>
+
+
+
+<p>Before we get into the solution, we&#8217;ll talk a little background info&#8230;</p>
+
+
+
+<p>Google cloud organizes its resources into &#8220;projects&#8221; &#8211; think of these similar to an Azure subscription/resource group organizational unit.  Natively, once you have built Google Compute Engine (GCE) VMs, you are unable to easily move those VM resources into another project.  There are a few how-to guides for leveraging disk snapshots, cloning, etc, but alot of those are difficult to operate at scale and open a plethora of potential issues in practice.</p>
+
+
+
+<p>Therefore, I present to you: <a href="https://github.com/vanberge/gce-migrator" data-type="URL" data-id="https://github.com/vanberge/gce-migrator">The Google Cloud Compute Engine Migrator</a>.</p>
+
+
+
+<p>I&#8217;ve developed a scriptable way to &#8220;move&#8221; VMs between projects, giving options on network connectivity with the ability to do both individual and bulk migrations.  Now, the &#8220;move&#8221; is in quotes here, because what this script actually does is shuts down the target VM, takes a virtual machine image of that VM (which includes all disks), and then deploys a new VM instance from that image in the project of your choosing.  So, while it&#8217;s a true 1:1 clone, it is not in fact the same virtual machine.  </p>
+
+
+
+<p>I&#8217;ll also concede there surely is a much more API driven and UX friendly way of doing this with.  But, I&#8217;m a command line script kid first, even in 2020. Therefore what we have here is a bash script leveraging the gcloud command suite to somewhat intelligently enable you to migrate your VMs between projects.  With that, let&#8217;s dive into the tech weeds&#8230;</p>
+
+
+
+<p><strong>Pre-Requisite Info</strong></p>
+
+
+
+<ul><li><strong>Disclaimer</strong>: This migration tool is provided without any warranty, make sure you review the script code and test accordingly with your requirements. Always make sure you have backups and have validated recovery from those backups before running, especially in production environments.  This cannot be stressed enough.</li><li>Make sure you know the source project id, destination project id, and which network within your GCP environment you would like to attach to.</li><li>If you intend to keep the source VM&#8217;s same IP address, the VPC network must be shared between the source and destination projects.</li><li>Keeping the same IP address will require the source VM to be removed after taking a machine image. The script will not do this for you, but will prompt you when to do it. </li><li>If not using the same IP (IE, attaching to a new VPC network at the destination), recognize that you will be left with 2 VM instances and that a cleanup should be performed on the source VM once destination VM has been completed.</li></ul>
+
+
+
+<p><strong>Using the Migrator Script</strong></p>
+
+
+
+<ul><li>Make sure you<a href="https://cloud.google.com/sdk/docs/install"> install the Google cloud SDK</a> (or, just use CloudShell within GCP)</li><li>If running outside of CloudShell, authenticate by running  <code>gcloud auth login</code></li><li>Clone the repository:  <code>git clone https://github.com/vanberge/gce-migrator.git</code></li><li>Change directory into the gce-migrator folder and run the script per the usage options below</li><li>Use format:<ul><li><code>./gce-migrate.sh -s -d -n -m -S</code></li></ul></li></ul>
+
+
+
+<p><strong>Required options</strong></p>
+
+
+
+<ul><li>-s <em>&lt;sourceproject id&gt;</em>: The project ID where VM currently lives</li><li>-d <em>&lt;destproject id&gt;</em>: The project ID where VM will reside after migration</li><li>-n <em>&lt;network&gt;</em>: The destination network that the new instance of the VM will be connected to.  Values are the name of the destination network, or &#8220;static&#8221; to keep the existing IP.<ul><li>network name: If passing network name, the VM will be connected to the network specified with the next available IP address.</li><li>static: If passing &#8220;static&#8221;, the script will retain the IP address of the VM instance.<br><br>NOTE: Setting the network &#8220;static&#8221; will require the deletion of the source VM before creating the new instance in the destination project. The script will prompt you to do this, but you MUST Have a backup and recovery scenario in the even this does not work.</li></ul></li><li>-m <em>&lt;migration type&gt;</em>: Must pass a single VM name, or &#8220;bulk&#8221;.<ul><li>bulk &#8211; use the &#8220;bulk&#8221; argument to migrate all GCE instances in the source project into the destination project and network.</li><li>Single VM &#8211; Pass <code>-m &lt;vmname&gt;</code> arguments to migrate a single GCE instance</li></ul></li></ul>
+
+
+
+<p><strong>Optional parameter</strong></p>
+
+
+
+<ul><li>-S: enable Secure/Shielded VM as part of the conversion. Only needed if source is NOT shielded, and you wish the destination to be shielded.</li></ul>
+
+
+
+<p><strong>Examples</strong></p>
+
+
+
+<p><code>./gce-migrate.sh -s sourceproject1 -d destproject1 -n default -m myvm1</code></p>
+
+
+
+<ul><li>This will migrate the VM &#8220;myvm1&#8221; from sourceproject1 to destproject1 using the default VPC network</li></ul>
+
+
+
+<p><code>./gce-migrate.sh -s sourceproject1 -d destproject1 -n static -m myvm1</code></p>
+
+
+
+<ul><li>This will migrate the VM &#8220;myvm1&#8221; from sourceproject1 to destproject1, keeping myvm1&#8217;s private IP address</li><li>As noted above, this requires the VM&#8217;s VPC network/subnet to be shared with the destination project</li></ul>
+
+
+
+<p><code>./gce-migrate.sh -s sourceproject1 -d destproject1 -n default -m bulk</code></p>
+
+
+
+<ul><li>Migrates all VMs in sourceproject1 to destproject</li><li>Attaches the VMs to the default network</li></ul>
+
+
+
+<p><code>./gce-migrate.sh -s sourceproject1 -d destproject1 -n default -m bulk -S</code></p>
+
+
+
+<ul><li>This will migrate all VM instances in sourceproject1 to destproject1, connecting to the default VPC network.</li><li>Enables shielded VM options on the VM as part of the migration</li></ul>
+
+
+
+<p><strong>Cleanup</strong></p>
+
+
+
+<p>If moving to a new network, this migration script will leave a stopped GCE instance in the source project, as well as machine images for all migrated VMs. Once functionality is validated at the destination, these items should be cleaned up per best practices and to avoid any future interruption.</p>
+
+
+
+<p>Hopefully this helps somebody who finds themselves with the challenge of moving GCE VMs between GCP projects!</p>
+					</div><!-- .entry-content -->
+		
+		<footer class="entry-meta">
+			This entry was posted in <a href="index.html" rel="category tag">Tech</a> on <a href="../../../index.html@p=3872.html" title="3:45 pm" rel="bookmark"><time class="entry-date" datetime="2020-12-08T15:45:20-05:00">December 8, 2020</time></a><span class="by-author"> by <span class="author vcard"><a class="url fn n" href="../../author/vanberge/index.html" title="View all posts by Vanberge" rel="author">Vanberge</a></span></span>.								</footer><!-- .entry-meta -->
+	</article><!-- #post -->
+
+	<article id="post-3738" class="post-3738 post type-post status-publish format-standard hentry category-tech tag-linux tag-sysadmin tag-vmware">
+				<header class="entry-header">
+			
+						<h1 class="entry-title">
+				<a href="https://www.ericvb.com/archives/installing-the-vmware-horizon-view-client-on-ubuntu-14-10" rel="bookmark">Installing the VMware Horizon View Client on Ubuntu 14.10</a>
+			</h1>
+										<div class="comments-link">
+					<a href="https://www.ericvb.com/archives/installing-the-vmware-horizon-view-client-on-ubuntu-14-10#respond"><span class="leave-reply">Leave a reply</span></a>				</div><!-- .comments-link -->
+					</header><!-- .entry-header -->
+
+				<div class="entry-content">
+			<p>If you&#8217;re a Linux user, you will be happy to know that VMware offers a Linux version of it&#8217;s <a href="https://www.vmware.com/support/viewclients/doc/horizon-view-client-linux-release-notes.html">Horizon View client</a>.  However, it&#8217;s a bit of a strange release strategy.  For Ubuntu, my distro of choice, VMware only offers the packages for the LTS versions of the popular OS. This is kind of a bummer because the LTS versions of Ubuntu Linux are only released every 2 years.  I really do not like running an OS that&#8217;s even one release behind.</p>
+<p>Well, I decided this just cannot stand.  I wanted to have a working View client on my latest Ubuntu 14.10 release which was not an LTS version.</p>
+<p>Google was surprisingly unhelpful here, only really offering suggestions on installing a 32 bit version and changing repositories in your sources.list file.  I did not really want to cross the streams that much on a fresh build, so I decided to try and find a cleaner way to get the Horizon View client installed.  This was actually quite a bit easier than I expected.</p>
+<p>The good news is, the packages VMware releases for the LTS versions of Ubuntu can pretty much install on any of the later versions of Ubuntu. Here&#8217;s how I did it:</p>
+<ul>
+<li>Browse to http://archive.canonical.com/ubuntu/pool/partner/v/vmware-view-client/ from your web browser and download the latest .deb package file.  At the time of this writing, the latest version is 2.2.0 for Ubuntu 14.04 LTS</li>
+<li>Open the file with archive manager and click &#8220;Install&#8221;, or install it from command line via
+<pre>sudo dpkg -i vmware-view-client_2.2.0-0ubuntu0.14.04_i386.deb</pre>
+</li>
+<li>The package should auto-resolve some dependencies for you and install successfully.</li>
+</ul>
+<p>That&#8217;s it!  You now have the VMware Horizon View client installed on the latest/greatest release of Ubuntu.  It&#8217;s been working great for me, and I hope it works just as well for anyone who comes across this. </p>
+					</div><!-- .entry-content -->
+		
+		<footer class="entry-meta">
+			This entry was posted in <a href="index.html" rel="category tag">Tech</a> and tagged <a href="../../tag/linux.html" rel="tag">linux</a>, <a href="../../tag/sysadmin.html" rel="tag">sysadmin</a>, <a href="../../tag/vmware.html" rel="tag">VMware</a> on <a href="https://www.ericvb.com/archives/installing-the-vmware-horizon-view-client-on-ubuntu-14-10" title="2:24 pm" rel="bookmark"><time class="entry-date" datetime="2014-10-31T14:24:08-04:00">October 31, 2014</time></a><span class="by-author"> by <span class="author vcard"><a class="url fn n" href="../../author/vanberge/index.html" title="View all posts by Vanberge" rel="author">Vanberge</a></span></span>.								</footer><!-- .entry-meta -->
+	</article><!-- #post -->
+
+	<article id="post-3717" class="post-3717 post type-post status-publish format-standard hentry category-tech tag-sysadmin">
+				<header class="entry-header">
+			
+						<h1 class="entry-title">
+				<a href="../../../index.html@p=3717.html" rel="bookmark">How to Build an Ikea &#8220;Lack Rack&#8221; for Your Home Lab</a>
+			</h1>
+										<div class="comments-link">
+					<a href="../../../index.html@p=3717.html#comments">5 Replies</a>				</div><!-- .comments-link -->
+					</header><!-- .entry-header -->
+
+				<div class="entry-content">
+			<p>As a sysadmin, I keep in the loop with the home lab/hobbyist community and am always looking for cool things to try and do with computers. One of the projects I&#8217;ve been looking to take on for some time has been a rack to store my IT equipment. Granted, I don&#8217;t have a ton &#8211; a decent server, small NAS, and some other miscellaneous hardware &#8211; but having all this stuff just sitting on the floor of my utility room is not ideal by any means.</p>
+<p>Through online forums and /r/homelab on reddit, I came up with a game plan to do this on the cheap.</p>
+<p>Enter the Lack Rack.</p>
+<p>Somehow, it was discovered that Ikea&#8217;s lack table line provides a near perfect fit for rack-sized hardware. There is a decent amount of information out there if you&#8217;re Googling around for how to build one (Even a <a href="https://wiki.eth0.nl/index.php/LackRack">whole site</a> dedicated to them). But, most of what I found out there was using a side table with legs only. Kind of like this:<a href="http://www.ericvb.com/wp-content/uploads/2014/08/lackrack.png"><br />
+</a></p>
+<p>I didn&#8217;t really love that style.  It looks and feels half done to me.  So, I decided to take it a little bit further.  I used 2 lack tables since they&#8217;re so cheap which allowed me to give it a base.  Then I wanted to be able to wheel it around, so I also added some caster style wheels on the bottom as well.  Here are a couple pics of what I ended up with</p>
+<p>I haven&#8217;t really seen any good writeups with doing a lack rack in this style, and therefore I wanted to go ahead and share my experiences with the interenet.</p>
+<p>Here&#8217;s how I made my lack rack</p>
+<p>What to get:</p>
+<ul>
+<li>2x <a href="https://www.ikea.com/us/en/p/lack-side-table-black-20011408/">Ikea Lack Side tables</a>.  I recommend 22 inch version vs. the 21 and 5/8 that seem to be on other guides. This is a perfect/snug fit.  I can&#8217;t imagine a 21 and 5/8 table fitting my server without me having to bump the legs out a little bit.  Note that it seems the black table is the only one that comes in 22&#8221;</li>
+<li>If you want to be able to roll this rig, get <a href="http://www.homedepot.com/p/Shepherd-2-in-Polypropylene-Wheel-Swivel-Plate-Caster-9392/100142073">4 caster style wheels</a> that you can easily screw onto the bottom</li>
+<li>Some hardware.  You&#8217;ll need at least 4 of something like  <a href="http://www.homedepot.com/p/Crown-Bolt-Zinc-Plated-2-in-Corner-Brace-61552/204765180">these corner brace/angle bracket</a> things, as well as some self-drilling style screws to mount those and your wheels.  I recommend taking some time looking at the screw width, depth, and length.  These are Ikea tables after all, so you have to sort of balance out how hard you tighten them down while being careful not to strip it out.  I didn&#8217;t have any problems using some screws with pretty wide threads that bit into the wood fairly well.  You should need 24 screws if you&#8217;re doing wheels and braces.</li>
+<li>Optional:  A couple of <a href="http://www.ikea.com/us/en/catalog/products/50072645/">these rails</a> to set your gear on!  I haven&#8217;t done this yet, and I&#8217;m not sure if I will.  But you might want to line the sides of your lack rack with these.
+<p>The Assembly Steps:</li>
+</ul>
+<ul>
+<li>Gather your 2x Ikea Lack side tables (again, I am a fan of the black 22&#8221; version).<br />
+<a href="https://www.ericvb.com/wp-content/uploads/2014/08/IMG_20140804_092158.jpg"><img decoding="async" class="alignright size-medium wp-image-3888" src="https://www.ericvb.com/wp-content/uploads/2014/08/IMG_20140804_092158-266x300.jpg" alt="" width="266" height="300" srcset="https://www.ericvb.com/wp-content/uploads/2014/08/IMG_20140804_092158-266x300.jpg 266w, ../../../wp-content/uploads/2014/08/IMG_20140804_092158-908x1024.jpg 908w, ../../../wp-content/uploads/2014/08/IMG_20140804_092158-768x867.jpg 768w, ../../../wp-content/uploads/2014/08/IMG_20140804_092158-1361x1536.jpg 1361w, ../../../wp-content/uploads/2014/08/IMG_20140804_092158-624x704.jpg 624w, https://www.ericvb.com/wp-content/uploads/2014/08/IMG_20140804_092158.jpg 1815w" sizes="(max-width: 266px) 100vw, 266px" /></a></li>
+<li>Assemble the first table completely per the provided instructions.  It&#8217;s very easy&#8230;  You essentially just have to hand screw the legs onto the top.</li>
+<li>Open the 2nd table and take just the top, which you will actually use as the bottom of your rack.  This shall henceforth be referred to as the &#8220;base&#8221;.  You&#8217;ll have 4 legs left over. Find something creative to use them for?</li>
+<li>Using the angle bracket/corner brace things, attach your first fully assembled table to the base of the 2nd table.  It might sound a little complicated, but you really just set the base from your 2nd table down flat with the finished side up, and then set your fully assembled table on top of it.  I did not pre-drill any holes and they all screwed in very easily without stripping.  It&#8217;s worth mentioning again that it did feel like it&#8217;d be easy to strip the wood, so don&#8217;t over tighten.</li>
+<li>Reminder, finished side of the base goes up.  You don&#8217;t want the bottom of your rack decorated while the visible base section is unfinished wood.  You can see from my pictures how the top/bottom are oriented and the way I used the brackets to mount the tables together.</li>
+<li>You should now have a mostly fully functioning &#8220;lack rack&#8221; &#8211; Congratulations!  Now if you like, go ahead and flip it upside down and screw on your caster style wheels to the bottom.</li>
+<li>And there you go, you should be all set.</li>
+</ul>
+<p><a href="https://www.ericvb.com/wp-content/uploads/2014/08/IMG_20140804_092230.jpg"><img decoding="async" loading="lazy" class="size-medium wp-image-3889 aligncenter" src="https://www.ericvb.com/wp-content/uploads/2014/08/IMG_20140804_092230-243x300.jpg" alt="" width="243" height="300" srcset="https://www.ericvb.com/wp-content/uploads/2014/08/IMG_20140804_092230-243x300.jpg 243w, ../../../wp-content/uploads/2014/08/IMG_20140804_092230-829x1024.jpg 829w, ../../../wp-content/uploads/2014/08/IMG_20140804_092230-768x949.jpg 768w, ../../../wp-content/uploads/2014/08/IMG_20140804_092230-1243x1536.jpg 1243w, ../../../wp-content/uploads/2014/08/IMG_20140804_092230-624x771.jpg 624w, https://www.ericvb.com/wp-content/uploads/2014/08/IMG_20140804_092230.jpg 1657w" sizes="(max-width: 243px) 100vw, 243px" /></a></p>
+<p>I might find a way to add some sides to this build to clean it up a little bit.  It also could use some cable management.  And as I stated earlier I may end up putting some rails along the sides.  I&#8217;ll call this my stage 1 for a decent home lab lack rack.  Total cost?  About 35 dollars.  Hope this helps if you&#8217;re considering a build!</p>
+					</div><!-- .entry-content -->
+		
+		<footer class="entry-meta">
+			This entry was posted in <a href="index.html" rel="category tag">Tech</a> and tagged <a href="../../tag/sysadmin.html" rel="tag">sysadmin</a> on <a href="../../../index.html@p=3717.html" title="4:57 pm" rel="bookmark"><time class="entry-date" datetime="2014-08-04T16:57:42-04:00">August 4, 2014</time></a><span class="by-author"> by <span class="author vcard"><a class="url fn n" href="../../author/vanberge/index.html" title="View all posts by Vanberge" rel="author">Vanberge</a></span></span>.								</footer><!-- .entry-meta -->
+	</article><!-- #post -->
+
+	<article id="post-3690" class="post-3690 post type-post status-publish format-standard hentry category-site-related category-tech">
+				<header class="entry-header">
+			
+						<h1 class="entry-title">
+				<a href="../../../index.html@p=3690.html" rel="bookmark">Navigating a Web Traffic Jam</a>
+			</h1>
+										<div class="comments-link">
+					<a href="../../../index.html@p=3690.html#comments">2 Replies</a>				</div><!-- .comments-link -->
+					</header><!-- .entry-header -->
+
+				<div class="entry-content">
+			<p>If you&#8217;ve tried to view ericvb.com recently, you may have been met with various error messages at various times instead of my actual website. Terms like &#8220;ACCOUNT SUSPENDED&#8221; or &#8220;500 Server error&#8221; and &#8220;Error establishing a database connection&#8221; have been appearing all too often.</p>
+<p>Turns out I have a couple of blog posts that have become fairly popular, and I thought it&#8217;d be interesting to share the story of how my site has had to go from &#8220;just a hobby&#8221; to something a little more enterprise grade.</p>
+<p><strong>Houston, we have a problem</strong><br />
+I received an email from my hosting provider stating my account had been suspended due to resource abuse.  I then tried to navigate to my site, and I only see &#8220;This account has been suspended&#8221; instead of my site content.  A few emails back and forth with support, and they re-enabled my account to give me a chance to try mitigate the performance issues.  I updated plugins and themes to latest versions, enabled some caching and security plugins, and finally even signed up for <a href="https://www.cloudflare.com/">CloudFlare</a> which has a really nice free content delivery service (more on this later).</p>
+<p>Things smoothed out for awhile, but soon my resource usage began to climb again.  CPU and RAM utilization were just crushing the server; and since I was on a shared server configuration, my site was making other people&#8217;s stuff perform poorly.  I had reviewed analytics data and found basically 2 of my posts were the culprits.  One on setting up tabbed ssh for Windows, and another on getting started with the ELK stack for syslogging.  I tried unpublishing those posts for awhile but I still ended up getting suspended 3 separate times. Finally, I had make the decision to move my website to a dedicated server.</p>
+<p>The migration to a dedicated server was really pretty easy.  Even fun!  MySQL is a great database and was easy to backup/restore, and the rest was just copying files.  In the end, my website is better secured thanks to the <a href="http://ithemes.com/security/">iThemes security plugin</a>, as well CloudFlare&#8217;s front end capabilities.</p>
+<p>I really can&#8217;t say enough about how happy I am with CloudFlare.  It provides caching, content optimization, and security features.  Their free offering is very capable, and obviously the paid subscriptions give you more features. </p>
+<p>Overall, this entire experience has been a great learning opportunity.  Topics I&#8217;ve never even thought about such as content delivery, web caching, and WordPess security are now a focus of mine with this website, and hopefully it results in a better experience for anyone who visits&#8230;</p>
+					</div><!-- .entry-content -->
+		
+		<footer class="entry-meta">
+			This entry was posted in <a href="../site-related/index.html" rel="category tag">Site related</a>, <a href="index.html" rel="category tag">Tech</a> on <a href="../../../index.html@p=3690.html" title="5:04 pm" rel="bookmark"><time class="entry-date" datetime="2014-03-27T17:04:41-04:00">March 27, 2014</time></a><span class="by-author"> by <span class="author vcard"><a class="url fn n" href="../../author/vanberge/index.html" title="View all posts by Vanberge" rel="author">Vanberge</a></span></span>.								</footer><!-- .entry-meta -->
+	</article><!-- #post -->
+
+	<article id="post-3639" class="post-3639 post type-post status-publish format-standard hentry category-tech tag-logstash tag-sysadmin">
+				<header class="entry-header">
+			
+						<h1 class="entry-title">
+				<a href="../../../index.html@p=3639.html" rel="bookmark">Getting Started on Centralized Logging with Logstash, Elasticsearch and Kibana</a>
+			</h1>
+										<div class="comments-link">
+					<a href="../../../index.html@p=3639.html#comments">4 Replies</a>				</div><!-- .comments-link -->
+					</header><!-- .entry-header -->
+
+				<div class="entry-content">
+			<p>As a sysadmin, one of the &#8220;rainy day&#8221; things on my to-do list for some time has been exploring centralized logging.  I&#8217;ve done a few proof of concept style quick implementations throughout the years but have never been able to secure budget or resources to see it to completion.  Splunk was too expensive, and the open source ones I tried required too much effort to be worth while back then.  This time, however,  I was more determined to make something stick.  With that, I began searching out some of the more popular open source tools.</p>
+<p>I considered various combinations of things like Fluentd, Graylog2, Octopussy, etc.  In the end, I settled on going with the Logstash/Elasticsearch/Kibana stack.  All of these free, open source tools are powerful in their own right &#8211; but they&#8217;re designed to work together and are <strong>immensely</strong> powerful when combined.  Logstash collects, ships, filters, and makes logs consistent.  Elasticsearch creates indices and searchability of the logs.  And finally, Kibana gives you a great web interface to analyze all your log data.  Here&#8217;s a screenshot of it all coming together for me.  This is a custom Kibana dashboard showing syslog output from all my VMware servers:</p>
+<p><a href="http://www.ericvb.com/wp-content/uploads/2014/01/Custom-Kibana-dashboard.png"><img decoding="async" loading="lazy" class="alignnone wp-image-3676 size-medium" src="http://www.ericvb.com/wp-content/uploads/2014/01/Custom-Kibana-dashboard-300x138.png" alt="Custom-Kibana-dashboard" width="300" height="138" srcset="../../../wp-content/uploads/2014/01/Custom-Kibana-dashboard-300x138.png 300w, ../../../wp-content/uploads/2014/01/Custom-Kibana-dashboard.png 945w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+<p>Before diving into the steps, I feel the need to point out that I&#8217;ve had a great time learning and setting up these tools.  I honestly haven&#8217;t been this excited about using software since first trying VMware ESX server.   I can&#8217;t stop working on it.  It&#8217;s become an addiction for me to continuously improve, filter, and make sense of various logs.  It&#8217;s really very rewarding to be able to visualize your log data in such a usable way.  Everything was  pretty easy to set up at a basic level, and the open source community was there for me via #logstash on IRC when I needed help taking things further or had any questions.  The setup of these tools <em>can</em> feel a little daunting to a newcomer with so many options and such a degree of configurability/customization, so I wanted to provide a step-by-step guide for how I ended up with an initial deployment.</p>
+<p>A couple prerequisite disclaimer points before I get started</p>
+<ul>
+<li>I chose to use Ubuntu server.  This is a personal preference, and certainly this guide can be helpful if you choose a different OS.  Use whatever OS you feel comfortable with.</li>
+<li>For the purposes of this guide, all 3 tools will be run on one server.  It is possible (even recommended depending on your workload) to separate them onto different servers.</li>
+<li>This is a &#8220;getting started&#8221; guide.  These tools can certainly be taken much further than I take them here.  They can be integrated with a message broker like Redis or RabbitMQ.  I&#8217;ll consider going into deeper options such as these in a followup enhanced configuration guide vs. here in the getting started guide.</li>
+</ul>
+<p>Now  let&#8217;s get into the setup!</p>
+<ol>
+<li>Get a webserver and PHP installed on your server.  I much prefer apache or nginx as the webserver.  Logstash does has a built in webserver that you can run, but I much prefer running a separate webserver.  In Ubuntu, I just went with the entire LAMP stack.   This is as easy as &#8220;<strong>apt-get install lamp-server</strong>&#8220;.</li>
+<li>Install a java runtime.  Again, easy in Ubuntu via <strong>apt-get install openjdk-7-jre-headless</strong></li>
+<li>Download the three components.  I downloaded gzip archives of each, but depending on your OS, there may be packages built for it.  Choose whichever way you&#8217;re more comfortable with.
+<ul>
+<li><strong>Elasticsearch</strong> (index) via: <a href="http://www.elasticsearch.org/download/">http://www.elasticsearch.org/download/</a></li>
+<li><strong>Logstash</strong> (collection) via: <a href="http://www.elasticsearch.org/overview/logstash/">http://www.elasticsearch.org/overview/logstash/</a></li>
+<li><strong>Kibana</strong> (web interface) via: <a href="http://www.elasticsearch.org/overview/kibana/">http://www.elasticsearch.org/overview/kibana/</a></li>
+</ul>
+</li>
+<li>Extract the archives (tar -xvf &lt;filename&gt;.tgz) and place the files where you want them. I chose /opt for logstash and elasticsearch, and then Kibana goes in your web root.  I did it as follows, an;d I&#8217;ll continue to reference these directories in the rest of the guide.
+<ul>
+<li>Extracted Elasticsearch tgz to /opt/elasticsearch</li>
+<li>Placed the Logstash jar in /opt/logstash</li>
+<li>Extracted Kibana tgz to my web root folder, /var/www/kibana &#8211; there was no special configuration needed other than putting the files here.</li>
+</ul>
+</li>
+<li>Edit your Elasticsearch config file (/opt/elasticsearch/config/elasticsearch.yml) and make 2 edits:
+<ul>
+<li>Find the line that says &#8220;cluster.name&#8221; and uncomment it, setting a name for your new Elasticsearch cluster.</li>
+<li>Look for &#8220;node.name&#8221; and set the node name as well.</li>
+<li>Note that you don&#8217;t have to set these variables.  If you don&#8217;t set these, Elasticsearch will set them randomly for you, but it is handy to know which server you&#8217;re looking at if you ever have to expand your setup so I recommend setting them.</li>
+</ul>
+</li>
+<li>Go ahead and start Elasticsearch by running <strong>/opt/elasticsearch/bin/elasticsearch</strong></li>
+<li>Create a basic logstash.conf file.  I created an /opt/logstash/logstash.conf with an initial config something like this, which just creates local file inputs.
+<pre>input {
+file {
+type => "linux-syslog"
+path => [ "/var/log/*.log", "/var/log/messages", "/var/log/syslog" ]
+}
+}
+output {
+stdout { }
+elasticsearch { cluster => "YourclusterName" }
+}</pre>
+<p>This input section is defined to look at and ingest files defined in the path array variable. Then the output section is setting to output to stdout (your command window) and also to elasticsearch where you define your cluster name. This is a very basic config to easily show us things are working.</li>
+<li>Now fire up Logstash by running:  <strong>/opt/logstash/bin/logstash agent -f /opt/logstash/logstash.conf</strong></li>
+<li>You should now see logstash initialize and all of the events it indexes should get output to your terminal via the stdout output, in addition to getting pushed over to elasticsearch where we should see them with Kibana.</li>
+<li>If you extracted Kibana as noted in step 4, then you should be able to browse to your server and check out your data!  Try http://yourserver/kibana and you should be greeted with an introduction screen. You&#8217;ll see they have a pre-configured logstash dashboard that you can click on and save as your default</li>
+<li>Once you see your data is indeed visible through Kibana, we can dive into further configuration of logstash.  If something&#8217;s off and you don&#8217;t see data, check out the <a href="http://logstash.net/docs/1.3.2/">logstash docs</a> or jump into #logstash on irc.freenode.net where people are very happy to help.  Once you&#8217;re satisfied that it is working, you may want to remove the stdout line from the output section and only have your output go to Elasticsearch for indexing.</li>
+<li>Now that we know things are functional, we can set up some additional logstash configs to further improve things
+<ul>
+<li>First, let&#8217;s set up a very common input for remote systems to dump syslogs into Logstash</li>
+<li>Edit your logstash.conf again and add a syslog to your input section like this:
+<pre>syslog {
+type => "syslog"
+}</pre>
+</li>
+<li>With the Logstash syslog input, you can specify the port, add tags, and set a bunch of other options. Make sure to check out the documentation for each input you add to your config. For syslog, visit http://logstash.net/docs/1.3.2/inputs/syslog for example.</li>
+<li>Next, we&#8217;ll want to set up a filter section of our config. The filter below makes sure we get a FQDN for the host by using a reverse DNS lookup and replacing the host variable with that (without this, many hosts just report an IP address), and then additionally adds a tag &#8220;VMware&#8221; for any host matching &#8220;esx&#8221; in the hostname. Pending your host names contain &#8220;esx&#8221; somewhere in them, this example makes it easy for browsing VMware syslog data through Kibana. You can certainly tailor these to any host names or even other fields you like. Logstash&#8217;s filtering and grok parsing are very powerful capabilities. This example is enough to give you an idea of the structure and how the logic works. Again, I can&#8217;t stress enough to dig into the docs and hop on IRC for help.  Overall, the filter section is probably where you&#8217;ll end up spending most of your time.
+<pre>filter {
+if [type] == "syslog" {
+dns {
+reverse => [ "host" ] action => "replace"
+}
+if [host] =~ /.*?(esx).*?(yourdomain)?/ {
+mutate { add_tag => [ "VMware" ] }
+}
+}
+}</pre>
+</li>
+<li>Once you get your logstash.conf tweaked, restart Logstash.  <strong>ps -ef | grep logstash</strong> and then kill the process.  Restart it the same way you did in step 8.</li>
+</ul>
+</li>
+<li><span style="line-height: 1.5em;">Now we&#8217;re ready to have some servers to dump syslogs to your new central log server! I started with VMware and Ubuntu and branched out from there. Depending on your OS or the syslog implementation, the method of sending logs to a remote syslog host varies.  Check your OS documentation for how to do this.  The default port is 514, which is default for the syslog input and typically remote hosts sending syslog data.</span></li>
+<li><span style="line-height: 1.5em;">Check out Kibana now and hopefully you see log entries.  Click through on hosts, on tags, try creating a new dashboard displaying only your &#8220;VMware&#8221; tagged logs. Etc Etc Etc &#8211; hopefully you can see your filters in action and how it helps bring consistency to your log data.</span></li>
+<li>Keep exploring the Logstash docs for more inputs.  Windows servers, Cisco devices, apache or IIS logs, Exchange, etc.  I don&#8217;t think there&#8217;s a sysadmin out there who has a shortage of log data they could/should be analyzing.</li>
+<li>Document your setup as you go so you can remember it later. 🙂</li>
+</ol>
+<p>I hope this startup guide has been helpful to getting a base configuration.  Keep in mind that Logstash has a plethora of inputs, outputs codecs and filters.  Make sure to check out all the documentation at <a href="http://logstash.net/docs/1.3.2/">http://logstash.net/docs/1.3.2/</a> and tailor this awesome tool to your needs.  If you have a system logging, chances are there&#8217;s an input or plugin for it.</p>
+<p>A few bonus tips</p>
+<ul>
+<li>Check out <a href="http://www.elasticsearch.org/videos/">http://www.elasticsearch.org/videos/</a>, particularly &#8220;Introduction to Logstash&#8221;</li>
+<li>Install a few awesome plugins for Elasticsearch
+<ul>
+<li>/opt/elasticsearch/bin/plugin -install karmi/elasticsearch-paramedic</li>
+<li>/opt/elasticsearch/bin/plugin -install royrusso/elasticsearch-HQ</li>
+<li>/opt/elasticsearch/bin/plugin -install mobz/elasticsearch-head</li>
+</ul>
+</li>
+<li>Move your logstash dashboard to default by browsing to /var/www/kibana/app/dashboards and copying logstash.json to default.json.  Maybe save default.json off as default.json.orig or something first.</li>
+<li>Make sure to visit the <a href="http://cookbook.logstash.net/">Logstash community cookbook</a>.</li>
+</ul>
+					</div><!-- .entry-content -->
+		
+		<footer class="entry-meta">
+			This entry was posted in <a href="index.html" rel="category tag">Tech</a> and tagged <a href="../../tag/logstash.html" rel="tag">logstash</a>, <a href="../../tag/sysadmin.html" rel="tag">sysadmin</a> on <a href="../../../index.html@p=3639.html" title="10:29 pm" rel="bookmark"><time class="entry-date" datetime="2014-01-04T22:29:05-05:00">January 4, 2014</time></a><span class="by-author"> by <span class="author vcard"><a class="url fn n" href="../../author/vanberge/index.html" title="View all posts by Vanberge" rel="author">Vanberge</a></span></span>.								</footer><!-- .entry-meta -->
+	</article><!-- #post -->
+
+	<article id="post-3618" class="post-3618 post type-post status-publish format-standard hentry category-tech tag-vmware tag-vmworld">
+				<header class="entry-header">
+			
+						<h1 class="entry-title">
+				<a href="../../../index.html@p=3618.html" rel="bookmark">VMworld: Day 4 &#8211; The &quot;Unofficial&quot; Summary Guide</a>
+			</h1>
+										<div class="comments-link">
+					<a href="../../../index.html@p=3618.html#respond"><span class="leave-reply">Leave a reply</span></a>				</div><!-- .comments-link -->
+					</header><!-- .entry-header -->
+
+				<div class="entry-content">
+			<p>As VMworld 2013 came to a close, I found myself reflecting on the vast experience.  Did I make the most of it?  Was it worthwhile?  What should I do differently next time?  None of these questions had simple answers, so I took the time to summarize my thoughts and feelings on VMworld.</p>
+<p><strong>Making the most of it.</strong><br />
+If you&#8217;re going to VMworld, you&#8217;re probably already planning on sessions, group discussions, labs, etc. Attending these things goes without saying. However, what I think is nearly as equally important are all the unofficial or underground things you can participate in at VMworld.  Do some of these things and have some fun while you meet/greet with some of the great minds in the industry.</p>
+<ul>
+<li>Meetups, Tweetups, and parties.<br />
+From <a href="http://www.vmunderground.com/">#VMunderground</a> to <a href="http://www.vbeers.org/">#vBeers</a>, there are plenty of community and vendor sponsored activities to check out. The comprehensive list can be found here: http://www.vmworld.com/community/gatherings. Even if you didn&#8217;t make it in time to sign up for one officially, crash one! Many times, they scan your badge and still let you in (I&#8217;ve heard). 😛</li>
+<li>Start a conversation.<br />
+I&#8217;m totally an introvert by nature, and so are most of the people attending VMworld.  At mealtimes, this resulted in many people sitting and eating by themselves at tables for 6.  My introverted nature begged me to do the same, but I forced myself to sit at a table with somebody else and start a conversation.  In literally every case, just saying &#8220;Mind if I join you? &#8230; So, where are you from?&#8221; resulted in great conversation.  So, take the initiative and be the one to break the ice!  Whether sitting at a meal, or if you happen to see one of your favorite tech bloggers &#8211; I found it very worthwhile to say hello.</li>
+<li>Embrace social media.<br />
+Social media outlets like Twitter, Instagram, Vine and Facebook sometimes elicit a negative connotation or response. Granted, these outlets are used for some of the more annoying things our human race has to offer.  This shouldn&#8217;t stop you from using them though.  I found Twitter particularly helpful &#8211; using hashtags for my sessions, finding new ideas, and overall interacting with colleagues was a really positive experience. You can ask about a good place to eat, trade ideas/thoughts on new products, and get in on running jokes.  Social media gives you a whole new level of interaction detail within VMworld, and you really should use it.</li>
+</ul>
+<p><strong>What would I do differently?</strong><br />
+My rookie foray into the enigma that is VMworld was bound to be a learning experience.  As noted before, I don&#8217;t travel very often.  I tried to counteract that lack of experience with planning and using available technologies. But there are still some things I would do differently next year.</p>
+<ul>
+<li>Register early.<br />
+I got a confirmation that I was going to VMworld pretty late in the game.  I think schedule builder kicks off in May, and I finally registered in early August. By then, many sessions are filled up.  I still got into plenty of great sessions, and you can always get in the standby line for ones that are full.  Not to mention I had to stay up at Fisherman&#8217;s wharf because all the other close hotels were booked.  This did give me the opportunity to ride the city&#8217;s impressive public transit system though.</li>
+<li>Branch out.<br />
+My tendency was to pick sessions for products that I use every day and am familiar with.  What is the point of that? Learn a little bit more or hope for one new feature you may not have known about before?  It&#8217;s probably better in retrospect to look for sessions or products you don&#8217;t use or don&#8217;t know anything about.  That way, you can learn ALOT and you will find yourself brainstorming of ways you could leverage these new products.</li>
+<li>Be a session detective.<br />
+The sessions available offer clues to the announcements that will be made at VMworld.  &#8220;What&#8217;s new in vSphere&#8221; sessions available? Well then they&#8217;re going to announce a new version of vSphere.  Keep an eye out for new products or what may be updates to existing products and you can have a head start on your session scheduling.</li>
+</ul>
+<p><strong>Was it worth it?</strong><br />
+Absolutely. It was an awesome experience.  I&#8217;m sure part of that is it being my first time, but I found myself coming up with new ideas and feeling inspired to learn more during and after VMworld.  You end up hearing how another enterprise solved a tough problem, or how a cool product helped an organization expand or take a next step and you can&#8217;t help but take that enthusiasm away with you.  It re-energized me in my career and I felt great about my industry and skillset. VMworld 2013 may have been my first, but I sincerely hope it is not even close to my last.</p>
+					</div><!-- .entry-content -->
+		
+		<footer class="entry-meta">
+			This entry was posted in <a href="index.html" rel="category tag">Tech</a> and tagged <a href="../../tag/vmware.html" rel="tag">VMware</a>, <a href="../../tag/vmworld.html" rel="tag">VMworld</a> on <a href="../../../index.html@p=3618.html" title="10:17 am" rel="bookmark"><time class="entry-date" datetime="2013-09-04T10:17:00-04:00">September 4, 2013</time></a><span class="by-author"> by <span class="author vcard"><a class="url fn n" href="../../author/vanberge/index.html" title="View all posts by Vanberge" rel="author">Vanberge</a></span></span>.								</footer><!-- .entry-meta -->
+	</article><!-- #post -->
+			<nav id="nav-below" class="navigation">
+				<h3 class="assistive-text">Post navigation</h3>
+				<div class="nav-previous"><a href="page/2.html" ><span class="meta-nav">&larr;</span> Older posts</a></div>
+				<div class="nav-next"></div>
+			</nav><!-- .navigation -->
+			
+		
+		</div><!-- #content -->
+	</section><!-- #primary -->
+
+
+			<div id="secondary" class="widget-area" role="complementary">
+			<aside id="text-2" class="widget widget_text"><h3 class="widget-title">Instagram</h3>			<div class="textwidget">
+<div id="sb_instagram"  class="sbi sbi_mob_col_1 sbi_tab_col_2 sbi_col_2 sbi_width_resp" style="padding-bottom: 10px;width: 100%;" data-feedid="*1"  data-res="auto" data-cols="2" data-colsmobile="1" data-colstablet="2" data-num="4" data-nummobile="" data-shortcode-atts="{}"  data-postid="" data-locatornonce="39ea059979" data-sbi-flags="favorLocal">
+	
+    <div id="sbi_images"  style="padding: 5px;">
+		<div class="sbi_item sbi_type_image sbi_new sbi_transition" id="sbi_18238486351128110" data-date="1654379987">
+    <div class="sbi_photo_wrap">
+        <a class="sbi_photo" href="https://www.instagram.com/p/CeZjpYHrmRl/" target="_blank" rel="noopener nofollow" data-full-res="https://scontent-iad3-2.cdninstagram.com/v/t51.29350-15/285722495_724954735324424_860852912508283548_n.webp?stp=dst-jpg&#038;_nc_cat=103&#038;ccb=1-7&#038;_nc_sid=8ae9d6&#038;_nc_ohc=ffweeydAalYAX8KRldU&#038;_nc_ht=scontent-iad3-2.cdninstagram.com&#038;edm=ANo9K5cEAAAA&#038;oh=00_AT_aJ3c794DlwK43MnDNbtJENvitETcpBYE7btDUmYhF4g&#038;oe=62A3C825" data-img-src-set="{&quot;d&quot;:&quot;https:\/\/scontent-iad3-2.cdninstagram.com\/v\/t51.29350-15\/285722495_724954735324424_860852912508283548_n.webp?stp=dst-jpg&amp;_nc_cat=103&amp;ccb=1-7&amp;_nc_sid=8ae9d6&amp;_nc_ohc=ffweeydAalYAX8KRldU&amp;_nc_ht=scontent-iad3-2.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AT_aJ3c794DlwK43MnDNbtJENvitETcpBYE7btDUmYhF4g&amp;oe=62A3C825&quot;,&quot;150&quot;:&quot;https:\/\/scontent-iad3-2.cdninstagram.com\/v\/t51.29350-15\/285722495_724954735324424_860852912508283548_n.webp?stp=dst-jpg&amp;_nc_cat=103&amp;ccb=1-7&amp;_nc_sid=8ae9d6&amp;_nc_ohc=ffweeydAalYAX8KRldU&amp;_nc_ht=scontent-iad3-2.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AT_aJ3c794DlwK43MnDNbtJENvitETcpBYE7btDUmYhF4g&amp;oe=62A3C825&quot;,&quot;320&quot;:&quot;https:\/\/scontent-iad3-2.cdninstagram.com\/v\/t51.29350-15\/285722495_724954735324424_860852912508283548_n.webp?stp=dst-jpg&amp;_nc_cat=103&amp;ccb=1-7&amp;_nc_sid=8ae9d6&amp;_nc_ohc=ffweeydAalYAX8KRldU&amp;_nc_ht=scontent-iad3-2.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AT_aJ3c794DlwK43MnDNbtJENvitETcpBYE7btDUmYhF4g&amp;oe=62A3C825&quot;,&quot;640&quot;:&quot;https:\/\/scontent-iad3-2.cdninstagram.com\/v\/t51.29350-15\/285722495_724954735324424_860852912508283548_n.webp?stp=dst-jpg&amp;_nc_cat=103&amp;ccb=1-7&amp;_nc_sid=8ae9d6&amp;_nc_ohc=ffweeydAalYAX8KRldU&amp;_nc_ht=scontent-iad3-2.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AT_aJ3c794DlwK43MnDNbtJENvitETcpBYE7btDUmYhF4g&amp;oe=62A3C825&quot;}">
+            <span class="sbi-screenreader">#naptime #puppy</span>
+            	                    <img src="../../../wp-content/plugins/instagram-feed/img/placeholder.png" alt="#naptime #puppy">
+        </a>
+    </div>
+</div><div class="sbi_item sbi_type_image sbi_new sbi_transition" id="sbi_17965795435635862" data-date="1654213805">
+    <div class="sbi_photo_wrap">
+        <a class="sbi_photo" href="https://www.instagram.com/p/CeUmrZ8rAZM/" target="_blank" rel="noopener nofollow" data-full-res="https://scontent-iad3-2.cdninstagram.com/v/t51.29350-15/285437382_568631894617660_9168570927424210870_n.webp?stp=dst-jpg&#038;_nc_cat=106&#038;ccb=1-7&#038;_nc_sid=8ae9d6&#038;_nc_ohc=INdkxLCSaBsAX85fm8F&#038;_nc_ht=scontent-iad3-2.cdninstagram.com&#038;edm=ANo9K5cEAAAA&#038;oh=00_AT8-UK0gYnHEhm7UOfoO5PyYSQMu2TSQ78csMXnMK4ugKg&#038;oe=62A2C293" data-img-src-set="{&quot;d&quot;:&quot;https:\/\/scontent-iad3-2.cdninstagram.com\/v\/t51.29350-15\/285437382_568631894617660_9168570927424210870_n.webp?stp=dst-jpg&amp;_nc_cat=106&amp;ccb=1-7&amp;_nc_sid=8ae9d6&amp;_nc_ohc=INdkxLCSaBsAX85fm8F&amp;_nc_ht=scontent-iad3-2.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AT8-UK0gYnHEhm7UOfoO5PyYSQMu2TSQ78csMXnMK4ugKg&amp;oe=62A2C293&quot;,&quot;150&quot;:&quot;https:\/\/scontent-iad3-2.cdninstagram.com\/v\/t51.29350-15\/285437382_568631894617660_9168570927424210870_n.webp?stp=dst-jpg&amp;_nc_cat=106&amp;ccb=1-7&amp;_nc_sid=8ae9d6&amp;_nc_ohc=INdkxLCSaBsAX85fm8F&amp;_nc_ht=scontent-iad3-2.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AT8-UK0gYnHEhm7UOfoO5PyYSQMu2TSQ78csMXnMK4ugKg&amp;oe=62A2C293&quot;,&quot;320&quot;:&quot;https:\/\/scontent-iad3-2.cdninstagram.com\/v\/t51.29350-15\/285437382_568631894617660_9168570927424210870_n.webp?stp=dst-jpg&amp;_nc_cat=106&amp;ccb=1-7&amp;_nc_sid=8ae9d6&amp;_nc_ohc=INdkxLCSaBsAX85fm8F&amp;_nc_ht=scontent-iad3-2.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AT8-UK0gYnHEhm7UOfoO5PyYSQMu2TSQ78csMXnMK4ugKg&amp;oe=62A2C293&quot;,&quot;640&quot;:&quot;https:\/\/scontent-iad3-2.cdninstagram.com\/v\/t51.29350-15\/285437382_568631894617660_9168570927424210870_n.webp?stp=dst-jpg&amp;_nc_cat=106&amp;ccb=1-7&amp;_nc_sid=8ae9d6&amp;_nc_ohc=INdkxLCSaBsAX85fm8F&amp;_nc_ht=scontent-iad3-2.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AT8-UK0gYnHEhm7UOfoO5PyYSQMu2TSQ78csMXnMK4ugKg&amp;oe=62A2C293&quot;}">
+            <span class="sbi-screenreader">#jortslife</span>
+            	                    <img src="../../../wp-content/plugins/instagram-feed/img/placeholder.png" alt="#jortslife">
+        </a>
+    </div>
+</div><div class="sbi_item sbi_type_image sbi_new sbi_transition" id="sbi_17921550887456726" data-date="1653701141">
+    <div class="sbi_photo_wrap">
+        <a class="sbi_photo" href="https://www.instagram.com/p/CeFU2XUrrRb/" target="_blank" rel="noopener nofollow" data-full-res="https://scontent-iad3-2.cdninstagram.com/v/t51.29350-15/284271390_3219987044995585_4794336554325044709_n.webp?stp=dst-jpg&#038;_nc_cat=110&#038;ccb=1-7&#038;_nc_sid=8ae9d6&#038;_nc_ohc=YDazQDug9ZoAX85b53u&#038;_nc_ht=scontent-iad3-2.cdninstagram.com&#038;edm=ANo9K5cEAAAA&#038;oh=00_AT_AvlFe9Yg0L3GF4ijZUE68XI_-vQkJ70IQwJiZ_PiEYg&#038;oe=62A23DD7" data-img-src-set="{&quot;d&quot;:&quot;https:\/\/scontent-iad3-2.cdninstagram.com\/v\/t51.29350-15\/284271390_3219987044995585_4794336554325044709_n.webp?stp=dst-jpg&amp;_nc_cat=110&amp;ccb=1-7&amp;_nc_sid=8ae9d6&amp;_nc_ohc=YDazQDug9ZoAX85b53u&amp;_nc_ht=scontent-iad3-2.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AT_AvlFe9Yg0L3GF4ijZUE68XI_-vQkJ70IQwJiZ_PiEYg&amp;oe=62A23DD7&quot;,&quot;150&quot;:&quot;https:\/\/scontent-iad3-2.cdninstagram.com\/v\/t51.29350-15\/284271390_3219987044995585_4794336554325044709_n.webp?stp=dst-jpg&amp;_nc_cat=110&amp;ccb=1-7&amp;_nc_sid=8ae9d6&amp;_nc_ohc=YDazQDug9ZoAX85b53u&amp;_nc_ht=scontent-iad3-2.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AT_AvlFe9Yg0L3GF4ijZUE68XI_-vQkJ70IQwJiZ_PiEYg&amp;oe=62A23DD7&quot;,&quot;320&quot;:&quot;https:\/\/scontent-iad3-2.cdninstagram.com\/v\/t51.29350-15\/284271390_3219987044995585_4794336554325044709_n.webp?stp=dst-jpg&amp;_nc_cat=110&amp;ccb=1-7&amp;_nc_sid=8ae9d6&amp;_nc_ohc=YDazQDug9ZoAX85b53u&amp;_nc_ht=scontent-iad3-2.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AT_AvlFe9Yg0L3GF4ijZUE68XI_-vQkJ70IQwJiZ_PiEYg&amp;oe=62A23DD7&quot;,&quot;640&quot;:&quot;https:\/\/scontent-iad3-2.cdninstagram.com\/v\/t51.29350-15\/284271390_3219987044995585_4794336554325044709_n.webp?stp=dst-jpg&amp;_nc_cat=110&amp;ccb=1-7&amp;_nc_sid=8ae9d6&amp;_nc_ohc=YDazQDug9ZoAX85b53u&amp;_nc_ht=scontent-iad3-2.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AT_AvlFe9Yg0L3GF4ijZUE68XI_-vQkJ70IQwJiZ_PiEYg&amp;oe=62A23DD7&quot;}">
+            <span class="sbi-screenreader">Forgive me father, for i have sinned #jorts #jeans</span>
+            	                    <img src="../../../wp-content/plugins/instagram-feed/img/placeholder.png" alt="Forgive me father, for i have sinned #jorts #jeanshorts #cutoffs">
+        </a>
+    </div>
+</div><div class="sbi_item sbi_type_carousel sbi_new sbi_transition" id="sbi_17887578995639593" data-date="1652618196">
+    <div class="sbi_photo_wrap">
+        <a class="sbi_photo" href="https://www.instagram.com/p/CdlDS7SrQvk/" target="_blank" rel="noopener nofollow" data-full-res="https://scontent-iad3-2.cdninstagram.com/v/t51.29350-15/280746129_1208206576591922_5670781113760358832_n.webp?stp=dst-jpg&#038;_nc_cat=109&#038;ccb=1-7&#038;_nc_sid=8ae9d6&#038;_nc_ohc=th_VKYJkbOgAX-V4gGx&#038;_nc_ht=scontent-iad3-2.cdninstagram.com&#038;edm=ANo9K5cEAAAA&#038;oh=00_AT_1uzTR_pCAJ1Sld-XgQdyuu39kBzBUjmnVA8CMD3mR8w&#038;oe=62A2B92C" data-img-src-set="{&quot;d&quot;:&quot;https:\/\/scontent-iad3-2.cdninstagram.com\/v\/t51.29350-15\/280746129_1208206576591922_5670781113760358832_n.webp?stp=dst-jpg&amp;_nc_cat=109&amp;ccb=1-7&amp;_nc_sid=8ae9d6&amp;_nc_ohc=th_VKYJkbOgAX-V4gGx&amp;_nc_ht=scontent-iad3-2.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AT_1uzTR_pCAJ1Sld-XgQdyuu39kBzBUjmnVA8CMD3mR8w&amp;oe=62A2B92C&quot;,&quot;150&quot;:&quot;https:\/\/scontent-iad3-2.cdninstagram.com\/v\/t51.29350-15\/280746129_1208206576591922_5670781113760358832_n.webp?stp=dst-jpg&amp;_nc_cat=109&amp;ccb=1-7&amp;_nc_sid=8ae9d6&amp;_nc_ohc=th_VKYJkbOgAX-V4gGx&amp;_nc_ht=scontent-iad3-2.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AT_1uzTR_pCAJ1Sld-XgQdyuu39kBzBUjmnVA8CMD3mR8w&amp;oe=62A2B92C&quot;,&quot;320&quot;:&quot;https:\/\/scontent-iad3-2.cdninstagram.com\/v\/t51.29350-15\/280746129_1208206576591922_5670781113760358832_n.webp?stp=dst-jpg&amp;_nc_cat=109&amp;ccb=1-7&amp;_nc_sid=8ae9d6&amp;_nc_ohc=th_VKYJkbOgAX-V4gGx&amp;_nc_ht=scontent-iad3-2.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AT_1uzTR_pCAJ1Sld-XgQdyuu39kBzBUjmnVA8CMD3mR8w&amp;oe=62A2B92C&quot;,&quot;640&quot;:&quot;https:\/\/scontent-iad3-2.cdninstagram.com\/v\/t51.29350-15\/280746129_1208206576591922_5670781113760358832_n.webp?stp=dst-jpg&amp;_nc_cat=109&amp;ccb=1-7&amp;_nc_sid=8ae9d6&amp;_nc_ohc=th_VKYJkbOgAX-V4gGx&amp;_nc_ht=scontent-iad3-2.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AT_1uzTR_pCAJ1Sld-XgQdyuu39kBzBUjmnVA8CMD3mR8w&amp;oe=62A2B92C&quot;}">
+            <span class="sbi-screenreader">#SundayFunday #PancakeArt</span>
+            <svg class="svg-inline--fa fa-clone fa-w-16 sbi_lightbox_carousel_icon" aria-hidden="true" aria-label="Clone" data-fa-proƒcessed="" data-prefix="far" data-icon="clone" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+	                <path fill="currentColor" d="M464 0H144c-26.51 0-48 21.49-48 48v48H48c-26.51 0-48 21.49-48 48v320c0 26.51 21.49 48 48 48h320c26.51 0 48-21.49 48-48v-48h48c26.51 0 48-21.49 48-48V48c0-26.51-21.49-48-48-48zM362 464H54a6 6 0 0 1-6-6V150a6 6 0 0 1 6-6h42v224c0 26.51 21.49 48 48 48h224v42a6 6 0 0 1-6 6zm96-96H150a6 6 0 0 1-6-6V54a6 6 0 0 1 6-6h308a6 6 0 0 1 6 6v308a6 6 0 0 1-6 6z"></path>
+	            </svg>	                    <img src="../../../wp-content/plugins/instagram-feed/img/placeholder.png" alt="#SundayFunday #PancakeArt">
+        </a>
+    </div>
+</div>    </div>
+
+	<div id="sbi_load" >
+
+	
+	
+</div>
+
+	    <span class="sbi_resized_image_data" data-feed-id="*1" data-resized="{&quot;17887578995639593&quot;:{&quot;id&quot;:&quot;280746129_1208206576591922_5670781113760358832_n.webp&quot;,&quot;ratio&quot;:&quot;1.00&quot;,&quot;sizes&quot;:{&quot;full&quot;:640,&quot;low&quot;:320,&quot;thumb&quot;:150}},&quot;17921550887456726&quot;:{&quot;id&quot;:&quot;284271390_3219987044995585_4794336554325044709_n.webp&quot;,&quot;ratio&quot;:&quot;1.33&quot;,&quot;sizes&quot;:{&quot;full&quot;:640,&quot;low&quot;:320,&quot;thumb&quot;:150}},&quot;17965795435635862&quot;:{&quot;id&quot;:&quot;285437382_568631894617660_9168570927424210870_n.webp&quot;,&quot;ratio&quot;:&quot;1.00&quot;,&quot;sizes&quot;:{&quot;full&quot;:640,&quot;low&quot;:320,&quot;thumb&quot;:150}},&quot;18238486351128110&quot;:{&quot;id&quot;:&quot;285722495_724954735324424_860852912508283548_n.webp&quot;,&quot;ratio&quot;:&quot;1.00&quot;,&quot;sizes&quot;:{&quot;full&quot;:640,&quot;low&quot;:320,&quot;thumb&quot;:150}}}">
+	</span>
+	</div>
+
+
+</div>
+		</aside><aside id="text-3" class="widget widget_text"><h3 class="widget-title">Twitter</h3>			<div class="textwidget">
+<!-- Custom Twitter Feeds by Smash Balloon -->
+<div id="ctf" class=" ctf ctf-type-usertimeline ctf-feed-1  ctf-styles ctf-list ctf-regular-style"   data-ctfshortcode="{&quot;feed&quot;:1}"   data-ctfdisablelinks="false" data-ctflinktextcolor="#" data-header-size="small" data-feedid="1" data-postid=""  data-feed="1" data-ctfintents="1"  data-ctfneeded="-113">
+	    <div class="ctf-tweets">
+   		
+<div  class="ctf-item ctf-author-vanberge ctf-new ctf-retweet"  id="1612310149431164929" >
+
+		<div class="ctf-context" >
+	    <a href="https://twitter.com/intent/user?screen_name=vanberge" target="_blank" rel="nofollow noopener noreferrer" class="ctf-retweet-icon"><svg class="svg-inline--fa fa-w-16" viewBox="0 0 24 24" aria-hidden="true" aria-label="retweet" role="img"><path fill="currentColor" d="M23.77 15.67c-.292-.293-.767-.293-1.06 0l-2.22 2.22V7.65c0-2.068-1.683-3.75-3.75-3.75h-5.85c-.414 0-.75.336-.75.75s.336.75.75.75h5.85c1.24 0 2.25 1.01 2.25 2.25v10.24l-2.22-2.22c-.293-.293-.768-.293-1.06 0s-.294.768 0 1.06l3.5 3.5c.145.147.337.22.53.22s.383-.072.53-.22l3.5-3.5c.294-.292.294-.767 0-1.06zm-10.66 3.28H7.26c-1.24 0-2.25-1.01-2.25-2.25V6.46l2.22 2.22c.148.147.34.22.532.22s.384-.073.53-.22c.293-.293.293-.768 0-1.06l-3.5-3.5c-.293-.294-.768-.294-1.06 0l-3.5 3.5c-.294.292-.294.767 0 1.06s.767.293 1.06 0l2.22-2.22V16.7c0 2.068 1.683 3.75 3.75 3.75h5.85c.414 0 .75-.336.75-.75s-.337-.75-.75-.75z"></path></svg><span class="ctf-screenreader">Retweet on Twitter</span></a>
+	    <a href="https://twitter.com/vanberge" target="_blank" rel="nofollow noopener noreferrer" class="ctf-retweet-text">Eric VanBergen 🎧 Retweeted</a>
+	</div>
+
+	<div class="ctf-author-box">
+		<div class="ctf-author-box-link">
+	        									<a href="https://twitter.com/denverbobcat" class="ctf-author-avatar" target="_blank" rel="noopener noreferrer">
+													<img src="https://pbs.twimg.com/profile_images/1480581019208237062/IDCAKkEo_normal.jpg" alt="denverbobcat" width="48" height="48">
+											</a>
+				
+									<a href="https://twitter.com/denverbobcat" target="_blank" rel="noopener noreferrer" class="ctf-author-name">jmc_303</a>
+										<a href="https://twitter.com/denverbobcat" class="ctf-author-screenname" target="_blank" rel="noopener noreferrer">@denverbobcat</a>
+					<span class="ctf-screename-sep">&middot;</span>
+					        
+							<div class="ctf-tweet-meta" >
+					<a href="https://twitter.com/denverbobcat/status/1612310149431164929" class="ctf-tweet-date" target="_blank" rel="noopener noreferrer">9 Jan</a>
+				</div>
+					</div>
+	    			<div class="ctf-corner-logo" >
+				<svg class="svg-inline--fa fa-twitter fa-w-16" aria-hidden="true" aria-label="twitter logo" data-fa-processed="" data-prefix="fab" data-icon="twitter" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg>			</div>
+		
+	</div>
+	<div class="ctf-tweet-content">
+		                <p class="ctf-tweet-text">
+                    @BarrySanders @TonyDungy @Lions Yeaaaaaah buddy!                     </p><a href="https://twitter.com/vanberge/status/1612310353337090048" target="_blank" rel="noopener noreferrer" class="ctf-tweet-text-media-wrap"><svg aria-hidden="true" aria-label="images in tweet" focusable="false" data-prefix="far" data-icon="image" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-image fa-w-16 fa-9x ctf-tweet-text-media"><path fill="currentColor" d="M464 64H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm-6 336H54a6 6 0 0 1-6-6V118a6 6 0 0 1 6-6h404a6 6 0 0 1 6 6v276a6 6 0 0 1-6 6zM128 152c-22.091 0-40 17.909-40 40s17.909 40 40 40 40-17.909 40-40-17.909-40-40-40zM96 352h320v-80l-87.515-87.515c-4.686-4.686-12.284-4.686-16.971 0L192 304l-39.515-39.515c-4.686-4.686-12.284-4.686-16.971 0L96 304v48z" class=""></path></svg></a>                </p>
+                        	</div>
+
+		
+	<div class="ctf-tweet-actions" >
+		
+		<a href="https://twitter.com/intent/tweet?in_reply_to=1612310149431164929&#038;related=denverbobcat" class="ctf-reply" target="_blank" rel="noopener noreferrer">
+			<svg class="svg-inline--fa fa-w-16" viewBox="0 0 24 24" aria-label="reply" role="img" xmlns="http://www.w3.org/2000/svg"><g><path fill="currentColor" d="M14.046 2.242l-4.148-.01h-.002c-4.374 0-7.8 3.427-7.8 7.802 0 4.098 3.186 7.206 7.465 7.37v3.828c0 .108.044.286.12.403.142.225.384.347.632.347.138 0 .277-.038.402-.118.264-.168 6.473-4.14 8.088-5.506 1.902-1.61 3.04-3.97 3.043-6.312v-.017c-.006-4.367-3.43-7.787-7.8-7.788zm3.787 12.972c-1.134.96-4.862 3.405-6.772 4.643V16.67c0-.414-.335-.75-.75-.75h-.396c-3.66 0-6.318-2.476-6.318-5.886 0-3.534 2.768-6.302 6.3-6.302l4.147.01h.002c3.532 0 6.3 2.766 6.302 6.296-.003 1.91-.942 3.844-2.514 5.176z"></path></g></svg>			<span class="ctf-screenreader">Reply on Twitter 1612310149431164929</span>
+		</a>
+
+		<a href="https://twitter.com/intent/retweet?tweet_id=1612310149431164929&#038;related=denverbobcat" class="ctf-retweet" target="_blank" rel="noopener noreferrer"><svg class="svg-inline--fa fa-w-16" viewBox="0 0 24 24" aria-hidden="true" aria-label="retweet" role="img"><path fill="currentColor" d="M23.77 15.67c-.292-.293-.767-.293-1.06 0l-2.22 2.22V7.65c0-2.068-1.683-3.75-3.75-3.75h-5.85c-.414 0-.75.336-.75.75s.336.75.75.75h5.85c1.24 0 2.25 1.01 2.25 2.25v10.24l-2.22-2.22c-.293-.293-.768-.293-1.06 0s-.294.768 0 1.06l3.5 3.5c.145.147.337.22.53.22s.383-.072.53-.22l3.5-3.5c.294-.292.294-.767 0-1.06zm-10.66 3.28H7.26c-1.24 0-2.25-1.01-2.25-2.25V6.46l2.22 2.22c.148.147.34.22.532.22s.384-.073.53-.22c.293-.293.293-.768 0-1.06l-3.5-3.5c-.293-.294-.768-.294-1.06 0l-3.5 3.5c-.294.292-.294.767 0 1.06s.767.293 1.06 0l2.22-2.22V16.7c0 2.068 1.683 3.75 3.75 3.75h5.85c.414 0 .75-.336.75-.75s-.337-.75-.75-.75z"></path></svg>			<span class="ctf-screenreader">Retweet on Twitter 1612310149431164929</span>
+			<span class="ctf-action-count ctf-retweet-count">1</span>
+		</a>
+
+		<a href="https://twitter.com/intent/like?tweet_id=1612310149431164929&#038;related=denverbobcat" class="ctf-like" target="_blank" rel="nofollow noopener noreferrer">
+			<svg class="svg-inline--fa fa-w-16" viewBox="0 0 24 24" aria-hidden="true" aria-label="like" role="img" xmlns="http://www.w3.org/2000/svg"><g><path fill="currentColor" d="M12 21.638h-.014C9.403 21.59 1.95 14.856 1.95 8.478c0-3.064 2.525-5.754 5.403-5.754 2.29 0 3.83 1.58 4.646 2.73.814-1.148 2.354-2.73 4.645-2.73 2.88 0 5.404 2.69 5.404 5.755 0 6.376-7.454 13.11-10.037 13.157H12zM7.354 4.225c-2.08 0-3.903 1.988-3.903 4.255 0 5.74 7.034 11.596 8.55 11.658 1.518-.062 8.55-5.917 8.55-11.658 0-2.267-1.823-4.255-3.903-4.255-2.528 0-3.94 2.936-3.952 2.965-.23.562-1.156.562-1.387 0-.014-.03-1.425-2.965-3.954-2.965z"></path></g></svg>			<span class="ctf-screenreader">Like on Twitter 1612310149431164929</span>
+			<span class="ctf-action-count ctf-favorite-count">19</span>
+		</a>
+		
+					<a href="https://twitter.com/denverbobcat/status/1612310149431164929" class="ctf-twitterlink" target="_blank" rel="nofollow noopener noreferrer">
+				<span >Twitter</span>
+				<span class="ctf-screenreader">1612310149431164929</span>
+			</a>
+			</div>
+</div>
+<div  class="ctf-item ctf-author-vanberge ctf-new ctf-retweet"  id="1609355362645250048" >
+
+		<div class="ctf-context" >
+	    <a href="https://twitter.com/intent/user?screen_name=vanberge" target="_blank" rel="nofollow noopener noreferrer" class="ctf-retweet-icon"><svg class="svg-inline--fa fa-w-16" viewBox="0 0 24 24" aria-hidden="true" aria-label="retweet" role="img"><path fill="currentColor" d="M23.77 15.67c-.292-.293-.767-.293-1.06 0l-2.22 2.22V7.65c0-2.068-1.683-3.75-3.75-3.75h-5.85c-.414 0-.75.336-.75.75s.336.75.75.75h5.85c1.24 0 2.25 1.01 2.25 2.25v10.24l-2.22-2.22c-.293-.293-.768-.293-1.06 0s-.294.768 0 1.06l3.5 3.5c.145.147.337.22.53.22s.383-.072.53-.22l3.5-3.5c.294-.292.294-.767 0-1.06zm-10.66 3.28H7.26c-1.24 0-2.25-1.01-2.25-2.25V6.46l2.22 2.22c.148.147.34.22.532.22s.384-.073.53-.22c.293-.293.293-.768 0-1.06l-3.5-3.5c-.293-.294-.768-.294-1.06 0l-3.5 3.5c-.294.292-.294.767 0 1.06s.767.293 1.06 0l2.22-2.22V16.7c0 2.068 1.683 3.75 3.75 3.75h5.85c.414 0 .75-.336.75-.75s-.337-.75-.75-.75z"></path></svg><span class="ctf-screenreader">Retweet on Twitter</span></a>
+	    <a href="https://twitter.com/vanberge" target="_blank" rel="nofollow noopener noreferrer" class="ctf-retweet-text">Eric VanBergen 🎧 Retweeted</a>
+	</div>
+
+	<div class="ctf-author-box">
+		<div class="ctf-author-box-link">
+	        									<a href="https://twitter.com/espngreeny" class="ctf-author-avatar" target="_blank" rel="noopener noreferrer">
+													<img src="https://pbs.twimg.com/profile_images/1347981542056984577/uXVlSQO9_normal.jpg" alt="espngreeny" width="48" height="48">
+											</a>
+				
+									<a href="https://twitter.com/espngreeny" target="_blank" rel="noopener noreferrer" class="ctf-author-name">Mike Greenberg</a>
+											<span class="ctf-verified"  ><svg class="svg-inline--fa fa-check-circle fa-w-16" aria-hidden="true" aria-label="verified" data-fa-processed="" data-prefix="fa" data-icon="check-circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path></svg></span>
+										<a href="https://twitter.com/espngreeny" class="ctf-author-screenname" target="_blank" rel="noopener noreferrer">@espngreeny</a>
+					<span class="ctf-screename-sep">&middot;</span>
+					        
+							<div class="ctf-tweet-meta" >
+					<a href="https://twitter.com/espngreeny/status/1609355362645250048" class="ctf-tweet-date" target="_blank" rel="noopener noreferrer">1 Jan</a>
+				</div>
+					</div>
+	    			<div class="ctf-corner-logo" >
+				<svg class="svg-inline--fa fa-twitter fa-w-16" aria-hidden="true" aria-label="twitter logo" data-fa-processed="" data-prefix="fab" data-icon="twitter" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg>			</div>
+		
+	</div>
+	<div class="ctf-tweet-content">
+		                <p class="ctf-tweet-text">
+                    A fitting end to a night where the officials didn’t have a clue. If that isn’t targeting, what is? #Michigan                                    </p>
+                        	</div>
+
+		
+	<div class="ctf-tweet-actions" >
+		
+		<a href="https://twitter.com/intent/tweet?in_reply_to=1609355362645250048&#038;related=espngreeny" class="ctf-reply" target="_blank" rel="noopener noreferrer">
+			<svg class="svg-inline--fa fa-w-16" viewBox="0 0 24 24" aria-label="reply" role="img" xmlns="http://www.w3.org/2000/svg"><g><path fill="currentColor" d="M14.046 2.242l-4.148-.01h-.002c-4.374 0-7.8 3.427-7.8 7.802 0 4.098 3.186 7.206 7.465 7.37v3.828c0 .108.044.286.12.403.142.225.384.347.632.347.138 0 .277-.038.402-.118.264-.168 6.473-4.14 8.088-5.506 1.902-1.61 3.04-3.97 3.043-6.312v-.017c-.006-4.367-3.43-7.787-7.8-7.788zm3.787 12.972c-1.134.96-4.862 3.405-6.772 4.643V16.67c0-.414-.335-.75-.75-.75h-.396c-3.66 0-6.318-2.476-6.318-5.886 0-3.534 2.768-6.302 6.3-6.302l4.147.01h.002c3.532 0 6.3 2.766 6.302 6.296-.003 1.91-.942 3.844-2.514 5.176z"></path></g></svg>			<span class="ctf-screenreader">Reply on Twitter 1609355362645250048</span>
+		</a>
+
+		<a href="https://twitter.com/intent/retweet?tweet_id=1609355362645250048&#038;related=espngreeny" class="ctf-retweet" target="_blank" rel="noopener noreferrer"><svg class="svg-inline--fa fa-w-16" viewBox="0 0 24 24" aria-hidden="true" aria-label="retweet" role="img"><path fill="currentColor" d="M23.77 15.67c-.292-.293-.767-.293-1.06 0l-2.22 2.22V7.65c0-2.068-1.683-3.75-3.75-3.75h-5.85c-.414 0-.75.336-.75.75s.336.75.75.75h5.85c1.24 0 2.25 1.01 2.25 2.25v10.24l-2.22-2.22c-.293-.293-.768-.293-1.06 0s-.294.768 0 1.06l3.5 3.5c.145.147.337.22.53.22s.383-.072.53-.22l3.5-3.5c.294-.292.294-.767 0-1.06zm-10.66 3.28H7.26c-1.24 0-2.25-1.01-2.25-2.25V6.46l2.22 2.22c.148.147.34.22.532.22s.384-.073.53-.22c.293-.293.293-.768 0-1.06l-3.5-3.5c-.293-.294-.768-.294-1.06 0l-3.5 3.5c-.294.292-.294.767 0 1.06s.767.293 1.06 0l2.22-2.22V16.7c0 2.068 1.683 3.75 3.75 3.75h5.85c.414 0 .75-.336.75-.75s-.337-.75-.75-.75z"></path></svg>			<span class="ctf-screenreader">Retweet on Twitter 1609355362645250048</span>
+			<span class="ctf-action-count ctf-retweet-count">754</span>
+		</a>
+
+		<a href="https://twitter.com/intent/like?tweet_id=1609355362645250048&#038;related=espngreeny" class="ctf-like" target="_blank" rel="nofollow noopener noreferrer">
+			<svg class="svg-inline--fa fa-w-16" viewBox="0 0 24 24" aria-hidden="true" aria-label="like" role="img" xmlns="http://www.w3.org/2000/svg"><g><path fill="currentColor" d="M12 21.638h-.014C9.403 21.59 1.95 14.856 1.95 8.478c0-3.064 2.525-5.754 5.403-5.754 2.29 0 3.83 1.58 4.646 2.73.814-1.148 2.354-2.73 4.645-2.73 2.88 0 5.404 2.69 5.404 5.755 0 6.376-7.454 13.11-10.037 13.157H12zM7.354 4.225c-2.08 0-3.903 1.988-3.903 4.255 0 5.74 7.034 11.596 8.55 11.658 1.518-.062 8.55-5.917 8.55-11.658 0-2.267-1.823-4.255-3.903-4.255-2.528 0-3.94 2.936-3.952 2.965-.23.562-1.156.562-1.387 0-.014-.03-1.425-2.965-3.954-2.965z"></path></g></svg>			<span class="ctf-screenreader">Like on Twitter 1609355362645250048</span>
+			<span class="ctf-action-count ctf-favorite-count">8390</span>
+		</a>
+		
+					<a href="https://twitter.com/espngreeny/status/1609355362645250048" class="ctf-twitterlink" target="_blank" rel="nofollow noopener noreferrer">
+				<span >Twitter</span>
+				<span class="ctf-screenreader">1609355362645250048</span>
+			</a>
+			</div>
+</div>
+<div  class="ctf-item ctf-author-vanberge ctf-new"  id="1596608855475212290" >
+
+	
+	<div class="ctf-author-box">
+		<div class="ctf-author-box-link">
+	        									<a href="https://twitter.com/vanberge" class="ctf-author-avatar" target="_blank" rel="noopener noreferrer">
+													<img src="https://pbs.twimg.com/profile_images/1475119576711057409/m5-2by6a_normal.jpg" alt="vanberge" width="48" height="48">
+											</a>
+				
+									<a href="https://twitter.com/vanberge" target="_blank" rel="noopener noreferrer" class="ctf-author-name">Eric VanBergen 🎧</a>
+										<a href="https://twitter.com/vanberge" class="ctf-author-screenname" target="_blank" rel="noopener noreferrer">@vanberge</a>
+					<span class="ctf-screename-sep">&middot;</span>
+					        
+							<div class="ctf-tweet-meta" >
+					<a href="https://twitter.com/vanberge/status/1596608855475212290" class="ctf-tweet-date" target="_blank" rel="noopener noreferrer">26 Nov</a>
+				</div>
+					</div>
+	    			<div class="ctf-corner-logo" >
+				<svg class="svg-inline--fa fa-twitter fa-w-16" aria-hidden="true" aria-label="twitter logo" data-fa-processed="" data-prefix="fab" data-icon="twitter" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg>			</div>
+		
+	</div>
+	<div class="ctf-tweet-content">
+		                <p class="ctf-tweet-text">
+                    Oh my God I'm so happy                                    </p>
+                        	</div>
+
+		
+	<div class="ctf-tweet-actions" >
+		
+		<a href="https://twitter.com/intent/tweet?in_reply_to=1596608855475212290&#038;related=vanberge" class="ctf-reply" target="_blank" rel="noopener noreferrer">
+			<svg class="svg-inline--fa fa-w-16" viewBox="0 0 24 24" aria-label="reply" role="img" xmlns="http://www.w3.org/2000/svg"><g><path fill="currentColor" d="M14.046 2.242l-4.148-.01h-.002c-4.374 0-7.8 3.427-7.8 7.802 0 4.098 3.186 7.206 7.465 7.37v3.828c0 .108.044.286.12.403.142.225.384.347.632.347.138 0 .277-.038.402-.118.264-.168 6.473-4.14 8.088-5.506 1.902-1.61 3.04-3.97 3.043-6.312v-.017c-.006-4.367-3.43-7.787-7.8-7.788zm3.787 12.972c-1.134.96-4.862 3.405-6.772 4.643V16.67c0-.414-.335-.75-.75-.75h-.396c-3.66 0-6.318-2.476-6.318-5.886 0-3.534 2.768-6.302 6.3-6.302l4.147.01h.002c3.532 0 6.3 2.766 6.302 6.296-.003 1.91-.942 3.844-2.514 5.176z"></path></g></svg>			<span class="ctf-screenreader">Reply on Twitter 1596608855475212290</span>
+		</a>
+
+		<a href="https://twitter.com/intent/retweet?tweet_id=1596608855475212290&#038;related=vanberge" class="ctf-retweet" target="_blank" rel="noopener noreferrer"><svg class="svg-inline--fa fa-w-16" viewBox="0 0 24 24" aria-hidden="true" aria-label="retweet" role="img"><path fill="currentColor" d="M23.77 15.67c-.292-.293-.767-.293-1.06 0l-2.22 2.22V7.65c0-2.068-1.683-3.75-3.75-3.75h-5.85c-.414 0-.75.336-.75.75s.336.75.75.75h5.85c1.24 0 2.25 1.01 2.25 2.25v10.24l-2.22-2.22c-.293-.293-.768-.293-1.06 0s-.294.768 0 1.06l3.5 3.5c.145.147.337.22.53.22s.383-.072.53-.22l3.5-3.5c.294-.292.294-.767 0-1.06zm-10.66 3.28H7.26c-1.24 0-2.25-1.01-2.25-2.25V6.46l2.22 2.22c.148.147.34.22.532.22s.384-.073.53-.22c.293-.293.293-.768 0-1.06l-3.5-3.5c-.293-.294-.768-.294-1.06 0l-3.5 3.5c-.294.292-.294.767 0 1.06s.767.293 1.06 0l2.22-2.22V16.7c0 2.068 1.683 3.75 3.75 3.75h5.85c.414 0 .75-.336.75-.75s-.337-.75-.75-.75z"></path></svg>			<span class="ctf-screenreader">Retweet on Twitter 1596608855475212290</span>
+			<span class="ctf-action-count ctf-retweet-count"></span>
+		</a>
+
+		<a href="https://twitter.com/intent/like?tweet_id=1596608855475212290&#038;related=vanberge" class="ctf-like" target="_blank" rel="nofollow noopener noreferrer">
+			<svg class="svg-inline--fa fa-w-16" viewBox="0 0 24 24" aria-hidden="true" aria-label="like" role="img" xmlns="http://www.w3.org/2000/svg"><g><path fill="currentColor" d="M12 21.638h-.014C9.403 21.59 1.95 14.856 1.95 8.478c0-3.064 2.525-5.754 5.403-5.754 2.29 0 3.83 1.58 4.646 2.73.814-1.148 2.354-2.73 4.645-2.73 2.88 0 5.404 2.69 5.404 5.755 0 6.376-7.454 13.11-10.037 13.157H12zM7.354 4.225c-2.08 0-3.903 1.988-3.903 4.255 0 5.74 7.034 11.596 8.55 11.658 1.518-.062 8.55-5.917 8.55-11.658 0-2.267-1.823-4.255-3.903-4.255-2.528 0-3.94 2.936-3.952 2.965-.23.562-1.156.562-1.387 0-.014-.03-1.425-2.965-3.954-2.965z"></path></g></svg>			<span class="ctf-screenreader">Like on Twitter 1596608855475212290</span>
+			<span class="ctf-action-count ctf-favorite-count">1</span>
+		</a>
+		
+					<a href="https://twitter.com/vanberge/status/1596608855475212290" class="ctf-twitterlink" target="_blank" rel="nofollow noopener noreferrer">
+				<span >Twitter</span>
+				<span class="ctf-screenreader">1596608855475212290</span>
+			</a>
+			</div>
+</div>
+<div  class="ctf-item ctf-author-vanberge ctf-new"  id="1595418861788344320" >
+
+	
+	<div class="ctf-author-box">
+		<div class="ctf-author-box-link">
+	        									<a href="https://twitter.com/vanberge" class="ctf-author-avatar" target="_blank" rel="noopener noreferrer">
+													<img src="https://pbs.twimg.com/profile_images/1475119576711057409/m5-2by6a_normal.jpg" alt="vanberge" width="48" height="48">
+											</a>
+				
+									<a href="https://twitter.com/vanberge" target="_blank" rel="noopener noreferrer" class="ctf-author-name">Eric VanBergen 🎧</a>
+										<a href="https://twitter.com/vanberge" class="ctf-author-screenname" target="_blank" rel="noopener noreferrer">@vanberge</a>
+					<span class="ctf-screename-sep">&middot;</span>
+					        
+							<div class="ctf-tweet-meta" >
+					<a href="https://twitter.com/vanberge/status/1595418861788344320" class="ctf-tweet-date" target="_blank" rel="noopener noreferrer">23 Nov</a>
+				</div>
+					</div>
+	    			<div class="ctf-corner-logo" >
+				<svg class="svg-inline--fa fa-twitter fa-w-16" aria-hidden="true" aria-label="twitter logo" data-fa-processed="" data-prefix="fab" data-icon="twitter" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg>			</div>
+		
+	</div>
+	<div class="ctf-tweet-content">
+		                <p class="ctf-tweet-text">
+                    "Thank you for your Steam purchase"<br />
+   - Steam to me like 842 times<br />
+<br />
+Dang Steam sales!                                    </p>
+                        	</div>
+
+		
+	<div class="ctf-tweet-actions" >
+		
+		<a href="https://twitter.com/intent/tweet?in_reply_to=1595418861788344320&#038;related=vanberge" class="ctf-reply" target="_blank" rel="noopener noreferrer">
+			<svg class="svg-inline--fa fa-w-16" viewBox="0 0 24 24" aria-label="reply" role="img" xmlns="http://www.w3.org/2000/svg"><g><path fill="currentColor" d="M14.046 2.242l-4.148-.01h-.002c-4.374 0-7.8 3.427-7.8 7.802 0 4.098 3.186 7.206 7.465 7.37v3.828c0 .108.044.286.12.403.142.225.384.347.632.347.138 0 .277-.038.402-.118.264-.168 6.473-4.14 8.088-5.506 1.902-1.61 3.04-3.97 3.043-6.312v-.017c-.006-4.367-3.43-7.787-7.8-7.788zm3.787 12.972c-1.134.96-4.862 3.405-6.772 4.643V16.67c0-.414-.335-.75-.75-.75h-.396c-3.66 0-6.318-2.476-6.318-5.886 0-3.534 2.768-6.302 6.3-6.302l4.147.01h.002c3.532 0 6.3 2.766 6.302 6.296-.003 1.91-.942 3.844-2.514 5.176z"></path></g></svg>			<span class="ctf-screenreader">Reply on Twitter 1595418861788344320</span>
+		</a>
+
+		<a href="https://twitter.com/intent/retweet?tweet_id=1595418861788344320&#038;related=vanberge" class="ctf-retweet" target="_blank" rel="noopener noreferrer"><svg class="svg-inline--fa fa-w-16" viewBox="0 0 24 24" aria-hidden="true" aria-label="retweet" role="img"><path fill="currentColor" d="M23.77 15.67c-.292-.293-.767-.293-1.06 0l-2.22 2.22V7.65c0-2.068-1.683-3.75-3.75-3.75h-5.85c-.414 0-.75.336-.75.75s.336.75.75.75h5.85c1.24 0 2.25 1.01 2.25 2.25v10.24l-2.22-2.22c-.293-.293-.768-.293-1.06 0s-.294.768 0 1.06l3.5 3.5c.145.147.337.22.53.22s.383-.072.53-.22l3.5-3.5c.294-.292.294-.767 0-1.06zm-10.66 3.28H7.26c-1.24 0-2.25-1.01-2.25-2.25V6.46l2.22 2.22c.148.147.34.22.532.22s.384-.073.53-.22c.293-.293.293-.768 0-1.06l-3.5-3.5c-.293-.294-.768-.294-1.06 0l-3.5 3.5c-.294.292-.294.767 0 1.06s.767.293 1.06 0l2.22-2.22V16.7c0 2.068 1.683 3.75 3.75 3.75h5.85c.414 0 .75-.336.75-.75s-.337-.75-.75-.75z"></path></svg>			<span class="ctf-screenreader">Retweet on Twitter 1595418861788344320</span>
+			<span class="ctf-action-count ctf-retweet-count"></span>
+		</a>
+
+		<a href="https://twitter.com/intent/like?tweet_id=1595418861788344320&#038;related=vanberge" class="ctf-like" target="_blank" rel="nofollow noopener noreferrer">
+			<svg class="svg-inline--fa fa-w-16" viewBox="0 0 24 24" aria-hidden="true" aria-label="like" role="img" xmlns="http://www.w3.org/2000/svg"><g><path fill="currentColor" d="M12 21.638h-.014C9.403 21.59 1.95 14.856 1.95 8.478c0-3.064 2.525-5.754 5.403-5.754 2.29 0 3.83 1.58 4.646 2.73.814-1.148 2.354-2.73 4.645-2.73 2.88 0 5.404 2.69 5.404 5.755 0 6.376-7.454 13.11-10.037 13.157H12zM7.354 4.225c-2.08 0-3.903 1.988-3.903 4.255 0 5.74 7.034 11.596 8.55 11.658 1.518-.062 8.55-5.917 8.55-11.658 0-2.267-1.823-4.255-3.903-4.255-2.528 0-3.94 2.936-3.952 2.965-.23.562-1.156.562-1.387 0-.014-.03-1.425-2.965-3.954-2.965z"></path></g></svg>			<span class="ctf-screenreader">Like on Twitter 1595418861788344320</span>
+			<span class="ctf-action-count ctf-favorite-count"></span>
+		</a>
+		
+					<a href="https://twitter.com/vanberge/status/1595418861788344320" class="ctf-twitterlink" target="_blank" rel="nofollow noopener noreferrer">
+				<span >Twitter</span>
+				<span class="ctf-screenreader">1595418861788344320</span>
+			</a>
+			</div>
+</div>
+<div  class="ctf-item ctf-author-vanberge ctf-new"  id="1594516570709147654" >
+
+	
+	<div class="ctf-author-box">
+		<div class="ctf-author-box-link">
+	        									<a href="https://twitter.com/vanberge" class="ctf-author-avatar" target="_blank" rel="noopener noreferrer">
+													<img src="https://pbs.twimg.com/profile_images/1475119576711057409/m5-2by6a_normal.jpg" alt="vanberge" width="48" height="48">
+											</a>
+				
+									<a href="https://twitter.com/vanberge" target="_blank" rel="noopener noreferrer" class="ctf-author-name">Eric VanBergen 🎧</a>
+										<a href="https://twitter.com/vanberge" class="ctf-author-screenname" target="_blank" rel="noopener noreferrer">@vanberge</a>
+					<span class="ctf-screename-sep">&middot;</span>
+					        
+							<div class="ctf-tweet-meta" >
+					<a href="https://twitter.com/vanberge/status/1594516570709147654" class="ctf-tweet-date" target="_blank" rel="noopener noreferrer">21 Nov</a>
+				</div>
+					</div>
+	    			<div class="ctf-corner-logo" >
+				<svg class="svg-inline--fa fa-twitter fa-w-16" aria-hidden="true" aria-label="twitter logo" data-fa-processed="" data-prefix="fab" data-icon="twitter" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg>			</div>
+		
+	</div>
+	<div class="ctf-tweet-content">
+		                <p class="ctf-tweet-text">
+                    &lt;3 support a good cause!<br />
+https://www.twitch.tv/tholdschoolgamer                                    </p>
+                        	</div>
+
+		
+	<div class="ctf-tweet-actions" >
+		
+		<a href="https://twitter.com/intent/tweet?in_reply_to=1594516570709147654&#038;related=vanberge" class="ctf-reply" target="_blank" rel="noopener noreferrer">
+			<svg class="svg-inline--fa fa-w-16" viewBox="0 0 24 24" aria-label="reply" role="img" xmlns="http://www.w3.org/2000/svg"><g><path fill="currentColor" d="M14.046 2.242l-4.148-.01h-.002c-4.374 0-7.8 3.427-7.8 7.802 0 4.098 3.186 7.206 7.465 7.37v3.828c0 .108.044.286.12.403.142.225.384.347.632.347.138 0 .277-.038.402-.118.264-.168 6.473-4.14 8.088-5.506 1.902-1.61 3.04-3.97 3.043-6.312v-.017c-.006-4.367-3.43-7.787-7.8-7.788zm3.787 12.972c-1.134.96-4.862 3.405-6.772 4.643V16.67c0-.414-.335-.75-.75-.75h-.396c-3.66 0-6.318-2.476-6.318-5.886 0-3.534 2.768-6.302 6.3-6.302l4.147.01h.002c3.532 0 6.3 2.766 6.302 6.296-.003 1.91-.942 3.844-2.514 5.176z"></path></g></svg>			<span class="ctf-screenreader">Reply on Twitter 1594516570709147654</span>
+		</a>
+
+		<a href="https://twitter.com/intent/retweet?tweet_id=1594516570709147654&#038;related=vanberge" class="ctf-retweet" target="_blank" rel="noopener noreferrer"><svg class="svg-inline--fa fa-w-16" viewBox="0 0 24 24" aria-hidden="true" aria-label="retweet" role="img"><path fill="currentColor" d="M23.77 15.67c-.292-.293-.767-.293-1.06 0l-2.22 2.22V7.65c0-2.068-1.683-3.75-3.75-3.75h-5.85c-.414 0-.75.336-.75.75s.336.75.75.75h5.85c1.24 0 2.25 1.01 2.25 2.25v10.24l-2.22-2.22c-.293-.293-.768-.293-1.06 0s-.294.768 0 1.06l3.5 3.5c.145.147.337.22.53.22s.383-.072.53-.22l3.5-3.5c.294-.292.294-.767 0-1.06zm-10.66 3.28H7.26c-1.24 0-2.25-1.01-2.25-2.25V6.46l2.22 2.22c.148.147.34.22.532.22s.384-.073.53-.22c.293-.293.293-.768 0-1.06l-3.5-3.5c-.293-.294-.768-.294-1.06 0l-3.5 3.5c-.294.292-.294.767 0 1.06s.767.293 1.06 0l2.22-2.22V16.7c0 2.068 1.683 3.75 3.75 3.75h5.85c.414 0 .75-.336.75-.75s-.337-.75-.75-.75z"></path></svg>			<span class="ctf-screenreader">Retweet on Twitter 1594516570709147654</span>
+			<span class="ctf-action-count ctf-retweet-count"></span>
+		</a>
+
+		<a href="https://twitter.com/intent/like?tweet_id=1594516570709147654&#038;related=vanberge" class="ctf-like" target="_blank" rel="nofollow noopener noreferrer">
+			<svg class="svg-inline--fa fa-w-16" viewBox="0 0 24 24" aria-hidden="true" aria-label="like" role="img" xmlns="http://www.w3.org/2000/svg"><g><path fill="currentColor" d="M12 21.638h-.014C9.403 21.59 1.95 14.856 1.95 8.478c0-3.064 2.525-5.754 5.403-5.754 2.29 0 3.83 1.58 4.646 2.73.814-1.148 2.354-2.73 4.645-2.73 2.88 0 5.404 2.69 5.404 5.755 0 6.376-7.454 13.11-10.037 13.157H12zM7.354 4.225c-2.08 0-3.903 1.988-3.903 4.255 0 5.74 7.034 11.596 8.55 11.658 1.518-.062 8.55-5.917 8.55-11.658 0-2.267-1.823-4.255-3.903-4.255-2.528 0-3.94 2.936-3.952 2.965-.23.562-1.156.562-1.387 0-.014-.03-1.425-2.965-3.954-2.965z"></path></g></svg>			<span class="ctf-screenreader">Like on Twitter 1594516570709147654</span>
+			<span class="ctf-action-count ctf-favorite-count"></span>
+		</a>
+		
+					<a href="https://twitter.com/vanberge/status/1594516570709147654" class="ctf-twitterlink" target="_blank" rel="nofollow noopener noreferrer">
+				<span >Twitter</span>
+				<span class="ctf-screenreader">1594516570709147654</span>
+			</a>
+			</div>
+</div>
+<div  class="ctf-item ctf-author-vanberge ctf-new"  id="1594429015435382784" >
+
+	
+	<div class="ctf-author-box">
+		<div class="ctf-author-box-link">
+	        									<a href="https://twitter.com/vanberge" class="ctf-author-avatar" target="_blank" rel="noopener noreferrer">
+													<img src="https://pbs.twimg.com/profile_images/1475119576711057409/m5-2by6a_normal.jpg" alt="vanberge" width="48" height="48">
+											</a>
+				
+									<a href="https://twitter.com/vanberge" target="_blank" rel="noopener noreferrer" class="ctf-author-name">Eric VanBergen 🎧</a>
+										<a href="https://twitter.com/vanberge" class="ctf-author-screenname" target="_blank" rel="noopener noreferrer">@vanberge</a>
+					<span class="ctf-screename-sep">&middot;</span>
+					        
+							<div class="ctf-tweet-meta" >
+					<a href="https://twitter.com/vanberge/status/1594429015435382784" class="ctf-tweet-date" target="_blank" rel="noopener noreferrer">20 Nov</a>
+				</div>
+					</div>
+	    			<div class="ctf-corner-logo" >
+				<svg class="svg-inline--fa fa-twitter fa-w-16" aria-hidden="true" aria-label="twitter logo" data-fa-processed="" data-prefix="fab" data-icon="twitter" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg>			</div>
+		
+	</div>
+	<div class="ctf-tweet-content">
+		                <p class="ctf-tweet-text">
+                    How can the Lions blow this game in 13 minutes                     </p><a href="https://twitter.com/vanberge/status/1594429015435382784" target="_blank" rel="noopener noreferrer" class="ctf-tweet-text-media-wrap"><svg aria-hidden="true" aria-label="video in tweet" focusable="false" data-prefix="far" data-icon="file-video" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="svg-inline--fa fa-file-video fa-w-12 fa-9x ctf-tweet-text-media"><path fill="currentColor" d="M369.941 97.941l-83.882-83.882A48 48 0 0 0 252.118 0H48C21.49 0 0 21.49 0 48v416c0 26.51 21.49 48 48 48h288c26.51 0 48-21.49 48-48V131.882a48 48 0 0 0-14.059-33.941zM332.118 128H256V51.882L332.118 128zM48 464V48h160v104c0 13.255 10.745 24 24 24h104v288H48zm228.687-211.303L224 305.374V268c0-11.046-8.954-20-20-20H100c-11.046 0-20 8.954-20 20v104c0 11.046 8.954 20 20 20h104c11.046 0 20-8.954 20-20v-37.374l52.687 52.674C286.704 397.318 304 390.28 304 375.986V264.011c0-14.311-17.309-21.319-27.313-11.314z" class=""></path></svg></a>                </p>
+                        	</div>
+
+		
+	<div class="ctf-tweet-actions" >
+		
+		<a href="https://twitter.com/intent/tweet?in_reply_to=1594429015435382784&#038;related=vanberge" class="ctf-reply" target="_blank" rel="noopener noreferrer">
+			<svg class="svg-inline--fa fa-w-16" viewBox="0 0 24 24" aria-label="reply" role="img" xmlns="http://www.w3.org/2000/svg"><g><path fill="currentColor" d="M14.046 2.242l-4.148-.01h-.002c-4.374 0-7.8 3.427-7.8 7.802 0 4.098 3.186 7.206 7.465 7.37v3.828c0 .108.044.286.12.403.142.225.384.347.632.347.138 0 .277-.038.402-.118.264-.168 6.473-4.14 8.088-5.506 1.902-1.61 3.04-3.97 3.043-6.312v-.017c-.006-4.367-3.43-7.787-7.8-7.788zm3.787 12.972c-1.134.96-4.862 3.405-6.772 4.643V16.67c0-.414-.335-.75-.75-.75h-.396c-3.66 0-6.318-2.476-6.318-5.886 0-3.534 2.768-6.302 6.3-6.302l4.147.01h.002c3.532 0 6.3 2.766 6.302 6.296-.003 1.91-.942 3.844-2.514 5.176z"></path></g></svg>			<span class="ctf-screenreader">Reply on Twitter 1594429015435382784</span>
+		</a>
+
+		<a href="https://twitter.com/intent/retweet?tweet_id=1594429015435382784&#038;related=vanberge" class="ctf-retweet" target="_blank" rel="noopener noreferrer"><svg class="svg-inline--fa fa-w-16" viewBox="0 0 24 24" aria-hidden="true" aria-label="retweet" role="img"><path fill="currentColor" d="M23.77 15.67c-.292-.293-.767-.293-1.06 0l-2.22 2.22V7.65c0-2.068-1.683-3.75-3.75-3.75h-5.85c-.414 0-.75.336-.75.75s.336.75.75.75h5.85c1.24 0 2.25 1.01 2.25 2.25v10.24l-2.22-2.22c-.293-.293-.768-.293-1.06 0s-.294.768 0 1.06l3.5 3.5c.145.147.337.22.53.22s.383-.072.53-.22l3.5-3.5c.294-.292.294-.767 0-1.06zm-10.66 3.28H7.26c-1.24 0-2.25-1.01-2.25-2.25V6.46l2.22 2.22c.148.147.34.22.532.22s.384-.073.53-.22c.293-.293.293-.768 0-1.06l-3.5-3.5c-.293-.294-.768-.294-1.06 0l-3.5 3.5c-.294.292-.294.767 0 1.06s.767.293 1.06 0l2.22-2.22V16.7c0 2.068 1.683 3.75 3.75 3.75h5.85c.414 0 .75-.336.75-.75s-.337-.75-.75-.75z"></path></svg>			<span class="ctf-screenreader">Retweet on Twitter 1594429015435382784</span>
+			<span class="ctf-action-count ctf-retweet-count"></span>
+		</a>
+
+		<a href="https://twitter.com/intent/like?tweet_id=1594429015435382784&#038;related=vanberge" class="ctf-like" target="_blank" rel="nofollow noopener noreferrer">
+			<svg class="svg-inline--fa fa-w-16" viewBox="0 0 24 24" aria-hidden="true" aria-label="like" role="img" xmlns="http://www.w3.org/2000/svg"><g><path fill="currentColor" d="M12 21.638h-.014C9.403 21.59 1.95 14.856 1.95 8.478c0-3.064 2.525-5.754 5.403-5.754 2.29 0 3.83 1.58 4.646 2.73.814-1.148 2.354-2.73 4.645-2.73 2.88 0 5.404 2.69 5.404 5.755 0 6.376-7.454 13.11-10.037 13.157H12zM7.354 4.225c-2.08 0-3.903 1.988-3.903 4.255 0 5.74 7.034 11.596 8.55 11.658 1.518-.062 8.55-5.917 8.55-11.658 0-2.267-1.823-4.255-3.903-4.255-2.528 0-3.94 2.936-3.952 2.965-.23.562-1.156.562-1.387 0-.014-.03-1.425-2.965-3.954-2.965z"></path></g></svg>			<span class="ctf-screenreader">Like on Twitter 1594429015435382784</span>
+			<span class="ctf-action-count ctf-favorite-count"></span>
+		</a>
+		
+					<a href="https://twitter.com/vanberge/status/1594429015435382784" class="ctf-twitterlink" target="_blank" rel="nofollow noopener noreferrer">
+				<span >Twitter</span>
+				<span class="ctf-screenreader">1594429015435382784</span>
+			</a>
+			</div>
+</div>    </div>
+    
+    <a href="javascript:void(0);" id="ctf-more" class="ctf-more" ><span>Load More...</span></a>
+
+
+</div>
+
+</div>
+		</aside><aside id="search-7" class="widget widget_search"><form role="search" method="get" id="searchform" class="searchform" action="../../../index.html">
+				<div>
+					<label class="screen-reader-text" for="s">Search for:</label>
+					<input type="text" value="" name="s" id="s" />
+					<input type="submit" id="searchsubmit" value="Search" />
+				</div>
+			</form></aside><aside id="akismet_widget-2" class="widget widget_akismet_widget"><h3 class="widget-title">Spam Blocked</h3>
+	<div class="a-stats">
+		<a href="https://akismet.com" target="_blank" rel="noopener" title="">
+			<strong class="count">980,140 spam</strong> blocked by <strong>Akismet</strong>		</a>
+	</div>
+
+</aside>		</div><!-- #secondary -->
+		</div><!-- #main .wrapper -->
+	<footer id="colophon" role="contentinfo">
+		<div class="site-info">
+									<a href="https://wordpress.org/" class="imprint" title="Semantic Personal Publishing Platform">
+				Proudly powered by WordPress			</a>
+		</div><!-- .site-info -->
+	</footer><!-- #colophon -->
+</div><!-- #page -->
+
+<!-- Instagram Feed JS -->
+<script type="text/javascript">
+var sbiajaxurl = "https://www.ericvb.com/wp-admin/admin-ajax.php";
+</script>
+<style type="text/css" data-ctf-style="1">.ctf-feed-1.ctf-regular-style .ctf-item, .ctf-feed-1 .ctf-header{border-bottom:1px solid #ddd!important;}</style><script type='text/javascript' src='../../../wp-content/themes/twentytwelve/js/navigation.js@ver=20141205' id='twentytwelve-navigation-js'></script>
+<script type='text/javascript' id='sbi_scripts-js-extra'>
+/* <![CDATA[ */
+var sb_instagram_js_options = {"font_method":"svg","resized_url":"https:\/\/www.ericvb.com\/wp-content\/uploads\/sb-instagram-feed-images\/","placeholder":"https:\/\/www.ericvb.com\/wp-content\/plugins\/instagram-feed\/img\/placeholder.png","ajax_url":"https:\/\/www.ericvb.com\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='../../../wp-content/plugins/instagram-feed/js/sbi-scripts.min.js@ver=6.1.1' id='sbi_scripts-js'></script>
+<script type='text/javascript' id='ctf_scripts-js-extra'>
+/* <![CDATA[ */
+var ctf = {"ajax_url":"https:\/\/www.ericvb.com\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='../../../wp-content/plugins/custom-twitter-feeds/js/ctf-scripts.min.js@ver=2.0.4' id='ctf_scripts-js'></script>
+</body>
+</html>

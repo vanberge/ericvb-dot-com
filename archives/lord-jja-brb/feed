@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: LoRD Jja BRB	</title>
+	<atom:link href="http://www.ericvb.com/archives/lord-jja-brb/feed" rel="self" type="application/rss+xml" />
+	<link>http://www.ericvb.com/archives/lord-jja-brb</link>
+	<description>A Distinction Without a Difference...</description>
+	<lastBuildDate>Thu, 19 Nov 2009 20:11:40 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.1</generator>
+	<item>
+		<title>
+		By: Vanberge		</title>
+		<link>http://www.ericvb.com/archives/lord-jja-brb#comment-14105</link>
+
+		<dc:creator><![CDATA[Vanberge]]></dc:creator>
+		<pubDate>Thu, 19 Nov 2009 20:11:40 +0000</pubDate>
+		<guid isPermaLink="false">http://www.ericvb.com/?p=767#comment-14105</guid>
+
+					<description><![CDATA[Nope!
+you were a level ahead of me... It was brave for me to even try!]]></description>
+			<content:encoded><![CDATA[<p>Nope!<br />
+you were a level ahead of me&#8230; It was brave for me to even try!</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Jeffrey		</title>
+		<link>http://www.ericvb.com/archives/lord-jja-brb#comment-14104</link>
+
+		<dc:creator><![CDATA[Jeffrey]]></dc:creator>
+		<pubDate>Thu, 19 Nov 2009 19:16:10 +0000</pubDate>
+		<guid isPermaLink="false">http://www.ericvb.com/?p=767#comment-14104</guid>
+
+					<description><![CDATA[Kind of pathetic that you needed to use your death knight skill. :-p]]></description>
+			<content:encoded><![CDATA[<p>Kind of pathetic that you needed to use your death knight skill. :-p</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>rotf &#8211; Eric VB.com</title>
+	<atom:link href="http://www.ericvb.com/archives/tag/rotf/feed" rel="self" type="application/rss+xml" />
+	<link>http://www.ericvb.com</link>
+	<description>A Distinction Without a Difference...</description>
+	<lastBuildDate>Tue, 13 Apr 2010 20:25:01 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.1</generator>
+	<item>
+		<title>A Van&#8217;s Search</title>
+		<link>http://www.ericvb.com/archives/a-vans-search</link>
+					<comments>http://www.ericvb.com/archives/a-vans-search#comments</comments>
+		
+		<dc:creator><![CDATA[Vanberge]]></dc:creator>
+		<pubDate>Tue, 13 Apr 2010 20:25:01 +0000</pubDate>
+				<category><![CDATA[Misc]]></category>
+		<category><![CDATA[rotf]]></category>
+		<category><![CDATA[Vanbergs]]></category>
+		<category><![CDATA[Vanlandw]]></category>
+		<guid isPermaLink="false">http://www.ericvb.com/?p=1137</guid>
+
+					<description><![CDATA[I used Google&#8217;s new search story video creator today to create a semi-comical little test video. It was kinda fun to use and to see the results; which it then allows you to publish on youtube if you want. Clearly I did, and my results are below.]]></description>
+										<content:encoded><![CDATA[<p>I used <a href="http://www.youtube.com/user/SearchStories">Google&#8217;s new search story video creator</a> today to create a semi-comical little test video.  It was kinda fun to use and to see the results; which it then allows you to publish on youtube if you want.  Clearly I did, and my results are below.  </p>
+<p><object width="560" height="340"><param name="movie" value="http://www.youtube.com/v/oDcsse8t-vk&#038;hl=en_US&#038;fs=1&#038;rel=0"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/oDcsse8t-vk&#038;hl=en_US&#038;fs=1&#038;rel=0" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="560" height="340"></embed></object></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>http://www.ericvb.com/archives/a-vans-search/feed</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>XboxLIVE &#8211; Mission Victor Charlie: Success</title>
+		<link>http://www.ericvb.com/archives/xboxlive-mission-victor-charlie-success</link>
+					<comments>http://www.ericvb.com/archives/xboxlive-mission-victor-charlie-success#comments</comments>
+		
+		<dc:creator><![CDATA[Vanberge]]></dc:creator>
+		<pubDate>Tue, 12 Jan 2010 17:03:35 +0000</pubDate>
+				<category><![CDATA[Misc]]></category>
+		<category><![CDATA[G]]></category>
+		<category><![CDATA[rotf]]></category>
+		<category><![CDATA[Vanlandw]]></category>
+		<category><![CDATA[Xbox]]></category>
+		<guid isPermaLink="false">http://www.ericvb.com/?p=814</guid>
+
+					<description><![CDATA[The mission that I am dubbing &#8220;Vacation Catch-up&#8221; has been completed as a success. As Vanlandw was away this week enjoying a much needed and EXTREMELY overdue vacation &#8211; I took it upon myself to catch him in gamerscore.  At the beginning of the week, I was almost 4,000 points behind him &#8211; so it [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><a href="http://ericvb.com/wp-content/uploads/2010/01/GamerScore.jpg"><img decoding="async" loading="lazy" class="alignleft size-full wp-image-820" title="GamerScore" src="http://ericvb.com/wp-content/uploads/2010/01/GamerScore-e1263319131673.jpg" alt="" width="600" height="132" /></a></p>
+<p>The mission that I am dubbing &#8220;Vacation Catch-up&#8221; has been completed as a success.</p>
+<p>As Vanlandw was away this week enjoying a much needed and EXTREMELY overdue vacation &#8211; I took it upon myself to catch him in gamerscore.  At the beginning of the week, I was almost 4,000 points behind him &#8211; so it was a pretty vast undertaking.</p>
+<p>Originally I didn&#8217;t even think it would be possible; but <a href="http://www.ericvb.com/archives/xboxlive-gamerscore">as previously posted</a> Vanbergs and Myself found a solution to that.</p>
+<p>Vanlandw and I are tied for the time being; and I&#8217;m sure he&#8217;ll fly past me in no time.</p>
+<p>TODAY, JUST TODAY, IN THE BATTLE OF VAN VS. VAN&#8230;.</p>
+<p><strong>Van won</strong></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>http://www.ericvb.com/archives/xboxlive-mission-victor-charlie-success/feed</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

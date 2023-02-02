@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Sidebar Redefined	</title>
+	<atom:link href="http://www.ericvb.com/archives/sidebar-redefined/feed" rel="self" type="application/rss+xml" />
+	<link>http://www.ericvb.com/archives/sidebar-redefined</link>
+	<description>A Distinction Without a Difference...</description>
+	<lastBuildDate>Sat, 26 Jul 2008 20:49:32 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.1</generator>
+	<item>
+		<title>
+		By: vanlandw		</title>
+		<link>http://www.ericvb.com/archives/sidebar-redefined#comment-8902</link>
+
+		<dc:creator><![CDATA[vanlandw]]></dc:creator>
+		<pubDate>Sat, 26 Jul 2008 20:49:32 +0000</pubDate>
+		<guid isPermaLink="false">http://www.palmerforpresident.com/?p=244#comment-8902</guid>
+
+					<description><![CDATA[you have done vanberge.org redefined
+
+clearly your last.fm right now is pretty epic right now you seemed to have listened to a large majority of the new disturbed CD and that was a great idea.
+
+br+b]]></description>
+			<content:encoded><![CDATA[<p>you have done vanberge.org redefined</p>
+<p>clearly your last.fm right now is pretty epic right now you seemed to have listened to a large majority of the new disturbed CD and that was a great idea.</p>
+<p>br+b</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

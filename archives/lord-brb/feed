@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: LoRD Brb	</title>
+	<atom:link href="http://www.ericvb.com/archives/lord-brb/feed" rel="self" type="application/rss+xml" />
+	<link>http://www.ericvb.com/archives/lord-brb</link>
+	<description>A Distinction Without a Difference...</description>
+	<lastBuildDate>Fri, 30 Apr 2010 13:28:53 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.1</generator>
+	<item>
+		<title>
+		By: Kramer		</title>
+		<link>http://www.ericvb.com/archives/lord-brb#comment-14527</link>
+
+		<dc:creator><![CDATA[Kramer]]></dc:creator>
+		<pubDate>Fri, 30 Apr 2010 13:28:53 +0000</pubDate>
+		<guid isPermaLink="false">http://www.ericvb.com/?p=1149#comment-14527</guid>
+
+					<description><![CDATA[Install LoRD again in a couple years.]]></description>
+			<content:encoded><![CDATA[<p>Install LoRD again in a couple years.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Vanberge		</title>
+		<link>http://www.ericvb.com/archives/lord-brb#comment-14519</link>
+
+		<dc:creator><![CDATA[Vanberge]]></dc:creator>
+		<pubDate>Wed, 28 Apr 2010 16:06:59 +0000</pubDate>
+		<guid isPermaLink="false">http://www.ericvb.com/?p=1149#comment-14519</guid>
+
+					<description><![CDATA[Yeah being at level 5-8 the forest was really hard for some reason.
+
+You did have a pretty massive early lead - so it maybe was good that your studies got in the way. :-)]]></description>
+			<content:encoded><![CDATA[<p>Yeah being at level 5-8 the forest was really hard for some reason.</p>
+<p>You did have a pretty massive early lead &#8211; so it maybe was good that your studies got in the way. 🙂</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Vo		</title>
+		<link>http://www.ericvb.com/archives/lord-brb#comment-14516</link>
+
+		<dc:creator><![CDATA[Vo]]></dc:creator>
+		<pubDate>Wed, 28 Apr 2010 04:09:43 +0000</pubDate>
+		<guid isPermaLink="false">http://www.ericvb.com/?p=1149#comment-14516</guid>
+
+					<description><![CDATA[I will miss LoRD.  After I got out to an early lead, my studies caused me to tank and everything in the damn forest killed me in one hit.  It will be missed.]]></description>
+			<content:encoded><![CDATA[<p>I will miss LoRD.  After I got out to an early lead, my studies caused me to tank and everything in the damn forest killed me in one hit.  It will be missed.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

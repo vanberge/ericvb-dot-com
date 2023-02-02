@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Google Android	</title>
+	<atom:link href="http://www.ericvb.com/archives/google-android/feed" rel="self" type="application/rss+xml" />
+	<link>http://www.ericvb.com/archives/google-android</link>
+	<description>A Distinction Without a Difference...</description>
+	<lastBuildDate>Mon, 14 Jan 2008 02:42:50 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.1</generator>
+	<item>
+		<title>
+		By: Vanberge		</title>
+		<link>http://www.ericvb.com/archives/google-android#comment-4760</link>
+
+		<dc:creator><![CDATA[Vanberge]]></dc:creator>
+		<pubDate>Mon, 14 Jan 2008 02:42:50 +0000</pubDate>
+		<guid isPermaLink="false">http://www.palmerforpresident.com/archives/186#comment-4760</guid>
+
+					<description><![CDATA[Flo, yeah you like that Arnold quote reference? The emulator actually doesn&#039;t make calls unfortunately.
+
+Jja - The emulator includes 4 different &quot;phones&quot;.  I don&#039;t see any documentation for what their screen resolutions are, but they vary from MotoQ sized to Iphone sized(ish).   :-/]]></description>
+			<content:encoded><![CDATA[<p>Flo, yeah you like that Arnold quote reference? The emulator actually doesn&#8217;t make calls unfortunately.</p>
+<p>Jja &#8211; The emulator includes 4 different &#8220;phones&#8221;.  I don&#8217;t see any documentation for what their screen resolutions are, but they vary from MotoQ sized to Iphone sized(ish).   :-/</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Jeff		</title>
+		<link>http://www.ericvb.com/archives/google-android#comment-4747</link>
+
+		<dc:creator><![CDATA[Jeff]]></dc:creator>
+		<pubDate>Sat, 12 Jan 2008 22:55:23 +0000</pubDate>
+		<guid isPermaLink="false">http://www.palmerforpresident.com/archives/186#comment-4747</guid>
+
+					<description><![CDATA[Looks kind of clumbsy/blocky. What resolutoin does that emulate at?]]></description>
+			<content:encoded><![CDATA[<p>Looks kind of clumbsy/blocky. What resolutoin does that emulate at?</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: FLO		</title>
+		<link>http://www.ericvb.com/archives/google-android#comment-4721</link>
+
+		<dc:creator><![CDATA[FLO]]></dc:creator>
+		<pubDate>Fri, 11 Jan 2008 05:29:21 +0000</pubDate>
+		<guid isPermaLink="false">http://www.palmerforpresident.com/archives/186#comment-4721</guid>
+
+					<description><![CDATA[i love your brother&#039;s &quot;phone number&quot;.]]></description>
+			<content:encoded><![CDATA[<p>i love your brother&#8217;s &#8220;phone number&#8221;.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>lyrics &#8211; Eric VB.com</title>
+	<atom:link href="http://www.ericvb.com/archives/tag/lyrics/feed" rel="self" type="application/rss+xml" />
+	<link>http://www.ericvb.com</link>
+	<description>A Distinction Without a Difference...</description>
+	<lastBuildDate>Fri, 18 Nov 2011 15:07:03 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.1</generator>
+	<item>
+		<title>&#8220;Better Come Much Bigger Than This&#8221;</title>
+		<link>http://www.ericvb.com/archives/better-come-much-bigger-than-this</link>
+					<comments>http://www.ericvb.com/archives/better-come-much-bigger-than-this#comments</comments>
+		
+		<dc:creator><![CDATA[Vanberge]]></dc:creator>
+		<pubDate>Fri, 18 Nov 2011 15:07:03 +0000</pubDate>
+				<category><![CDATA[Misc]]></category>
+		<category><![CDATA[lol]]></category>
+		<category><![CDATA[lyrics]]></category>
+		<category><![CDATA[netflix]]></category>
+		<guid isPermaLink="false">http://www.ericvb.com/?p=1557</guid>
+
+					<description><![CDATA[&#8220;Oh, ok&#8230; Thanks for the email. Let me sign right up&#8221;]]></description>
+										<content:encoded><![CDATA[<p>&#8220;Oh, ok&#8230; Thanks for the email.  Let me sign right up&#8221;</p>
+<p><a href="http://ericvb.com/wp-content/uploads/2011/11/yeah.jpg"><img decoding="async" loading="lazy" class="alignnone size-full wp-image-1558" title="NetflixBegging" src="http://ericvb.com/wp-content/uploads/2011/11/yeah.jpg" alt="Newp!" width="542" height="682" srcset="http://www.ericvb.com/wp-content/uploads/2011/11/yeah.jpg 542w, http://www.ericvb.com/wp-content/uploads/2011/11/yeah-238x300.jpg 238w" sizes="(max-width: 542px) 100vw, 542px" /></a></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>http://www.ericvb.com/archives/better-come-much-bigger-than-this/feed</wfw:commentRss>
+			<slash:comments>3</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

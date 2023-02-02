@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>web &#8211; Eric VB.com</title>
+	<atom:link href="http://www.ericvb.com/archives/tag/web/feed" rel="self" type="application/rss+xml" />
+	<link>http://www.ericvb.com</link>
+	<description>A Distinction Without a Difference...</description>
+	<lastBuildDate>Tue, 18 May 2010 18:37:11 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.1</generator>
+	<item>
+		<title>My Evolution of Music</title>
+		<link>http://www.ericvb.com/archives/my-evolution-of-music</link>
+					<comments>http://www.ericvb.com/archives/my-evolution-of-music#comments</comments>
+		
+		<dc:creator><![CDATA[Vanberge]]></dc:creator>
+		<pubDate>Tue, 18 May 2010 17:04:12 +0000</pubDate>
+				<category><![CDATA[Tech]]></category>
+		<category><![CDATA[grooveshark]]></category>
+		<category><![CDATA[music]]></category>
+		<category><![CDATA[pandora]]></category>
+		<category><![CDATA[web]]></category>
+		<guid isPermaLink="false">http://www.ericvb.com/?p=1182</guid>
+
+					<description><![CDATA[Music can soothe the soul, amplify emotions, and change the way we experience many situations.  Some music helps me concentrate and focus while I&#8217;m working.  Some music brings me back to certain memories and times/places in my life.  Some music embraces the various traits of my personality.   But overall, I love music and have spent [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>Music can soothe the soul, amplify emotions, and change the way we experience many situations.  Some music helps me concentrate and focus while I&#8217;m working.  Some music brings me back to certain memories and times/places in my life.  Some music embraces the various traits of my personality.   But overall, I love music and have spent the last couple weeks searching for a better, smarter way to utilize music in my life.  I&#8217;ll call it my next &#8220;stage&#8221; of music evolution (More on this to follow).</p>
+<p>I&#8217;m looking for an on-demand, streaming, intelligent way to get to this next level.   I think about how Netflix changed the way I watch movies forever (I haven&#8217;t bought a movie on DVD/BluRay/etc since 2007 when I joined Netflix) &#8211; and more or less I&#8217;d like to find  a service that can do the same thing for my music&#8230;</p>
+<p>Last.fm, Slacker Radio, Pandora, GrooveShark, Lala, etc.   The list goes on and on for web-based services allowing you to stream, organize, and overall just get more connected with your music.  These are exactly the kind of thing I&#8217;m looking for, and I see them as being heavily inolved in my future of music.   So, I&#8217;ve been trying to figure out which service(s) work best for me.  My main criteria are as follows:</p>
+<ul>
+<li> An easy way to stream music</li>
+<li> A blackberry/iPod capable mobile app</li>
+<li> Help find new music that I enjoy</li>
+<li> Rely less (much less) on my iPod</li>
+</ul>
+<p>With those criteria in mind, I narrowed my field and focused on two services: Pandora and Grooveshark.  They are each somewhat similar, and they each have their pros and cons.</p>
+<p><a href="http://www.pandora.com/">Pandora</a> is a fantastic service.  Simple, clean, and easy to use &#8211; It capitalizes on the <a href="http://www.pandora.com/mgp.shtml">music genome project</a> to take your listening habits, ratings, and stations that you&#8217;ve created and use intelligent algorithms to play music that you like.  Most services will provide recommendations based on similar genres and/or meta tagging &#8211; but Pandora actually uses deep elements of music theory and composition to provide recommendations to you as a listener.  For example, Pandora just played &#8220;The Hollow&#8221; by A Perfect Circle on my station, with the following explanation: &#8220;<em>based on what you&#8217;ve told us so far, we&#8217;re playing this track because it features hard rock roots, a subtle use of vocal harmony, groove based composition, a twelve-eight time signature, and repetitive melodic phrasing</em>&#8220;.  I don&#8217;t know what most of that even starts to mean in layman&#8217;s terms&#8230;  But Pandora has been remarkably accurate thus far in determining music that I like.  It&#8217;s been a very enjoyable service to use, tweak, and make my own.   I&#8217;ve created 6 or so stations ranging from vintage rock roots, through instrumental movie scores and techno, and reaching my pillars of Hard Rock and Metal.  I really like how Pandora does this, all while making it simple and fun to use.</p>
+<p>Pandora also has robust mobile applications for both iPod and Blackberries.  So I can listen to Pandora in my car connecting it through the blue-tooth of my radio.  That&#8217;s nearly a priceless selling point.  I liken it to a satellite radio subscription service.</p>
+<p>Pandora does have its weaknesses.  Most notably is the lack of a selective listening.  If I want to hear &#8220;Crawl Through Knives&#8221; by In Flames, I would try to make a new station and type in that song title.  But that song will not play&#8230;  The station will continue to be created, and play songs SIMILAR TO Crawl through Knives musically; but there is no way to listen to a specific song at a specific time and I frankly don&#8217;t understand why that is.  It definitely doesn&#8217;t ruin Pandora in my perspective, as I have enjoyed the variety and anticipation for hearing new music.  But, I wouldn&#8217;t mind if the option existed.</p>
+<p>Moving on to <a href="http://www.grooveshark.com">Grooveshark</a>.  Grooveshark is another very slick web service.  It&#8217;s a little more expansive and functional than Pandora is, but it may be just a little bit &#8220;too much&#8221;.  Pandora&#8217;s biggest weakness is also Grooveshark&#8217;s biggest strength &#8211; I could  literally search for a band or song name and be met with immediate and  accurate search results.  Functionality ranges from adding tracks to playlists, organizing your  library, or listening to Grooveshark radio for random selections.  Clicking through Grooveshark is quite rewarding; it is very speedy, fast, responsive, and overall just fun.  I found myself forgetting that it was even a web application.</p>
+<p>With much more depth than Pandora, Groooveshark is a very interesting option.  Aside from syncing to a mobile device for you, Grooveshark is almost a drop in web-based replacement for iTunes.  You can even upload your own music in a youtube style fashion.  It&#8217;s a very innovative service&#8230; and one that I&#8217;m certainly keeping my eye on moving forward.</p>
+<p>Overall, I was actually quite torn here.  Pandora is such a fitting option, awesome in its simplicity.  Grooveshark is in its earlier stages, but making an impression fast and furious.  Pandora has mobile apps.  Grooveshark has mobile app in beta/development (although not for my Blackberry Storm).  Grooveshark has listening on-demand for specific songs.  Pandora has detailed musical analysis resulting in hours of specifically tailored music without me having to worry about organizing any playlists.  I think in the end, I find the music genome project fascinating.  It takes such a unique approach to music, and that alone has nudged me ever-so-slightly towards Pandora.  The mobile app allowing for bluetooth integration has seemingly sealed the deal for me &#8211; as I&#8217;ve recently found myself  nearly fully gravitated towards Pandora.  I&#8217;ve been streaming it at work, tailoring my stations at home and from my Blackberry when I feel the need or have an inkling, and have been looking to find ways to fully utilize Pandora&#8217;s offerings.  (note <a href="http://pandorafm.real-ity.com">PandoraFM</a>, which scrobbles your Pandora tracks into Last.fm).  Pandora and Grooveshark each have free and premium versions that you can subscribe to.  They are nearly the same cost &#8211; and as of now I haven&#8217;t purchased either.  But, unless something changes drastically (and soon) I foresee a Pandora subscription in the very near future for my person.</p>
+<p>But I&#8217;ll always take recommendations or opinions of the limited readership that graces this site with their visits&#8230;  Here are my Pandora stations as a reference:
+<link rel="stylesheet" type="text/css" href="http://feeds.pandora.com/styles/feeds/stations-text.css" />
+<script src="http://feeds.pandora.com/feeds/people/vanberge5/stations.js?max=10&#038;noform"></script></p>
+<p>Now, with the possible future of music as I know it laid out&#8230; it didn&#8217;t feel fitting without giving a brief history of what led me here. Expand to read a bit more about how music came to be as I know it today.</p>
+<p><span id="more-1182"></span></p>
+<p><strong>Stage 1 &#8211; Cassettes</strong><br />
+The first album I ever owned was Motley Crue&#8217;s &#8220;Dr. Feelgood&#8221;. I bought it at a local video store with allowance money when I was somewhere around 10 years old. There was always something about the feel and sound of a cassette tape made it cool and fun to use. The sharp clicking/latching sounds made when removing and loading tapes was almost as good as the Music was. We saw videos on MTV before and after school, and that was how we learned about music growing up. I seemed to favor Motley Crue, Poison, and Alice cooper throughout this stage, and I grew to have a pretty decent collection of cassette tapes through birthdays, Christmases, and being lucky enough to have a hi-tech dad that could make great utilization of blank cassette tapes for both of his sons. <img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>The pillars of this stage of music in my life were my Sony Walkman with auto-reverse and my dual cassette &#8220;boom box&#8221; radio&#8230;</p>
+<p><strong>Stage 2 &#8211; Compact Disks</strong><br />
+CD audio didn&#8217;t make it to my home town until I was in the 8th grade or so. It started when my parents purchased a 6 disk CD changing player and hooked up to their stereo. Soon to follow were my Sony Discman which skipped at the slightest movement (but was still AWESOME at the time), and a family membership to &#8220;BMG&#8221;. I can remember poring over BMG mailings meticulously picking out albums to order with my brother. We slowly but surely built up a decent collection through the teenage and high school years. My favorites that helped me enjoy the CD evolution were some standard classics including Green Day&#8217;s Dookie, Live&#8217;s Throwing Copper, Bush&#8217;s Sixteen Stone. But I also found ways to branch out via the Deftones, the Insane Clown Posse, and even some 2pac and other &#8220;gangsta&#8221; rap.</p>
+<p>I spent a fair amount of money on a loud stereo for my car, and I made every effort to make use of it during these teenage CD centered years.</p>
+<p><strong>Stage 3 &#8211; The Napster Revolution</strong><br />
+I went to college at THE EXACT correct time from the music perspective. High speed networking combined with the new digital music age ushered in by the popularity of the MP3, Winamp, and the file-sharing program &#8220;Napster&#8221;. In the early years, nobody knew where anyone stood regarding this new world. It was uncharted territory for the music industry. I could open Napster, type in an artist name or song title, and have it downloaded and playing in Winamp in minutes&#8230; For free. Was it legal? Nobody knew. Nobody seemed to care that we did it. Nobody told us to stop it. EVERYONE did it &#8211; everyone used Napster.</p>
+<p>But, like all good things &#8211; the golden age of Napster soon fizzled out. Metallica, along with other media outlets, caught up to the game. Napster would ban people, those people switched to Imesh &#8211; Imesh got shut down, those people switched to BearShare&#8230; etc etc. The cycle continued and fizzled outward but ultimately the music industry got back on top. It&#8217;s now been clearly defined now that downloading music you have not purchased is illegal. BUT &#8211; there is no arguing that this changed the music industry forever. Music lovers today can one-click purchase MP3s via mediums like Amazon.com or Apple&#8217;s iTunes store; and they owe that to the MP3 / Napster revolution.</p>
+<p><strong>Stage 3.5 &#8211; The iPod</strong><br />
+Take the MP3 and digital music capabilities and from above, add Apple&#8217;s revolutionary iPod media player, and you now have the ability to literally carry around your entire music collection in a fist-sized device. With the iPod, walkmans and portable CD players became instantly obsolete. The iPod took off pretty much instantly &#8211; and it seemed liked everywhere I looked, there was somebody somewhere wearing the signature white bud headphones. The integration with iPods is what has been surprising for me. Electronics makers seemed to try to embrace the iPod as a partner and design interfaces to work alongside the iPod instead of focusing on making competitor devices. You can now hook them to your TV, hook them to your car, hook them into your Bose home theater &#8211; the iPod integration across the electronic world is unparalleled and will never be matched in any way by anyone else. Your entire music collection is completely portable and available at the touch of a finger. It is truly amazing.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>http://www.ericvb.com/archives/my-evolution-of-music/feed</wfw:commentRss>
+			<slash:comments>8</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

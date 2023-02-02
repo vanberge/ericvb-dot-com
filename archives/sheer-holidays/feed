@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Sheer Holidays	</title>
+	<atom:link href="http://www.ericvb.com/archives/sheer-holidays/feed" rel="self" type="application/rss+xml" />
+	<link>http://www.ericvb.com/archives/sheer-holidays</link>
+	<description>A Distinction Without a Difference...</description>
+	<lastBuildDate>Thu, 21 Dec 2006 03:21:41 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.1</generator>
+	<item>
+		<title>
+		By: vanlandw		</title>
+		<link>http://www.ericvb.com/archives/sheer-holidays#comment-739</link>
+
+		<dc:creator><![CDATA[vanlandw]]></dc:creator>
+		<pubDate>Wed, 20 Dec 2006 22:33:39 +0000</pubDate>
+		<guid isPermaLink="false">http://www.palmerforpresident.com/?p=119#comment-739</guid>
+
+					<description><![CDATA[You are a good man vanberge four.  I also am looking forward to getting out of town and spending a few days at home.  We are both lucky men and I&#039;m sure Hart is going to be a fantastic time for all vans in attendance. 
+
+Ef linux 
+Ef IE7
+Ef spam
+
+brb :-D]]></description>
+			<content:encoded><![CDATA[<p>You are a good man vanberge four.  I also am looking forward to getting out of town and spending a few days at home.  We are both lucky men and I&#8217;m sure Hart is going to be a fantastic time for all vans in attendance. </p>
+<p>Ef linux<br />
+Ef IE7<br />
+Ef spam</p>
+<p>brb 😀</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Big Sky Country	</title>
+	<atom:link href="http://www.ericvb.com/archives/big-sky-country/feed" rel="self" type="application/rss+xml" />
+	<link>http://www.ericvb.com/archives/big-sky-country</link>
+	<description>A Distinction Without a Difference...</description>
+	<lastBuildDate>Tue, 15 Jul 2008 22:03:33 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.1</generator>
+	<item>
+		<title>
+		By: vanlandw		</title>
+		<link>http://www.ericvb.com/archives/big-sky-country#comment-8562</link>
+
+		<dc:creator><![CDATA[vanlandw]]></dc:creator>
+		<pubDate>Tue, 15 Jul 2008 22:03:33 +0000</pubDate>
+		<guid isPermaLink="false">http://www.palmerforpresident.com/?p=201#comment-8562</guid>
+
+					<description><![CDATA[vanberge&#039;s hat is pretty epic to be honest...please put a photo of you in your hat on your main blog]]></description>
+			<content:encoded><![CDATA[<p>vanberge&#8217;s hat is pretty epic to be honest&#8230;please put a photo of you in your hat on your main blog</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Kramer		</title>
+		<link>http://www.ericvb.com/archives/big-sky-country#comment-8448</link>
+
+		<dc:creator><![CDATA[Kramer]]></dc:creator>
+		<pubDate>Sat, 12 Jul 2008 20:05:38 +0000</pubDate>
+		<guid isPermaLink="false">http://www.palmerforpresident.com/?p=201#comment-8448</guid>
+
+					<description><![CDATA[GG on getting a cowboy hat, Vanberge.  They make for good headware.]]></description>
+			<content:encoded><![CDATA[<p>GG on getting a cowboy hat, Vanberge.  They make for good headware.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

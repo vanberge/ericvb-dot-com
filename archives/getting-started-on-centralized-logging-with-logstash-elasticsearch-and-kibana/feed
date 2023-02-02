@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Getting Started on Centralized Logging with Logstash, Elasticsearch and Kibana	</title>
+	<atom:link href="http://www.ericvb.com/archives/getting-started-on-centralized-logging-with-logstash-elasticsearch-and-kibana/feed" rel="self" type="application/rss+xml" />
+	<link>http://www.ericvb.com/archives/getting-started-on-centralized-logging-with-logstash-elasticsearch-and-kibana</link>
+	<description>A Distinction Without a Difference...</description>
+	<lastBuildDate>Thu, 13 Nov 2014 07:07:04 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.1</generator>
+	<item>
+		<title>
+		By: vinod		</title>
+		<link>http://www.ericvb.com/archives/getting-started-on-centralized-logging-with-logstash-elasticsearch-and-kibana#comment-85702</link>
+
+		<dc:creator><![CDATA[vinod]]></dc:creator>
+		<pubDate>Thu, 13 Nov 2014 07:07:04 +0000</pubDate>
+		<guid isPermaLink="false">http://www.ericvb.com/?p=3639#comment-85702</guid>
+
+					<description><![CDATA[how to take logs from remote machine]]></description>
+			<content:encoded><![CDATA[<p>how to take logs from remote machine</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Implementando a stack ELK (ElasticSearch, Logstash e Kibana) no CentOSRicardo Martins &#124; Ricardo Martins		</title>
+		<link>http://www.ericvb.com/archives/getting-started-on-centralized-logging-with-logstash-elasticsearch-and-kibana#comment-73813</link>
+
+		<dc:creator><![CDATA[Implementando a stack ELK (ElasticSearch, Logstash e Kibana) no CentOSRicardo Martins &#124; Ricardo Martins]]></dc:creator>
+		<pubDate>Wed, 02 Jul 2014 12:25:46 +0000</pubDate>
+		<guid isPermaLink="false">http://www.ericvb.com/?p=3639#comment-73813</guid>
+
+					<description><![CDATA[[&#8230;] http://www.ericvb.com/archives/getting-started-on-centralized-logging-with-logstash-elasticsearch-an&#8230; [&#8230;]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] <a href="http://www.ericvb.com/archives/getting-started-on-centralized-logging-with-logstash-elasticsearch-an&#038;#8230" rel="nofollow ugc">http://www.ericvb.com/archives/getting-started-on-centralized-logging-with-logstash-elasticsearch-an&#038;#8230</a>; [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Make sense of server logs, with logstash, elasticsearch and kibana. &#124; another LAN (Local Area Network)		</title>
+		<link>http://www.ericvb.com/archives/getting-started-on-centralized-logging-with-logstash-elasticsearch-and-kibana#comment-37718</link>
+
+		<dc:creator><![CDATA[Make sense of server logs, with logstash, elasticsearch and kibana. &#124; another LAN (Local Area Network)]]></dc:creator>
+		<pubDate>Sun, 13 Apr 2014 14:44:12 +0000</pubDate>
+		<guid isPermaLink="false">http://www.ericvb.com/?p=3639#comment-37718</guid>
+
+					<description><![CDATA[[&#8230;] http://www.ericvb.com/archives/getting-started-on-centralized-logging-with-logstash-elasticsearch-an&#8230; [&#8230;]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] <a href="http://www.ericvb.com/archives/getting-started-on-centralized-logging-with-logstash-elasticsearch-an&#038;#8230" rel="nofollow ugc">http://www.ericvb.com/archives/getting-started-on-centralized-logging-with-logstash-elasticsearch-an&#038;#8230</a>; [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Aaron		</title>
+		<link>http://www.ericvb.com/archives/getting-started-on-centralized-logging-with-logstash-elasticsearch-and-kibana#comment-34284</link>
+
+		<dc:creator><![CDATA[Aaron]]></dc:creator>
+		<pubDate>Sun, 05 Jan 2014 18:54:53 +0000</pubDate>
+		<guid isPermaLink="false">http://www.ericvb.com/?p=3639#comment-34284</guid>
+
+					<description><![CDATA[Nicely done!  Glad the &quot;Introduction to Logstash&quot; gets a mention here ;)]]></description>
+			<content:encoded><![CDATA[<p>Nicely done!  Glad the &#8220;Introduction to Logstash&#8221; gets a mention here 😉</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

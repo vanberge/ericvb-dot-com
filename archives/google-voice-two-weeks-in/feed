@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Google Voice &#8211; Two Weeks In	</title>
+	<atom:link href="http://www.ericvb.com/archives/google-voice-two-weeks-in/feed" rel="self" type="application/rss+xml" />
+	<link>http://www.ericvb.com/archives/google-voice-two-weeks-in</link>
+	<description>A Distinction Without a Difference...</description>
+	<lastBuildDate>Thu, 05 Apr 2012 12:28:15 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.1</generator>
+	<item>
+		<title>
+		By: Vanberge		</title>
+		<link>http://www.ericvb.com/archives/google-voice-two-weeks-in#comment-20153</link>
+
+		<dc:creator><![CDATA[Vanberge]]></dc:creator>
+		<pubDate>Thu, 05 Apr 2012 12:28:15 +0000</pubDate>
+		<guid isPermaLink="false">http://www.palmerforpresident.com/?p=621#comment-20153</guid>
+
+					<description><![CDATA[Eric,
+
+Oh I realize that - and the Google Voice systems do as well; because if you turn on recording it will loudly state &quot;CALL RECORDING ON&quot;]]></description>
+			<content:encoded><![CDATA[<p>Eric,</p>
+<p>Oh I realize that &#8211; and the Google Voice systems do as well; because if you turn on recording it will loudly state &#8220;CALL RECORDING ON&#8221;</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Eric Knight		</title>
+		<link>http://www.ericvb.com/archives/google-voice-two-weeks-in#comment-20135</link>
+
+		<dc:creator><![CDATA[Eric Knight]]></dc:creator>
+		<pubDate>Wed, 04 Apr 2012 20:33:05 +0000</pubDate>
+		<guid isPermaLink="false">http://www.palmerforpresident.com/?p=621#comment-20135</guid>
+
+					<description><![CDATA[You may think twice before recording some phone calls. In some states, such as Caifornia, recording calls without permission is a FELONY.]]></description>
+			<content:encoded><![CDATA[<p>You may think twice before recording some phone calls. In some states, such as Caifornia, recording calls without permission is a FELONY.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

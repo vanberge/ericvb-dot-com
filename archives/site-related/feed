@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Site Related&#8230;	</title>
+	<atom:link href="http://www.ericvb.com/archives/site-related/feed" rel="self" type="application/rss+xml" />
+	<link>http://www.ericvb.com/archives/site-related</link>
+	<description>A Distinction Without a Difference...</description>
+	<lastBuildDate>Mon, 10 Apr 2006 16:23:15 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.1</generator>
+	<item>
+		<title>
+		By: vanberge		</title>
+		<link>http://www.ericvb.com/archives/site-related#comment-150</link>
+
+		<dc:creator><![CDATA[vanberge]]></dc:creator>
+		<pubDate>Mon, 10 Apr 2006 16:23:15 +0000</pubDate>
+		<guid isPermaLink="false">http://www.palmerforpresident.com/?p=72#comment-150</guid>
+
+					<description><![CDATA[It appears then, JJA, that we  are both very rebellious and throw caution into the sheer wind.]]></description>
+			<content:encoded><![CDATA[<p>It appears then, JJA, that we  are both very rebellious and throw caution into the sheer wind.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Jeff		</title>
+		<link>http://www.ericvb.com/archives/site-related#comment-149</link>
+
+		<dc:creator><![CDATA[Jeff]]></dc:creator>
+		<pubDate>Mon, 10 Apr 2006 03:16:11 +0000</pubDate>
+		<guid isPermaLink="false">http://www.palmerforpresident.com/?p=72#comment-149</guid>
+
+					<description><![CDATA[I cannot remember the last time I did a backup before I upgraded some web deal like that.]]></description>
+			<content:encoded><![CDATA[<p>I cannot remember the last time I did a backup before I upgraded some web deal like that.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: vanlandw		</title>
+		<link>http://www.ericvb.com/archives/site-related#comment-148</link>
+
+		<dc:creator><![CDATA[vanlandw]]></dc:creator>
+		<pubDate>Sun, 09 Apr 2006 23:13:56 +0000</pubDate>
+		<guid isPermaLink="false">http://www.palmerforpresident.com/?p=72#comment-148</guid>
+
+					<description><![CDATA[i am glad you created some updates to the software that powers p4p :-[
+
+you should have created a backup though van...but clearly i would have done the same fu**ing think :-[]]></description>
+			<content:encoded><![CDATA[<p>i am glad you created some updates to the software that powers p4p :-[</p>
+<p>you should have created a backup though van&#8230;but clearly i would have done the same fu**ing think :-[</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

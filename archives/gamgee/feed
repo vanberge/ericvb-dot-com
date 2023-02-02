@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Gamgee	</title>
+	<atom:link href="http://www.ericvb.com/archives/gamgee/feed" rel="self" type="application/rss+xml" />
+	<link>http://www.ericvb.com/archives/gamgee</link>
+	<description>A Distinction Without a Difference...</description>
+	<lastBuildDate>Thu, 19 Jan 2006 00:00:59 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.1</generator>
+	<item>
+		<title>
+		By: vanberge		</title>
+		<link>http://www.ericvb.com/archives/gamgee#comment-65</link>
+
+		<dc:creator><![CDATA[vanberge]]></dc:creator>
+		<pubDate>Thu, 19 Jan 2006 00:00:59 +0000</pubDate>
+		<guid isPermaLink="false">http://www.palmerforpresident.com/?p=58#comment-65</guid>
+
+					<description><![CDATA[lol... thank you kramer.
+
+
+vanlandw, the music should be back.]]></description>
+			<content:encoded><![CDATA[<p>lol&#8230; thank you kramer.</p>
+<p>vanlandw, the music should be back.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: vanlandw		</title>
+		<link>http://www.ericvb.com/archives/gamgee#comment-64</link>
+
+		<dc:creator><![CDATA[vanlandw]]></dc:creator>
+		<pubDate>Tue, 17 Jan 2006 19:34:37 +0000</pubDate>
+		<guid isPermaLink="false">http://www.palmerforpresident.com/?p=58#comment-64</guid>
+
+					<description><![CDATA[you need to put the music back van..if you want i can host the music file on the bob to keep BW down.  that that is really funny]]></description>
+			<content:encoded><![CDATA[<p>you need to put the music back van..if you want i can host the music file on the bob to keep BW down.  that that is really funny</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Kramer		</title>
+		<link>http://www.ericvb.com/archives/gamgee#comment-63</link>
+
+		<dc:creator><![CDATA[Kramer]]></dc:creator>
+		<pubDate>Tue, 17 Jan 2006 19:26:41 +0000</pubDate>
+		<guid isPermaLink="false">http://www.palmerforpresident.com/?p=58#comment-63</guid>
+
+					<description><![CDATA[Van, that is brilliant.]]></description>
+			<content:encoded><![CDATA[<p>Van, that is brilliant.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

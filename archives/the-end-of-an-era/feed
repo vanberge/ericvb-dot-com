@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: The End of an Era	</title>
+	<atom:link href="http://www.ericvb.com/archives/the-end-of-an-era/feed" rel="self" type="application/rss+xml" />
+	<link>http://www.ericvb.com/archives/the-end-of-an-era</link>
+	<description>A Distinction Without a Difference...</description>
+	<lastBuildDate>Fri, 19 Jun 2009 02:28:13 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.1</generator>
+	<item>
+		<title>
+		By: Vanberge		</title>
+		<link>http://www.ericvb.com/archives/the-end-of-an-era#comment-13675</link>
+
+		<dc:creator><![CDATA[Vanberge]]></dc:creator>
+		<pubDate>Fri, 19 Jun 2009 02:28:13 +0000</pubDate>
+		<guid isPermaLink="false">http://www.ericvb.com/?p=626#comment-13675</guid>
+
+					<description><![CDATA[Jeff
+yeah i was missing the line that said follow symlinks.
+:-(]]></description>
+			<content:encoded><![CDATA[<p>Jeff<br />
+yeah i was missing the line that said follow symlinks.<br />
+🙁</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Jeff		</title>
+		<link>http://www.ericvb.com/archives/the-end-of-an-era#comment-13672</link>
+
+		<dc:creator><![CDATA[Jeff]]></dc:creator>
+		<pubDate>Thu, 18 Jun 2009 23:14:16 +0000</pubDate>
+		<guid isPermaLink="false">http://www.ericvb.com/?p=626#comment-13672</guid>
+
+					<description><![CDATA[You can do that simply by editing your htaccess script]]></description>
+			<content:encoded><![CDATA[<p>You can do that simply by editing your htaccess script</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Vanberge		</title>
+		<link>http://www.ericvb.com/archives/the-end-of-an-era#comment-13645</link>
+
+		<dc:creator><![CDATA[Vanberge]]></dc:creator>
+		<pubDate>Sat, 13 Jun 2009 22:25:19 +0000</pubDate>
+		<guid isPermaLink="false">http://www.ericvb.com/?p=626#comment-13645</guid>
+
+					<description><![CDATA[Im trying to find out how to do a more complex redirect.  so it will keep my permalinks going to the right content.  i.e. www.palmerforpresident.com/archives/grand-rapids-sonic will redirect to www.ericvb.com/archives/grand-rapids-sonic]]></description>
+			<content:encoded><![CDATA[<p>Im trying to find out how to do a more complex redirect.  so it will keep my permalinks going to the right content.  i.e. <a href="http://www.palmerforpresident.com/archives/grand-rapids-sonic" rel="nofollow ugc">http://www.palmerforpresident.com/archives/grand-rapids-sonic</a> will redirect to <a href="http://www.ericvb.com/archives/grand-rapids-sonic" rel="nofollow ugc">http://www.ericvb.com/archives/grand-rapids-sonic</a></p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Vanberge		</title>
+		<link>http://www.ericvb.com/archives/the-end-of-an-era#comment-13644</link>
+
+		<dc:creator><![CDATA[Vanberge]]></dc:creator>
+		<pubDate>Sat, 13 Jun 2009 22:11:19 +0000</pubDate>
+		<guid isPermaLink="false">http://www.ericvb.com/?p=626#comment-13644</guid>
+
+					<description><![CDATA[Good call jja... I am going to set that up now.]]></description>
+			<content:encoded><![CDATA[<p>Good call jja&#8230; I am going to set that up now.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: vanlandw		</title>
+		<link>http://www.ericvb.com/archives/the-end-of-an-era#comment-13642</link>
+
+		<dc:creator><![CDATA[vanlandw]]></dc:creator>
+		<pubDate>Sat, 13 Jun 2009 15:31:10 +0000</pubDate>
+		<guid isPermaLink="false">http://www.ericvb.com/?p=626#comment-13642</guid>
+
+					<description><![CDATA[yeah that is what i did when bauercount moved from vanlandw.com/bauercount
+
+it&#039;s still working if i&#039;m correct a quick google search you should be able to set this shit up.
+
+mostly because anytime i&#039;m going to attend your site i&#039;m going to use p4p :-/
+
+until it no longer works anymore :-[
+
+gg brb]]></description>
+			<content:encoded><![CDATA[<p>yeah that is what i did when bauercount moved from vanlandw.com/bauercount</p>
+<p>it&#8217;s still working if i&#8217;m correct a quick google search you should be able to set this shit up.</p>
+<p>mostly because anytime i&#8217;m going to attend your site i&#8217;m going to use p4p :-/</p>
+<p>until it no longer works anymore :-[</p>
+<p>gg brb</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Jeff		</title>
+		<link>http://www.ericvb.com/archives/the-end-of-an-era#comment-13641</link>
+
+		<dc:creator><![CDATA[Jeff]]></dc:creator>
+		<pubDate>Sat, 13 Jun 2009 15:28:46 +0000</pubDate>
+		<guid isPermaLink="false">http://www.ericvb.com/?p=626#comment-13641</guid>
+
+					<description><![CDATA[I recommend you have p4p do a 301 redirect to the new url. By having both urls serve the same content you are going to slaughter your search ranking.]]></description>
+			<content:encoded><![CDATA[<p>I recommend you have p4p do a 301 redirect to the new url. By having both urls serve the same content you are going to slaughter your search ranking.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

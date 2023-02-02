@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Super Bowl Party	</title>
+	<atom:link href="http://www.ericvb.com/archives/super-bowl-party/feed" rel="self" type="application/rss+xml" />
+	<link>http://www.ericvb.com/archives/super-bowl-party</link>
+	<description>A Distinction Without a Difference...</description>
+	<lastBuildDate>Wed, 01 Feb 2006 04:58:38 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.1</generator>
+	<item>
+		<title>
+		By: Kramer		</title>
+		<link>http://www.ericvb.com/archives/super-bowl-party#comment-84</link>
+
+		<dc:creator><![CDATA[Kramer]]></dc:creator>
+		<pubDate>Wed, 01 Feb 2006 04:58:38 +0000</pubDate>
+		<guid isPermaLink="false">http://www.palmerforpresident.com/?p=60#comment-84</guid>
+
+					<description><![CDATA[I will still be in Texas.
+
+You guys (or as they say down here, y&#039;all) need to come down some time.]]></description>
+			<content:encoded><![CDATA[<p>I will still be in Texas.</p>
+<p>You guys (or as they say down here, y&#8217;all) need to come down some time.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: vanberge		</title>
+		<link>http://www.ericvb.com/archives/super-bowl-party#comment-81</link>
+
+		<dc:creator><![CDATA[vanberge]]></dc:creator>
+		<pubDate>Tue, 31 Jan 2006 23:23:34 +0000</pubDate>
+		<guid isPermaLink="false">http://www.palmerforpresident.com/?p=60#comment-81</guid>
+
+					<description><![CDATA[Kramer!!  why not??
+
+you are invited... and you could bring some of that BBQ]]></description>
+			<content:encoded><![CDATA[<p>Kramer!!  why not??</p>
+<p>you are invited&#8230; and you could bring some of that BBQ</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Kramer		</title>
+		<link>http://www.ericvb.com/archives/super-bowl-party#comment-80</link>
+
+		<dc:creator><![CDATA[Kramer]]></dc:creator>
+		<pubDate>Tue, 31 Jan 2006 17:48:13 +0000</pubDate>
+		<guid isPermaLink="false">http://www.palmerforpresident.com/?p=60#comment-80</guid>
+
+					<description><![CDATA[I will not be there.  Sorry.]]></description>
+			<content:encoded><![CDATA[<p>I will not be there.  Sorry.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: vanlandw		</title>
+		<link>http://www.ericvb.com/archives/super-bowl-party#comment-79</link>
+
+		<dc:creator><![CDATA[vanlandw]]></dc:creator>
+		<pubDate>Mon, 30 Jan 2006 04:49:18 +0000</pubDate>
+		<guid isPermaLink="false">http://www.palmerforpresident.com/?p=60#comment-79</guid>
+
+					<description><![CDATA[I&#039;m there]]></description>
+			<content:encoded><![CDATA[<p>I&#8217;m there</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

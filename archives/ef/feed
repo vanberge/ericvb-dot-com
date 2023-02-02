@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: ef	</title>
+	<atom:link href="http://www.ericvb.com/archives/ef/feed" rel="self" type="application/rss+xml" />
+	<link>http://www.ericvb.com/archives/ef</link>
+	<description>A Distinction Without a Difference...</description>
+	<lastBuildDate>Thu, 24 Nov 2005 18:04:19 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.1</generator>
+	<item>
+		<title>
+		By: vanberge		</title>
+		<link>http://www.ericvb.com/archives/ef#comment-9</link>
+
+		<dc:creator><![CDATA[vanberge]]></dc:creator>
+		<pubDate>Thu, 24 Nov 2005 09:53:13 +0000</pubDate>
+		<guid isPermaLink="false">http://www.palmerforpresident.com/?p=49#comment-9</guid>
+
+					<description><![CDATA[I dont think im going to rm jja....  
+
+I FIXED THE MSG BOARDS COMPLETELY.
+
+ALL DATA RESTORED.
+
+although now i must say i know mysql much better than i ever wanted.  and clearly i wasted 7 hours of my life making this work.   horrendous persona.
+
+happy thanksgiving]]></description>
+			<content:encoded><![CDATA[<p>I dont think im going to rm jja&#8230;.  </p>
+<p>I FIXED THE MSG BOARDS COMPLETELY.</p>
+<p>ALL DATA RESTORED.</p>
+<p>although now i must say i know mysql much better than i ever wanted.  and clearly i wasted 7 hours of my life making this work.   horrendous persona.</p>
+<p>happy thanksgiving</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Jeff		</title>
+		<link>http://www.ericvb.com/archives/ef#comment-8</link>
+
+		<dc:creator><![CDATA[Jeff]]></dc:creator>
+		<pubDate>Thu, 24 Nov 2005 09:17:09 +0000</pubDate>
+		<guid isPermaLink="false">http://www.palmerforpresident.com/?p=49#comment-8</guid>
+
+					<description><![CDATA[Nope. I did not corrupt my database and lose three months of conversations. :raz:]]></description>
+			<content:encoded><![CDATA[<p>Nope. I did not corrupt my database and lose three months of conversations. :raz:</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: vanberge		</title>
+		<link>http://www.ericvb.com/archives/ef#comment-7</link>
+
+		<dc:creator><![CDATA[vanberge]]></dc:creator>
+		<pubDate>Wed, 23 Nov 2005 12:39:23 +0000</pubDate>
+		<guid isPermaLink="false">http://www.palmerforpresident.com/?p=49#comment-7</guid>
+
+					<description><![CDATA[if i do it... you have to do it to jja..  :-)]]></description>
+			<content:encoded><![CDATA[<p>if i do it&#8230; you have to do it to jja..  🙂</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Jeff		</title>
+		<link>http://www.ericvb.com/archives/ef#comment-6</link>
+
+		<dc:creator><![CDATA[Jeff]]></dc:creator>
+		<pubDate>Wed, 23 Nov 2005 05:36:22 +0000</pubDate>
+		<guid isPermaLink="false">http://www.palmerforpresident.com/?p=49#comment-6</guid>
+
+					<description><![CDATA[rm]]></description>
+			<content:encoded><![CDATA[<p>rm</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

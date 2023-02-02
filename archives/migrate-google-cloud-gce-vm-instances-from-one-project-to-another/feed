@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Migrate Google Cloud GCE VM Instances From One Project To Another	</title>
+	<atom:link href="http://www.ericvb.com/archives/migrate-google-cloud-gce-vm-instances-from-one-project-to-another/feed" rel="self" type="application/rss+xml" />
+	<link>http://www.ericvb.com/archives/migrate-google-cloud-gce-vm-instances-from-one-project-to-another</link>
+	<description>A Distinction Without a Difference...</description>
+	<lastBuildDate>Tue, 06 Apr 2021 13:07:10 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.1</generator>
+	<item>
+		<title>
+		By: Vanberge		</title>
+		<link>http://www.ericvb.com/archives/migrate-google-cloud-gce-vm-instances-from-one-project-to-another#comment-266044</link>
+
+		<dc:creator><![CDATA[Vanberge]]></dc:creator>
+		<pubDate>Tue, 06 Apr 2021 13:07:10 +0000</pubDate>
+		<guid isPermaLink="false">http://www.ericvb.com/?p=3872#comment-266044</guid>
+
+					<description><![CDATA[@Chris Z
+Finally got around to looking at this.  The filter fields did change, so I have updated the script accordingly:
+
+https://github.com/vanberge/gce-migrator/commit/be93818355551758a13db3b5edcfa984b742d4bf#diff-a64299e0a2a7a2fa6c51ed8591f0fcb460c67af407515b04247e7f1df3d6cfd3
+
+
+This should address your issue now]]></description>
+			<content:encoded><![CDATA[<p>@Chris Z<br />
+Finally got around to looking at this.  The filter fields did change, so I have updated the script accordingly:</p>
+<p><a href="https://github.com/vanberge/gce-migrator/commit/be93818355551758a13db3b5edcfa984b742d4bf#diff-a64299e0a2a7a2fa6c51ed8591f0fcb460c67af407515b04247e7f1df3d6cfd3" rel="nofollow ugc">https://github.com/vanberge/gce-migrator/commit/be93818355551758a13db3b5edcfa984b742d4bf#diff-a64299e0a2a7a2fa6c51ed8591f0fcb460c67af407515b04247e7f1df3d6cfd3</a></p>
+<p>This should address your issue now</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Vanberge		</title>
+		<link>http://www.ericvb.com/archives/migrate-google-cloud-gce-vm-instances-from-one-project-to-another#comment-255898</link>
+
+		<dc:creator><![CDATA[Vanberge]]></dc:creator>
+		<pubDate>Wed, 10 Mar 2021 15:07:57 +0000</pubDate>
+		<guid isPermaLink="false">http://www.ericvb.com/?p=3872#comment-255898</guid>
+
+					<description><![CDATA[Thanks @Chris for the heads up here.  I&#039;ll do some testing and see what I can find here.]]></description>
+			<content:encoded><![CDATA[<p>Thanks @Chris for the heads up here.  I&#8217;ll do some testing and see what I can find here.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Chris Z		</title>
+		<link>http://www.ericvb.com/archives/migrate-google-cloud-gce-vm-instances-from-one-project-to-another#comment-244065</link>
+
+		<dc:creator><![CDATA[Chris Z]]></dc:creator>
+		<pubDate>Wed, 03 Feb 2021 19:40:43 +0000</pubDate>
+		<guid isPermaLink="false">http://www.ericvb.com/?p=3872#comment-244065</guid>
+
+					<description><![CDATA[Regarding the account error, it appears the filter syntax has changed. I changed line 164 to `DESTPROJECT_SVCACCT=$(gcloud iam service-accounts list --project $DESTPROJECT_ID --filter=&quot;NAME:Compute Engine default service account&quot; &#124; grep &quot;Compute&quot; &#124; awk -F &quot;  &quot; &#039;{ print $2 }&#039;)` and the script ran. Unfortunately, no VMs were created in the new project.
+
+The script didn&#039;t indicate any errors. Tried it with -m $my-project-name and -m bulk. No new VMs either way.]]></description>
+			<content:encoded><![CDATA[<p>Regarding the account error, it appears the filter syntax has changed. I changed line 164 to `DESTPROJECT_SVCACCT=$(gcloud iam service-accounts list &#8211;project $DESTPROJECT_ID &#8211;filter=&#8221;NAME:Compute Engine default service account&#8221; | grep &#8220;Compute&#8221; | awk -F &#8221;  &#8221; &#8216;{ print $2 }&#8217;)` and the script ran. Unfortunately, no VMs were created in the new project.</p>
+<p>The script didn&#8217;t indicate any errors. Tried it with -m $my-project-name and -m bulk. No new VMs either way.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Chris Z		</title>
+		<link>http://www.ericvb.com/archives/migrate-google-cloud-gce-vm-instances-from-one-project-to-another#comment-244040</link>
+
+		<dc:creator><![CDATA[Chris Z]]></dc:creator>
+		<pubDate>Wed, 03 Feb 2021 18:25:14 +0000</pubDate>
+		<guid isPermaLink="false">http://www.ericvb.com/?p=3872#comment-244040</guid>
+
+					<description><![CDATA[&quot;Cannot find GCE service account in destination project&quot; What do I need to do to fix this?
+
+Thanks in advance.]]></description>
+			<content:encoded><![CDATA[<p>&#8220;Cannot find GCE service account in destination project&#8221; What do I need to do to fix this?</p>
+<p>Thanks in advance.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

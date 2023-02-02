@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>videogames &#8211; Eric VB.com</title>
+	<atom:link href="http://www.ericvb.com/archives/tag/videogames/feed" rel="self" type="application/rss+xml" />
+	<link>http://www.ericvb.com</link>
+	<description>A Distinction Without a Difference...</description>
+	<lastBuildDate>Mon, 07 Nov 2011 20:42:32 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.1</generator>
+	<item>
+		<title>Red Ring of Death</title>
+		<link>http://www.ericvb.com/archives/red-ring-of-death</link>
+					<comments>http://www.ericvb.com/archives/red-ring-of-death#comments</comments>
+		
+		<dc:creator><![CDATA[Vanberge]]></dc:creator>
+		<pubDate>Mon, 03 Oct 2011 17:25:06 +0000</pubDate>
+				<category><![CDATA[Misc]]></category>
+		<category><![CDATA[Tech]]></category>
+		<category><![CDATA[rrod]]></category>
+		<category><![CDATA[videogames]]></category>
+		<category><![CDATA[Xbox]]></category>
+		<guid isPermaLink="false">http://www.ericvb.com/?p=1512</guid>
+
+					<description><![CDATA[For some time, it appeared that the dreaded &#8220;RRoD&#8221; had overlooked my Xbox 360 console. Over the years, I&#8217;ve watched as my brother, friends, family members, and co-workers had to send their consoles into Microsoft for warranty repair.  Sometimes even on multiple occasions.  The ruthless crimson-ringed beast seemed to spare no one.  In fact, I&#8217;m [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p>For some time, it appeared that the dreaded &#8220;<a href="http://en.wikipedia.org/wiki/Xbox_360_technical_problems#.22General_Hardware_Failure.22_errors">RRoD</a>&#8221; had overlooked my Xbox 360 console.</p>
+<p>Over the years, I&#8217;ve watched as my brother, friends, family members, and co-workers had to send their consoles into Microsoft for warranty repair.  Sometimes even on multiple occasions.  The ruthless crimson-ringed beast seemed to spare no one.  In fact, I&#8217;m almost positive that I do not know a single person that has an early-model Xbox that has not &#8220;red ringed&#8221; at some point.</p>
+<p>On Thursday night, as I went to launch my newly downloaded Battle Field 3 beta, my Xbox beeped loudly and froze up.  I powered it off, and powered it back on &#8211; only for it to freeze at the Xbox boot screen animation.  A second power off/on showed me a most unpleasant site framed in a very distinctly reddish hue.  It seemed, much like death itself stalking the cast of a Final Destination movie, that this unmerciful demon of console demise had at last found its misguided way to my Xbox</p>
+<p><a href="http://ericvb.com/wp-content/uploads/2011/10/rrod_evil-e1317658213222.jpg"><img decoding="async" loading="lazy" class="aligncenter size-full wp-image-1516" title="rrod_evil" src="http://ericvb.com/wp-content/uploads/2011/10/rrod_evil-e1317658213222.jpg" alt="" width="349" height="349" srcset="http://www.ericvb.com/wp-content/uploads/2011/10/rrod_evil-e1317658213222.jpg 349w, http://www.ericvb.com/wp-content/uploads/2011/10/rrod_evil-e1317658213222-150x150.jpg 150w, http://www.ericvb.com/wp-content/uploads/2011/10/rrod_evil-e1317658213222-300x300.jpg 300w" sizes="(max-width: 349px) 100vw, 349px" /></a></p>
+<p>Personally, I feel this has been a long time coming.  I&#8217;ve somehow managed to dodge this bullet for years.  Probably the fact that I have the &#8220;2nd printing&#8221; of the Xbox 360 Pro with an HDMI port bought me this extra lease on life, but who can be sure.  After a night&#8217;s rest, the RRoD continued in the morning.  I decided it was time to take corrective actions.  Microsoft extended warranty coverage for this issue for a period of 3 years.  Since I bought my Xbox in November of 2007, I was 11 months past my warranty coverage.  This leaves my 1st option:  Send the console into Microsoft for 100 dollar repair/refurb.</p>
+<p>Since I like 100 dollars in my bank account, I did not even consider this option.</p>
+<p>My next thought is to replace the console.  I immediately shop on Amazon and Newegg, but I&#8217;m not really enjoying the notion of paying $200 plus for a new Xbox and paying for a data migration kit.</p>
+<p>A third option, much more my style, began to creep into my frazzled mind.   &#8220;Why not try to actually try to fix this myself?&#8221;.  I am a fairly technically savvy person with a family history of MacGyvering &#8211; so I saw fit to AT THE VERY LEAST lace up, touch gloves, and slug it out for a few rounds with the RRoD.  I commenced work immediately.</p>
+<p>I didn&#8217;t use a guide to open up my Xbox; but I should have.  I used brute force and a couple of plastic tabs that hold the top plastic bezel in place are now snapped off.  It was difficult to  get this console open my first time, and it probably took me 45 minutes to have the thing completely disassembled to where I had the system board out and all other pieces off to the side.</p>
+<p><a href="http://ericvb.com/wp-content/uploads/2011/10/rrod_disassembled.jpg"><img decoding="async" loading="lazy" class="aligncenter size-medium wp-image-1513" title="rrod_disassembled" src="http://ericvb.com/wp-content/uploads/2011/10/rrod_disassembled-e1317658875780-300x300.jpg" alt="" width="300" height="300" srcset="http://www.ericvb.com/wp-content/uploads/2011/10/rrod_disassembled-e1317658875780-300x300.jpg 300w, http://www.ericvb.com/wp-content/uploads/2011/10/rrod_disassembled-e1317658875780-150x150.jpg 150w, http://www.ericvb.com/wp-content/uploads/2011/10/rrod_disassembled-e1317658875780.jpg 481w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+<p>With everything opened up and my warranty (or, possibility of ever having one) now completely devoid, I started looking at possible fixes.  Both the CPU and GPU heat-sinks seemed firmly attached, so I didn&#8217;t believe that to be my problem.  Overall, the system was pretty clean.  I blew out some of the dust plugging up the fans and heat-sinks overall, but that definitely wasn&#8217;t enough of a backup to cause a RRoD in my opinion.</p>
+<p>So, I decided it must be the memory chips on the bottom of the Xbox system board.  These 4 chips sit on the bottom side where no fan/cooling will ever reach them.  Microsoft tried to alleviate this by attaching some chintzy thermal pads, but those things were basically a band aid with some high density foam attached to the chips.</p>
+<p>I removed the pads and cleaned the memory chips.  I used <a href="http://www.youtube.com/watch?v=wsz0lNJ6JrQ&amp;t=4m18s">this guide</a> to replace those pads with some custom &#8220;penny based&#8221; copper heat sinks.  You take 2 pennies, wrap them together with electrical tape, and stick them onto those 4 memory chips.  From the pic, you can see I have a tube of high-temperature synthetic grease which I layered between the chip and pennies.</p>
+<p>The entire process was a pain.  Getting the system back together was harder than taking it apart.  It&#8217;s difficult to get everything to line up correctly while keeping those pennies in place on the chips.  After I got it part-way back together, I test-booted the Xbox only to find that the red ring persisted.  Even worse, this time it seemed to red ring before even powering on the fans.  I took this to mean that I had a short somewhere; and indeed it did seem that the system board was crooked from my penny application.  I adjusted screw tension in several places, and removed screws completely in other places &#8211; and after some finagling I was able to get the system to boot to it&#8217;s &#8220;normal&#8221; red ring where the fans and everything at least had power.</p>
+<p>Further research indicated that the RRoD error code may persist even if you have fixed the problem.  The easiest way to clear that error code was to replace it with another error code and/or reset the onboard chips.  The easiest way to do THAT is to simply overheat your Xbox.  Shouldn&#8217;t be too hard, right?  I mean, the thing runs at nuclear temperature even in a ventialted area.  Google reported the &#8220;towel trick&#8221; was the key, and I watched <a href="http://www.youtube.com/watch?v=avWs4-wD15w">this entertaining guy</a> do said trick &#8211; which apparently means cooking your Xbox for 20-25 minutes.</p>
+<p>Since I had the thing apart already, I decided to expedite this baking process by booting it up without the fans installed.  So I turned it on, then wrapped the console in a thick fleece blanket, and about 6 minutes later it completely powered off.  I tried to boot it up again, and I got 2 red rings vs 3 (indicating overheat, yay!).  So, I let it cool off for about 10 minutes before trying again&#8230;</p>
+<p><a href="http://ericvb.com/wp-content/uploads/2011/10/rrod_remedied.jpg"><img decoding="async" loading="lazy" class="aligncenter size-large wp-image-1514" title="rrod_remedied" src="http://ericvb.com/wp-content/uploads/2011/10/rrod_remedied-e1317660311581.jpg" alt="" width="600" height="440" srcset="http://www.ericvb.com/wp-content/uploads/2011/10/rrod_remedied-e1317660311581.jpg 600w, http://www.ericvb.com/wp-content/uploads/2011/10/rrod_remedied-e1317660311581-300x220.jpg 300w" sizes="(max-width: 600px) 100vw, 600px" /></a></p>
+<p>It BOOTED!!!  I let it idle for a bit, played some Trials, verified live connectivity, etc etc.  Everything was looking great!  The penny fix in combination with an overheat to clear it out seemed to do the trick for me.</p>
+<p>I put the unit back together, and by this point I was very comfortable getting it back together correctly. I tightened all the screws, got all the tabs back in place, buttoned it up completely.</p>
+<p>With everything hooked back up; I tested the console for awhile playing various games.  I played Trials.  I played Battlefield 3 beta.  I reviewed my settings and live connectivity again&#8230;   And after 1-2 hours, it was still working fine.</p>
+<p>I have continued playing throughout the weekend with 2-3 hours per session; totaling probably 8-10 hours of game play; and I feel like everything is very stable.  No more red rings.  I have done multiple power on/offs, disconnected/reconnected all hardware and storage devices; and at this time I feel very good about my Xbox and its &#8220;Non RRoD&#8221; status.</p>
+<p>In fact, everyone in the family does!</p>
+<p><a href="http://ericvb.com/wp-content/uploads/2011/10/rrod_everybodyshappy.jpg"><img decoding="async" loading="lazy" class="aligncenter size-full wp-image-1515" title="rrod_everybodyshappy" src="http://ericvb.com/wp-content/uploads/2011/10/rrod_everybodyshappy.jpg" alt="" width="392" height="523" srcset="http://www.ericvb.com/wp-content/uploads/2011/10/rrod_everybodyshappy.jpg 392w, http://www.ericvb.com/wp-content/uploads/2011/10/rrod_everybodyshappy-224x300.jpg 224w" sizes="(max-width: 392px) 100vw, 392px" /></a></p>
+<p>Take that, RRoD&#8230;  I looked through your intimidating vengeful red eye directly into your villainous soul.  After a hard-fought battle, I am confident that on this day,  good has triumphed over evil&#8230;</p>
+<p><strong>###UPDATE###</strong><br />
+This penny fix was only temporary.  The red-ring of death resurfaced about 10 days later and asked me for a rematch.</p>
+<p>This time I pulled out all the stops and researched every possible fix that typically works for the RRoD.  Ultimately, I ended up at 2 main fixes:</p>
+<ul>
+<li>Replacing the X-clamps that hold the heat syncs in place for the GPU and CPU, combined with replacing the thermal paste on the cores/heatsinks</li>
+<li>Purchase a heat gun and use it to refresh the solder connections by heating the bottom of the circuit board.</li>
+</ul>
+<p>I followed this video tutorial pretty much exactly.  He does a great job explaining the work done, and gives exact specs for the hardware that replaces the crappy X-clamps.  I took it one step further and drilled a grid of holes in the top of my Xbox to improve the airflow over top of the heatsinks.</p>
+<p><iframe loading="lazy" width="480" height="360" src="http://www.youtube.com/embed/uB2QoJM7p5I?rel=0" frameborder="0" allowfullscreen></iframe></p>
+<p>This work seems to have officially bested the RRoD &#8211; as of now it&#8217;s been operating for about a month without any further issues.  I&#8217;ve also noticed it running much quieter now that I&#8217;ve drilled the holes, so I think that has improved the airflow and makes it so my fans have to do much less work to move the same amount of air.</p>
+<p>Your move, RRoD.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>http://www.ericvb.com/archives/red-ring-of-death/feed</wfw:commentRss>
+			<slash:comments>4</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

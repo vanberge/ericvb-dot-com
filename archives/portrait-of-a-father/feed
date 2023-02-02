@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Portrait of a Father	</title>
+	<atom:link href="http://www.ericvb.com/archives/portrait-of-a-father/feed" rel="self" type="application/rss+xml" />
+	<link>http://www.ericvb.com/archives/portrait-of-a-father</link>
+	<description>A Distinction Without a Difference...</description>
+	<lastBuildDate>Wed, 23 Aug 2006 22:10:04 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.1</generator>
+	<item>
+		<title>
+		By: PalmerForPresident.com &#187; Mickeyvb.		</title>
+		<link>http://www.ericvb.com/archives/portrait-of-a-father#comment-394</link>
+
+		<dc:creator><![CDATA[PalmerForPresident.com &#187; Mickeyvb.]]></dc:creator>
+		<pubDate>Wed, 23 Aug 2006 22:10:04 +0000</pubDate>
+		<guid isPermaLink="false">http://www.palmerforpresident.com/?p=42#comment-394</guid>
+
+					<description><![CDATA[[...] Happy Fathery&#8217;s day to MickeyVB. [...]]]></description>
+			<content:encoded><![CDATA[<p>[&#8230;] Happy Fathery&#8217;s day to MickeyVB. [&#8230;]</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: bun		</title>
+		<link>http://www.ericvb.com/archives/portrait-of-a-father#comment-287</link>
+
+		<dc:creator><![CDATA[bun]]></dc:creator>
+		<pubDate>Tue, 20 Jun 2006 19:14:58 +0000</pubDate>
+		<guid isPermaLink="false">http://www.palmerforpresident.com/?p=42#comment-287</guid>
+
+					<description><![CDATA[awwwwwwwwwwwwwwwwwwwwwwwww]]></description>
+			<content:encoded><![CDATA[<p>awwwwwwwwwwwwwwwwwwwwwwwww</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: How to Stop YouTube from Sucking (DD-WRT Version)	</title>
+	<atom:link href="http://www.ericvb.com/archives/how-to-stop-youtube-from-sucking-dd-wrt-version/feed" rel="self" type="application/rss+xml" />
+	<link>http://www.ericvb.com/archives/how-to-stop-youtube-from-sucking-dd-wrt-version</link>
+	<description>A Distinction Without a Difference...</description>
+	<lastBuildDate>Mon, 15 Apr 2013 04:46:21 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.1</generator>
+	<item>
+		<title>
+		By: com		</title>
+		<link>http://www.ericvb.com/archives/how-to-stop-youtube-from-sucking-dd-wrt-version#comment-26724</link>
+
+		<dc:creator><![CDATA[com]]></dc:creator>
+		<pubDate>Mon, 15 Apr 2013 04:46:21 +0000</pubDate>
+		<guid isPermaLink="false">http://www.ericvb.com/?p=3556#comment-26724</guid>
+
+					<description><![CDATA[ok, so this may be location dependent since the problem i had was due to a different ip range, mine is 208.117.251.x, this is with TWC in NC. to find out you can use firebug and look at the GET on &quot;videoplayback?algorithm=throttle-factor&quot; with domain name something like &quot;r9---sn-p5qlsm7l.c.youtube.com&quot;. however, blocking that range renders every video unplayable, you could block individual ip addresses of slow videos but results of that are inconsistent - sometimes it would switch to a good ip, sometimes it would switch to another bad ip and give up after, and sometimes it would not attempt to switch at all rendering the video unplayable again. i&#039;ve tried both of these methods:
+iptables -I FORWARD -s 208.117.251.172/32 -j REJECT
+iptables -I FORWARD -s 192.168.1.0/24 -d 208.117.251.172/32 -j REJECT]]></description>
+			<content:encoded><![CDATA[<p>ok, so this may be location dependent since the problem i had was due to a different ip range, mine is 208.117.251.x, this is with TWC in NC. to find out you can use firebug and look at the GET on &#8220;videoplayback?algorithm=throttle-factor&#8221; with domain name something like &#8220;r9&#8212;sn-p5qlsm7l.c.youtube.com&#8221;. however, blocking that range renders every video unplayable, you could block individual ip addresses of slow videos but results of that are inconsistent &#8211; sometimes it would switch to a good ip, sometimes it would switch to another bad ip and give up after, and sometimes it would not attempt to switch at all rendering the video unplayable again. i&#8217;ve tried both of these methods:<br />
+iptables -I FORWARD -s 208.117.251.172/32 -j REJECT<br />
+iptables -I FORWARD -s 192.168.1.0/24 -d 208.117.251.172/32 -j REJECT</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: com		</title>
+		<link>http://www.ericvb.com/archives/how-to-stop-youtube-from-sucking-dd-wrt-version#comment-26721</link>
+
+		<dc:creator><![CDATA[com]]></dc:creator>
+		<pubDate>Mon, 15 Apr 2013 01:14:00 +0000</pubDate>
+		<guid isPermaLink="false">http://www.ericvb.com/?p=3556#comment-26721</guid>
+
+					<description><![CDATA[Doesn&#039;t seem to work :( tried both DROP and REJECT using dd-wrt on linksys, time warner cable in NC, still extremely bad buffering on lots of videos.]]></description>
+			<content:encoded><![CDATA[<p>Doesn&#8217;t seem to work 🙁 tried both DROP and REJECT using dd-wrt on linksys, time warner cable in NC, still extremely bad buffering on lots of videos.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Vanberge		</title>
+		<link>http://www.ericvb.com/archives/how-to-stop-youtube-from-sucking-dd-wrt-version#comment-26515</link>
+
+		<dc:creator><![CDATA[Vanberge]]></dc:creator>
+		<pubDate>Wed, 10 Apr 2013 02:03:39 +0000</pubDate>
+		<guid isPermaLink="false">http://www.ericvb.com/?p=3556#comment-26515</guid>
+
+					<description><![CDATA[David, do you have DD-WRT installed on it?  What isn&#039;t working exactly?]]></description>
+			<content:encoded><![CDATA[<p>David, do you have DD-WRT installed on it?  What isn&#8217;t working exactly?</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: David		</title>
+		<link>http://www.ericvb.com/archives/how-to-stop-youtube-from-sucking-dd-wrt-version#comment-26372</link>
+
+		<dc:creator><![CDATA[David]]></dc:creator>
+		<pubDate>Sat, 06 Apr 2013 23:18:17 +0000</pubDate>
+		<guid isPermaLink="false">http://www.ericvb.com/?p=3556#comment-26372</guid>
+
+					<description><![CDATA[This sounds like a dream come true.  But, for the life of me, I can&#039;t figure out how to get this to work on a Netgear WNDR3400.  I&#039;m not an idiot, at least I didn&#039;t think I was.  Help!]]></description>
+			<content:encoded><![CDATA[<p>This sounds like a dream come true.  But, for the life of me, I can&#8217;t figure out how to get this to work on a Netgear WNDR3400.  I&#8217;m not an idiot, at least I didn&#8217;t think I was.  Help!</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Vanberge		</title>
+		<link>http://www.ericvb.com/archives/how-to-stop-youtube-from-sucking-dd-wrt-version#comment-26303</link>
+
+		<dc:creator><![CDATA[Vanberge]]></dc:creator>
+		<pubDate>Fri, 05 Apr 2013 00:17:46 +0000</pubDate>
+		<guid isPermaLink="false">http://www.ericvb.com/?p=3556#comment-26303</guid>
+
+					<description><![CDATA[Rene,
+Something I&#039;ve been trying out and testing is using REJECT instead of DROP.
+Try replacing that and see what you get?
+
+I have not noticed a difference so far; but it was something that Mitch the original author recommended on his site.]]></description>
+			<content:encoded><![CDATA[<p>Rene,<br />
+Something I&#8217;ve been trying out and testing is using REJECT instead of DROP.<br />
+Try replacing that and see what you get?</p>
+<p>I have not noticed a difference so far; but it was something that Mitch the original author recommended on his site.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Rene		</title>
+		<link>http://www.ericvb.com/archives/how-to-stop-youtube-from-sucking-dd-wrt-version#comment-26271</link>
+
+		<dc:creator><![CDATA[Rene]]></dc:creator>
+		<pubDate>Thu, 04 Apr 2013 02:12:51 +0000</pubDate>
+		<guid isPermaLink="false">http://www.ericvb.com/?p=3556#comment-26271</guid>
+
+					<description><![CDATA[For some reason this doesn&#039;t work for me. I still get the constant buffering prior to trying this tweak.]]></description>
+			<content:encoded><![CDATA[<p>For some reason this doesn&#8217;t work for me. I still get the constant buffering prior to trying this tweak.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

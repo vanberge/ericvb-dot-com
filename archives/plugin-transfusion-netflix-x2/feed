@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Plugin Transfusion &#8211; Netflix-X2	</title>
+	<atom:link href="http://www.ericvb.com/archives/plugin-transfusion-netflix-x2/feed" rel="self" type="application/rss+xml" />
+	<link>http://www.ericvb.com/archives/plugin-transfusion-netflix-x2</link>
+	<description>A Distinction Without a Difference...</description>
+	<lastBuildDate>Fri, 02 Apr 2010 19:10:10 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.1</generator>
+	<item>
+		<title>
+		By: Vanberge		</title>
+		<link>http://www.ericvb.com/archives/plugin-transfusion-netflix-x2#comment-14301</link>
+
+		<dc:creator><![CDATA[Vanberge]]></dc:creator>
+		<pubDate>Wed, 24 Feb 2010 00:09:18 +0000</pubDate>
+		<guid isPermaLink="false">http://www.ericvb.com/?p=860#comment-14301</guid>
+
+					<description><![CDATA[It&#039;s ok once in awhile... right?  :-/
+
+Lolz]]></description>
+			<content:encoded><![CDATA[<p>It&#8217;s ok once in awhile&#8230; right?  :-/</p>
+<p>Lolz</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: chouse		</title>
+		<link>http://www.ericvb.com/archives/plugin-transfusion-netflix-x2#comment-14300</link>
+
+		<dc:creator><![CDATA[chouse]]></dc:creator>
+		<pubDate>Tue, 23 Feb 2010 23:31:02 +0000</pubDate>
+		<guid isPermaLink="false">http://www.ericvb.com/?p=860#comment-14300</guid>
+
+					<description><![CDATA[Google 20% FTW!]]></description>
+			<content:encoded><![CDATA[<p>Google 20% FTW!</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

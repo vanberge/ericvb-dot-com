@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Update	</title>
+	<atom:link href="http://www.ericvb.com/archives/update/feed" rel="self" type="application/rss+xml" />
+	<link>http://www.ericvb.com/archives/update</link>
+	<description>A Distinction Without a Difference...</description>
+	<lastBuildDate>Fri, 09 Jun 2006 19:01:01 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.1</generator>
+	<item>
+		<title>
+		By: vanbergs		</title>
+		<link>http://www.ericvb.com/archives/update#comment-251</link>
+
+		<dc:creator><![CDATA[vanbergs]]></dc:creator>
+		<pubDate>Fri, 09 Jun 2006 19:01:01 +0000</pubDate>
+		<guid isPermaLink="false">http://www.palmerforpresident.com/?p=80#comment-251</guid>
+
+					<description><![CDATA[I just ate three grilled cheese sandwiches :-)]]></description>
+			<content:encoded><![CDATA[<p>I just ate three grilled cheese sandwiches 🙂</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: vanlandw		</title>
+		<link>http://www.ericvb.com/archives/update#comment-250</link>
+
+		<dc:creator><![CDATA[vanlandw]]></dc:creator>
+		<pubDate>Fri, 09 Jun 2006 18:48:32 +0000</pubDate>
+		<guid isPermaLink="false">http://www.palmerforpresident.com/?p=80#comment-250</guid>
+
+					<description><![CDATA[your life is way to perfect...i&#039;m jealous
+
+other then downloading windows vista...i used beta one and from what i&#039;ve read it won&#039;t be worth the money they are charging...again IMHO of course..
+
+it will be worth free if your computer has the balls for it]]></description>
+			<content:encoded><![CDATA[<p>your life is way to perfect&#8230;i&#8217;m jealous</p>
+<p>other then downloading windows vista&#8230;i used beta one and from what i&#8217;ve read it won&#8217;t be worth the money they are charging&#8230;again IMHO of course..</p>
+<p>it will be worth free if your computer has the balls for it</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Jeff		</title>
+		<link>http://www.ericvb.com/archives/update#comment-247</link>
+
+		<dc:creator><![CDATA[Jeff]]></dc:creator>
+		<pubDate>Fri, 09 Jun 2006 05:15:35 +0000</pubDate>
+		<guid isPermaLink="false">http://www.palmerforpresident.com/?p=80#comment-247</guid>
+
+					<description><![CDATA[You are probably correct.]]></description>
+			<content:encoded><![CDATA[<p>You are probably correct.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Vanberge		</title>
+		<link>http://www.ericvb.com/archives/update#comment-243</link>
+
+		<dc:creator><![CDATA[Vanberge]]></dc:creator>
+		<pubDate>Fri, 09 Jun 2006 01:53:58 +0000</pubDate>
+		<guid isPermaLink="false">http://www.palmerforpresident.com/?p=80#comment-243</guid>
+
+					<description><![CDATA[this is literally the lamest worstest most hideously pathetic update i have ever constructed.
+
+brb]]></description>
+			<content:encoded><![CDATA[<p>this is literally the lamest worstest most hideously pathetic update i have ever constructed.</p>
+<p>brb</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

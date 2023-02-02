@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Pre-cap	</title>
+	<atom:link href="http://www.ericvb.com/archives/pre-cap/feed" rel="self" type="application/rss+xml" />
+	<link>http://www.ericvb.com/archives/pre-cap</link>
+	<description>A Distinction Without a Difference...</description>
+	<lastBuildDate>Fri, 03 Apr 2009 16:36:15 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.1</generator>
+	<item>
+		<title>
+		By: vanlandw		</title>
+		<link>http://www.ericvb.com/archives/pre-cap#comment-13351</link>
+
+		<dc:creator><![CDATA[vanlandw]]></dc:creator>
+		<pubDate>Fri, 03 Apr 2009 16:36:15 +0000</pubDate>
+		<guid isPermaLink="false">http://www.palmerforpresident.com/?p=552#comment-13351</guid>
+
+					<description><![CDATA[Chicago should be cool. We should just rent a bus like in Judgment Night and fight for our lives...]]></description>
+			<content:encoded><![CDATA[<p>Chicago should be cool. We should just rent a bus like in Judgment Night and fight for our lives&#8230;</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: bun		</title>
+		<link>http://www.ericvb.com/archives/pre-cap#comment-13350</link>
+
+		<dc:creator><![CDATA[bun]]></dc:creator>
+		<pubDate>Fri, 03 Apr 2009 14:13:55 +0000</pubDate>
+		<guid isPermaLink="false">http://www.palmerforpresident.com/?p=552#comment-13350</guid>
+
+					<description><![CDATA[yeah you should look into hotels my van. getting one in the city that weekend is going to be insane because of baseball, so your best bet may be to just find one close to MT, and then just drive in for the show.]]></description>
+			<content:encoded><![CDATA[<p>yeah you should look into hotels my van. getting one in the city that weekend is going to be insane because of baseball, so your best bet may be to just find one close to MT, and then just drive in for the show.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

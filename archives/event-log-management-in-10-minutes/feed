@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Event Log Management in 10 Minutes	</title>
+	<atom:link href="http://www.ericvb.com/archives/event-log-management-in-10-minutes/feed" rel="self" type="application/rss+xml" />
+	<link>http://www.ericvb.com/archives/event-log-management-in-10-minutes</link>
+	<description>A Distinction Without a Difference...</description>
+	<lastBuildDate>Thu, 14 May 2009 19:58:53 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.1</generator>
+	<item>
+		<title>
+		By: Vanberge		</title>
+		<link>http://www.ericvb.com/archives/event-log-management-in-10-minutes#comment-13504</link>
+
+		<dc:creator><![CDATA[Vanberge]]></dc:creator>
+		<pubDate>Thu, 14 May 2009 19:58:53 +0000</pubDate>
+		<guid isPermaLink="false">http://www.palmerforpresident.com/?p=608#comment-13504</guid>
+
+					<description><![CDATA[Is this you Ben?  You need to update your blog! :-D
+http://blogs.splunk.com/ben/
+
+Thanks for the info...  Always good to learn something new.
+Can&#039;t wait for 4.0!
+
+p.s. - who would I have to talk to to get hooked up with some Splunk stickers or something.  ;-P]]></description>
+			<content:encoded><![CDATA[<p>Is this you Ben?  You need to update your blog! 😀<br />
+<a href="http://blogs.splunk.com/ben/" rel="nofollow ugc">http://blogs.splunk.com/ben/</a></p>
+<p>Thanks for the info&#8230;  Always good to learn something new.<br />
+Can&#8217;t wait for 4.0!</p>
+<p>p.s. &#8211; who would I have to talk to to get hooked up with some Splunk stickers or something.  ;-P</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: ben		</title>
+		<link>http://www.ericvb.com/archives/event-log-management-in-10-minutes#comment-13503</link>
+
+		<dc:creator><![CDATA[ben]]></dc:creator>
+		<pubDate>Thu, 14 May 2009 19:21:46 +0000</pubDate>
+		<guid isPermaLink="false">http://www.palmerforpresident.com/?p=608#comment-13503</guid>
+
+					<description><![CDATA[disclaimer: i work for splunk.
+
+Thanks for the kind words about splunk.  If you would rather not install multiple software applications, you can actually use splunk to collect data with wmi as well.
+
+Here is some information on setting up windows data inputs:
+http://www.splunk.com/base/Documentation/latest/Admin/WindowsInputs
+
+And a video all about setting up splunk for windows is here:
+http://www.splunk.com/view/SP-CAAADKS
+
+In our 4.0 version of the product (currently in beta) you will be able to do a lot more of that setup through the UI.]]></description>
+			<content:encoded><![CDATA[<p>disclaimer: i work for splunk.</p>
+<p>Thanks for the kind words about splunk.  If you would rather not install multiple software applications, you can actually use splunk to collect data with wmi as well.</p>
+<p>Here is some information on setting up windows data inputs:<br />
+<a href="http://www.splunk.com/base/Documentation/latest/Admin/WindowsInputs" rel="nofollow ugc">http://www.splunk.com/base/Documentation/latest/Admin/WindowsInputs</a></p>
+<p>And a video all about setting up splunk for windows is here:<br />
+<a href="http://www.splunk.com/view/SP-CAAADKS" rel="nofollow ugc">http://www.splunk.com/view/SP-CAAADKS</a></p>
+<p>In our 4.0 version of the product (currently in beta) you will be able to do a lot more of that setup through the UI.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

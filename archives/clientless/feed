@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Clientless	</title>
+	<atom:link href="http://www.ericvb.com/archives/clientless/feed" rel="self" type="application/rss+xml" />
+	<link>http://www.ericvb.com/archives/clientless</link>
+	<description>A Distinction Without a Difference...</description>
+	<lastBuildDate>Tue, 29 Jan 2008 06:18:16 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.1</generator>
+	<item>
+		<title>
+		By: vanbergs		</title>
+		<link>http://www.ericvb.com/archives/clientless#comment-4985</link>
+
+		<dc:creator><![CDATA[vanbergs]]></dc:creator>
+		<pubDate>Tue, 29 Jan 2008 06:18:16 +0000</pubDate>
+		<guid isPermaLink="false">http://www.palmerforpresident.com/archives/192#comment-4985</guid>
+
+					<description><![CDATA[You should post the pictures from auto show weekend on your site!]]></description>
+			<content:encoded><![CDATA[<p>You should post the pictures from auto show weekend on your site!</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: vanlandw		</title>
+		<link>http://www.ericvb.com/archives/clientless#comment-4977</link>
+
+		<dc:creator><![CDATA[vanlandw]]></dc:creator>
+		<pubDate>Tue, 29 Jan 2008 02:19:07 +0000</pubDate>
+		<guid isPermaLink="false">http://www.palmerforpresident.com/archives/192#comment-4977</guid>
+
+					<description><![CDATA[Dear vanberge4,
+
+I just switched to google.com/ig after not liking it for awhile. The main reason I switched was for an application called &quot;Remember the Milk&quot;. It&#039;s just a &quot;todo&quot; list and it helps me get stuff done. GMAIL and google reader do work better then any mail clent or rss reader does for me mostly because I use these things away from a personal computer so yeah it&#039;s the best things ever.  I hope it works very well for you numba4. The ig google news thing is kinda cool as well
+
+brb]]></description>
+			<content:encoded><![CDATA[<p>Dear vanberge4,</p>
+<p>I just switched to google.com/ig after not liking it for awhile. The main reason I switched was for an application called &#8220;Remember the Milk&#8221;. It&#8217;s just a &#8220;todo&#8221; list and it helps me get stuff done. GMAIL and google reader do work better then any mail clent or rss reader does for me mostly because I use these things away from a personal computer so yeah it&#8217;s the best things ever.  I hope it works very well for you numba4. The ig google news thing is kinda cool as well</p>
+<p>brb</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Kramer		</title>
+		<link>http://www.ericvb.com/archives/clientless#comment-4975</link>
+
+		<dc:creator><![CDATA[Kramer]]></dc:creator>
+		<pubDate>Tue, 29 Jan 2008 00:30:54 +0000</pubDate>
+		<guid isPermaLink="false">http://www.palmerforpresident.com/archives/192#comment-4975</guid>
+
+					<description><![CDATA[I have been email clientless free for a while now.  Gmail is great.]]></description>
+			<content:encoded><![CDATA[<p>I have been email clientless free for a while now.  Gmail is great.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

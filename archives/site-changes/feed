@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Site Changes	</title>
+	<atom:link href="http://www.ericvb.com/archives/site-changes/feed" rel="self" type="application/rss+xml" />
+	<link>http://www.ericvb.com/archives/site-changes</link>
+	<description>A Distinction Without a Difference...</description>
+	<lastBuildDate>Mon, 08 Jan 2007 23:08:52 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.1</generator>
+	<item>
+		<title>
+		By: vanlandw		</title>
+		<link>http://www.ericvb.com/archives/site-changes#comment-850</link>
+
+		<dc:creator><![CDATA[vanlandw]]></dc:creator>
+		<pubDate>Mon, 08 Jan 2007 23:08:52 +0000</pubDate>
+		<guid isPermaLink="false">http://www.palmerforpresident.com/archives/132#comment-850</guid>
+
+					<description><![CDATA[i have to agree with vanberge on this one.....
+
+rusty you really need to implement your blog once again...i miss your writings :-(]]></description>
+			<content:encoded><![CDATA[<p>i have to agree with vanberge on this one&#8230;..</p>
+<p>rusty you really need to implement your blog once again&#8230;i miss your writings 🙁</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Vanberge		</title>
+		<link>http://www.ericvb.com/archives/site-changes#comment-848</link>
+
+		<dc:creator><![CDATA[Vanberge]]></dc:creator>
+		<pubDate>Mon, 08 Jan 2007 03:12:25 +0000</pubDate>
+		<guid isPermaLink="false">http://www.palmerforpresident.com/archives/132#comment-848</guid>
+
+					<description><![CDATA[bun...  clearly you don&#039;t have a website so you are worse than me]]></description>
+			<content:encoded><![CDATA[<p>bun&#8230;  clearly you don&#8217;t have a website so you are worse than me</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: bun		</title>
+		<link>http://www.ericvb.com/archives/site-changes#comment-846</link>
+
+		<dc:creator><![CDATA[bun]]></dc:creator>
+		<pubDate>Sun, 07 Jan 2007 19:45:46 +0000</pubDate>
+		<guid isPermaLink="false">http://www.palmerforpresident.com/archives/132#comment-846</guid>
+
+					<description><![CDATA[wpe]]></description>
+			<content:encoded><![CDATA[<p>wpe</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		By: Kramer		</title>
+		<link>http://www.ericvb.com/archives/site-changes#comment-844</link>
+
+		<dc:creator><![CDATA[Kramer]]></dc:creator>
+		<pubDate>Sun, 07 Jan 2007 02:17:03 +0000</pubDate>
+		<guid isPermaLink="false">http://www.palmerforpresident.com/archives/132#comment-844</guid>
+
+					<description><![CDATA[Removing Rusty from your links was your best change.]]></description>
+			<content:encoded><![CDATA[<p>Removing Rusty from your links was your best change.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>
